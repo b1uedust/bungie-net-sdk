@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Information about a current character&#39;s status with a Progression. A progression is a value that can increase with activity and has levels. Think Character Level and Reputation Levels. Combine this \&quot;live\&quot; data with the related DestinyProgressionDefinition for a full picture of the Progression.
  */
 @ApiModel(description = "Information about a current character's status with a Progression. A progression is a value that can increase with activity and has levels. Think Character Level and Reputation Levels. Combine this \"live\" data with the related DestinyProgressionDefinition for a full picture of the Progression.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDestinyProgression {
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
   @JsonProperty("dailyProgress")
   private Integer dailyProgress = null;
@@ -59,7 +59,7 @@ public class DestinyDestinyProgression {
   @JsonProperty("nextLevelAt")
   private Integer nextLevelAt = null;
 
-  public DestinyDestinyProgression progressionHash(Integer progressionHash) {
+  public DestinyDestinyProgression progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -69,11 +69,11 @@ public class DestinyDestinyProgression {
    * @return progressionHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Progression in question. Use it to look up the DestinyProgressionDefinition in static data.")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 

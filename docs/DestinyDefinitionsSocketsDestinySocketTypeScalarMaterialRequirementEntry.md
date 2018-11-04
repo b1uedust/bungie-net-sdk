@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**currencyItemHash** | **Integer** |  |  [optional]
+**currencyItemHash** | **Long** |  |  [optional]
 **scalarValue** | **Integer** |  |  [optional]
 
 

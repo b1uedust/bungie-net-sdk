@@ -28,23 +28,23 @@ import uk.co.bluedust.model.DestinyComponentsCollectiblesDestinyCollectibleCompo
 /**
  * DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent {
   @JsonProperty("recentCollectibleHashes")
-  private List<Integer> recentCollectibleHashes = null;
+  private List<Long> recentCollectibleHashes = null;
 
   @JsonProperty("newnessFlaggedCollectibleHashes")
-  private List<Integer> newnessFlaggedCollectibleHashes = null;
+  private List<Long> newnessFlaggedCollectibleHashes = null;
 
   @JsonProperty("collectibles")
   private Map<String, DestinyComponentsCollectiblesDestinyCollectibleComponent> collectibles = null;
 
-  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent recentCollectibleHashes(List<Integer> recentCollectibleHashes) {
+  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent recentCollectibleHashes(List<Long> recentCollectibleHashes) {
     this.recentCollectibleHashes = recentCollectibleHashes;
     return this;
   }
 
-  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent addRecentCollectibleHashesItem(Integer recentCollectibleHashesItem) {
+  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent addRecentCollectibleHashesItem(Long recentCollectibleHashesItem) {
     if (this.recentCollectibleHashes == null) {
       this.recentCollectibleHashes = new ArrayList<>();
     }
@@ -57,20 +57,20 @@ public class DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent {
    * @return recentCollectibleHashes
   **/
   @ApiModelProperty(value = "The list of collectibles determined by the game as having been \"recently\" acquired.")
-  public List<Integer> getRecentCollectibleHashes() {
+  public List<Long> getRecentCollectibleHashes() {
     return recentCollectibleHashes;
   }
 
-  public void setRecentCollectibleHashes(List<Integer> recentCollectibleHashes) {
+  public void setRecentCollectibleHashes(List<Long> recentCollectibleHashes) {
     this.recentCollectibleHashes = recentCollectibleHashes;
   }
 
-  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent newnessFlaggedCollectibleHashes(List<Integer> newnessFlaggedCollectibleHashes) {
+  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent newnessFlaggedCollectibleHashes(List<Long> newnessFlaggedCollectibleHashes) {
     this.newnessFlaggedCollectibleHashes = newnessFlaggedCollectibleHashes;
     return this;
   }
 
-  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent addNewnessFlaggedCollectibleHashesItem(Integer newnessFlaggedCollectibleHashesItem) {
+  public DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent addNewnessFlaggedCollectibleHashesItem(Long newnessFlaggedCollectibleHashesItem) {
     if (this.newnessFlaggedCollectibleHashes == null) {
       this.newnessFlaggedCollectibleHashes = new ArrayList<>();
     }
@@ -83,11 +83,11 @@ public class DestinyComponentsCollectiblesDestinyProfileCollectiblesComponent {
    * @return newnessFlaggedCollectibleHashes
   **/
   @ApiModelProperty(value = "The list of collectibles determined by the game as having been \"recently\" acquired.  The game client itself actually controls this data, so I personally question whether anyone will get much use out of this: because we can't edit this value through the API. But in case anyone finds it useful, here it is.")
-  public List<Integer> getNewnessFlaggedCollectibleHashes() {
+  public List<Long> getNewnessFlaggedCollectibleHashes() {
     return newnessFlaggedCollectibleHashes;
   }
 
-  public void setNewnessFlaggedCollectibleHashes(List<Integer> newnessFlaggedCollectibleHashes) {
+  public void setNewnessFlaggedCollectibleHashes(List<Long> newnessFlaggedCollectibleHashes) {
     this.newnessFlaggedCollectibleHashes = newnessFlaggedCollectibleHashes;
   }
 

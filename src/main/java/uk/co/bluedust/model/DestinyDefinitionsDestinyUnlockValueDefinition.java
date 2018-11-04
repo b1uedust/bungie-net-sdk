@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * An Unlock Value is an internal integer value, stored on the server and used in a variety of ways, most frequently for the gating/requirement checks that the game performs across all of its main features. They can also be used as the storage data for mapped Progressions, Objectives, and other features that require storage of variable numeric values.
  */
 @ApiModel(description = "An Unlock Value is an internal integer value, stored on the server and used in a variety of ways, most frequently for the gating/requirement checks that the game performs across all of its main features. They can also be used as the storage data for mapped Progressions, Objectives, and other features that require storage of variable numeric values.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyUnlockValueDefinition {
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -35,7 +35,7 @@ public class DestinyDefinitionsDestinyUnlockValueDefinition {
   @JsonProperty("redacted")
   private Boolean redacted = null;
 
-  public DestinyDefinitionsDestinyUnlockValueDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyUnlockValueDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDefinitionsDestinyUnlockValueDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

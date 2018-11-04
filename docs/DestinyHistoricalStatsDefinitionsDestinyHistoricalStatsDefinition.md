@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **mergeMethod** | [**MergeMethodEnum**](#MergeMethodEnum) | Optional icon for the statistic |  [optional]
 **unitLabel** | **String** | Localized Unit Name for the stat. |  [optional]
 **weight** | **Integer** | Weight assigned to this stat indicating its relative impressiveness. |  [optional]
-**medalTierHash** | **Integer** | The tier associated with this medal - be it implicitly or explicitly. |  [optional]
+**medalTierHash** | **Long** | The tier associated with this medal - be it implicitly or explicitly. |  [optional]
 
 
 <a name="MergeMethodEnum"></a>

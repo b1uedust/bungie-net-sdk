@@ -28,13 +28,13 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyItemSocketEntryPlugItemRand
  * The definition information for a specific socket on an item. This will determine how the socket behaves in-game.
  */
 @ApiModel(description = "The definition information for a specific socket on an item. This will determine how the socket behaves in-game.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
   @JsonProperty("socketTypeHash")
-  private Integer socketTypeHash = null;
+  private Long socketTypeHash = null;
 
   @JsonProperty("singleInitialItemHash")
-  private Integer singleInitialItemHash = null;
+  private Long singleInitialItemHash = null;
 
   @JsonProperty("reusablePlugItems")
   private List<DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition> reusablePlugItems = null;
@@ -49,7 +49,7 @@ public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
   private Object plugSources = null;
 
   @JsonProperty("reusablePlugSetHash")
-  private Integer reusablePlugSetHash = null;
+  private Long reusablePlugSetHash = null;
 
   @JsonProperty("randomizedPlugItems")
   private List<DestinyDefinitionsDestinyItemSocketEntryPlugItemRandomizedDefinition> randomizedPlugItems = null;
@@ -57,7 +57,7 @@ public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
   @JsonProperty("defaultVisible")
   private Boolean defaultVisible = null;
 
-  public DestinyDefinitionsDestinyItemSocketEntryDefinition socketTypeHash(Integer socketTypeHash) {
+  public DestinyDefinitionsDestinyItemSocketEntryDefinition socketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
     return this;
   }
@@ -67,15 +67,15 @@ public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
    * @return socketTypeHash
   **/
   @ApiModelProperty(value = "All sockets have a type, and this is the hash identifier for this particular type. Use it to look up the DestinySocketTypeDefinition: read there for more information on how socket types affect the behavior of the socket.")
-  public Integer getSocketTypeHash() {
+  public Long getSocketTypeHash() {
     return socketTypeHash;
   }
 
-  public void setSocketTypeHash(Integer socketTypeHash) {
+  public void setSocketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
   }
 
-  public DestinyDefinitionsDestinyItemSocketEntryDefinition singleInitialItemHash(Integer singleInitialItemHash) {
+  public DestinyDefinitionsDestinyItemSocketEntryDefinition singleInitialItemHash(Long singleInitialItemHash) {
     this.singleInitialItemHash = singleInitialItemHash;
     return this;
   }
@@ -85,11 +85,11 @@ public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
    * @return singleInitialItemHash
   **/
   @ApiModelProperty(value = "If a valid hash, this is the hash identifier for the DestinyInventoryItemDefinition representing the Plug that will be initially inserted into the item on item creation. Otherwise, this Socket will either start without a plug inserted, or will have one randomly inserted.")
-  public Integer getSingleInitialItemHash() {
+  public Long getSingleInitialItemHash() {
     return singleInitialItemHash;
   }
 
-  public void setSingleInitialItemHash(Integer singleInitialItemHash) {
+  public void setSingleInitialItemHash(Long singleInitialItemHash) {
     this.singleInitialItemHash = singleInitialItemHash;
   }
 
@@ -173,7 +173,7 @@ public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
     this.plugSources = plugSources;
   }
 
-  public DestinyDefinitionsDestinyItemSocketEntryDefinition reusablePlugSetHash(Integer reusablePlugSetHash) {
+  public DestinyDefinitionsDestinyItemSocketEntryDefinition reusablePlugSetHash(Long reusablePlugSetHash) {
     this.reusablePlugSetHash = reusablePlugSetHash;
     return this;
   }
@@ -183,11 +183,11 @@ public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
    * @return reusablePlugSetHash
   **/
   @ApiModelProperty(value = "If this socket's plugs come from a reusable DestinyPlugSetDefinition, this is the identifier for that set. We added this concept to reduce some major duplication that's going to come from sockets as replacements for what was once implemented as large sets of items and kiosks (like Emotes).")
-  public Integer getReusablePlugSetHash() {
+  public Long getReusablePlugSetHash() {
     return reusablePlugSetHash;
   }
 
-  public void setReusablePlugSetHash(Integer reusablePlugSetHash) {
+  public void setReusablePlugSetHash(Long reusablePlugSetHash) {
     this.reusablePlugSetHash = reusablePlugSetHash;
   }
 

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * If a vendor can ever end up performing actions, these are the properties that will be related to those actions. I&#39;m not going to bother documenting this yet, as it is unused and unclear if it will ever be used... but in case it is ever populated and someone finds it useful, it is defined here.
  */
 @ApiModel(description = "If a vendor can ever end up performing actions, these are the properties that will be related to those actions. I'm not going to bother documenting this yet, as it is unused and unclear if it will ever be used... but in case it is ever populated and someone finds it useful, it is defined here.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorActionDefinition {
   @JsonProperty("description")
   private String description = null;
@@ -48,7 +48,7 @@ public class DestinyDefinitionsDestinyVendorActionDefinition {
   private String actionId = null;
 
   @JsonProperty("actionHash")
-  private Integer actionHash = null;
+  private Long actionHash = null;
 
   @JsonProperty("autoPerformAction")
   private Boolean autoPerformAction = null;
@@ -179,7 +179,7 @@ public class DestinyDefinitionsDestinyVendorActionDefinition {
     this.actionId = actionId;
   }
 
-  public DestinyDefinitionsDestinyVendorActionDefinition actionHash(Integer actionHash) {
+  public DestinyDefinitionsDestinyVendorActionDefinition actionHash(Long actionHash) {
     this.actionHash = actionHash;
     return this;
   }
@@ -189,11 +189,11 @@ public class DestinyDefinitionsDestinyVendorActionDefinition {
    * @return actionHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActionHash() {
+  public Long getActionHash() {
     return actionHash;
   }
 
-  public void setActionHash(Integer actionHash) {
+  public void setActionHash(Long actionHash) {
     this.actionHash = actionHash;
   }
 

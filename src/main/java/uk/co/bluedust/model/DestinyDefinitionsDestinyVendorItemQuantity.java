@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * In addition to item quantity information for vendor prices, this also has any optional information that may exist about how the item&#39;s quantity can be modified. (unfortunately not information that is able to be read outside of the BNet servers, but it&#39;s there)
  */
 @ApiModel(description = "In addition to item quantity information for vendor prices, this also has any optional information that may exist about how the item's quantity can be modified. (unfortunately not information that is able to be read outside of the BNet servers, but it's there)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorItemQuantity {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("itemInstanceId")
   private Long itemInstanceId = null;
@@ -35,7 +35,7 @@ public class DestinyDefinitionsDestinyVendorItemQuantity {
   @JsonProperty("quantity")
   private Integer quantity = null;
 
-  public DestinyDefinitionsDestinyVendorItemQuantity itemHash(Integer itemHash) {
+  public DestinyDefinitionsDestinyVendorItemQuantity itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDefinitionsDestinyVendorItemQuantity {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier for the item in question. Use it to look up the item's DestinyInventoryItemDefinition.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

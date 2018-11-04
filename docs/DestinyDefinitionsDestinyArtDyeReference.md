@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**artDyeChannelHash** | **Integer** |  |  [optional]
+**artDyeChannelHash** | **Long** |  |  [optional]
 
 
 

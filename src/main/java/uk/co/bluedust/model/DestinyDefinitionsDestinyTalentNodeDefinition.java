@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyNodeStepDefinition;
  * Talent Grids on items have Nodes. These nodes have positions in the talent grid&#39;s UI, and contain \&quot;Steps\&quot; (DestinyTalentNodeStepDefinition), one of whom will be the \&quot;Current\&quot; step.  The Current Step determines the visual properties of the node, as well as what the node grants when it is activated.  See DestinyTalentGridDefinition for a more complete overview of how Talent Grids work, and how they are used in Destiny 2 (and how they were used in Destiny 1).
  */
 @ApiModel(description = "Talent Grids on items have Nodes. These nodes have positions in the talent grid's UI, and contain \"Steps\" (DestinyTalentNodeStepDefinition), one of whom will be the \"Current\" step.  The Current Step determines the visual properties of the node, as well as what the node grants when it is activated.  See DestinyTalentGridDefinition for a more complete overview of how Talent Grids work, and how they are used in Destiny 2 (and how they were used in Destiny 1).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyTalentNodeDefinition {
   @JsonProperty("nodeIndex")
   private Integer nodeIndex = null;
 
   @JsonProperty("nodeHash")
-  private Integer nodeHash = null;
+  private Long nodeHash = null;
 
   @JsonProperty("row")
   private Integer row = null;
@@ -66,7 +66,7 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
   private List<DestinyDefinitionsDestinyNodeStepDefinition> steps = null;
 
   @JsonProperty("exclusiveWithNodeHashes")
-  private List<Integer> exclusiveWithNodeHashes = null;
+  private List<Long> exclusiveWithNodeHashes = null;
 
   @JsonProperty("randomStartProgressionBarAtProgression")
   private Integer randomStartProgressionBarAtProgression = null;
@@ -75,10 +75,10 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
   private String layoutIdentifier = null;
 
   @JsonProperty("groupHash")
-  private Integer groupHash = null;
+  private Long groupHash = null;
 
   @JsonProperty("loreHash")
-  private Integer loreHash = null;
+  private Long loreHash = null;
 
   @JsonProperty("nodeStyleIdentifier")
   private String nodeStyleIdentifier = null;
@@ -104,7 +104,7 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
     this.nodeIndex = nodeIndex;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeDefinition nodeHash(Integer nodeHash) {
+  public DestinyDefinitionsDestinyTalentNodeDefinition nodeHash(Long nodeHash) {
     this.nodeHash = nodeHash;
     return this;
   }
@@ -114,11 +114,11 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
    * @return nodeHash
   **/
   @ApiModelProperty(value = "The hash identifier for the node, which unfortunately is also content version dependent but can be (and ideally, should be) used instead of the nodeIndex to uniquely identify the node.  The two exist side-by-side for backcompat reasons due to the Great Talent Node Restructuring of Destiny 1, and I ran out of time to remove one of them and standardize on the other. Sorry!")
-  public Integer getNodeHash() {
+  public Long getNodeHash() {
     return nodeHash;
   }
 
-  public void setNodeHash(Integer nodeHash) {
+  public void setNodeHash(Long nodeHash) {
     this.nodeHash = nodeHash;
   }
 
@@ -318,12 +318,12 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
     this.steps = steps;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeDefinition exclusiveWithNodeHashes(List<Integer> exclusiveWithNodeHashes) {
+  public DestinyDefinitionsDestinyTalentNodeDefinition exclusiveWithNodeHashes(List<Long> exclusiveWithNodeHashes) {
     this.exclusiveWithNodeHashes = exclusiveWithNodeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeDefinition addExclusiveWithNodeHashesItem(Integer exclusiveWithNodeHashesItem) {
+  public DestinyDefinitionsDestinyTalentNodeDefinition addExclusiveWithNodeHashesItem(Long exclusiveWithNodeHashesItem) {
     if (this.exclusiveWithNodeHashes == null) {
       this.exclusiveWithNodeHashes = new ArrayList<>();
     }
@@ -336,11 +336,11 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
    * @return exclusiveWithNodeHashes
   **/
   @ApiModelProperty(value = "The nodeHash values for nodes that are in an Exclusive Set with this node.  See DestinyTalentGridDefinition.exclusiveSets for more info about exclusive sets.  Again, note that these are nodeHashes and *not* nodeIndexes.")
-  public List<Integer> getExclusiveWithNodeHashes() {
+  public List<Long> getExclusiveWithNodeHashes() {
     return exclusiveWithNodeHashes;
   }
 
-  public void setExclusiveWithNodeHashes(List<Integer> exclusiveWithNodeHashes) {
+  public void setExclusiveWithNodeHashes(List<Long> exclusiveWithNodeHashes) {
     this.exclusiveWithNodeHashes = exclusiveWithNodeHashes;
   }
 
@@ -380,7 +380,7 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
     this.layoutIdentifier = layoutIdentifier;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeDefinition groupHash(Integer groupHash) {
+  public DestinyDefinitionsDestinyTalentNodeDefinition groupHash(Long groupHash) {
     this.groupHash = groupHash;
     return this;
   }
@@ -390,15 +390,15 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
    * @return groupHash
   **/
   @ApiModelProperty(value = "As of Destiny 2, nodes can exist as part of \"Exclusive Groups\". These differ from exclusive sets in that, within the group, many nodes can be activated. But the act of activating any node in the group will cause \"opposing\" nodes (nodes in groups that are not allowed to be activated at the same time as this group) to deactivate.  See DestinyTalentExclusiveGroup for more information on the details. This is an identifier for this node's group, if it is part of one.")
-  public Integer getGroupHash() {
+  public Long getGroupHash() {
     return groupHash;
   }
 
-  public void setGroupHash(Integer groupHash) {
+  public void setGroupHash(Long groupHash) {
     this.groupHash = groupHash;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeDefinition loreHash(Integer loreHash) {
+  public DestinyDefinitionsDestinyTalentNodeDefinition loreHash(Long loreHash) {
     this.loreHash = loreHash;
     return this;
   }
@@ -408,11 +408,11 @@ public class DestinyDefinitionsDestinyTalentNodeDefinition {
    * @return loreHash
   **/
   @ApiModelProperty(value = "Talent nodes can be associated with a piece of Lore, generally rendered in a tooltip. This is the hash identifier of the lore element to show, if there is one to be show.")
-  public Integer getLoreHash() {
+  public Long getLoreHash() {
     return loreHash;
   }
 
-  public void setLoreHash(Integer loreHash) {
+  public void setLoreHash(Long loreHash) {
     this.loreHash = loreHash;
   }
 

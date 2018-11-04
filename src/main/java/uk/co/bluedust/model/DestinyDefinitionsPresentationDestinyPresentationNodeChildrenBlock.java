@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyDefinitionsPresentationDestinyPresentationNod
  * As/if presentation nodes begin to host more entities as children, these lists will be added to. One list property exists per type of entity that can be treated as a child of this presentation node, and each holds the identifier of the entity and any associated information needed to display the UI for that entity (if anything)
  */
 @ApiModel(description = "As/if presentation nodes begin to host more entities as children, these lists will be added to. One list property exists per type of entity that can be treated as a child of this presentation node, and each holds the identifier of the entity and any associated information needed to display the UI for that entity (if anything)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsPresentationDestinyPresentationNodeChildrenBlock {
   @JsonProperty("presentationNodes")
   private List<DestinyDefinitionsPresentationDestinyPresentationNodeChildEntry> presentationNodes = null;

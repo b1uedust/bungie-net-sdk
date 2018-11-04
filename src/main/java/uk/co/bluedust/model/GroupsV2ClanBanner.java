@@ -23,30 +23,30 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * GroupsV2ClanBanner
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class GroupsV2ClanBanner {
   @JsonProperty("decalId")
-  private Integer decalId = null;
+  private Long decalId = null;
 
   @JsonProperty("decalColorId")
-  private Integer decalColorId = null;
+  private Long decalColorId = null;
 
   @JsonProperty("decalBackgroundColorId")
-  private Integer decalBackgroundColorId = null;
+  private Long decalBackgroundColorId = null;
 
   @JsonProperty("gonfalonId")
-  private Integer gonfalonId = null;
+  private Long gonfalonId = null;
 
   @JsonProperty("gonfalonColorId")
-  private Integer gonfalonColorId = null;
+  private Long gonfalonColorId = null;
 
   @JsonProperty("gonfalonDetailId")
-  private Integer gonfalonDetailId = null;
+  private Long gonfalonDetailId = null;
 
   @JsonProperty("gonfalonDetailColorId")
-  private Integer gonfalonDetailColorId = null;
+  private Long gonfalonDetailColorId = null;
 
-  public GroupsV2ClanBanner decalId(Integer decalId) {
+  public GroupsV2ClanBanner decalId(Long decalId) {
     this.decalId = decalId;
     return this;
   }
@@ -56,15 +56,15 @@ public class GroupsV2ClanBanner {
    * @return decalId
   **/
   @ApiModelProperty(value = "")
-  public Integer getDecalId() {
+  public Long getDecalId() {
     return decalId;
   }
 
-  public void setDecalId(Integer decalId) {
+  public void setDecalId(Long decalId) {
     this.decalId = decalId;
   }
 
-  public GroupsV2ClanBanner decalColorId(Integer decalColorId) {
+  public GroupsV2ClanBanner decalColorId(Long decalColorId) {
     this.decalColorId = decalColorId;
     return this;
   }
@@ -74,15 +74,15 @@ public class GroupsV2ClanBanner {
    * @return decalColorId
   **/
   @ApiModelProperty(value = "")
-  public Integer getDecalColorId() {
+  public Long getDecalColorId() {
     return decalColorId;
   }
 
-  public void setDecalColorId(Integer decalColorId) {
+  public void setDecalColorId(Long decalColorId) {
     this.decalColorId = decalColorId;
   }
 
-  public GroupsV2ClanBanner decalBackgroundColorId(Integer decalBackgroundColorId) {
+  public GroupsV2ClanBanner decalBackgroundColorId(Long decalBackgroundColorId) {
     this.decalBackgroundColorId = decalBackgroundColorId;
     return this;
   }
@@ -92,15 +92,15 @@ public class GroupsV2ClanBanner {
    * @return decalBackgroundColorId
   **/
   @ApiModelProperty(value = "")
-  public Integer getDecalBackgroundColorId() {
+  public Long getDecalBackgroundColorId() {
     return decalBackgroundColorId;
   }
 
-  public void setDecalBackgroundColorId(Integer decalBackgroundColorId) {
+  public void setDecalBackgroundColorId(Long decalBackgroundColorId) {
     this.decalBackgroundColorId = decalBackgroundColorId;
   }
 
-  public GroupsV2ClanBanner gonfalonId(Integer gonfalonId) {
+  public GroupsV2ClanBanner gonfalonId(Long gonfalonId) {
     this.gonfalonId = gonfalonId;
     return this;
   }
@@ -110,15 +110,15 @@ public class GroupsV2ClanBanner {
    * @return gonfalonId
   **/
   @ApiModelProperty(value = "")
-  public Integer getGonfalonId() {
+  public Long getGonfalonId() {
     return gonfalonId;
   }
 
-  public void setGonfalonId(Integer gonfalonId) {
+  public void setGonfalonId(Long gonfalonId) {
     this.gonfalonId = gonfalonId;
   }
 
-  public GroupsV2ClanBanner gonfalonColorId(Integer gonfalonColorId) {
+  public GroupsV2ClanBanner gonfalonColorId(Long gonfalonColorId) {
     this.gonfalonColorId = gonfalonColorId;
     return this;
   }
@@ -128,15 +128,15 @@ public class GroupsV2ClanBanner {
    * @return gonfalonColorId
   **/
   @ApiModelProperty(value = "")
-  public Integer getGonfalonColorId() {
+  public Long getGonfalonColorId() {
     return gonfalonColorId;
   }
 
-  public void setGonfalonColorId(Integer gonfalonColorId) {
+  public void setGonfalonColorId(Long gonfalonColorId) {
     this.gonfalonColorId = gonfalonColorId;
   }
 
-  public GroupsV2ClanBanner gonfalonDetailId(Integer gonfalonDetailId) {
+  public GroupsV2ClanBanner gonfalonDetailId(Long gonfalonDetailId) {
     this.gonfalonDetailId = gonfalonDetailId;
     return this;
   }
@@ -146,15 +146,15 @@ public class GroupsV2ClanBanner {
    * @return gonfalonDetailId
   **/
   @ApiModelProperty(value = "")
-  public Integer getGonfalonDetailId() {
+  public Long getGonfalonDetailId() {
     return gonfalonDetailId;
   }
 
-  public void setGonfalonDetailId(Integer gonfalonDetailId) {
+  public void setGonfalonDetailId(Long gonfalonDetailId) {
     this.gonfalonDetailId = gonfalonDetailId;
   }
 
-  public GroupsV2ClanBanner gonfalonDetailColorId(Integer gonfalonDetailColorId) {
+  public GroupsV2ClanBanner gonfalonDetailColorId(Long gonfalonDetailColorId) {
     this.gonfalonDetailColorId = gonfalonDetailColorId;
     return this;
   }
@@ -164,11 +164,11 @@ public class GroupsV2ClanBanner {
    * @return gonfalonDetailColorId
   **/
   @ApiModelProperty(value = "")
-  public Integer getGonfalonDetailColorId() {
+  public Long getGonfalonDetailColorId() {
     return gonfalonDetailColorId;
   }
 
-  public void setGonfalonDetailColorId(Integer gonfalonDetailColorId) {
+  public void setGonfalonDetailColorId(Long gonfalonDetailColorId) {
     this.gonfalonDetailColorId = gonfalonDetailColorId;
   }
 

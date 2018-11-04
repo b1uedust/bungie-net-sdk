@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Many actions relating to items require you to expend materials: - Activating a talent node - Inserting a plug into a socket The items will refer to material requirements by a materialRequirementsHash in these cases, and this is the definition for those requirements in terms of the item required, how much of it is required and other interesting info. This is one of the rare/strange times where a single contract class is used both in definitions *and* in live data response contracts. I&#39;m not sure yet whether I regret that.
  */
 @ApiModel(description = "Many actions relating to items require you to expend materials: - Activating a talent node - Inserting a plug into a socket The items will refer to material requirements by a materialRequirementsHash in these cases, and this is the definition for those requirements in terms of the item required, how much of it is required and other interesting info. This is one of the rare/strange times where a single contract class is used both in definitions *and* in live data response contracts. I'm not sure yet whether I regret that.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyMaterialRequirement {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("deleteOnAction")
   private Boolean deleteOnAction = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsDestinyMaterialRequirement {
   @JsonProperty("omitFromRequirements")
   private Boolean omitFromRequirements = null;
 
-  public DestinyDefinitionsDestinyMaterialRequirement itemHash(Integer itemHash) {
+  public DestinyDefinitionsDestinyMaterialRequirement itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -48,11 +48,11 @@ public class DestinyDefinitionsDestinyMaterialRequirement {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier of the material required. Use it to look up the material's DestinyInventoryItemDefinition.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

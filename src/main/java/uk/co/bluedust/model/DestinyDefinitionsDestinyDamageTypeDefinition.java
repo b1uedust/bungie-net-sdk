@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * All damage types that are possible in the game are defined here, along with localized info and icons as needed.
  */
 @ApiModel(description = "All damage types that are possible in the game are defined here, along with localized info and icons as needed.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyDamageTypeDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -39,7 +39,7 @@ public class DestinyDefinitionsDestinyDamageTypeDefinition {
   private Object enumValue = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -119,7 +119,7 @@ public class DestinyDefinitionsDestinyDamageTypeDefinition {
     this.enumValue = enumValue;
   }
 
-  public DestinyDefinitionsDestinyDamageTypeDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyDamageTypeDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -129,11 +129,11 @@ public class DestinyDefinitionsDestinyDamageTypeDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

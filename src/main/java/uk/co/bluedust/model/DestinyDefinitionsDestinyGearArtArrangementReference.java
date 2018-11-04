@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsDestinyGearArtArrangementReference
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyGearArtArrangementReference {
   @JsonProperty("classHash")
-  private Integer classHash = null;
+  private Long classHash = null;
 
   @JsonProperty("artArrangementHash")
-  private Integer artArrangementHash = null;
+  private Long artArrangementHash = null;
 
-  public DestinyDefinitionsDestinyGearArtArrangementReference classHash(Integer classHash) {
+  public DestinyDefinitionsDestinyGearArtArrangementReference classHash(Long classHash) {
     this.classHash = classHash;
     return this;
   }
@@ -41,15 +41,15 @@ public class DestinyDefinitionsDestinyGearArtArrangementReference {
    * @return classHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getClassHash() {
+  public Long getClassHash() {
     return classHash;
   }
 
-  public void setClassHash(Integer classHash) {
+  public void setClassHash(Long classHash) {
     this.classHash = classHash;
   }
 
-  public DestinyDefinitionsDestinyGearArtArrangementReference artArrangementHash(Integer artArrangementHash) {
+  public DestinyDefinitionsDestinyGearArtArrangementReference artArrangementHash(Long artArrangementHash) {
     this.artArrangementHash = artArrangementHash;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyDefinitionsDestinyGearArtArrangementReference {
    * @return artArrangementHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getArtArrangementHash() {
+  public Long getArtArrangementHash() {
     return artArrangementHash;
   }
 
-  public void setArtArrangementHash(Integer artArrangementHash) {
+  public void setArtArrangementHash(Long artArrangementHash) {
     this.artArrangementHash = artArrangementHash;
   }
 

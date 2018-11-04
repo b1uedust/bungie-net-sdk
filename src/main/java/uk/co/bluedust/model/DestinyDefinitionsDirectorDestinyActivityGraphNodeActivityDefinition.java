@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * The actual activity to be redirected to when you click on the node. Note that a node can have many Activities attached to it: but only one will be active at any given time. The list of Node Activities will be traversed, and the first one found to be active will be displayed. This way, a node can layer multiple variants of an activity on top of each other. For instance, one node can control the weekly Crucible Playlist. There are multiple possible playlists, but only one is active for the week.
  */
 @ApiModel(description = "The actual activity to be redirected to when you click on the node. Note that a node can have many Activities attached to it: but only one will be active at any given time. The list of Node Activities will be traversed, and the first one found to be active will be displayed. This way, a node can layer multiple variants of an activity on top of each other. For instance, one node can control the weekly Crucible Playlist. There are multiple possible playlists, but only one is active for the week.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinition {
   @JsonProperty("nodeActivityId")
-  private Integer nodeActivityId = null;
+  private Long nodeActivityId = null;
 
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinition nodeActivityId(Integer nodeActivityId) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinition nodeActivityId(Long nodeActivityId) {
     this.nodeActivityId = nodeActivityId;
     return this;
   }
@@ -42,15 +42,15 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinitio
    * @return nodeActivityId
   **/
   @ApiModelProperty(value = "An identifier for this node activity. It is only guaranteed to be unique within the Activity Graph.")
-  public Integer getNodeActivityId() {
+  public Long getNodeActivityId() {
     return nodeActivityId;
   }
 
-  public void setNodeActivityId(Integer nodeActivityId) {
+  public void setNodeActivityId(Long nodeActivityId) {
     this.nodeActivityId = nodeActivityId;
   }
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinition activityHash(Integer activityHash) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinition activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphNodeActivityDefinitio
    * @return activityHash
   **/
   @ApiModelProperty(value = "The activity that will be activated if the user clicks on this node. Controls all activity-related information displayed on the node if it is active (the text shown in the tooltip etc)")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

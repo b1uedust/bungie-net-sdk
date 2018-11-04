@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**collectibleHash** | **Integer** |  |  [optional]
+**collectibleHash** | **Long** |  |  [optional]
 
 
 

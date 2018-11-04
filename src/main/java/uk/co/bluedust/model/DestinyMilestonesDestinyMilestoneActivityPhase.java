@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents whatever information we can return about an explicit phase in an activity. In the future, I hope we&#39;ll have more than just \&quot;guh, you done gone and did something,\&quot; but for the forseeable future that&#39;s all we&#39;ve got. I&#39;m making it more than just a list of booleans out of that overly-optimistic hope.
  */
 @ApiModel(description = "Represents whatever information we can return about an explicit phase in an activity. In the future, I hope we'll have more than just \"guh, you done gone and did something,\" but for the forseeable future that's all we've got. I'm making it more than just a list of booleans out of that overly-optimistic hope.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestoneActivityPhase {
   @JsonProperty("complete")
   private Boolean complete = null;
 
   @JsonProperty("phaseHash")
-  private Integer phaseHash = null;
+  private Long phaseHash = null;
 
   public DestinyMilestonesDestinyMilestoneActivityPhase complete(Boolean complete) {
     this.complete = complete;
@@ -50,7 +50,7 @@ public class DestinyMilestonesDestinyMilestoneActivityPhase {
     this.complete = complete;
   }
 
-  public DestinyMilestonesDestinyMilestoneActivityPhase phaseHash(Integer phaseHash) {
+  public DestinyMilestonesDestinyMilestoneActivityPhase phaseHash(Long phaseHash) {
     this.phaseHash = phaseHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyMilestonesDestinyMilestoneActivityPhase {
    * @return phaseHash
   **/
   @ApiModelProperty(value = "In DestinyActivityDefinition, if the activity has phases, there will be a set of phases defined in the \"insertionPoints\" property. This is the hash that maps to that phase.")
-  public Integer getPhaseHash() {
+  public Long getPhaseHash() {
     return phaseHash;
   }
 
-  public void setPhaseHash(Integer phaseHash) {
+  public void setPhaseHash(Long phaseHash) {
     this.phaseHash = phaseHash;
   }
 

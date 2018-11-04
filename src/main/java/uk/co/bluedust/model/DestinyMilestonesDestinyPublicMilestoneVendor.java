@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyMilestonesDestinyPublicMilestoneVendor
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyPublicMilestoneVendor {
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("previewItemHash")
-  private Integer previewItemHash = null;
+  private Long previewItemHash = null;
 
-  public DestinyMilestonesDestinyPublicMilestoneVendor vendorHash(Integer vendorHash) {
+  public DestinyMilestonesDestinyPublicMilestoneVendor vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -41,15 +41,15 @@ public class DestinyMilestonesDestinyPublicMilestoneVendor {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Vendor related to this Milestone. You can show useful things from this, such as thier Faction icon or whatever you might care about.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneVendor previewItemHash(Integer previewItemHash) {
+  public DestinyMilestonesDestinyPublicMilestoneVendor previewItemHash(Long previewItemHash) {
     this.previewItemHash = previewItemHash;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyMilestonesDestinyPublicMilestoneVendor {
    * @return previewItemHash
   **/
   @ApiModelProperty(value = "If this vendor is featuring a specific item for this event, this will be the hash identifier of that item. I'm taking bets now on how long we go before this needs to be a list or some other, more complex representation instead and I deprecate this too. I'm going to go with 5 months. Calling it now, 2017-09-14 at 9:46pm PST.")
-  public Integer getPreviewItemHash() {
+  public Long getPreviewItemHash() {
     return previewItemHash;
   }
 
-  public void setPreviewItemHash(Integer previewItemHash) {
+  public void setPreviewItemHash(Long previewItemHash) {
     this.previewItemHash = previewItemHash;
   }
 

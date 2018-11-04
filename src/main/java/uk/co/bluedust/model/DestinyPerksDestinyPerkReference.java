@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * The list of perks to display in an item tooltip - and whether or not they have been activated.  Perks apply a variety of effects to a character, and are generally either intrinsic to the item or provided in activated talent nodes or sockets.
  */
 @ApiModel(description = "The list of perks to display in an item tooltip - and whether or not they have been activated.  Perks apply a variety of effects to a character, and are generally either intrinsic to the item or provided in activated talent nodes or sockets.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyPerksDestinyPerkReference {
   @JsonProperty("perkHash")
-  private Integer perkHash = null;
+  private Long perkHash = null;
 
   @JsonProperty("iconPath")
   private String iconPath = null;
@@ -38,7 +38,7 @@ public class DestinyPerksDestinyPerkReference {
   @JsonProperty("visible")
   private Boolean visible = null;
 
-  public DestinyPerksDestinyPerkReference perkHash(Integer perkHash) {
+  public DestinyPerksDestinyPerkReference perkHash(Long perkHash) {
     this.perkHash = perkHash;
     return this;
   }
@@ -48,11 +48,11 @@ public class DestinyPerksDestinyPerkReference {
    * @return perkHash
   **/
   @ApiModelProperty(value = "The hash identifier for the perk, which can be used to look up DestinySandboxPerkDefinition if it exists. Be warned, perks frequently do not have user-viewable information. You should examine whether you actually found a name/description in the perk's definition before you show it to the user.")
-  public Integer getPerkHash() {
+  public Long getPerkHash() {
     return perkHash;
   }
 
-  public void setPerkHash(Integer perkHash) {
+  public void setPerkHash(Long perkHash) {
     this.perkHash = perkHash;
   }
 

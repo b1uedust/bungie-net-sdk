@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Data related to what happens while a plug is being inserted, mostly for UI purposes.
  */
 @ApiModel(description = "Data related to what happens while a plug is being inserted, mostly for UI purposes.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSocketsDestinyInsertPlugActionDefinition {
   @JsonProperty("actionExecuteSeconds")
   private Integer actionExecuteSeconds = null;

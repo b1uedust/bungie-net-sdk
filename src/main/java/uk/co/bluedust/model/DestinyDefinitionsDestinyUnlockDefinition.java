@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiModelProperty;
  * Unlock Flags are small bits (literally, a bit, as in a boolean value) that the game server uses for an extremely wide range of state checks, progress storage, and other interesting tidbits of information.
  */
 @ApiModel(description = "Unlock Flags are small bits (literally, a bit, as in a boolean value) that the game server uses for an extremely wide range of state checks, progress storage, and other interesting tidbits of information.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyUnlockDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -56,7 +56,7 @@ public class DestinyDefinitionsDestinyUnlockDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyUnlockDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyUnlockDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -66,11 +66,11 @@ public class DestinyDefinitionsDestinyUnlockDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

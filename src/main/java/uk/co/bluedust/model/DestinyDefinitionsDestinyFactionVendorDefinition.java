@@ -24,18 +24,18 @@ import io.swagger.annotations.ApiModelProperty;
  * These definitions represent faction vendors at different points in the game.  A single faction may contain multiple vendors, or the same vendor available at two different locations.
  */
 @ApiModel(description = "These definitions represent faction vendors at different points in the game.  A single faction may contain multiple vendors, or the same vendor available at two different locations.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyFactionVendorDefinition {
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
   @JsonProperty("backgroundImagePath")
   private String backgroundImagePath = null;
 
-  public DestinyDefinitionsDestinyFactionVendorDefinition vendorHash(Integer vendorHash) {
+  public DestinyDefinitionsDestinyFactionVendorDefinition vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -45,15 +45,15 @@ public class DestinyDefinitionsDestinyFactionVendorDefinition {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "The faction vendor hash.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 
-  public DestinyDefinitionsDestinyFactionVendorDefinition destinationHash(Integer destinationHash) {
+  public DestinyDefinitionsDestinyFactionVendorDefinition destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -63,11 +63,11 @@ public class DestinyDefinitionsDestinyFactionVendorDefinition {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "The hash identifier for a Destination at which this vendor may be located. Each destination where a Vendor may exist will only ever have a single entry.")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 

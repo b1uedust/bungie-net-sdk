@@ -25,19 +25,19 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Sockets on an item are organized into Categories visually.  You can find references to the socket category defined on an item&#39;s DestinyInventoryItemDefinition.sockets.socketCategories property.  This has the display information for rendering the categories&#39; header, and a hint for how the UI should handle showing this category.  The shitty thing about this, however, is that the socket categories&#39; UI style can be overridden by the item&#39;s UI style. For instance, the Socket Category used by Emote Sockets says it&#39;s \&quot;consumable,\&quot; but that&#39;s a lie: they&#39;re all reusable, and overridden by the detail UI pages in ways that we can&#39;t easily account for in the API.  As a result, I will try to compile these rules into the individual sockets on items, and provide the best hint possible there through the plugSources property. In the future, I may attempt to use this information in conjunction with the item to provide a more usable UI hint on the socket layer, but for now improving the consistency of plugSources is the best I have time to provide. (See https://github.com/Bungie-net/api/issues/522 for more info)
  */
 @ApiModel(description = "Sockets on an item are organized into Categories visually.  You can find references to the socket category defined on an item's DestinyInventoryItemDefinition.sockets.socketCategories property.  This has the display information for rendering the categories' header, and a hint for how the UI should handle showing this category.  The shitty thing about this, however, is that the socket categories' UI style can be overridden by the item's UI style. For instance, the Socket Category used by Emote Sockets says it's \"consumable,\" but that's a lie: they're all reusable, and overridden by the detail UI pages in ways that we can't easily account for in the API.  As a result, I will try to compile these rules into the individual sockets on items, and provide the best hint possible there through the plugSources property. In the future, I may attempt to use this information in conjunction with the item to provide a more usable UI hint on the socket layer, but for now improving the consistency of plugSources is the best I have time to provide. (See https://github.com/Bungie-net/api/issues/522 for more info)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSocketsDestinySocketCategoryDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("uiCategoryStyle")
-  private Integer uiCategoryStyle = null;
+  private Long uiCategoryStyle = null;
 
   @JsonProperty("categoryStyle")
   private Object categoryStyle = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -63,7 +63,7 @@ public class DestinyDefinitionsSocketsDestinySocketCategoryDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsSocketsDestinySocketCategoryDefinition uiCategoryStyle(Integer uiCategoryStyle) {
+  public DestinyDefinitionsSocketsDestinySocketCategoryDefinition uiCategoryStyle(Long uiCategoryStyle) {
     this.uiCategoryStyle = uiCategoryStyle;
     return this;
   }
@@ -73,11 +73,11 @@ public class DestinyDefinitionsSocketsDestinySocketCategoryDefinition {
    * @return uiCategoryStyle
   **/
   @ApiModelProperty(value = "A string hinting to the game's UI system about how the sockets in this category should be displayed.  BNet doesn't use it: it's up to you to find valid values and make your own special UI if you want to honor this category style.")
-  public Integer getUiCategoryStyle() {
+  public Long getUiCategoryStyle() {
     return uiCategoryStyle;
   }
 
-  public void setUiCategoryStyle(Integer uiCategoryStyle) {
+  public void setUiCategoryStyle(Long uiCategoryStyle) {
     this.uiCategoryStyle = uiCategoryStyle;
   }
 
@@ -99,7 +99,7 @@ public class DestinyDefinitionsSocketsDestinySocketCategoryDefinition {
     this.categoryStyle = categoryStyle;
   }
 
-  public DestinyDefinitionsSocketsDestinySocketCategoryDefinition hash(Integer hash) {
+  public DestinyDefinitionsSocketsDestinySocketCategoryDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -109,11 +109,11 @@ public class DestinyDefinitionsSocketsDestinySocketCategoryDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

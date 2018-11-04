@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * If the item can exist in an inventory - the overwhelming majority of them can and do - then this is the basic properties regarding the item&#39;s relationship with the inventory.
  */
 @ApiModel(description = "If the item can exist in an inventory - the overwhelming majority of them can and do - then this is the basic properties regarding the item's relationship with the inventory.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
   @JsonProperty("stackUniqueLabel")
   private String stackUniqueLabel = null;
@@ -33,13 +33,13 @@ public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
   private Integer maxStackSize = null;
 
   @JsonProperty("bucketTypeHash")
-  private Integer bucketTypeHash = null;
+  private Long bucketTypeHash = null;
 
   @JsonProperty("recoveryBucketTypeHash")
-  private Integer recoveryBucketTypeHash = null;
+  private Long recoveryBucketTypeHash = null;
 
   @JsonProperty("tierTypeHash")
-  private Integer tierTypeHash = null;
+  private Long tierTypeHash = null;
 
   @JsonProperty("isInstanceItem")
   private Boolean isInstanceItem = null;
@@ -98,7 +98,7 @@ public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
     this.maxStackSize = maxStackSize;
   }
 
-  public DestinyDefinitionsDestinyItemInventoryBlockDefinition bucketTypeHash(Integer bucketTypeHash) {
+  public DestinyDefinitionsDestinyItemInventoryBlockDefinition bucketTypeHash(Long bucketTypeHash) {
     this.bucketTypeHash = bucketTypeHash;
     return this;
   }
@@ -108,15 +108,15 @@ public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
    * @return bucketTypeHash
   **/
   @ApiModelProperty(value = "The hash identifier for the DestinyInventoryBucketDefinition to which this item belongs. I should have named this \"bucketHash\", but too many things refer to it now. Sigh.")
-  public Integer getBucketTypeHash() {
+  public Long getBucketTypeHash() {
     return bucketTypeHash;
   }
 
-  public void setBucketTypeHash(Integer bucketTypeHash) {
+  public void setBucketTypeHash(Long bucketTypeHash) {
     this.bucketTypeHash = bucketTypeHash;
   }
 
-  public DestinyDefinitionsDestinyItemInventoryBlockDefinition recoveryBucketTypeHash(Integer recoveryBucketTypeHash) {
+  public DestinyDefinitionsDestinyItemInventoryBlockDefinition recoveryBucketTypeHash(Long recoveryBucketTypeHash) {
     this.recoveryBucketTypeHash = recoveryBucketTypeHash;
     return this;
   }
@@ -126,15 +126,15 @@ public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
    * @return recoveryBucketTypeHash
   **/
   @ApiModelProperty(value = "If the item is picked up by the lost loot queue, this is the hash identifier for the DestinyInventoryBucketDefinition into which it will be placed. Again, I should have named this recoveryBucketHash instead.")
-  public Integer getRecoveryBucketTypeHash() {
+  public Long getRecoveryBucketTypeHash() {
     return recoveryBucketTypeHash;
   }
 
-  public void setRecoveryBucketTypeHash(Integer recoveryBucketTypeHash) {
+  public void setRecoveryBucketTypeHash(Long recoveryBucketTypeHash) {
     this.recoveryBucketTypeHash = recoveryBucketTypeHash;
   }
 
-  public DestinyDefinitionsDestinyItemInventoryBlockDefinition tierTypeHash(Integer tierTypeHash) {
+  public DestinyDefinitionsDestinyItemInventoryBlockDefinition tierTypeHash(Long tierTypeHash) {
     this.tierTypeHash = tierTypeHash;
     return this;
   }
@@ -144,11 +144,11 @@ public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
    * @return tierTypeHash
   **/
   @ApiModelProperty(value = "The hash identifier for the Tier Type of the item, use to look up its DestinyItemTierTypeDefinition if you need to show localized data for the item's tier.")
-  public Integer getTierTypeHash() {
+  public Long getTierTypeHash() {
     return tierTypeHash;
   }
 
-  public void setTierTypeHash(Integer tierTypeHash) {
+  public void setTierTypeHash(Long tierTypeHash) {
     this.tierTypeHash = tierTypeHash;
   }
 

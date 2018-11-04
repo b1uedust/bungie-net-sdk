@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * When a vendor provides services, this is the localized name of those services.
  */
 @ApiModel(description = "When a vendor provides services, this is the localized name of those services.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorServiceDefinition {
   @JsonProperty("name")
   private String name = null;

@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sackType** | **Integer** |  |  [optional]
+**sackType** | **Long** |  |  [optional]
 
 
 

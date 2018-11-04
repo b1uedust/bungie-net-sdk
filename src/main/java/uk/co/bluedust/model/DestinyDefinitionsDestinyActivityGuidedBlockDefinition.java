@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Guided Game information for this activity.
  */
 @ApiModel(description = "Guided Game information for this activity.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityGuidedBlockDefinition {
   @JsonProperty("guidedMaxLobbySize")
   private Integer guidedMaxLobbySize = null;

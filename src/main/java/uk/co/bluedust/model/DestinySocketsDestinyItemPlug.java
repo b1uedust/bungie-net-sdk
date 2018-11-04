@@ -26,10 +26,10 @@ import uk.co.bluedust.model.DestinyQuestsDestinyObjectiveProgress;
 /**
  * DestinySocketsDestinyItemPlug
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinySocketsDestinyItemPlug {
   @JsonProperty("plugItemHash")
-  private Integer plugItemHash = null;
+  private Long plugItemHash = null;
 
   @JsonProperty("plugObjectives")
   private List<DestinyQuestsDestinyObjectiveProgress> plugObjectives = null;
@@ -46,7 +46,7 @@ public class DestinySocketsDestinyItemPlug {
   @JsonProperty("enableFailIndexes")
   private List<Integer> enableFailIndexes = null;
 
-  public DestinySocketsDestinyItemPlug plugItemHash(Integer plugItemHash) {
+  public DestinySocketsDestinyItemPlug plugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
     return this;
   }
@@ -56,11 +56,11 @@ public class DestinySocketsDestinyItemPlug {
    * @return plugItemHash
   **/
   @ApiModelProperty(value = "The hash identifier of the DestinyInventoryItemDefinition that represents this plug.")
-  public Integer getPlugItemHash() {
+  public Long getPlugItemHash() {
     return plugItemHash;
   }
 
-  public void setPlugItemHash(Integer plugItemHash) {
+  public void setPlugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
   }
 

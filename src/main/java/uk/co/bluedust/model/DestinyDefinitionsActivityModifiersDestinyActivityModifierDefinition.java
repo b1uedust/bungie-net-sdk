@@ -25,13 +25,13 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Modifiers - in Destiny 1, these were referred to as \&quot;Skulls\&quot; - are changes that can be applied to an Activity.
  */
 @ApiModel(description = "Modifiers - in Destiny 1, these were referred to as \"Skulls\" - are changes that can be applied to an Activity.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsActivityModifiersDestinyActivityModifierDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -57,7 +57,7 @@ public class DestinyDefinitionsActivityModifiersDestinyActivityModifierDefinitio
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsActivityModifiersDestinyActivityModifierDefinition hash(Integer hash) {
+  public DestinyDefinitionsActivityModifiersDestinyActivityModifierDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -67,11 +67,11 @@ public class DestinyDefinitionsActivityModifiersDestinyActivityModifierDefinitio
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

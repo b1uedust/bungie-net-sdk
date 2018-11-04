@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyComponentsVendorsDestinyVendorGroup;
  * This component returns references to all of the Vendors in the response, grouped by categorizations that Bungie has deemed to be interesting, in the order in which both the groups and the vendors within that group should be rendered.
  */
 @ApiModel(description = "This component returns references to all of the Vendors in the response, grouped by categorizations that Bungie has deemed to be interesting, in the order in which both the groups and the vendors within that group should be rendered.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyComponentsVendorsDestinyVendorGroupComponent {
   @JsonProperty("groups")
   private List<DestinyComponentsVendorsDestinyVendorGroup> groups = null;

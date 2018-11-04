@@ -36,7 +36,7 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * The static data about Activities in Destiny 2.  Note that an Activity must be combined with an ActivityMode to know - from a Gameplay perspective - what the user is \&quot;Playing\&quot;.  In most PvE activities, this is fairly straightforward. A Story Activity can only be played in the Story Activity Mode.  However, in PvP activities, the Activity alone only tells you the map being played, or the Playlist that the user chose to enter. You&#39;ll need to know the Activity Mode they&#39;re playing to know that they&#39;re playing Mode X on Map Y.  Activity Definitions tell a great deal of information about what *could* be relevant to a user: what rewards they can earn, what challenges could be performed, what modifiers could be applied. To figure out which of these properties is actually live, you&#39;ll need to combine the definition with \&quot;Live\&quot; data from one of the Destiny endpoints.  Activities also have Activity Types, but unfortunately in Destiny 2 these are even less reliable of a source of information than they were in Destiny 1. I will be looking into ways to provide more reliable sources for type information as time goes on, but for now we&#39;re going to have to deal with the limitations. See DestinyActivityTypeDefinition for more information.
  */
 @ApiModel(description = "The static data about Activities in Destiny 2.  Note that an Activity must be combined with an ActivityMode to know - from a Gameplay perspective - what the user is \"Playing\".  In most PvE activities, this is fairly straightforward. A Story Activity can only be played in the Story Activity Mode.  However, in PvP activities, the Activity alone only tells you the map being played, or the Playlist that the user chose to enter. You'll need to know the Activity Mode they're playing to know that they're playing Mode X on Map Y.  Activity Definitions tell a great deal of information about what *could* be relevant to a user: what rewards they can earn, what challenges could be performed, what modifiers could be applied. To figure out which of these properties is actually live, you'll need to combine the definition with \"Live\" data from one of the Destiny endpoints.  Activities also have Activity Types, but unfortunately in Destiny 2 these are even less reliable of a source of information than they were in Destiny 1. I will be looking into ways to provide more reliable sources for type information as time goes on, but for now we're going to have to deal with the limitations. See DestinyActivityTypeDefinition for more information.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -60,13 +60,13 @@ public class DestinyDefinitionsDestinyActivityDefinition {
   private Integer activityLightLevel = null;
 
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
   @JsonProperty("placeHash")
-  private Integer placeHash = null;
+  private Long placeHash = null;
 
   @JsonProperty("activityTypeHash")
-  private Integer activityTypeHash = null;
+  private Long activityTypeHash = null;
 
   @JsonProperty("tier")
   private Integer tier = null;
@@ -102,7 +102,7 @@ public class DestinyDefinitionsDestinyActivityDefinition {
   private Object guidedGame = null;
 
   @JsonProperty("directActivityModeHash")
-  private Integer directActivityModeHash = null;
+  private Long directActivityModeHash = null;
 
   /**
    * If the activity had an activity mode directly defined on it, this will be the enum value of that mode.
@@ -258,7 +258,7 @@ public class DestinyDefinitionsDestinyActivityDefinition {
   private List<DestinyDefinitionsDestinyActivityLoadoutRequirementSet> loadouts = null;
 
   @JsonProperty("activityModeHashes")
-  private List<Integer> activityModeHashes = null;
+  private List<Long> activityModeHashes = null;
 
   @JsonProperty("activityModeTypes")
   private List<DestinyHistoricalStatsDefinitionsDestinyActivityModeType> activityModeTypes = null;
@@ -273,7 +273,7 @@ public class DestinyDefinitionsDestinyActivityDefinition {
   private List<DestinyConstantsDestinyEnvironmentLocationMapping> activityLocationMappings = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -407,7 +407,7 @@ public class DestinyDefinitionsDestinyActivityDefinition {
     this.activityLightLevel = activityLightLevel;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition destinationHash(Integer destinationHash) {
+  public DestinyDefinitionsDestinyActivityDefinition destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -417,15 +417,15 @@ public class DestinyDefinitionsDestinyActivityDefinition {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "The hash identifier for the Destination on which this Activity is played. Use it to look up the DestinyDestinationDefinition for human readable info about the destination. A Destination can be thought of as a more specific location than a \"Place\". For instance, if the \"Place\" is Earth, the \"Destination\" would be a specific city or region on Earth.")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition placeHash(Integer placeHash) {
+  public DestinyDefinitionsDestinyActivityDefinition placeHash(Long placeHash) {
     this.placeHash = placeHash;
     return this;
   }
@@ -435,15 +435,15 @@ public class DestinyDefinitionsDestinyActivityDefinition {
    * @return placeHash
   **/
   @ApiModelProperty(value = "The hash identifier for the \"Place\" on which this Activity is played. Use it to look up the DestinyPlaceDefinition for human readable info about the Place. A Place is the largest-scoped concept for location information. For instance, if the \"Place\" is Earth, the \"Destination\" would be a specific city or region on Earth.")
-  public Integer getPlaceHash() {
+  public Long getPlaceHash() {
     return placeHash;
   }
 
-  public void setPlaceHash(Integer placeHash) {
+  public void setPlaceHash(Long placeHash) {
     this.placeHash = placeHash;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition activityTypeHash(Integer activityTypeHash) {
+  public DestinyDefinitionsDestinyActivityDefinition activityTypeHash(Long activityTypeHash) {
     this.activityTypeHash = activityTypeHash;
     return this;
   }
@@ -453,11 +453,11 @@ public class DestinyDefinitionsDestinyActivityDefinition {
    * @return activityTypeHash
   **/
   @ApiModelProperty(value = "The hash identifier for the Activity Type of this Activity. You may use it to look up the DestinyActivityTypeDefinition for human readable info, but be forewarned: Playlists and many PVP Map Activities will map to generic Activity Types. You'll have to use your knowledge of the Activity Mode being played to get more specific information about what the user is playing.")
-  public Integer getActivityTypeHash() {
+  public Long getActivityTypeHash() {
     return activityTypeHash;
   }
 
-  public void setActivityTypeHash(Integer activityTypeHash) {
+  public void setActivityTypeHash(Long activityTypeHash) {
     this.activityTypeHash = activityTypeHash;
   }
 
@@ -707,7 +707,7 @@ public class DestinyDefinitionsDestinyActivityDefinition {
     this.guidedGame = guidedGame;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition directActivityModeHash(Integer directActivityModeHash) {
+  public DestinyDefinitionsDestinyActivityDefinition directActivityModeHash(Long directActivityModeHash) {
     this.directActivityModeHash = directActivityModeHash;
     return this;
   }
@@ -717,11 +717,11 @@ public class DestinyDefinitionsDestinyActivityDefinition {
    * @return directActivityModeHash
   **/
   @ApiModelProperty(value = "If this activity had an activity mode directly defined on it, this will be the hash of that mode.")
-  public Integer getDirectActivityModeHash() {
+  public Long getDirectActivityModeHash() {
     return directActivityModeHash;
   }
 
-  public void setDirectActivityModeHash(Integer directActivityModeHash) {
+  public void setDirectActivityModeHash(Long directActivityModeHash) {
     this.directActivityModeHash = directActivityModeHash;
   }
 
@@ -769,12 +769,12 @@ public class DestinyDefinitionsDestinyActivityDefinition {
     this.loadouts = loadouts;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition activityModeHashes(List<Integer> activityModeHashes) {
+  public DestinyDefinitionsDestinyActivityDefinition activityModeHashes(List<Long> activityModeHashes) {
     this.activityModeHashes = activityModeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition addActivityModeHashesItem(Integer activityModeHashesItem) {
+  public DestinyDefinitionsDestinyActivityDefinition addActivityModeHashesItem(Long activityModeHashesItem) {
     if (this.activityModeHashes == null) {
       this.activityModeHashes = new ArrayList<>();
     }
@@ -787,11 +787,11 @@ public class DestinyDefinitionsDestinyActivityDefinition {
    * @return activityModeHashes
   **/
   @ApiModelProperty(value = "The hash identifiers for Activity Modes relevant to this activity.  Note that if this is a playlist, the specific playlist entry chosen will determine the actual activity modes that end up being relevant.")
-  public List<Integer> getActivityModeHashes() {
+  public List<Long> getActivityModeHashes() {
     return activityModeHashes;
   }
 
-  public void setActivityModeHashes(List<Integer> activityModeHashes) {
+  public void setActivityModeHashes(List<Long> activityModeHashes) {
     this.activityModeHashes = activityModeHashes;
   }
 
@@ -891,7 +891,7 @@ public class DestinyDefinitionsDestinyActivityDefinition {
     this.activityLocationMappings = activityLocationMappings;
   }
 
-  public DestinyDefinitionsDestinyActivityDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyActivityDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -901,11 +901,11 @@ public class DestinyDefinitionsDestinyActivityDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

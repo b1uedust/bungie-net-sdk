@@ -24,18 +24,18 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents a socket that has a plug associated with it intrinsically. This is useful for situations where the weapon needs to have a visual plug/Mod on it, but that plug/Mod should never change.
  */
 @ApiModel(description = "Represents a socket that has a plug associated with it intrinsically. This is useful for situations where the weapon needs to have a visual plug/Mod on it, but that plug/Mod should never change.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition {
   @JsonProperty("plugItemHash")
-  private Integer plugItemHash = null;
+  private Long plugItemHash = null;
 
   @JsonProperty("socketTypeHash")
-  private Integer socketTypeHash = null;
+  private Long socketTypeHash = null;
 
   @JsonProperty("defaultVisible")
   private Boolean defaultVisible = null;
 
-  public DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition plugItemHash(Integer plugItemHash) {
+  public DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition plugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
     return this;
   }
@@ -45,15 +45,15 @@ public class DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition {
    * @return plugItemHash
   **/
   @ApiModelProperty(value = "Indicates the plug that is intrinsically inserted into this socket.")
-  public Integer getPlugItemHash() {
+  public Long getPlugItemHash() {
     return plugItemHash;
   }
 
-  public void setPlugItemHash(Integer plugItemHash) {
+  public void setPlugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
   }
 
-  public DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition socketTypeHash(Integer socketTypeHash) {
+  public DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition socketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
     return this;
   }
@@ -63,11 +63,11 @@ public class DestinyDefinitionsDestinyItemIntrinsicSocketEntryDefinition {
    * @return socketTypeHash
   **/
   @ApiModelProperty(value = "Indicates the type of this intrinsic socket.")
-  public Integer getSocketTypeHash() {
+  public Long getSocketTypeHash() {
     return socketTypeHash;
   }
 
-  public void setSocketTypeHash(Integer socketTypeHash) {
+  public void setSocketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
   }
 

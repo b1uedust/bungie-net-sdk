@@ -26,15 +26,15 @@ import java.util.List;
  * Represents a specific group of vendors that can be rendered in the recommended order.  How do we figure out this order? It&#39;s a long story, and will likely get more complicated over time.
  */
 @ApiModel(description = "Represents a specific group of vendors that can be rendered in the recommended order.  How do we figure out this order? It's a long story, and will likely get more complicated over time.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyComponentsVendorsDestinyVendorGroup {
   @JsonProperty("vendorGroupHash")
-  private Integer vendorGroupHash = null;
+  private Long vendorGroupHash = null;
 
   @JsonProperty("vendorHashes")
-  private List<Integer> vendorHashes = null;
+  private List<Long> vendorHashes = null;
 
-  public DestinyComponentsVendorsDestinyVendorGroup vendorGroupHash(Integer vendorGroupHash) {
+  public DestinyComponentsVendorsDestinyVendorGroup vendorGroupHash(Long vendorGroupHash) {
     this.vendorGroupHash = vendorGroupHash;
     return this;
   }
@@ -44,20 +44,20 @@ public class DestinyComponentsVendorsDestinyVendorGroup {
    * @return vendorGroupHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getVendorGroupHash() {
+  public Long getVendorGroupHash() {
     return vendorGroupHash;
   }
 
-  public void setVendorGroupHash(Integer vendorGroupHash) {
+  public void setVendorGroupHash(Long vendorGroupHash) {
     this.vendorGroupHash = vendorGroupHash;
   }
 
-  public DestinyComponentsVendorsDestinyVendorGroup vendorHashes(List<Integer> vendorHashes) {
+  public DestinyComponentsVendorsDestinyVendorGroup vendorHashes(List<Long> vendorHashes) {
     this.vendorHashes = vendorHashes;
     return this;
   }
 
-  public DestinyComponentsVendorsDestinyVendorGroup addVendorHashesItem(Integer vendorHashesItem) {
+  public DestinyComponentsVendorsDestinyVendorGroup addVendorHashesItem(Long vendorHashesItem) {
     if (this.vendorHashes == null) {
       this.vendorHashes = new ArrayList<>();
     }
@@ -70,11 +70,11 @@ public class DestinyComponentsVendorsDestinyVendorGroup {
    * @return vendorHashes
   **/
   @ApiModelProperty(value = "The ordered list of vendors within a particular group.")
-  public List<Integer> getVendorHashes() {
+  public List<Long> getVendorHashes() {
     return vendorHashes;
   }
 
-  public void setVendorHashes(List<Integer> vendorHashes) {
+  public void setVendorHashes(List<Long> vendorHashes) {
     this.vendorHashes = vendorHashes;
   }
 

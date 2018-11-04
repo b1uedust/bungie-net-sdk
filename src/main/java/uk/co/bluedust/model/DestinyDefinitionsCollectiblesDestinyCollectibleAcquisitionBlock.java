@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock {
   @JsonProperty("acquireMaterialRequirementHash")
-  private Integer acquireMaterialRequirementHash = null;
+  private Long acquireMaterialRequirementHash = null;
 
   @JsonProperty("acquireTimestampUnlockValueHash")
-  private Integer acquireTimestampUnlockValueHash = null;
+  private Long acquireTimestampUnlockValueHash = null;
 
-  public DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock acquireMaterialRequirementHash(Integer acquireMaterialRequirementHash) {
+  public DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock acquireMaterialRequirementHash(Long acquireMaterialRequirementHash) {
     this.acquireMaterialRequirementHash = acquireMaterialRequirementHash;
     return this;
   }
@@ -41,15 +41,15 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock {
    * @return acquireMaterialRequirementHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getAcquireMaterialRequirementHash() {
+  public Long getAcquireMaterialRequirementHash() {
     return acquireMaterialRequirementHash;
   }
 
-  public void setAcquireMaterialRequirementHash(Integer acquireMaterialRequirementHash) {
+  public void setAcquireMaterialRequirementHash(Long acquireMaterialRequirementHash) {
     this.acquireMaterialRequirementHash = acquireMaterialRequirementHash;
   }
 
-  public DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock acquireTimestampUnlockValueHash(Integer acquireTimestampUnlockValueHash) {
+  public DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock acquireTimestampUnlockValueHash(Long acquireTimestampUnlockValueHash) {
     this.acquireTimestampUnlockValueHash = acquireTimestampUnlockValueHash;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock {
    * @return acquireTimestampUnlockValueHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getAcquireTimestampUnlockValueHash() {
+  public Long getAcquireTimestampUnlockValueHash() {
     return acquireTimestampUnlockValueHash;
   }
 
-  public void setAcquireTimestampUnlockValueHash(Integer acquireTimestampUnlockValueHash) {
+  public void setAcquireTimestampUnlockValueHash(Long acquireTimestampUnlockValueHash) {
     this.acquireTimestampUnlockValueHash = acquireTimestampUnlockValueHash;
   }
 

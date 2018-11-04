@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiModelProperty;
  * The definition of an item and quantity required in a character&#39;s inventory in order to perform an action.
  */
 @ApiModel(description = "The definition of an item and quantity required in a character's inventory in order to perform an action.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemActionRequiredItemDefinition {
   @JsonProperty("count")
   private Integer count = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("deleteOnAction")
   private Boolean deleteOnAction = null;
@@ -53,7 +53,7 @@ public class DestinyDefinitionsDestinyItemActionRequiredItemDefinition {
     this.count = count;
   }
 
-  public DestinyDefinitionsDestinyItemActionRequiredItemDefinition itemHash(Integer itemHash) {
+  public DestinyDefinitionsDestinyItemActionRequiredItemDefinition itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -63,11 +63,11 @@ public class DestinyDefinitionsDestinyItemActionRequiredItemDefinition {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier of the item you need to have. Use it to look up the DestinyInventoryItemDefinition for more info.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

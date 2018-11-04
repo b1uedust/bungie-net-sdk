@@ -28,10 +28,10 @@ import uk.co.bluedust.model.DestinySocketsDestinyItemPlug;
  * The status of a given item&#39;s socket. (which plug is inserted, if any: whether it is enabled, what \&quot;reusable\&quot; plugs can be inserted, etc...)  If I had it to do over, this would probably have a DestinyItemPlug representing the inserted item instead of most of these properties. :shrug:
  */
 @ApiModel(description = "The status of a given item's socket. (which plug is inserted, if any: whether it is enabled, what \"reusable\" plugs can be inserted, etc...)  If I had it to do over, this would probably have a DestinyItemPlug representing the inserted item instead of most of these properties. :shrug:")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesItemsDestinyItemSocketState {
   @JsonProperty("plugHash")
-  private Integer plugHash = null;
+  private Long plugHash = null;
 
   @JsonProperty("isEnabled")
   private Boolean isEnabled = null;
@@ -43,7 +43,7 @@ public class DestinyEntitiesItemsDestinyItemSocketState {
   private List<Integer> enableFailIndexes = null;
 
   @JsonProperty("reusablePlugHashes")
-  private List<Integer> reusablePlugHashes = null;
+  private List<Long> reusablePlugHashes = null;
 
   @JsonProperty("plugObjectives")
   private List<DestinyQuestsDestinyObjectiveProgress> plugObjectives = null;
@@ -51,7 +51,7 @@ public class DestinyEntitiesItemsDestinyItemSocketState {
   @JsonProperty("reusablePlugs")
   private List<DestinySocketsDestinyItemPlug> reusablePlugs = null;
 
-  public DestinyEntitiesItemsDestinyItemSocketState plugHash(Integer plugHash) {
+  public DestinyEntitiesItemsDestinyItemSocketState plugHash(Long plugHash) {
     this.plugHash = plugHash;
     return this;
   }
@@ -61,11 +61,11 @@ public class DestinyEntitiesItemsDestinyItemSocketState {
    * @return plugHash
   **/
   @ApiModelProperty(value = "The currently active plug, if any.  Note that, because all plugs are statically defined, its effect on stats and perks can be statically determined using the plug item's definition. The stats and perks can be taken at face value on the plug item as the stats and perks it will provide to the user/item.")
-  public Integer getPlugHash() {
+  public Long getPlugHash() {
     return plugHash;
   }
 
-  public void setPlugHash(Integer plugHash) {
+  public void setPlugHash(Long plugHash) {
     this.plugHash = plugHash;
   }
 
@@ -131,12 +131,12 @@ public class DestinyEntitiesItemsDestinyItemSocketState {
     this.enableFailIndexes = enableFailIndexes;
   }
 
-  public DestinyEntitiesItemsDestinyItemSocketState reusablePlugHashes(List<Integer> reusablePlugHashes) {
+  public DestinyEntitiesItemsDestinyItemSocketState reusablePlugHashes(List<Long> reusablePlugHashes) {
     this.reusablePlugHashes = reusablePlugHashes;
     return this;
   }
 
-  public DestinyEntitiesItemsDestinyItemSocketState addReusablePlugHashesItem(Integer reusablePlugHashesItem) {
+  public DestinyEntitiesItemsDestinyItemSocketState addReusablePlugHashesItem(Long reusablePlugHashesItem) {
     if (this.reusablePlugHashes == null) {
       this.reusablePlugHashes = new ArrayList<>();
     }
@@ -149,11 +149,11 @@ public class DestinyEntitiesItemsDestinyItemSocketState {
    * @return reusablePlugHashes
   **/
   @ApiModelProperty(value = "If the item supports reusable plugs, this is the list of plug item hashes that are currently allowed to be used for this socket. See the \"reusablePlugs\" property, which has rendered this obsolete, for more information.")
-  public List<Integer> getReusablePlugHashes() {
+  public List<Long> getReusablePlugHashes() {
     return reusablePlugHashes;
   }
 
-  public void setReusablePlugHashes(List<Integer> reusablePlugHashes) {
+  public void setReusablePlugHashes(List<Long> reusablePlugHashes) {
     this.reusablePlugHashes = reusablePlugHashes;
   }
 

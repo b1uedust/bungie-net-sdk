@@ -26,10 +26,10 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyPublicMilestoneChallenge;
 /**
  * DestinyMilestonesDestinyPublicMilestoneQuest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyPublicMilestoneQuest {
   @JsonProperty("questItemHash")
-  private Integer questItemHash = null;
+  private Long questItemHash = null;
 
   @JsonProperty("activity")
   private Object activity = null;
@@ -37,7 +37,7 @@ public class DestinyMilestonesDestinyPublicMilestoneQuest {
   @JsonProperty("challenges")
   private List<DestinyMilestonesDestinyPublicMilestoneChallenge> challenges = null;
 
-  public DestinyMilestonesDestinyPublicMilestoneQuest questItemHash(Integer questItemHash) {
+  public DestinyMilestonesDestinyPublicMilestoneQuest questItemHash(Long questItemHash) {
     this.questItemHash = questItemHash;
     return this;
   }
@@ -47,11 +47,11 @@ public class DestinyMilestonesDestinyPublicMilestoneQuest {
    * @return questItemHash
   **/
   @ApiModelProperty(value = "Quests are defined as Items in content. As such, this is the hash identifier of the DestinyInventoryItemDefinition that represents this quest. It will have pointers to all of the steps in the quest, and display information for the quest (title, description, icon etc) Individual steps will be referred to in the Quest item's DestinyInventoryItemDefinition.setData property, and themselves are Items with their own renderable data.")
-  public Integer getQuestItemHash() {
+  public Long getQuestItemHash() {
     return questItemHash;
   }
 
-  public void setQuestItemHash(Integer questItemHash) {
+  public void setQuestItemHash(Long questItemHash) {
     this.questItemHash = questItemHash;
   }
 

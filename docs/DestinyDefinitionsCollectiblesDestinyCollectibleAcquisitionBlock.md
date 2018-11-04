@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**acquireMaterialRequirementHash** | **Integer** |  |  [optional]
-**acquireTimestampUnlockValueHash** | **Integer** |  |  [optional]
+**acquireMaterialRequirementHash** | **Long** |  |  [optional]
+**acquireTimestampUnlockValueHash** | **Long** |  |  [optional]
 
 
 

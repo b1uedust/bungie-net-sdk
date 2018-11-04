@@ -31,7 +31,7 @@ import uk.co.bluedust.model.UserGeneralUser;
 /**
  * ContentContentItemPublicContract
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class ContentContentItemPublicContract {
   @JsonProperty("contentId")
   private Long contentId = null;

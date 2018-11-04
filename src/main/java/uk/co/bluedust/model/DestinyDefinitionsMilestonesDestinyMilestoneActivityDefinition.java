@@ -28,15 +28,15 @@ import uk.co.bluedust.model.DestinyDefinitionsMilestonesDestinyMilestoneActivity
  * Milestones can have associated activities which provide additional information about the context, challenges, modifiers, state etc... related to this Milestone.   Information we need to be able to return that data is defined here, along with Tier data to establish a relationship between a conceptual Activity and its difficulty levels and variants.
  */
 @ApiModel(description = "Milestones can have associated activities which provide additional information about the context, challenges, modifiers, state etc... related to this Milestone.   Information we need to be able to return that data is defined here, along with Tier data to establish a relationship between a conceptual Activity and its difficulty levels and variants.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneActivityDefinition {
   @JsonProperty("conceptualActivityHash")
-  private Integer conceptualActivityHash = null;
+  private Long conceptualActivityHash = null;
 
   @JsonProperty("variants")
   private Map<String, DestinyDefinitionsMilestonesDestinyMilestoneActivityVariantDefinition> variants = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneActivityDefinition conceptualActivityHash(Integer conceptualActivityHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneActivityDefinition conceptualActivityHash(Long conceptualActivityHash) {
     this.conceptualActivityHash = conceptualActivityHash;
     return this;
   }
@@ -46,11 +46,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneActivityDefinition {
    * @return conceptualActivityHash
   **/
   @ApiModelProperty(value = "The \"Conceptual\" activity hash. Basically, we picked the lowest level activity and are treating it as the canonical definition of the activity for rendering purposes.  If you care about the specific difficulty modes and variations, use the activities under \"Variants\".")
-  public Integer getConceptualActivityHash() {
+  public Long getConceptualActivityHash() {
     return conceptualActivityHash;
   }
 
-  public void setConceptualActivityHash(Integer conceptualActivityHash) {
+  public void setConceptualActivityHash(Long conceptualActivityHash) {
     this.conceptualActivityHash = conceptualActivityHash;
   }
 

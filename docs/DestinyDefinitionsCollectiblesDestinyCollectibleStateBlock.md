@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**obscuredOverrideItemHash** | **Integer** |  |  [optional]
+**obscuredOverrideItemHash** | **Long** |  |  [optional]
 **requirements** | [**DestinyDefinitionsPresentationDestinyPresentationNodeRequirementsBlock**](DestinyDefinitionsPresentationDestinyPresentationNodeRequirementsBlock.md) |  |  [optional]
 
 

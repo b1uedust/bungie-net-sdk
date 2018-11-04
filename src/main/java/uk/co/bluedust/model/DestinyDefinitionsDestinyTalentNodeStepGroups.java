@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyTalentNodeStepWeaponPerform
  * These properties are an attempt to categorize talent node steps by certain common properties. See the related enumerations for the type of properties being categorized.
  */
 @ApiModel(description = "These properties are an attempt to categorize talent node steps by certain common properties. See the related enumerations for the type of properties being categorized.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyTalentNodeStepGroups {
   @JsonProperty("weaponPerformance")
   private DestinyDefinitionsDestinyTalentNodeStepWeaponPerformances weaponPerformance = null;

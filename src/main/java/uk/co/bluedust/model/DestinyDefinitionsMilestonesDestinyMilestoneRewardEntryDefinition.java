@@ -27,10 +27,10 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * The definition of a specific reward, which may be contained in a category of rewards and that has optional information about how it is obtained.
  */
 @ApiModel(description = "The definition of a specific reward, which may be contained in a category of rewards and that has optional information about how it is obtained.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
   @JsonProperty("rewardEntryHash")
-  private Integer rewardEntryHash = null;
+  private Long rewardEntryHash = null;
 
   @JsonProperty("rewardEntryIdentifier")
   private String rewardEntryIdentifier = null;
@@ -39,7 +39,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
   private List<DestinyDestinyItemQuantity> items = null;
 
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -47,7 +47,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
   @JsonProperty("order")
   private Integer order = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition rewardEntryHash(Integer rewardEntryHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition rewardEntryHash(Long rewardEntryHash) {
     this.rewardEntryHash = rewardEntryHash;
     return this;
   }
@@ -57,11 +57,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
    * @return rewardEntryHash
   **/
   @ApiModelProperty(value = "The identifier for this reward entry. Runtime data will refer to reward entries by this hash. Only guaranteed unique within the specific Milestone.")
-  public Integer getRewardEntryHash() {
+  public Long getRewardEntryHash() {
     return rewardEntryHash;
   }
 
-  public void setRewardEntryHash(Integer rewardEntryHash) {
+  public void setRewardEntryHash(Long rewardEntryHash) {
     this.rewardEntryHash = rewardEntryHash;
   }
 
@@ -109,7 +109,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
     this.items = items;
   }
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition vendorHash(Integer vendorHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -119,11 +119,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "If this reward is redeemed at a Vendor, this is the hash of the Vendor to go to in order to redeem the reward. Use this hash to look up the DestinyVendorDefinition.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 

@@ -24,16 +24,16 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents custom data that we know about an individual variant of an activity.
  */
 @ApiModel(description = "Represents custom data that we know about an individual variant of an activity.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestoneActivityVariant {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("completionStatus")
   private Object completionStatus = null;
 
   @JsonProperty("activityModeHash")
-  private Integer activityModeHash = null;
+  private Long activityModeHash = null;
 
   /**
    * The enumeration equivalent of the most specific Activity Mode under which this activity is played.
@@ -185,7 +185,7 @@ public class DestinyMilestonesDestinyMilestoneActivityVariant {
   @JsonProperty("activityModeType")
   private ActivityModeTypeEnum activityModeType = null;
 
-  public DestinyMilestonesDestinyMilestoneActivityVariant activityHash(Integer activityHash) {
+  public DestinyMilestonesDestinyMilestoneActivityVariant activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -195,11 +195,11 @@ public class DestinyMilestonesDestinyMilestoneActivityVariant {
    * @return activityHash
   **/
   @ApiModelProperty(value = "The hash for the specific variant of the activity related to this milestone. You can pull more detailed static info from the DestinyActivityDefinition, such as difficulty level.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
@@ -221,7 +221,7 @@ public class DestinyMilestonesDestinyMilestoneActivityVariant {
     this.completionStatus = completionStatus;
   }
 
-  public DestinyMilestonesDestinyMilestoneActivityVariant activityModeHash(Integer activityModeHash) {
+  public DestinyMilestonesDestinyMilestoneActivityVariant activityModeHash(Long activityModeHash) {
     this.activityModeHash = activityModeHash;
     return this;
   }
@@ -231,11 +231,11 @@ public class DestinyMilestonesDestinyMilestoneActivityVariant {
    * @return activityModeHash
   **/
   @ApiModelProperty(value = "The hash identifier of the most specific Activity Mode under which this activity is played. This is useful for situations where the activity in question is - for instance - a PVP map, but it's not clear what mode the PVP map is being played under. If it's a playlist, this will be less specific: but hopefully useful in some way.")
-  public Integer getActivityModeHash() {
+  public Long getActivityModeHash() {
     return activityModeHash;
   }
 
-  public void setActivityModeHash(Integer activityModeHash) {
+  public void setActivityModeHash(Long activityModeHash) {
     this.activityModeHash = activityModeHash;
   }
 

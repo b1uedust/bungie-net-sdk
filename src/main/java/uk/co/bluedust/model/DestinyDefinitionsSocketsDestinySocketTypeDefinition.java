@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsSocketsDestinySocketTypeScalarMate
  * All Sockets have a \&quot;Type\&quot;: a set of common properties that determine when the socket allows Plugs to be inserted, what Categories of Plugs can be inserted, and whether the socket is even visible at all given the current game/character/account state.  See DestinyInventoryItemDefinition for more information about Socketed items and Plugs.
  */
 @ApiModel(description = "All Sockets have a \"Type\": a set of common properties that determine when the socket allows Plugs to be inserted, what Categories of Plugs can be inserted, and whether the socket is even visible at all given the current game/character/account state.  See DestinyInventoryItemDefinition for more information about Socketed items and Plugs.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -40,7 +40,7 @@ public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
   private List<DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition> plugWhitelist = null;
 
   @JsonProperty("socketCategoryHash")
-  private Integer socketCategoryHash = null;
+  private Long socketCategoryHash = null;
 
   @JsonProperty("visibility")
   private Object visibility = null;
@@ -64,7 +64,7 @@ public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
   private List<DestinyDefinitionsSocketsDestinySocketTypeScalarMaterialRequirementEntry> currencyScalars = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -134,7 +134,7 @@ public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
     this.plugWhitelist = plugWhitelist;
   }
 
-  public DestinyDefinitionsSocketsDestinySocketTypeDefinition socketCategoryHash(Integer socketCategoryHash) {
+  public DestinyDefinitionsSocketsDestinySocketTypeDefinition socketCategoryHash(Long socketCategoryHash) {
     this.socketCategoryHash = socketCategoryHash;
     return this;
   }
@@ -144,11 +144,11 @@ public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
    * @return socketCategoryHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getSocketCategoryHash() {
+  public Long getSocketCategoryHash() {
     return socketCategoryHash;
   }
 
-  public void setSocketCategoryHash(Integer socketCategoryHash) {
+  public void setSocketCategoryHash(Long socketCategoryHash) {
     this.socketCategoryHash = socketCategoryHash;
   }
 
@@ -286,7 +286,7 @@ public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
     this.currencyScalars = currencyScalars;
   }
 
-  public DestinyDefinitionsSocketsDestinySocketTypeDefinition hash(Integer hash) {
+  public DestinyDefinitionsSocketsDestinySocketTypeDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -296,11 +296,11 @@ public class DestinyDefinitionsSocketsDestinySocketTypeDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

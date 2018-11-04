@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyDefinitionsReportingDestinyReportReasonDefini
  * If you&#39;re going to report someone for a Terms of Service violation, you need to choose a category and reason for the report. This definition holds both the categories and the reasons within those categories, for simplicity and my own laziness&#39; sake.  Note tha this means that, to refer to a Reason by reasonHash, you need a combination of the reasonHash *and* the associated ReasonCategory&#39;s hash: there are some reasons defined under multiple categories.
  */
 @ApiModel(description = "If you're going to report someone for a Terms of Service violation, you need to choose a category and reason for the report. This definition holds both the categories and the reasons within those categories, for simplicity and my own laziness' sake.  Note tha this means that, to refer to a Reason by reasonHash, you need a combination of the reasonHash *and* the associated ReasonCategory's hash: there are some reasons defined under multiple categories.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsReportingDestinyReportReasonCategoryDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsReportingDestinyReportReasonCategoryDefinition {
   private Map<String, DestinyDefinitionsReportingDestinyReportReasonDefinition> reasons = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -90,7 +90,7 @@ public class DestinyDefinitionsReportingDestinyReportReasonCategoryDefinition {
     this.reasons = reasons;
   }
 
-  public DestinyDefinitionsReportingDestinyReportReasonCategoryDefinition hash(Integer hash) {
+  public DestinyDefinitionsReportingDestinyReportReasonCategoryDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -100,11 +100,11 @@ public class DestinyDefinitionsReportingDestinyReportReasonCategoryDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

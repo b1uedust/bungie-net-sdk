@@ -27,15 +27,15 @@ import uk.co.bluedust.model.DestinyDyeReference;
  * Bare minimum summary information for an item, for the sake of 3D rendering the item.
  */
 @ApiModel(description = "Bare minimum summary information for an item, for the sake of 3D rendering the item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyCharacterDestinyItemPeerView {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("dyes")
   private List<DestinyDyeReference> dyes = null;
 
-  public DestinyCharacterDestinyItemPeerView itemHash(Integer itemHash) {
+  public DestinyCharacterDestinyItemPeerView itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyCharacterDestinyItemPeerView {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier of the item in question. Use it to look up the DestinyInventoryItemDefinition of the item for static rendering data.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

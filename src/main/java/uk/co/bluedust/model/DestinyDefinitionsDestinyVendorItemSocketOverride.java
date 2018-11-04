@@ -24,18 +24,18 @@ import io.swagger.annotations.ApiModelProperty;
  * The information for how the vendor purchase should override a given socket with custom plug data.
  */
 @ApiModel(description = "The information for how the vendor purchase should override a given socket with custom plug data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorItemSocketOverride {
   @JsonProperty("singleItemHash")
-  private Integer singleItemHash = null;
+  private Long singleItemHash = null;
 
   @JsonProperty("randomizedOptionsCount")
   private Integer randomizedOptionsCount = null;
 
   @JsonProperty("socketTypeHash")
-  private Integer socketTypeHash = null;
+  private Long socketTypeHash = null;
 
-  public DestinyDefinitionsDestinyVendorItemSocketOverride singleItemHash(Integer singleItemHash) {
+  public DestinyDefinitionsDestinyVendorItemSocketOverride singleItemHash(Long singleItemHash) {
     this.singleItemHash = singleItemHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDefinitionsDestinyVendorItemSocketOverride {
    * @return singleItemHash
   **/
   @ApiModelProperty(value = "If this is populated, the socket will be overridden with a specific plug.  If this isn't populated, it's being overridden by something more complicated that is only known by the Game Server and God, which means we can't tell you in advance what it'll be.")
-  public Integer getSingleItemHash() {
+  public Long getSingleItemHash() {
     return singleItemHash;
   }
 
-  public void setSingleItemHash(Integer singleItemHash) {
+  public void setSingleItemHash(Long singleItemHash) {
     this.singleItemHash = singleItemHash;
   }
 
@@ -71,7 +71,7 @@ public class DestinyDefinitionsDestinyVendorItemSocketOverride {
     this.randomizedOptionsCount = randomizedOptionsCount;
   }
 
-  public DestinyDefinitionsDestinyVendorItemSocketOverride socketTypeHash(Integer socketTypeHash) {
+  public DestinyDefinitionsDestinyVendorItemSocketOverride socketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
     return this;
   }
@@ -81,11 +81,11 @@ public class DestinyDefinitionsDestinyVendorItemSocketOverride {
    * @return socketTypeHash
   **/
   @ApiModelProperty(value = "This appears to be used to select which socket ultimately gets the override defined here.")
-  public Integer getSocketTypeHash() {
+  public Long getSocketTypeHash() {
     return socketTypeHash;
   }
 
-  public void setSocketTypeHash(Integer socketTypeHash) {
+  public void setSocketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
   }
 

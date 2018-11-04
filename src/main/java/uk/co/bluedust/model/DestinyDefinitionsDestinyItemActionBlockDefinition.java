@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyProgressionRewardDefinition
  * If an item can have an action performed on it (like \&quot;Dismantle\&quot;), it will be defined here if you care.
  */
 @ApiModel(description = "If an item can have an action performed on it (like \"Dismantle\"), it will be defined here if you care.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemActionBlockDefinition {
   @JsonProperty("verbName")
   private String verbName = null;
@@ -61,7 +61,7 @@ public class DestinyDefinitionsDestinyItemActionBlockDefinition {
   private String requiredLocation = null;
 
   @JsonProperty("requiredCooldownHash")
-  private Integer requiredCooldownHash = null;
+  private Long requiredCooldownHash = null;
 
   @JsonProperty("deleteOnAction")
   private Boolean deleteOnAction = null;
@@ -268,7 +268,7 @@ public class DestinyDefinitionsDestinyItemActionBlockDefinition {
     this.requiredLocation = requiredLocation;
   }
 
-  public DestinyDefinitionsDestinyItemActionBlockDefinition requiredCooldownHash(Integer requiredCooldownHash) {
+  public DestinyDefinitionsDestinyItemActionBlockDefinition requiredCooldownHash(Long requiredCooldownHash) {
     this.requiredCooldownHash = requiredCooldownHash;
     return this;
   }
@@ -278,11 +278,11 @@ public class DestinyDefinitionsDestinyItemActionBlockDefinition {
    * @return requiredCooldownHash
   **/
   @ApiModelProperty(value = "The identifier hash for the Cooldown associated with this action. We have not pulled this data yet for you to have more data to use for cooldowns.")
-  public Integer getRequiredCooldownHash() {
+  public Long getRequiredCooldownHash() {
     return requiredCooldownHash;
   }
 
-  public void setRequiredCooldownHash(Integer requiredCooldownHash) {
+  public void setRequiredCooldownHash(Long requiredCooldownHash) {
     this.requiredCooldownHash = requiredCooldownHash;
   }
 

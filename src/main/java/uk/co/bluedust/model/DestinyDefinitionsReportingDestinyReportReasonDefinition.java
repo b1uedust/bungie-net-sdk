@@ -25,15 +25,15 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * A specific reason for being banned. Only accessible under the related category (DestinyReportReasonCategoryDefinition) under which it is shown. Note that this means that report reasons&#39; reasonHash are not globally unique: and indeed, entries like \&quot;Other\&quot; are defined under most categories for example.
  */
 @ApiModel(description = "A specific reason for being banned. Only accessible under the related category (DestinyReportReasonCategoryDefinition) under which it is shown. Note that this means that report reasons' reasonHash are not globally unique: and indeed, entries like \"Other\" are defined under most categories for example.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsReportingDestinyReportReasonDefinition {
   @JsonProperty("reasonHash")
-  private Integer reasonHash = null;
+  private Long reasonHash = null;
 
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
-  public DestinyDefinitionsReportingDestinyReportReasonDefinition reasonHash(Integer reasonHash) {
+  public DestinyDefinitionsReportingDestinyReportReasonDefinition reasonHash(Long reasonHash) {
     this.reasonHash = reasonHash;
     return this;
   }
@@ -43,11 +43,11 @@ public class DestinyDefinitionsReportingDestinyReportReasonDefinition {
    * @return reasonHash
   **/
   @ApiModelProperty(value = "The identifier for the reason: they are only guaranteed unique under the Category in which they are found.")
-  public Integer getReasonHash() {
+  public Long getReasonHash() {
     return reasonHash;
   }
 
-  public void setReasonHash(Integer reasonHash) {
+  public void setReasonHash(Long reasonHash) {
     this.reasonHash = reasonHash;
   }
 

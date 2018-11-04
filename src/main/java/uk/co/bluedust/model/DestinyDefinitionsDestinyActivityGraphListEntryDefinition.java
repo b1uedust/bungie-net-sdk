@@ -24,12 +24,12 @@ import io.swagger.annotations.ApiModelProperty;
  * Destinations and Activities may have default Activity Graphs that should be shown when you bring up the Director and are playing in either.  This contract defines the graph referred to and the gating for when it is relevant.
  */
 @ApiModel(description = "Destinations and Activities may have default Activity Graphs that should be shown when you bring up the Director and are playing in either.  This contract defines the graph referred to and the gating for when it is relevant.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityGraphListEntryDefinition {
   @JsonProperty("activityGraphHash")
-  private Integer activityGraphHash = null;
+  private Long activityGraphHash = null;
 
-  public DestinyDefinitionsDestinyActivityGraphListEntryDefinition activityGraphHash(Integer activityGraphHash) {
+  public DestinyDefinitionsDestinyActivityGraphListEntryDefinition activityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
     return this;
   }
@@ -39,11 +39,11 @@ public class DestinyDefinitionsDestinyActivityGraphListEntryDefinition {
    * @return activityGraphHash
   **/
   @ApiModelProperty(value = "The hash identifier of the DestinyActivityGraphDefinition that should be shown when opening the director.")
-  public Integer getActivityGraphHash() {
+  public Long getActivityGraphHash() {
     return activityGraphHash;
   }
 
-  public void setActivityGraphHash(Integer activityGraphHash) {
+  public void setActivityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
   }
 

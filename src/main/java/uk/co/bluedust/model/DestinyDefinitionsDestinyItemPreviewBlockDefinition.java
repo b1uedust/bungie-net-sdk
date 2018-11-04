@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyDefinitionsItemsDestinyDerivedItemCategoryDef
  * Items like Sacks or Boxes can have items that it shows in-game when you view details that represent the items you can obtain if you use or acquire the item.  This defines those categories, and gives some insights into that data&#39;s source.
  */
 @ApiModel(description = "Items like Sacks or Boxes can have items that it shows in-game when you view details that represent the items you can obtain if you use or acquire the item.  This defines those categories, and gives some insights into that data's source.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemPreviewBlockDefinition {
   @JsonProperty("screenStyle")
   private String screenStyle = null;
 
   @JsonProperty("previewVendorHash")
-  private Integer previewVendorHash = null;
+  private Long previewVendorHash = null;
 
   @JsonProperty("previewActionString")
   private String previewActionString = null;
@@ -59,7 +59,7 @@ public class DestinyDefinitionsDestinyItemPreviewBlockDefinition {
     this.screenStyle = screenStyle;
   }
 
-  public DestinyDefinitionsDestinyItemPreviewBlockDefinition previewVendorHash(Integer previewVendorHash) {
+  public DestinyDefinitionsDestinyItemPreviewBlockDefinition previewVendorHash(Long previewVendorHash) {
     this.previewVendorHash = previewVendorHash;
     return this;
   }
@@ -69,11 +69,11 @@ public class DestinyDefinitionsDestinyItemPreviewBlockDefinition {
    * @return previewVendorHash
   **/
   @ApiModelProperty(value = "If the preview data is derived from a fake \"Preview\" Vendor, this will be the hash identifier for the DestinyVendorDefinition of that fake vendor.")
-  public Integer getPreviewVendorHash() {
+  public Long getPreviewVendorHash() {
     return previewVendorHash;
   }
 
-  public void setPreviewVendorHash(Integer previewVendorHash) {
+  public void setPreviewVendorHash(Long previewVendorHash) {
     this.previewVendorHash = previewVendorHash;
   }
 

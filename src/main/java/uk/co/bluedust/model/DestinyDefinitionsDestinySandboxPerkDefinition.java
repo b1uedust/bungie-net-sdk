@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Perks are modifiers to a character or item that can be applied situationally.  - Perks determine a weapons&#39; damage type.  - Perks put the Mods in Modifiers (they are literally the entity that bestows the Sandbox benefit for whatever fluff text about the modifier in the Socket, Plug or Talent Node)  - Perks are applied for unique alterations of state in Objectives  Anyways, I&#39;m sure you can see why perks are so interesting.  What Perks often don&#39;t have is human readable information, so we attempt to reverse engineer that by pulling that data from places that uniquely refer to these perks: namely, Talent Nodes and Plugs. That only gives us a subset of perks that are human readable, but those perks are the ones people generally care about anyways. The others are left as a mystery, their true purpose mostly unknown and undocumented.
  */
 @ApiModel(description = "Perks are modifiers to a character or item that can be applied situationally.  - Perks determine a weapons' damage type.  - Perks put the Mods in Modifiers (they are literally the entity that bestows the Sandbox benefit for whatever fluff text about the modifier in the Socket, Plug or Talent Node)  - Perks are applied for unique alterations of state in Objectives  Anyways, I'm sure you can see why perks are so interesting.  What Perks often don't have is human readable information, so we attempt to reverse engineer that by pulling that data from places that uniquely refer to these perks: namely, Talent Nodes and Plugs. That only gives us a subset of perks that are human readable, but those perks are the ones people generally care about anyways. The others are left as a mystery, their true purpose mostly unknown and undocumented.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinySandboxPerkDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -39,13 +39,13 @@ public class DestinyDefinitionsDestinySandboxPerkDefinition {
   private Object damageType = null;
 
   @JsonProperty("damageTypeHash")
-  private Integer damageTypeHash = null;
+  private Long damageTypeHash = null;
 
   @JsonProperty("perkGroups")
   private Object perkGroups = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -125,7 +125,7 @@ public class DestinyDefinitionsDestinySandboxPerkDefinition {
     this.damageType = damageType;
   }
 
-  public DestinyDefinitionsDestinySandboxPerkDefinition damageTypeHash(Integer damageTypeHash) {
+  public DestinyDefinitionsDestinySandboxPerkDefinition damageTypeHash(Long damageTypeHash) {
     this.damageTypeHash = damageTypeHash;
     return this;
   }
@@ -135,11 +135,11 @@ public class DestinyDefinitionsDestinySandboxPerkDefinition {
    * @return damageTypeHash
   **/
   @ApiModelProperty(value = "The hash identifier for looking up the DestinyDamageTypeDefinition, if this perk has a damage type.  This is preferred over using the damageType enumeration value, which has been left purely because it is occasionally convenient.")
-  public Integer getDamageTypeHash() {
+  public Long getDamageTypeHash() {
     return damageTypeHash;
   }
 
-  public void setDamageTypeHash(Integer damageTypeHash) {
+  public void setDamageTypeHash(Long damageTypeHash) {
     this.damageTypeHash = damageTypeHash;
   }
 
@@ -161,7 +161,7 @@ public class DestinyDefinitionsDestinySandboxPerkDefinition {
     this.perkGroups = perkGroups;
   }
 
-  public DestinyDefinitionsDestinySandboxPerkDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinySandboxPerkDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -171,11 +171,11 @@ public class DestinyDefinitionsDestinySandboxPerkDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

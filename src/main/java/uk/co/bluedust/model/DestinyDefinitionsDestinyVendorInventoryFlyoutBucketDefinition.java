@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiModelProperty;
  * Information about a single inventory bucket in a vendor flyout UI and how it is shown.
  */
 @ApiModel(description = "Information about a single inventory bucket in a vendor flyout UI and how it is shown.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition {
   @JsonProperty("collapsible")
   private Boolean collapsible = null;
 
   @JsonProperty("inventoryBucketHash")
-  private Integer inventoryBucketHash = null;
+  private Long inventoryBucketHash = null;
 
   @JsonProperty("sortItemsBy")
   private Object sortItemsBy = null;
@@ -53,7 +53,7 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition {
     this.collapsible = collapsible;
   }
 
-  public DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition inventoryBucketHash(Integer inventoryBucketHash) {
+  public DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition inventoryBucketHash(Long inventoryBucketHash) {
     this.inventoryBucketHash = inventoryBucketHash;
     return this;
   }
@@ -63,11 +63,11 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition {
    * @return inventoryBucketHash
   **/
   @ApiModelProperty(value = "The inventory bucket whose contents should be shown.")
-  public Integer getInventoryBucketHash() {
+  public Long getInventoryBucketHash() {
     return inventoryBucketHash;
   }
 
-  public void setInventoryBucketHash(Integer inventoryBucketHash) {
+  public void setInventoryBucketHash(Long inventoryBucketHash) {
     this.inventoryBucketHash = inventoryBucketHash;
   }
 

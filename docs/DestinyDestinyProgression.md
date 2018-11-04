@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**progressionHash** | **Integer** | The hash identifier of the Progression in question. Use it to look up the DestinyProgressionDefinition in static data. |  [optional]
+**progressionHash** | **Long** | The hash identifier of the Progression in question. Use it to look up the DestinyProgressionDefinition in static data. |  [optional]
 **dailyProgress** | **Integer** | The amount of progress earned today for this progression. |  [optional]
 **dailyLimit** | **Integer** | If this progression has a daily limit, this is that limit. |  [optional]
 **weeklyProgress** | **Integer** | The amount of progress earned toward this progression in the current week. |  [optional]

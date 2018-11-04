@@ -27,10 +27,10 @@ import uk.co.bluedust.model.DestinyDefinitionsMilestonesDestinyMilestoneChalleng
 /**
  * DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefinition
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefinition {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("challenges")
   private List<DestinyDefinitionsMilestonesDestinyMilestoneChallengeDefinition> challenges = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefini
   @JsonProperty("activityGraphNodes")
   private List<DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry> activityGraphNodes = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefinition activityHash(Integer activityHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefinition activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -48,11 +48,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefini
    * @return activityHash
   **/
   @ApiModelProperty(value = "The activity for which this challenge is active.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

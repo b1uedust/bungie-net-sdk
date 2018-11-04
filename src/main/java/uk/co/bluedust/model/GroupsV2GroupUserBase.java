@@ -25,7 +25,7 @@ import uk.co.bluedust.model.UserUserInfoCard;
 /**
  * GroupsV2GroupUserBase
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class GroupsV2GroupUserBase {
   @JsonProperty("groupId")
   private Long groupId = null;

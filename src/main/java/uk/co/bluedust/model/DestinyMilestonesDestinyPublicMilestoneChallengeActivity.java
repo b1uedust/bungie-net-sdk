@@ -25,21 +25,21 @@ import java.util.List;
 /**
  * DestinyMilestonesDestinyPublicMilestoneChallengeActivity
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyPublicMilestoneChallengeActivity {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("challengeObjectiveHashes")
-  private List<Integer> challengeObjectiveHashes = null;
+  private List<Long> challengeObjectiveHashes = null;
 
   @JsonProperty("modifierHashes")
-  private List<Integer> modifierHashes = null;
+  private List<Long> modifierHashes = null;
 
   @JsonProperty("loadoutRequirementIndex")
   private Integer loadoutRequirementIndex = null;
 
-  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity activityHash(Integer activityHash) {
+  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -49,20 +49,20 @@ public class DestinyMilestonesDestinyPublicMilestoneChallengeActivity {
    * @return activityHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity challengeObjectiveHashes(List<Integer> challengeObjectiveHashes) {
+  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity challengeObjectiveHashes(List<Long> challengeObjectiveHashes) {
     this.challengeObjectiveHashes = challengeObjectiveHashes;
     return this;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity addChallengeObjectiveHashesItem(Integer challengeObjectiveHashesItem) {
+  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity addChallengeObjectiveHashesItem(Long challengeObjectiveHashesItem) {
     if (this.challengeObjectiveHashes == null) {
       this.challengeObjectiveHashes = new ArrayList<>();
     }
@@ -75,20 +75,20 @@ public class DestinyMilestonesDestinyPublicMilestoneChallengeActivity {
    * @return challengeObjectiveHashes
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getChallengeObjectiveHashes() {
+  public List<Long> getChallengeObjectiveHashes() {
     return challengeObjectiveHashes;
   }
 
-  public void setChallengeObjectiveHashes(List<Integer> challengeObjectiveHashes) {
+  public void setChallengeObjectiveHashes(List<Long> challengeObjectiveHashes) {
     this.challengeObjectiveHashes = challengeObjectiveHashes;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity modifierHashes(List<Integer> modifierHashes) {
+  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity modifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
     return this;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity addModifierHashesItem(Integer modifierHashesItem) {
+  public DestinyMilestonesDestinyPublicMilestoneChallengeActivity addModifierHashesItem(Long modifierHashesItem) {
     if (this.modifierHashes == null) {
       this.modifierHashes = new ArrayList<>();
     }
@@ -101,11 +101,11 @@ public class DestinyMilestonesDestinyPublicMilestoneChallengeActivity {
    * @return modifierHashes
   **/
   @ApiModelProperty(value = "If the activity has modifiers, this will be the list of modifiers that all variants have in common. Perform lookups against DestinyActivityModifierDefinition which defines the modifier being applied to get at the modifier data.  Note that, in the DestiyActivityDefinition, you will see many more modifiers than this being referred to: those are all *possible* modifiers for the activity, not the active ones. Use only the active ones to match what's really live.")
-  public List<Integer> getModifierHashes() {
+  public List<Long> getModifierHashes() {
     return modifierHashes;
   }
 
-  public void setModifierHashes(List<Integer> modifierHashes) {
+  public void setModifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
   }
 

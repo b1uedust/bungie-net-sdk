@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * If a Destiny Profile can&#39;t be returned, but we&#39;re pretty certain it&#39;s a valid Destiny account, this will contain as much info as we can get about the profile for your use.  Assume that the most you&#39;ll get is the Error Code, the Membership Type and the Membership ID.
  */
 @ApiModel(description = "If a Destiny Profile can't be returned, but we're pretty certain it's a valid Destiny account, this will contain as much info as we can get about the profile for your use.  Assume that the most you'll get is the Error Code, the Membership Type and the Membership ID.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyResponsesDestinyErrorProfile {
   @JsonProperty("errorCode")
   private Object errorCode = null;

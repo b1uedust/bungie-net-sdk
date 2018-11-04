@@ -26,13 +26,13 @@ import java.util.List;
  * If an item is \&quot;instanced\&quot;, this will contain information about the item&#39;s instance that doesn&#39;t fit easily into other components. One might say this is the \&quot;essential\&quot; instance data for the item.  Items are instanced if they require information or state that can vary. For instance, weapons are Instanced: they are given a unique identifier, uniquely generated stats, and can have their properties altered. Non-instanced items have none of these things: for instance, Glimmer has no unique properties aside from how much of it you own.  You can tell from an item&#39;s definition whether it will be instanced or not by looking at the DestinyInventoryItemDefinition&#39;s definition.inventory.isInstanceItem property.
  */
 @ApiModel(description = "If an item is \"instanced\", this will contain information about the item's instance that doesn't fit easily into other components. One might say this is the \"essential\" instance data for the item.  Items are instanced if they require information or state that can vary. For instance, weapons are Instanced: they are given a unique identifier, uniquely generated stats, and can have their properties altered. Non-instanced items have none of these things: for instance, Glimmer has no unique properties aside from how much of it you own.  You can tell from an item's definition whether it will be instanced or not by looking at the DestinyInventoryItemDefinition's definition.inventory.isInstanceItem property.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesItemsDestinyItemInstanceComponent {
   @JsonProperty("damageType")
   private Object damageType = null;
 
   @JsonProperty("damageTypeHash")
-  private Integer damageTypeHash = null;
+  private Long damageTypeHash = null;
 
   @JsonProperty("primaryStat")
   private Object primaryStat = null;
@@ -53,7 +53,7 @@ public class DestinyEntitiesItemsDestinyItemInstanceComponent {
   private Integer equipRequiredLevel = null;
 
   @JsonProperty("unlockHashesRequiredToEquip")
-  private List<Integer> unlockHashesRequiredToEquip = null;
+  private List<Long> unlockHashesRequiredToEquip = null;
 
   @JsonProperty("cannotEquipReason")
   private Object cannotEquipReason = null;
@@ -76,7 +76,7 @@ public class DestinyEntitiesItemsDestinyItemInstanceComponent {
     this.damageType = damageType;
   }
 
-  public DestinyEntitiesItemsDestinyItemInstanceComponent damageTypeHash(Integer damageTypeHash) {
+  public DestinyEntitiesItemsDestinyItemInstanceComponent damageTypeHash(Long damageTypeHash) {
     this.damageTypeHash = damageTypeHash;
     return this;
   }
@@ -86,11 +86,11 @@ public class DestinyEntitiesItemsDestinyItemInstanceComponent {
    * @return damageTypeHash
   **/
   @ApiModelProperty(value = "The current damage type's hash, so you can look up localized info and icons for it.")
-  public Integer getDamageTypeHash() {
+  public Long getDamageTypeHash() {
     return damageTypeHash;
   }
 
-  public void setDamageTypeHash(Integer damageTypeHash) {
+  public void setDamageTypeHash(Long damageTypeHash) {
     this.damageTypeHash = damageTypeHash;
   }
 
@@ -202,12 +202,12 @@ public class DestinyEntitiesItemsDestinyItemInstanceComponent {
     this.equipRequiredLevel = equipRequiredLevel;
   }
 
-  public DestinyEntitiesItemsDestinyItemInstanceComponent unlockHashesRequiredToEquip(List<Integer> unlockHashesRequiredToEquip) {
+  public DestinyEntitiesItemsDestinyItemInstanceComponent unlockHashesRequiredToEquip(List<Long> unlockHashesRequiredToEquip) {
     this.unlockHashesRequiredToEquip = unlockHashesRequiredToEquip;
     return this;
   }
 
-  public DestinyEntitiesItemsDestinyItemInstanceComponent addUnlockHashesRequiredToEquipItem(Integer unlockHashesRequiredToEquipItem) {
+  public DestinyEntitiesItemsDestinyItemInstanceComponent addUnlockHashesRequiredToEquipItem(Long unlockHashesRequiredToEquipItem) {
     if (this.unlockHashesRequiredToEquip == null) {
       this.unlockHashesRequiredToEquip = new ArrayList<>();
     }
@@ -220,11 +220,11 @@ public class DestinyEntitiesItemsDestinyItemInstanceComponent {
    * @return unlockHashesRequiredToEquip
   **/
   @ApiModelProperty(value = "Sometimes, there are limitations to equipping that are represented by character-level flags called \"unlocks\".  This is a list of flags that they need in order to equip the item that the character has not met. Use these to look up the descriptions to show in your UI by looking up the relevant DestinyUnlockDefinitions for the hashes.")
-  public List<Integer> getUnlockHashesRequiredToEquip() {
+  public List<Long> getUnlockHashesRequiredToEquip() {
     return unlockHashesRequiredToEquip;
   }
 
-  public void setUnlockHashesRequiredToEquip(List<Integer> unlockHashesRequiredToEquip) {
+  public void setUnlockHashesRequiredToEquip(List<Long> unlockHashesRequiredToEquip) {
     this.unlockHashesRequiredToEquip = unlockHashesRequiredToEquip;
   }
 

@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsPresentationDestinyPresentationChi
  * Defines a
  */
 @ApiModel(description = "Defines a")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -40,10 +40,10 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
   private String sourceString = null;
 
   @JsonProperty("sourceHash")
-  private Integer sourceHash = null;
+  private Long sourceHash = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("acquisitionInfo")
   private DestinyDefinitionsCollectiblesDestinyCollectibleAcquisitionBlock acquisitionInfo = null;
@@ -55,7 +55,7 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
   private DestinyDefinitionsPresentationDestinyPresentationChildBlock presentationInfo = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -117,7 +117,7 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
     this.sourceString = sourceString;
   }
 
-  public DestinyDefinitionsCollectiblesDestinyCollectibleDefinition sourceHash(Integer sourceHash) {
+  public DestinyDefinitionsCollectiblesDestinyCollectibleDefinition sourceHash(Long sourceHash) {
     this.sourceHash = sourceHash;
     return this;
   }
@@ -127,15 +127,15 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
    * @return sourceHash
   **/
   @ApiModelProperty(value = "This is a hash identifier we are building on the BNet side in an attempt to let people group collectibles by similar sources.  I can't promise that it's going to be 100% accurate, but if the designers were consistent in assigning the same source strings to items with the same sources, it *ought to* be. No promises though.  This hash also doesn't relate to an actual definition, just to note: we've got nothing useful other than the source string for this data.")
-  public Integer getSourceHash() {
+  public Long getSourceHash() {
     return sourceHash;
   }
 
-  public void setSourceHash(Integer sourceHash) {
+  public void setSourceHash(Long sourceHash) {
     this.sourceHash = sourceHash;
   }
 
-  public DestinyDefinitionsCollectiblesDestinyCollectibleDefinition itemHash(Integer itemHash) {
+  public DestinyDefinitionsCollectiblesDestinyCollectibleDefinition itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -145,11 +145,11 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
    * @return itemHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 
@@ -207,7 +207,7 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
     this.presentationInfo = presentationInfo;
   }
 
-  public DestinyDefinitionsCollectiblesDestinyCollectibleDefinition hash(Integer hash) {
+  public DestinyDefinitionsCollectiblesDestinyCollectibleDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -217,11 +217,11 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

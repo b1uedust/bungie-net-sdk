@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents all of the data related to a single plug to be inserted.  Note that, while you *can* point to a socket that represents infusion, you will receive an error if you attempt to do so. Come on guys, let&#39;s play nice.
  */
 @ApiModel(description = "Represents all of the data related to a single plug to be inserted.  Note that, while you *can* point to a socket that represents infusion, you will receive an error if you attempt to do so. Come on guys, let's play nice.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyRequestsActionsDestinyInsertPlugsRequestEntry {
   @JsonProperty("socketIndex")
   private Integer socketIndex = null;
@@ -33,7 +33,7 @@ public class DestinyRequestsActionsDestinyInsertPlugsRequestEntry {
   private Object socketArrayType = null;
 
   @JsonProperty("plugItemHash")
-  private Integer plugItemHash = null;
+  private Long plugItemHash = null;
 
   public DestinyRequestsActionsDestinyInsertPlugsRequestEntry socketIndex(Integer socketIndex) {
     this.socketIndex = socketIndex;
@@ -71,7 +71,7 @@ public class DestinyRequestsActionsDestinyInsertPlugsRequestEntry {
     this.socketArrayType = socketArrayType;
   }
 
-  public DestinyRequestsActionsDestinyInsertPlugsRequestEntry plugItemHash(Integer plugItemHash) {
+  public DestinyRequestsActionsDestinyInsertPlugsRequestEntry plugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
     return this;
   }
@@ -81,11 +81,11 @@ public class DestinyRequestsActionsDestinyInsertPlugsRequestEntry {
    * @return plugItemHash
   **/
   @ApiModelProperty(value = "Plugs are never instanced (except in infusion). So with the hash alone, we should be able to: 1) Infer whether the player actually needs to have the item, or if it's a reusable plug 2) Perform any operation needed to use the Plug, including removing the plug item and running reward sheets.")
-  public Integer getPlugItemHash() {
+  public Long getPlugItemHash() {
     return plugItemHash;
   }
 
-  public void setPlugItemHash(Integer plugItemHash) {
+  public void setPlugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
   }
 

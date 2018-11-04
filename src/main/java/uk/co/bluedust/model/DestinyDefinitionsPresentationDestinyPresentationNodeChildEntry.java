@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsPresentationDestinyPresentationNodeChildEntry
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsPresentationDestinyPresentationNodeChildEntry {
   @JsonProperty("presentationNodeHash")
-  private Integer presentationNodeHash = null;
+  private Long presentationNodeHash = null;
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeChildEntry presentationNodeHash(Integer presentationNodeHash) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeChildEntry presentationNodeHash(Long presentationNodeHash) {
     this.presentationNodeHash = presentationNodeHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeChildEntry {
    * @return presentationNodeHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getPresentationNodeHash() {
+  public Long getPresentationNodeHash() {
     return presentationNodeHash;
   }
 
-  public void setPresentationNodeHash(Integer presentationNodeHash) {
+  public void setPresentationNodeHash(Long presentationNodeHash) {
     this.presentationNodeHash = presentationNodeHash;
   }
 

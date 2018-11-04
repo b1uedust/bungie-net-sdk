@@ -26,18 +26,18 @@ import uk.co.bluedust.model.DestinyDestinyItemSubType;
 /**
  * DestinyDefinitionsDestinyActivityLoadoutRequirement
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityLoadoutRequirement {
   @JsonProperty("equipmentSlotHash")
-  private Integer equipmentSlotHash = null;
+  private Long equipmentSlotHash = null;
 
   @JsonProperty("allowedEquippedItemHashes")
-  private List<Integer> allowedEquippedItemHashes = null;
+  private List<Long> allowedEquippedItemHashes = null;
 
   @JsonProperty("allowedWeaponSubTypes")
   private List<DestinyDestinyItemSubType> allowedWeaponSubTypes = null;
 
-  public DestinyDefinitionsDestinyActivityLoadoutRequirement equipmentSlotHash(Integer equipmentSlotHash) {
+  public DestinyDefinitionsDestinyActivityLoadoutRequirement equipmentSlotHash(Long equipmentSlotHash) {
     this.equipmentSlotHash = equipmentSlotHash;
     return this;
   }
@@ -47,20 +47,20 @@ public class DestinyDefinitionsDestinyActivityLoadoutRequirement {
    * @return equipmentSlotHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getEquipmentSlotHash() {
+  public Long getEquipmentSlotHash() {
     return equipmentSlotHash;
   }
 
-  public void setEquipmentSlotHash(Integer equipmentSlotHash) {
+  public void setEquipmentSlotHash(Long equipmentSlotHash) {
     this.equipmentSlotHash = equipmentSlotHash;
   }
 
-  public DestinyDefinitionsDestinyActivityLoadoutRequirement allowedEquippedItemHashes(List<Integer> allowedEquippedItemHashes) {
+  public DestinyDefinitionsDestinyActivityLoadoutRequirement allowedEquippedItemHashes(List<Long> allowedEquippedItemHashes) {
     this.allowedEquippedItemHashes = allowedEquippedItemHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyActivityLoadoutRequirement addAllowedEquippedItemHashesItem(Integer allowedEquippedItemHashesItem) {
+  public DestinyDefinitionsDestinyActivityLoadoutRequirement addAllowedEquippedItemHashesItem(Long allowedEquippedItemHashesItem) {
     if (this.allowedEquippedItemHashes == null) {
       this.allowedEquippedItemHashes = new ArrayList<>();
     }
@@ -73,11 +73,11 @@ public class DestinyDefinitionsDestinyActivityLoadoutRequirement {
    * @return allowedEquippedItemHashes
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getAllowedEquippedItemHashes() {
+  public List<Long> getAllowedEquippedItemHashes() {
     return allowedEquippedItemHashes;
   }
 
-  public void setAllowedEquippedItemHashes(List<Integer> allowedEquippedItemHashes) {
+  public void setAllowedEquippedItemHashes(List<Long> allowedEquippedItemHashes) {
     this.allowedEquippedItemHashes = allowedEquippedItemHashes;
   }
 

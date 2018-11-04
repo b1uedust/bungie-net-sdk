@@ -27,10 +27,10 @@ import uk.co.bluedust.model.DestinyChallengesDestinyChallengeStatus;
  * If a Milestone has one or more Quests, this will contain the live information for the character&#39;s status with one of those quests.
  */
 @ApiModel(description = "If a Milestone has one or more Quests, this will contain the live information for the character's status with one of those quests.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestoneQuest {
   @JsonProperty("questItemHash")
-  private Integer questItemHash = null;
+  private Long questItemHash = null;
 
   @JsonProperty("status")
   private Object status = null;
@@ -41,7 +41,7 @@ public class DestinyMilestonesDestinyMilestoneQuest {
   @JsonProperty("challenges")
   private List<DestinyChallengesDestinyChallengeStatus> challenges = null;
 
-  public DestinyMilestonesDestinyMilestoneQuest questItemHash(Integer questItemHash) {
+  public DestinyMilestonesDestinyMilestoneQuest questItemHash(Long questItemHash) {
     this.questItemHash = questItemHash;
     return this;
   }
@@ -51,11 +51,11 @@ public class DestinyMilestonesDestinyMilestoneQuest {
    * @return questItemHash
   **/
   @ApiModelProperty(value = "Quests are defined as Items in content. As such, this is the hash identifier of the DestinyInventoryItemDefinition that represents this quest. It will have pointers to all of the steps in the quest, and display information for the quest (title, description, icon etc) Individual steps will be referred to in the Quest item's DestinyInventoryItemDefinition.setData property, and themselves are Items with their own renderable data.")
-  public Integer getQuestItemHash() {
+  public Long getQuestItemHash() {
     return questItemHash;
   }
 
-  public void setQuestItemHash(Integer questItemHash) {
+  public void setQuestItemHash(Long questItemHash) {
     this.questItemHash = questItemHash;
   }
 

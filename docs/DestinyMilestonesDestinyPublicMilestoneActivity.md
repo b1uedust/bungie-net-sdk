@@ -4,10 +4,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activityHash** | **Integer** | The hash identifier of the activity that&#39;s been chosen to be considered the canonical \&quot;conceptual\&quot; activity definition. This may have many variants, defined herein. |  [optional]
-**modifierHashes** | **List&lt;Integer&gt;** | The activity may have 0-to-many modifiers: if it does, this will contain the hashes to the DestinyActivityModifierDefinition that defines the modifier being applied. |  [optional]
+**activityHash** | **Long** | The hash identifier of the activity that&#39;s been chosen to be considered the canonical \&quot;conceptual\&quot; activity definition. This may have many variants, defined herein. |  [optional]
+**modifierHashes** | **List&lt;Long&gt;** | The activity may have 0-to-many modifiers: if it does, this will contain the hashes to the DestinyActivityModifierDefinition that defines the modifier being applied. |  [optional]
 **variants** | [**List&lt;DestinyMilestonesDestinyPublicMilestoneActivityVariant&gt;**](DestinyMilestonesDestinyPublicMilestoneActivityVariant.md) | Every relevant variation of this conceptual activity, including the conceptual activity itself, have variants defined here. |  [optional]
-**activityModeHash** | **Integer** | The hash identifier of the most specific Activity Mode under which this activity is played. This is useful for situations where the activity in question is - for instance - a PVP map, but it&#39;s not clear what mode the PVP map is being played under. If it&#39;s a playlist, this will be less specific: but hopefully useful in some way. |  [optional]
+**activityModeHash** | **Long** | The hash identifier of the most specific Activity Mode under which this activity is played. This is useful for situations where the activity in question is - for instance - a PVP map, but it&#39;s not clear what mode the PVP map is being played under. If it&#39;s a playlist, this will be less specific: but hopefully useful in some way. |  [optional]
 **activityModeType** | [**ActivityModeTypeEnum**](#ActivityModeTypeEnum) | The enumeration equivalent of the most specific Activity Mode under which this activity is played. |  [optional]
 
 

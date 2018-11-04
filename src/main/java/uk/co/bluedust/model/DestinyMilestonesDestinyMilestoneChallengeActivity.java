@@ -27,16 +27,16 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyMilestoneActivityPhase;
 /**
  * DestinyMilestonesDestinyMilestoneChallengeActivity
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestoneChallengeActivity {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("challenges")
   private List<DestinyChallengesDestinyChallengeStatus> challenges = null;
 
   @JsonProperty("modifierHashes")
-  private List<Integer> modifierHashes = null;
+  private List<Long> modifierHashes = null;
 
   @JsonProperty("loadoutRequirementIndex")
   private Integer loadoutRequirementIndex = null;
@@ -44,7 +44,7 @@ public class DestinyMilestonesDestinyMilestoneChallengeActivity {
   @JsonProperty("phases")
   private List<DestinyMilestonesDestinyMilestoneActivityPhase> phases = null;
 
-  public DestinyMilestonesDestinyMilestoneChallengeActivity activityHash(Integer activityHash) {
+  public DestinyMilestonesDestinyMilestoneChallengeActivity activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -54,11 +54,11 @@ public class DestinyMilestonesDestinyMilestoneChallengeActivity {
    * @return activityHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
@@ -88,12 +88,12 @@ public class DestinyMilestonesDestinyMilestoneChallengeActivity {
     this.challenges = challenges;
   }
 
-  public DestinyMilestonesDestinyMilestoneChallengeActivity modifierHashes(List<Integer> modifierHashes) {
+  public DestinyMilestonesDestinyMilestoneChallengeActivity modifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
     return this;
   }
 
-  public DestinyMilestonesDestinyMilestoneChallengeActivity addModifierHashesItem(Integer modifierHashesItem) {
+  public DestinyMilestonesDestinyMilestoneChallengeActivity addModifierHashesItem(Long modifierHashesItem) {
     if (this.modifierHashes == null) {
       this.modifierHashes = new ArrayList<>();
     }
@@ -106,11 +106,11 @@ public class DestinyMilestonesDestinyMilestoneChallengeActivity {
    * @return modifierHashes
   **/
   @ApiModelProperty(value = "If the activity has modifiers, this will be the list of modifiers that all variants have in common. Perform lookups against DestinyActivityModifierDefinition which defines the modifier being applied to get at the modifier data.  Note that, in the DestiyActivityDefinition, you will see many more modifiers than this being referred to: those are all *possible* modifiers for the activity, not the active ones. Use only the active ones to match what's really live.")
-  public List<Integer> getModifierHashes() {
+  public List<Long> getModifierHashes() {
     return modifierHashes;
   }
 
-  public void setModifierHashes(List<Integer> modifierHashes) {
+  public void setModifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
   }
 

@@ -100,7 +100,7 @@ CommunityContentApi apiInstance = new CommunityContentApi();
 Integer page = 56; // Integer | Zero based page.
 Integer partnershipType = 56; // Integer | The type of partnership for which the status should be returned.
 Integer sort = 56; // Integer | The sort mode.
-Integer modeHash = 56; // Integer | The hash of the Activity Mode for which streams should be retrieved. Don't pass it in or pass 0 to not filter by mode.
+Long modeHash = 789L; // Long | The hash of the Activity Mode for which streams should be retrieved. Don't pass it in or pass 0 to not filter by mode.
 String streamLocale = "streamLocale_example"; // String | The locale for streams you'd like to see. Don't pass this to fall back on your BNet locale. Pass 'ALL' to not filter by locale.
 try {
     InlineResponse20060 result = apiInstance.communityContentGetCommunityLiveStatuses(page, partnershipType, sort, modeHash, streamLocale);
@@ -118,7 +118,7 @@ Name | Type | Description  | Notes
  **page** | **Integer**| Zero based page. |
  **partnershipType** | **Integer**| The type of partnership for which the status should be returned. | [enum: 0, 1]
  **sort** | **Integer**| The sort mode. | [enum: 0, 1, 2, 3]
- **modeHash** | **Integer**| The hash of the Activity Mode for which streams should be retrieved. Don&#39;t pass it in or pass 0 to not filter by mode. | [optional]
+ **modeHash** | **Long**| The hash of the Activity Mode for which streams should be retrieved. Don&#39;t pass it in or pass 0 to not filter by mode. | [optional]
  **streamLocale** | **String**| The locale for streams you&#39;d like to see. Don&#39;t pass this to fall back on your BNet locale. Pass &#39;ALL&#39; to not filter by locale. | [optional]
 
 ### Return type

@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **minLevelRequired** | **Integer** | The minimum Character Level required for equipping the item when the item spawns at the item level defined on this DestinyItemSourceDefinition, as far as we saw in our processing. |  [optional]
 **maxLevelRequired** | **Integer** | The maximum Character Level required for equipping the item when the item spawns at the item level defined on this DestinyItemSourceDefinition, as far as we saw in our processing. |  [optional]
 **computedStats** | [**Map&lt;String, DestinyDefinitionsDestinyInventoryItemStatDefinition&gt;**](DestinyDefinitionsDestinyInventoryItemStatDefinition.md) | The stats computed for this level/quality range. |  [optional]
-**sourceHashes** | **List&lt;Integer&gt;** | The DestinyRewardSourceDefinitions found that can spawn the item at this level. |  [optional]
+**sourceHashes** | **List&lt;Long&gt;** | The DestinyRewardSourceDefinitions found that can spawn the item at this level. |  [optional]
 
 
 

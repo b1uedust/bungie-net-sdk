@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activityGraphHash** | **Integer** |  |  [optional]
-**activityGraphNodeHash** | **Integer** |  |  [optional]
+**activityGraphHash** | **Long** |  |  [optional]
+**activityGraphNodeHash** | **Long** |  |  [optional]
 
 
 

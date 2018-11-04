@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * This is a reference to, and summary data for, a specific item that you can get as a result of Using or Acquiring some other Item (For example, this could be summary information for an Emote that you can get by opening an an Eververse Box) See DestinyDerivedItemCategoryDefinition for more information.
  */
 @ApiModel(description = "This is a reference to, and summary data for, a specific item that you can get as a result of Using or Acquiring some other Item (For example, this could be summary information for an Emote that you can get by opening an an Eververse Box) See DestinyDerivedItemCategoryDefinition for more information.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsItemsDestinyDerivedItemDefinition {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("itemName")
   private String itemName = null;
@@ -44,7 +44,7 @@ public class DestinyDefinitionsItemsDestinyDerivedItemDefinition {
   @JsonProperty("vendorItemIndex")
   private Integer vendorItemIndex = null;
 
-  public DestinyDefinitionsItemsDestinyDerivedItemDefinition itemHash(Integer itemHash) {
+  public DestinyDefinitionsItemsDestinyDerivedItemDefinition itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -54,11 +54,11 @@ public class DestinyDefinitionsItemsDestinyDerivedItemDefinition {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash for the DestinyInventoryItemDefinition of this derived item, if there is one. Sometimes we are given this information as a manual override, in which case there won't be an actual DestinyInventoryItemDefinition for what we display, but you can still show the strings from this object itself.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

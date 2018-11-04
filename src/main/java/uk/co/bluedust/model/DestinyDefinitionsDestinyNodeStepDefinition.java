@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyNodeSocketReplaceResponse;
  * This defines the properties of a \&quot;Talent Node Step\&quot;. When you see a talent node in game, the actual visible properties that you see (its icon, description, the perks and stats it provides) are not provided by the Node itself, but rather by the currently active Step on the node.  When a Talent Node is activated, the currently active step&#39;s benefits are conferred upon the item and character.  The currently active step on talent nodes are determined when an item is first instantiated. Sometimes it is random, sometimes it is more deterministic (particularly when a node has only a single step).  Note that, when dealing with Talent Node Steps, you must ensure that you have the latest version of content. stepIndex and nodeStepHash - two ways of identifying the step within a node - are both content version dependent, and thus are subject to change between content updates.
  */
 @ApiModel(description = "This defines the properties of a \"Talent Node Step\". When you see a talent node in game, the actual visible properties that you see (its icon, description, the perks and stats it provides) are not provided by the Node itself, but rather by the currently active Step on the node.  When a Talent Node is activated, the currently active step's benefits are conferred upon the item and character.  The currently active step on talent nodes are determined when an item is first instantiated. Sometimes it is random, sometimes it is more deterministic (particularly when a node has only a single step).  Note that, when dealing with Talent Node Steps, you must ensure that you have the latest version of content. stepIndex and nodeStepHash - two ways of identifying the step within a node - are both content version dependent, and thus are subject to change between content updates.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyNodeStepDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -36,7 +36,7 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
   private Integer stepIndex = null;
 
   @JsonProperty("nodeStepHash")
-  private Integer nodeStepHash = null;
+  private Long nodeStepHash = null;
 
   @JsonProperty("interactionDescription")
   private String interactionDescription = null;
@@ -45,7 +45,7 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
   private Object damageType = null;
 
   @JsonProperty("damageTypeHash")
-  private Integer damageTypeHash = null;
+  private Long damageTypeHash = null;
 
   @JsonProperty("activationRequirement")
   private Object activationRequirement = null;
@@ -60,13 +60,13 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
   private Boolean isNextStepRandom = null;
 
   @JsonProperty("perkHashes")
-  private List<Integer> perkHashes = null;
+  private List<Long> perkHashes = null;
 
   @JsonProperty("startProgressionBarAtProgress")
   private Integer startProgressionBarAtProgress = null;
 
   @JsonProperty("statHashes")
-  private List<Integer> statHashes = null;
+  private List<Long> statHashes = null;
 
   @JsonProperty("affectsQuality")
   private Boolean affectsQuality = null;
@@ -116,7 +116,7 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
     this.stepIndex = stepIndex;
   }
 
-  public DestinyDefinitionsDestinyNodeStepDefinition nodeStepHash(Integer nodeStepHash) {
+  public DestinyDefinitionsDestinyNodeStepDefinition nodeStepHash(Long nodeStepHash) {
     this.nodeStepHash = nodeStepHash;
     return this;
   }
@@ -126,11 +126,11 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
    * @return nodeStepHash
   **/
   @ApiModelProperty(value = "The hash of this node step. Unfortunately, while it can be used to uniquely identify the step within a node, it is also content version dependent and should not be relied on without ensuring you have the latest vesion of content.")
-  public Integer getNodeStepHash() {
+  public Long getNodeStepHash() {
     return nodeStepHash;
   }
 
-  public void setNodeStepHash(Integer nodeStepHash) {
+  public void setNodeStepHash(Long nodeStepHash) {
     this.nodeStepHash = nodeStepHash;
   }
 
@@ -170,7 +170,7 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
     this.damageType = damageType;
   }
 
-  public DestinyDefinitionsDestinyNodeStepDefinition damageTypeHash(Integer damageTypeHash) {
+  public DestinyDefinitionsDestinyNodeStepDefinition damageTypeHash(Long damageTypeHash) {
     this.damageTypeHash = damageTypeHash;
     return this;
   }
@@ -180,11 +180,11 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
    * @return damageTypeHash
   **/
   @ApiModelProperty(value = "If the step provides a damage type, this will be the hash identifier used to look up the damage type's DestinyDamageTypeDefinition.")
-  public Integer getDamageTypeHash() {
+  public Long getDamageTypeHash() {
     return damageTypeHash;
   }
 
-  public void setDamageTypeHash(Integer damageTypeHash) {
+  public void setDamageTypeHash(Long damageTypeHash) {
     this.damageTypeHash = damageTypeHash;
   }
 
@@ -260,12 +260,12 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
     this.isNextStepRandom = isNextStepRandom;
   }
 
-  public DestinyDefinitionsDestinyNodeStepDefinition perkHashes(List<Integer> perkHashes) {
+  public DestinyDefinitionsDestinyNodeStepDefinition perkHashes(List<Long> perkHashes) {
     this.perkHashes = perkHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyNodeStepDefinition addPerkHashesItem(Integer perkHashesItem) {
+  public DestinyDefinitionsDestinyNodeStepDefinition addPerkHashesItem(Long perkHashesItem) {
     if (this.perkHashes == null) {
       this.perkHashes = new ArrayList<>();
     }
@@ -278,11 +278,11 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
    * @return perkHashes
   **/
   @ApiModelProperty(value = "The list of hash identifiers for Perks (DestinySandboxPerkDefinition) that are applied when this step is active. Perks provide a variety of benefits and modifications - examine DestinySandboxPerkDefinition to learn more.")
-  public List<Integer> getPerkHashes() {
+  public List<Long> getPerkHashes() {
     return perkHashes;
   }
 
-  public void setPerkHashes(List<Integer> perkHashes) {
+  public void setPerkHashes(List<Long> perkHashes) {
     this.perkHashes = perkHashes;
   }
 
@@ -304,12 +304,12 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
     this.startProgressionBarAtProgress = startProgressionBarAtProgress;
   }
 
-  public DestinyDefinitionsDestinyNodeStepDefinition statHashes(List<Integer> statHashes) {
+  public DestinyDefinitionsDestinyNodeStepDefinition statHashes(List<Long> statHashes) {
     this.statHashes = statHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyNodeStepDefinition addStatHashesItem(Integer statHashesItem) {
+  public DestinyDefinitionsDestinyNodeStepDefinition addStatHashesItem(Long statHashesItem) {
     if (this.statHashes == null) {
       this.statHashes = new ArrayList<>();
     }
@@ -322,11 +322,11 @@ public class DestinyDefinitionsDestinyNodeStepDefinition {
    * @return statHashes
   **/
   @ApiModelProperty(value = "When the step provides stat benefits on the item or character, this is the list of hash identifiers for stats (DestinyStatDefinition) that are provided.")
-  public List<Integer> getStatHashes() {
+  public List<Long> getStatHashes() {
     return statHashes;
   }
 
-  public void setStatHashes(List<Integer> statHashes) {
+  public void setStatHashes(List<Long> statHashes) {
     this.statHashes = statHashes;
   }
 

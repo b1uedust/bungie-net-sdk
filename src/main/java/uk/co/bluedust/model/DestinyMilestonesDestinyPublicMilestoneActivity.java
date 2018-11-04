@@ -27,19 +27,19 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyPublicMilestoneActivityVaria
  * A milestone may have one or more conceptual Activities associated with it, and each of those conceptual activities could have a variety of variants, modes, tiers, what-have-you. Our attempts to determine what qualifies as a conceptual activity are, unfortunately, janky. So if you see missing modes or modes that don&#39;t seem appropriate to you, let us know and I&#39;ll buy you a beer if we ever meet up in person.
  */
 @ApiModel(description = "A milestone may have one or more conceptual Activities associated with it, and each of those conceptual activities could have a variety of variants, modes, tiers, what-have-you. Our attempts to determine what qualifies as a conceptual activity are, unfortunately, janky. So if you see missing modes or modes that don't seem appropriate to you, let us know and I'll buy you a beer if we ever meet up in person.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyPublicMilestoneActivity {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("modifierHashes")
-  private List<Integer> modifierHashes = null;
+  private List<Long> modifierHashes = null;
 
   @JsonProperty("variants")
   private List<DestinyMilestonesDestinyPublicMilestoneActivityVariant> variants = null;
 
   @JsonProperty("activityModeHash")
-  private Integer activityModeHash = null;
+  private Long activityModeHash = null;
 
   /**
    * The enumeration equivalent of the most specific Activity Mode under which this activity is played.
@@ -191,7 +191,7 @@ public class DestinyMilestonesDestinyPublicMilestoneActivity {
   @JsonProperty("activityModeType")
   private ActivityModeTypeEnum activityModeType = null;
 
-  public DestinyMilestonesDestinyPublicMilestoneActivity activityHash(Integer activityHash) {
+  public DestinyMilestonesDestinyPublicMilestoneActivity activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -201,20 +201,20 @@ public class DestinyMilestonesDestinyPublicMilestoneActivity {
    * @return activityHash
   **/
   @ApiModelProperty(value = "The hash identifier of the activity that's been chosen to be considered the canonical \"conceptual\" activity definition. This may have many variants, defined herein.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneActivity modifierHashes(List<Integer> modifierHashes) {
+  public DestinyMilestonesDestinyPublicMilestoneActivity modifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
     return this;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneActivity addModifierHashesItem(Integer modifierHashesItem) {
+  public DestinyMilestonesDestinyPublicMilestoneActivity addModifierHashesItem(Long modifierHashesItem) {
     if (this.modifierHashes == null) {
       this.modifierHashes = new ArrayList<>();
     }
@@ -227,11 +227,11 @@ public class DestinyMilestonesDestinyPublicMilestoneActivity {
    * @return modifierHashes
   **/
   @ApiModelProperty(value = "The activity may have 0-to-many modifiers: if it does, this will contain the hashes to the DestinyActivityModifierDefinition that defines the modifier being applied.")
-  public List<Integer> getModifierHashes() {
+  public List<Long> getModifierHashes() {
     return modifierHashes;
   }
 
-  public void setModifierHashes(List<Integer> modifierHashes) {
+  public void setModifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
   }
 
@@ -261,7 +261,7 @@ public class DestinyMilestonesDestinyPublicMilestoneActivity {
     this.variants = variants;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneActivity activityModeHash(Integer activityModeHash) {
+  public DestinyMilestonesDestinyPublicMilestoneActivity activityModeHash(Long activityModeHash) {
     this.activityModeHash = activityModeHash;
     return this;
   }
@@ -271,11 +271,11 @@ public class DestinyMilestonesDestinyPublicMilestoneActivity {
    * @return activityModeHash
   **/
   @ApiModelProperty(value = "The hash identifier of the most specific Activity Mode under which this activity is played. This is useful for situations where the activity in question is - for instance - a PVP map, but it's not clear what mode the PVP map is being played under. If it's a playlist, this will be less specific: but hopefully useful in some way.")
-  public Integer getActivityModeHash() {
+  public Long getActivityModeHash() {
     return activityModeHash;
   }
 
-  public void setActivityModeHash(Integer activityModeHash) {
+  public void setActivityModeHash(Long activityModeHash) {
     this.activityModeHash = activityModeHash;
   }
 

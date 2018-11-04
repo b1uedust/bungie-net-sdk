@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry {
   @JsonProperty("activityGraphHash")
-  private Integer activityGraphHash = null;
+  private Long activityGraphHash = null;
 
   @JsonProperty("activityGraphNodeHash")
-  private Integer activityGraphNodeHash = null;
+  private Long activityGraphNodeHash = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry activityGraphHash(Integer activityGraphHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry activityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
     return this;
   }
@@ -41,15 +41,15 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphN
    * @return activityGraphHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityGraphHash() {
+  public Long getActivityGraphHash() {
     return activityGraphHash;
   }
 
-  public void setActivityGraphHash(Integer activityGraphHash) {
+  public void setActivityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
   }
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry activityGraphNodeHash(Integer activityGraphNodeHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphNodeEntry activityGraphNodeHash(Long activityGraphNodeHash) {
     this.activityGraphNodeHash = activityGraphNodeHash;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityGraphN
    * @return activityGraphNodeHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityGraphNodeHash() {
+  public Long getActivityGraphNodeHash() {
     return activityGraphNodeHash;
   }
 
-  public void setActivityGraphNodeHash(Integer activityGraphNodeHash) {
+  public void setActivityGraphNodeHash(Long activityGraphNodeHash) {
     this.activityGraphNodeHash = activityGraphNodeHash;
   }
 

@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsMilestonesDestinyMilestoneChallengeDefinition
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeDefinition {
   @JsonProperty("challengeObjectiveHash")
-  private Integer challengeObjectiveHash = null;
+  private Long challengeObjectiveHash = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeDefinition challengeObjectiveHash(Integer challengeObjectiveHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneChallengeDefinition challengeObjectiveHash(Long challengeObjectiveHash) {
     this.challengeObjectiveHash = challengeObjectiveHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneChallengeDefinition {
    * @return challengeObjectiveHash
   **/
   @ApiModelProperty(value = "The challenge related to this milestone.")
-  public Integer getChallengeObjectiveHash() {
+  public Long getChallengeObjectiveHash() {
     return challengeObjectiveHash;
   }
 
-  public void setChallengeObjectiveHash(Integer challengeObjectiveHash) {
+  public void setChallengeObjectiveHash(Long challengeObjectiveHash) {
     this.challengeObjectiveHash = challengeObjectiveHash;
   }
 

@@ -28,13 +28,13 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyInventoryItemStatDefinition
  * Information about the item&#39;s calculated stats, with as much data as we can find for the stats without having an actual instance of the item.  Note that this means the entire concept of providing these stats is fundamentally insufficient: we cannot predict with 100% accuracy the conditions under which an item can spawn, so we use various heuristics to attempt to simulate the conditions as accurately as possible. Actual stats for items in-game can and will vary, but these should at least be useful base points for comparison and display.  It is also worth noting that some stats, like Magazine size, have further calculations performed on them by scripts in-game and on the game servers that BNet does not have access to. We cannot know how those stats are further transformed, and thus some stats will be inaccurate even on instances of items in BNet vs. how they appear in-game. This is a known limitation of our item statistics, without any planned fix.
  */
 @ApiModel(description = "Information about the item's calculated stats, with as much data as we can find for the stats without having an actual instance of the item.  Note that this means the entire concept of providing these stats is fundamentally insufficient: we cannot predict with 100% accuracy the conditions under which an item can spawn, so we use various heuristics to attempt to simulate the conditions as accurately as possible. Actual stats for items in-game can and will vary, but these should at least be useful base points for comparison and display.  It is also worth noting that some stats, like Magazine size, have further calculations performed on them by scripts in-game and on the game servers that BNet does not have access to. We cannot know how those stats are further transformed, and thus some stats will be inaccurate even on instances of items in BNet vs. how they appear in-game. This is a known limitation of our item statistics, without any planned fix.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemStatBlockDefinition {
   @JsonProperty("disablePrimaryStatDisplay")
   private Boolean disablePrimaryStatDisplay = null;
 
   @JsonProperty("statGroupHash")
-  private Integer statGroupHash = null;
+  private Long statGroupHash = null;
 
   @JsonProperty("stats")
   private Map<String, DestinyDefinitionsDestinyInventoryItemStatDefinition> stats = null;
@@ -43,7 +43,7 @@ public class DestinyDefinitionsDestinyItemStatBlockDefinition {
   private Boolean hasDisplayableStats = null;
 
   @JsonProperty("primaryBaseStatHash")
-  private Integer primaryBaseStatHash = null;
+  private Long primaryBaseStatHash = null;
 
   public DestinyDefinitionsDestinyItemStatBlockDefinition disablePrimaryStatDisplay(Boolean disablePrimaryStatDisplay) {
     this.disablePrimaryStatDisplay = disablePrimaryStatDisplay;
@@ -63,7 +63,7 @@ public class DestinyDefinitionsDestinyItemStatBlockDefinition {
     this.disablePrimaryStatDisplay = disablePrimaryStatDisplay;
   }
 
-  public DestinyDefinitionsDestinyItemStatBlockDefinition statGroupHash(Integer statGroupHash) {
+  public DestinyDefinitionsDestinyItemStatBlockDefinition statGroupHash(Long statGroupHash) {
     this.statGroupHash = statGroupHash;
     return this;
   }
@@ -73,11 +73,11 @@ public class DestinyDefinitionsDestinyItemStatBlockDefinition {
    * @return statGroupHash
   **/
   @ApiModelProperty(value = "If the item's stats are meant to be modified by a DestinyStatGroupDefinition, this will be the identifier for that definition.  If you are using live data or precomputed stats data on the DestinyInventoryItemDefinition.stats.stats property, you don't have to worry about statGroupHash and how it alters stats: the already altered stats are provided to you. But if you want to see how the sausage gets made, or perform computations yourself, this is valuable information.")
-  public Integer getStatGroupHash() {
+  public Long getStatGroupHash() {
     return statGroupHash;
   }
 
-  public void setStatGroupHash(Integer statGroupHash) {
+  public void setStatGroupHash(Long statGroupHash) {
     this.statGroupHash = statGroupHash;
   }
 
@@ -125,7 +125,7 @@ public class DestinyDefinitionsDestinyItemStatBlockDefinition {
     this.hasDisplayableStats = hasDisplayableStats;
   }
 
-  public DestinyDefinitionsDestinyItemStatBlockDefinition primaryBaseStatHash(Integer primaryBaseStatHash) {
+  public DestinyDefinitionsDestinyItemStatBlockDefinition primaryBaseStatHash(Long primaryBaseStatHash) {
     this.primaryBaseStatHash = primaryBaseStatHash;
     return this;
   }
@@ -135,11 +135,11 @@ public class DestinyDefinitionsDestinyItemStatBlockDefinition {
    * @return primaryBaseStatHash
   **/
   @ApiModelProperty(value = "This stat is determined to be the \"primary\" stat, and can be looked up in the stats or any other stat collection related to the item.  Use this hash to look up the stat's value using DestinyInventoryItemDefinition.stats.stats, and the renderable data for the primary stat in the related DestinyStatDefinition.")
-  public Integer getPrimaryBaseStatHash() {
+  public Long getPrimaryBaseStatHash() {
     return primaryBaseStatHash;
   }
 
-  public void setPrimaryBaseStatHash(Integer primaryBaseStatHash) {
+  public void setPrimaryBaseStatHash(Long primaryBaseStatHash) {
     this.primaryBaseStatHash = primaryBaseStatHash;
   }
 

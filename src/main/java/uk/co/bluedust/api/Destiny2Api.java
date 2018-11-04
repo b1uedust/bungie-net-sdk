@@ -54,7 +54,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 @Component("uk.co.bluedust.api.Destiny2Api")
 public class Destiny2Api {
     private ApiClient apiClient;
@@ -450,7 +450,7 @@ public class Destiny2Api {
      * @return InlineResponse20043
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public InlineResponse20043 destiny2GetCollectibleNodeDetails(Long characterId, Integer collectiblePresentationNodeHash, Long destinyMembershipId, Integer membershipType, List<DestinyDestinyComponentType> components) throws RestClientException {
+    public InlineResponse20043 destiny2GetCollectibleNodeDetails(Long characterId, Long collectiblePresentationNodeHash, Long destinyMembershipId, Integer membershipType, List<DestinyDestinyComponentType> components) throws RestClientException {
         Object postBody = null;
         
         // verify the required parameter 'characterId' is set
@@ -555,7 +555,7 @@ public class Destiny2Api {
      * @return InlineResponse20034
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public InlineResponse20034 destiny2GetDestinyEntityDefinition(String entityType, Integer hashIdentifier) throws RestClientException {
+    public InlineResponse20034 destiny2GetDestinyEntityDefinition(String entityType, Long hashIdentifier) throws RestClientException {
         Object postBody = null;
         
         // verify the required parameter 'entityType' is set
@@ -1032,7 +1032,7 @@ public class Destiny2Api {
      * @return InlineResponse20056
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public InlineResponse20056 destiny2GetPublicMilestoneContent(Integer milestoneHash) throws RestClientException {
+    public InlineResponse20056 destiny2GetPublicMilestoneContent(Long milestoneHash) throws RestClientException {
         Object postBody = null;
         
         // verify the required parameter 'milestoneHash' is set
@@ -1146,7 +1146,7 @@ public class Destiny2Api {
      * @return InlineResponse20042
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public InlineResponse20042 destiny2GetVendor(Long characterId, Long destinyMembershipId, Integer membershipType, Integer vendorHash, List<DestinyDestinyComponentType> components) throws RestClientException {
+    public InlineResponse20042 destiny2GetVendor(Long characterId, Long destinyMembershipId, Integer membershipType, Long vendorHash, List<DestinyDestinyComponentType> components) throws RestClientException {
         Object postBody = null;
         
         // verify the required parameter 'characterId' is set

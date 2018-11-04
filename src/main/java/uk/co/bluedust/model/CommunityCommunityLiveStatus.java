@@ -26,7 +26,7 @@ import uk.co.bluedust.model.UserUserInfoCard;
 /**
  * CommunityCommunityLiveStatus
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class CommunityCommunityLiveStatus {
   @JsonProperty("dateStatusUpdated")
   private OffsetDateTime dateStatusUpdated = null;
@@ -56,7 +56,7 @@ public class CommunityCommunityLiveStatus {
   private UserUserInfoCard userInfo = null;
 
   @JsonProperty("currentActivityHash")
-  private Integer currentActivityHash = null;
+  private Long currentActivityHash = null;
 
   @JsonProperty("dateLastPlayed")
   private OffsetDateTime dateLastPlayed = null;
@@ -83,7 +83,7 @@ public class CommunityCommunityLiveStatus {
   private String title = null;
 
   @JsonProperty("activityModeHash")
-  private Integer activityModeHash = null;
+  private Long activityModeHash = null;
 
   @JsonProperty("dateFeatured")
   private OffsetDateTime dateFeatured = null;
@@ -256,7 +256,7 @@ public class CommunityCommunityLiveStatus {
     this.userInfo = userInfo;
   }
 
-  public CommunityCommunityLiveStatus currentActivityHash(Integer currentActivityHash) {
+  public CommunityCommunityLiveStatus currentActivityHash(Long currentActivityHash) {
     this.currentActivityHash = currentActivityHash;
     return this;
   }
@@ -266,11 +266,11 @@ public class CommunityCommunityLiveStatus {
    * @return currentActivityHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getCurrentActivityHash() {
+  public Long getCurrentActivityHash() {
     return currentActivityHash;
   }
 
-  public void setCurrentActivityHash(Integer currentActivityHash) {
+  public void setCurrentActivityHash(Long currentActivityHash) {
     this.currentActivityHash = currentActivityHash;
   }
 
@@ -418,7 +418,7 @@ public class CommunityCommunityLiveStatus {
     this.title = title;
   }
 
-  public CommunityCommunityLiveStatus activityModeHash(Integer activityModeHash) {
+  public CommunityCommunityLiveStatus activityModeHash(Long activityModeHash) {
     this.activityModeHash = activityModeHash;
     return this;
   }
@@ -428,11 +428,11 @@ public class CommunityCommunityLiveStatus {
    * @return activityModeHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityModeHash() {
+  public Long getActivityModeHash() {
     return activityModeHash;
   }
 
-  public void setActivityModeHash(Integer activityModeHash) {
+  public void setActivityModeHash(Long activityModeHash) {
     this.activityModeHash = activityModeHash;
   }
 

@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsPresentationDestinyPresentationNodeRecordChildEntry
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsPresentationDestinyPresentationNodeRecordChildEntry {
   @JsonProperty("recordHash")
-  private Integer recordHash = null;
+  private Long recordHash = null;
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeRecordChildEntry recordHash(Integer recordHash) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeRecordChildEntry recordHash(Long recordHash) {
     this.recordHash = recordHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeRecordChildEnt
    * @return recordHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getRecordHash() {
+  public Long getRecordHash() {
     return recordHash;
   }
 
-  public void setRecordHash(Integer recordHash) {
+  public void setRecordHash(Long recordHash) {
     this.recordHash = recordHash;
   }
 

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyVendorInventoryFlyoutBucket
  * The definition for an \&quot;inventory flyout\&quot;: a UI screen where we show you part of an otherwise hidden vendor inventory: like the Vault inventory buckets.
  */
 @ApiModel(description = "The definition for an \"inventory flyout\": a UI screen where we show you part of an otherwise hidden vendor inventory: like the Vault inventory buckets.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
   @JsonProperty("lockedDescription")
   private String lockedDescription = null;
@@ -39,13 +39,13 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
   private List<DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition> buckets = null;
 
   @JsonProperty("flyoutId")
-  private Integer flyoutId = null;
+  private Long flyoutId = null;
 
   @JsonProperty("suppressNewness")
   private Boolean suppressNewness = null;
 
   @JsonProperty("equipmentSlotHash")
-  private Integer equipmentSlotHash = null;
+  private Long equipmentSlotHash = null;
 
   public DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition lockedDescription(String lockedDescription) {
     this.lockedDescription = lockedDescription;
@@ -109,7 +109,7 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
     this.buckets = buckets;
   }
 
-  public DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition flyoutId(Integer flyoutId) {
+  public DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition flyoutId(Long flyoutId) {
     this.flyoutId = flyoutId;
     return this;
   }
@@ -119,11 +119,11 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
    * @return flyoutId
   **/
   @ApiModelProperty(value = "An identifier for the flyout, in case anything else needs to refer to them.")
-  public Integer getFlyoutId() {
+  public Long getFlyoutId() {
     return flyoutId;
   }
 
-  public void setFlyoutId(Integer flyoutId) {
+  public void setFlyoutId(Long flyoutId) {
     this.flyoutId = flyoutId;
   }
 
@@ -145,7 +145,7 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
     this.suppressNewness = suppressNewness;
   }
 
-  public DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition equipmentSlotHash(Integer equipmentSlotHash) {
+  public DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition equipmentSlotHash(Long equipmentSlotHash) {
     this.equipmentSlotHash = equipmentSlotHash;
     return this;
   }
@@ -155,11 +155,11 @@ public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
    * @return equipmentSlotHash
   **/
   @ApiModelProperty(value = "If this flyout is meant to show you the contents of the player's equipment slot, this is the slot to show.")
-  public Integer getEquipmentSlotHash() {
+  public Long getEquipmentSlotHash() {
     return equipmentSlotHash;
   }
 
-  public void setEquipmentSlotHash(Integer equipmentSlotHash) {
+  public void setEquipmentSlotHash(Long equipmentSlotHash) {
     this.equipmentSlotHash = equipmentSlotHash;
   }
 

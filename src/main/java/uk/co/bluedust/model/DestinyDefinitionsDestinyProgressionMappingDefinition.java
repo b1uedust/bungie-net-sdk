@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Aggregations of multiple progressions.  These are used to apply rewards to multiple progressions at once. They can sometimes have human readable data as well, but only extremely sporadically.
  */
 @ApiModel(description = "Aggregations of multiple progressions.  These are used to apply rewards to multiple progressions at once. They can sometimes have human readable data as well, but only extremely sporadically.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyProgressionMappingDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -33,7 +33,7 @@ public class DestinyDefinitionsDestinyProgressionMappingDefinition {
   private String displayUnits = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -77,7 +77,7 @@ public class DestinyDefinitionsDestinyProgressionMappingDefinition {
     this.displayUnits = displayUnits;
   }
 
-  public DestinyDefinitionsDestinyProgressionMappingDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyProgressionMappingDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -87,11 +87,11 @@ public class DestinyDefinitionsDestinyProgressionMappingDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

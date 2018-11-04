@@ -26,13 +26,13 @@ import java.util.List;
  * Talent nodes have requirements that must be met before they can be activated.  This describes the material costs, the Level of the Talent Grid&#39;s progression required, and other conditional information that limits whether a talent node can be activated.
  */
 @ApiModel(description = "Talent nodes have requirements that must be met before they can be activated.  This describes the material costs, the Level of the Talent Grid's progression required, and other conditional information that limits whether a talent node can be activated.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyNodeActivationRequirement {
   @JsonProperty("gridLevel")
   private Integer gridLevel = null;
 
   @JsonProperty("materialRequirementHashes")
-  private List<Integer> materialRequirementHashes = null;
+  private List<Long> materialRequirementHashes = null;
 
   public DestinyDefinitionsDestinyNodeActivationRequirement gridLevel(Integer gridLevel) {
     this.gridLevel = gridLevel;
@@ -52,12 +52,12 @@ public class DestinyDefinitionsDestinyNodeActivationRequirement {
     this.gridLevel = gridLevel;
   }
 
-  public DestinyDefinitionsDestinyNodeActivationRequirement materialRequirementHashes(List<Integer> materialRequirementHashes) {
+  public DestinyDefinitionsDestinyNodeActivationRequirement materialRequirementHashes(List<Long> materialRequirementHashes) {
     this.materialRequirementHashes = materialRequirementHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyNodeActivationRequirement addMaterialRequirementHashesItem(Integer materialRequirementHashesItem) {
+  public DestinyDefinitionsDestinyNodeActivationRequirement addMaterialRequirementHashesItem(Long materialRequirementHashesItem) {
     if (this.materialRequirementHashes == null) {
       this.materialRequirementHashes = new ArrayList<>();
     }
@@ -70,11 +70,11 @@ public class DestinyDefinitionsDestinyNodeActivationRequirement {
    * @return materialRequirementHashes
   **/
   @ApiModelProperty(value = "The list of hash identifiers for material requirement sets: materials that are required for the node to be activated. See DestinyMaterialRequirementSetDefinition for more information about material requirements.  In this case, only a single DestinyMaterialRequirementSetDefinition will be chosen from this list, and we won't know which one will be chosen until an instance of the item is created.")
-  public List<Integer> getMaterialRequirementHashes() {
+  public List<Long> getMaterialRequirementHashes() {
     return materialRequirementHashes;
   }
 
-  public void setMaterialRequirementHashes(List<Integer> materialRequirementHashes) {
+  public void setMaterialRequirementHashes(List<Long> materialRequirementHashes) {
     this.materialRequirementHashes = materialRequirementHashes;
   }
 

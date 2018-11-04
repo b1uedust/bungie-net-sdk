@@ -30,28 +30,28 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyFactionVendorDefinition;
  * These definitions represent Factions in the game. Factions have ended up unilaterally being related to Vendors that represent them, but that need not necessarily be the case.  A Faction is really just an entity that has a related progression for which a character can gain experience. In Destiny 1, Dead Orbit was an example of a Faction: there happens to be a Vendor that represents Dead Orbit (and indeed, DestinyVendorDefinition.factionHash defines to this relationship), but Dead Orbit could theoretically exist without the Vendor that provides rewards.
  */
 @ApiModel(description = "These definitions represent Factions in the game. Factions have ended up unilaterally being related to Vendors that represent them, but that need not necessarily be the case.  A Faction is really just an entity that has a related progression for which a character can gain experience. In Destiny 1, Dead Orbit was an example of a Faction: there happens to be a Vendor that represents Dead Orbit (and indeed, DestinyVendorDefinition.factionHash defines to this relationship), but Dead Orbit could theoretically exist without the Vendor that provides rewards.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyFactionDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
   @JsonProperty("tokenValues")
-  private Map<String, Integer> tokenValues = null;
+  private Map<String, Long> tokenValues = null;
 
   @JsonProperty("rewardItemHash")
-  private Integer rewardItemHash = null;
+  private Long rewardItemHash = null;
 
   @JsonProperty("rewardVendorHash")
-  private Integer rewardVendorHash = null;
+  private Long rewardVendorHash = null;
 
   @JsonProperty("vendors")
   private List<DestinyDefinitionsDestinyFactionVendorDefinition> vendors = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -77,7 +77,7 @@ public class DestinyDefinitionsDestinyFactionDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyFactionDefinition progressionHash(Integer progressionHash) {
+  public DestinyDefinitionsDestinyFactionDefinition progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -87,20 +87,20 @@ public class DestinyDefinitionsDestinyFactionDefinition {
    * @return progressionHash
   **/
   @ApiModelProperty(value = "The hash identifier for the DestinyProgressionDefinition that indicates the character's relationship with this faction in terms of experience and levels.")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 
-  public DestinyDefinitionsDestinyFactionDefinition tokenValues(Map<String, Integer> tokenValues) {
+  public DestinyDefinitionsDestinyFactionDefinition tokenValues(Map<String, Long> tokenValues) {
     this.tokenValues = tokenValues;
     return this;
   }
 
-  public DestinyDefinitionsDestinyFactionDefinition putTokenValuesItem(String key, Integer tokenValuesItem) {
+  public DestinyDefinitionsDestinyFactionDefinition putTokenValuesItem(String key, Long tokenValuesItem) {
     if (this.tokenValues == null) {
       this.tokenValues = new HashMap<>();
     }
@@ -113,15 +113,15 @@ public class DestinyDefinitionsDestinyFactionDefinition {
    * @return tokenValues
   **/
   @ApiModelProperty(value = "The faction token item hashes, and their respective progression values.")
-  public Map<String, Integer> getTokenValues() {
+  public Map<String, Long> getTokenValues() {
     return tokenValues;
   }
 
-  public void setTokenValues(Map<String, Integer> tokenValues) {
+  public void setTokenValues(Map<String, Long> tokenValues) {
     this.tokenValues = tokenValues;
   }
 
-  public DestinyDefinitionsDestinyFactionDefinition rewardItemHash(Integer rewardItemHash) {
+  public DestinyDefinitionsDestinyFactionDefinition rewardItemHash(Long rewardItemHash) {
     this.rewardItemHash = rewardItemHash;
     return this;
   }
@@ -131,15 +131,15 @@ public class DestinyDefinitionsDestinyFactionDefinition {
    * @return rewardItemHash
   **/
   @ApiModelProperty(value = "The faction reward item hash, usually an engram.")
-  public Integer getRewardItemHash() {
+  public Long getRewardItemHash() {
     return rewardItemHash;
   }
 
-  public void setRewardItemHash(Integer rewardItemHash) {
+  public void setRewardItemHash(Long rewardItemHash) {
     this.rewardItemHash = rewardItemHash;
   }
 
-  public DestinyDefinitionsDestinyFactionDefinition rewardVendorHash(Integer rewardVendorHash) {
+  public DestinyDefinitionsDestinyFactionDefinition rewardVendorHash(Long rewardVendorHash) {
     this.rewardVendorHash = rewardVendorHash;
     return this;
   }
@@ -149,11 +149,11 @@ public class DestinyDefinitionsDestinyFactionDefinition {
    * @return rewardVendorHash
   **/
   @ApiModelProperty(value = "The faction reward vendor hash, used for faction engram previews.")
-  public Integer getRewardVendorHash() {
+  public Long getRewardVendorHash() {
     return rewardVendorHash;
   }
 
-  public void setRewardVendorHash(Integer rewardVendorHash) {
+  public void setRewardVendorHash(Long rewardVendorHash) {
     this.rewardVendorHash = rewardVendorHash;
   }
 
@@ -183,7 +183,7 @@ public class DestinyDefinitionsDestinyFactionDefinition {
     this.vendors = vendors;
   }
 
-  public DestinyDefinitionsDestinyFactionDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyFactionDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -193,11 +193,11 @@ public class DestinyDefinitionsDestinyFactionDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

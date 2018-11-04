@@ -29,13 +29,13 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyVendorItemSocketOverride;
  * This represents an item being sold by the vendor.
  */
 @ApiModel(description = "This represents an item being sold by the vendor.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorItemDefinition {
   @JsonProperty("vendorItemIndex")
   private Integer vendorItemIndex = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("quantity")
   private Integer quantity = null;
@@ -77,7 +77,7 @@ public class DestinyDefinitionsDestinyVendorItemDefinition {
   private String displayCategory = null;
 
   @JsonProperty("inventoryBucketHash")
-  private Integer inventoryBucketHash = null;
+  private Long inventoryBucketHash = null;
 
   @JsonProperty("visibilityScope")
   private Object visibilityScope = null;
@@ -124,7 +124,7 @@ public class DestinyDefinitionsDestinyVendorItemDefinition {
     this.vendorItemIndex = vendorItemIndex;
   }
 
-  public DestinyDefinitionsDestinyVendorItemDefinition itemHash(Integer itemHash) {
+  public DestinyDefinitionsDestinyVendorItemDefinition itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -134,11 +134,11 @@ public class DestinyDefinitionsDestinyVendorItemDefinition {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier of the item being sold (DestinyInventoryItemDefinition).  Note that a vendor can sell the same item in multiple ways, so don't assume that itemHash is a unique identifier for this entity.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 
@@ -400,7 +400,7 @@ public class DestinyDefinitionsDestinyVendorItemDefinition {
     this.displayCategory = displayCategory;
   }
 
-  public DestinyDefinitionsDestinyVendorItemDefinition inventoryBucketHash(Integer inventoryBucketHash) {
+  public DestinyDefinitionsDestinyVendorItemDefinition inventoryBucketHash(Long inventoryBucketHash) {
     this.inventoryBucketHash = inventoryBucketHash;
     return this;
   }
@@ -410,11 +410,11 @@ public class DestinyDefinitionsDestinyVendorItemDefinition {
    * @return inventoryBucketHash
   **/
   @ApiModelProperty(value = "The inventory bucket into which this item will be placed upon purchase.")
-  public Integer getInventoryBucketHash() {
+  public Long getInventoryBucketHash() {
     return inventoryBucketHash;
   }
 
-  public void setInventoryBucketHash(Integer inventoryBucketHash) {
+  public void setInventoryBucketHash(Long inventoryBucketHash) {
     this.inventoryBucketHash = inventoryBucketHash;
   }
 

@@ -28,20 +28,20 @@ import uk.co.bluedust.model.DestinyComponentsRecordsDestinyRecordComponent;
 /**
  * DestinyComponentsRecordsDestinyCharacterRecordsComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyComponentsRecordsDestinyCharacterRecordsComponent {
   @JsonProperty("featuredRecordHashes")
-  private List<Integer> featuredRecordHashes = null;
+  private List<Long> featuredRecordHashes = null;
 
   @JsonProperty("records")
   private Map<String, DestinyComponentsRecordsDestinyRecordComponent> records = null;
 
-  public DestinyComponentsRecordsDestinyCharacterRecordsComponent featuredRecordHashes(List<Integer> featuredRecordHashes) {
+  public DestinyComponentsRecordsDestinyCharacterRecordsComponent featuredRecordHashes(List<Long> featuredRecordHashes) {
     this.featuredRecordHashes = featuredRecordHashes;
     return this;
   }
 
-  public DestinyComponentsRecordsDestinyCharacterRecordsComponent addFeaturedRecordHashesItem(Integer featuredRecordHashesItem) {
+  public DestinyComponentsRecordsDestinyCharacterRecordsComponent addFeaturedRecordHashesItem(Long featuredRecordHashesItem) {
     if (this.featuredRecordHashes == null) {
       this.featuredRecordHashes = new ArrayList<>();
     }
@@ -54,11 +54,11 @@ public class DestinyComponentsRecordsDestinyCharacterRecordsComponent {
    * @return featuredRecordHashes
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getFeaturedRecordHashes() {
+  public List<Long> getFeaturedRecordHashes() {
     return featuredRecordHashes;
   }
 
-  public void setFeaturedRecordHashes(List<Integer> featuredRecordHashes) {
+  public void setFeaturedRecordHashes(List<Long> featuredRecordHashes) {
     this.featuredRecordHashes = featuredRecordHashes;
   }
 

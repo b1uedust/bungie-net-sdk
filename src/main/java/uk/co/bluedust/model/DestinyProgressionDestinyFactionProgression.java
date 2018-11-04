@@ -24,16 +24,16 @@ import io.swagger.annotations.ApiModelProperty;
  * Mostly for historical purposes, we segregate Faction progressions from other progressions. This is just a DestinyProgression with a shortcut for finding the DestinyFactionDefinition of the faction related to the progression.
  */
 @ApiModel(description = "Mostly for historical purposes, we segregate Faction progressions from other progressions. This is just a DestinyProgression with a shortcut for finding the DestinyFactionDefinition of the faction related to the progression.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyProgressionDestinyFactionProgression {
   @JsonProperty("factionHash")
-  private Integer factionHash = null;
+  private Long factionHash = null;
 
   @JsonProperty("factionVendorIndex")
   private Integer factionVendorIndex = null;
 
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
   @JsonProperty("dailyProgress")
   private Integer dailyProgress = null;
@@ -65,7 +65,7 @@ public class DestinyProgressionDestinyFactionProgression {
   @JsonProperty("nextLevelAt")
   private Integer nextLevelAt = null;
 
-  public DestinyProgressionDestinyFactionProgression factionHash(Integer factionHash) {
+  public DestinyProgressionDestinyFactionProgression factionHash(Long factionHash) {
     this.factionHash = factionHash;
     return this;
   }
@@ -75,11 +75,11 @@ public class DestinyProgressionDestinyFactionProgression {
    * @return factionHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Faction related to this progression. Use it to look up the DestinyFactionDefinition for more rendering info.")
-  public Integer getFactionHash() {
+  public Long getFactionHash() {
     return factionHash;
   }
 
-  public void setFactionHash(Integer factionHash) {
+  public void setFactionHash(Long factionHash) {
     this.factionHash = factionHash;
   }
 
@@ -101,7 +101,7 @@ public class DestinyProgressionDestinyFactionProgression {
     this.factionVendorIndex = factionVendorIndex;
   }
 
-  public DestinyProgressionDestinyFactionProgression progressionHash(Integer progressionHash) {
+  public DestinyProgressionDestinyFactionProgression progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -111,11 +111,11 @@ public class DestinyProgressionDestinyFactionProgression {
    * @return progressionHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Progression in question. Use it to look up the DestinyProgressionDefinition in static data.")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 

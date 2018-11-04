@@ -24,16 +24,16 @@ import io.swagger.annotations.ApiModelProperty;
  * Returns data about a character&#39;s status with a given Objective. Combine with DestinyObjectiveDefinition static data for display purposes.
  */
 @ApiModel(description = "Returns data about a character's status with a given Objective. Combine with DestinyObjectiveDefinition static data for display purposes.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyQuestsDestinyObjectiveProgress {
   @JsonProperty("objectiveHash")
-  private Integer objectiveHash = null;
+  private Long objectiveHash = null;
 
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("progress")
   private Integer progress = null;
@@ -47,7 +47,7 @@ public class DestinyQuestsDestinyObjectiveProgress {
   @JsonProperty("visible")
   private Boolean visible = null;
 
-  public DestinyQuestsDestinyObjectiveProgress objectiveHash(Integer objectiveHash) {
+  public DestinyQuestsDestinyObjectiveProgress objectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
     return this;
   }
@@ -57,15 +57,15 @@ public class DestinyQuestsDestinyObjectiveProgress {
    * @return objectiveHash
   **/
   @ApiModelProperty(value = "The unique identifier of the Objective being referred to. Use to look up the DestinyObjectiveDefinition in static data.")
-  public Integer getObjectiveHash() {
+  public Long getObjectiveHash() {
     return objectiveHash;
   }
 
-  public void setObjectiveHash(Integer objectiveHash) {
+  public void setObjectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
   }
 
-  public DestinyQuestsDestinyObjectiveProgress destinationHash(Integer destinationHash) {
+  public DestinyQuestsDestinyObjectiveProgress destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -75,15 +75,15 @@ public class DestinyQuestsDestinyObjectiveProgress {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "If the Objective has a Destination associated with it, this is the unique identifier of the Destination being referred to. Use to look up the DestinyDestinationDefinition in static data. This will give localized data about *where* in the universe the objective should be achieved.")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 
-  public DestinyQuestsDestinyObjectiveProgress activityHash(Integer activityHash) {
+  public DestinyQuestsDestinyObjectiveProgress activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -93,11 +93,11 @@ public class DestinyQuestsDestinyObjectiveProgress {
    * @return activityHash
   **/
   @ApiModelProperty(value = "If the Objective has an Activity associated with it, this is the unique identifier of the Activity being referred to. Use to look up the DestinyActivityDefinition in static data. This will give localized data about *what* you should be playing for the objective to be achieved.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

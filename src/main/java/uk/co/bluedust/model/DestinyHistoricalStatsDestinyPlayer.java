@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyHistoricalStatsDestinyPlayer
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyHistoricalStatsDestinyPlayer {
   @JsonProperty("destinyUserInfo")
   private Object destinyUserInfo = null;
@@ -32,13 +32,13 @@ public class DestinyHistoricalStatsDestinyPlayer {
   private String characterClass = null;
 
   @JsonProperty("classHash")
-  private Integer classHash = null;
+  private Long classHash = null;
 
   @JsonProperty("raceHash")
-  private Integer raceHash = null;
+  private Long raceHash = null;
 
   @JsonProperty("genderHash")
-  private Integer genderHash = null;
+  private Long genderHash = null;
 
   @JsonProperty("characterLevel")
   private Integer characterLevel = null;
@@ -56,7 +56,7 @@ public class DestinyHistoricalStatsDestinyPlayer {
   private String clanTag = null;
 
   @JsonProperty("emblemHash")
-  private Integer emblemHash = null;
+  private Long emblemHash = null;
 
   public DestinyHistoricalStatsDestinyPlayer destinyUserInfo(Object destinyUserInfo) {
     this.destinyUserInfo = destinyUserInfo;
@@ -94,7 +94,7 @@ public class DestinyHistoricalStatsDestinyPlayer {
     this.characterClass = characterClass;
   }
 
-  public DestinyHistoricalStatsDestinyPlayer classHash(Integer classHash) {
+  public DestinyHistoricalStatsDestinyPlayer classHash(Long classHash) {
     this.classHash = classHash;
     return this;
   }
@@ -104,15 +104,15 @@ public class DestinyHistoricalStatsDestinyPlayer {
    * @return classHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getClassHash() {
+  public Long getClassHash() {
     return classHash;
   }
 
-  public void setClassHash(Integer classHash) {
+  public void setClassHash(Long classHash) {
     this.classHash = classHash;
   }
 
-  public DestinyHistoricalStatsDestinyPlayer raceHash(Integer raceHash) {
+  public DestinyHistoricalStatsDestinyPlayer raceHash(Long raceHash) {
     this.raceHash = raceHash;
     return this;
   }
@@ -122,15 +122,15 @@ public class DestinyHistoricalStatsDestinyPlayer {
    * @return raceHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getRaceHash() {
+  public Long getRaceHash() {
     return raceHash;
   }
 
-  public void setRaceHash(Integer raceHash) {
+  public void setRaceHash(Long raceHash) {
     this.raceHash = raceHash;
   }
 
-  public DestinyHistoricalStatsDestinyPlayer genderHash(Integer genderHash) {
+  public DestinyHistoricalStatsDestinyPlayer genderHash(Long genderHash) {
     this.genderHash = genderHash;
     return this;
   }
@@ -140,11 +140,11 @@ public class DestinyHistoricalStatsDestinyPlayer {
    * @return genderHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getGenderHash() {
+  public Long getGenderHash() {
     return genderHash;
   }
 
-  public void setGenderHash(Integer genderHash) {
+  public void setGenderHash(Long genderHash) {
     this.genderHash = genderHash;
   }
 
@@ -238,7 +238,7 @@ public class DestinyHistoricalStatsDestinyPlayer {
     this.clanTag = clanTag;
   }
 
-  public DestinyHistoricalStatsDestinyPlayer emblemHash(Integer emblemHash) {
+  public DestinyHistoricalStatsDestinyPlayer emblemHash(Long emblemHash) {
     this.emblemHash = emblemHash;
     return this;
   }
@@ -248,11 +248,11 @@ public class DestinyHistoricalStatsDestinyPlayer {
    * @return emblemHash
   **/
   @ApiModelProperty(value = "If we know the emblem's hash, this can be used to look up the player's emblem at the time of a match when receiving PGCR data, or otherwise their currently equipped emblem (if we are able to obtain it).")
-  public Integer getEmblemHash() {
+  public Long getEmblemHash() {
     return emblemHash;
   }
 
-  public void setEmblemHash(Integer emblemHash) {
+  public void setEmblemHash(Long emblemHash) {
     this.emblemHash = emblemHash;
   }
 

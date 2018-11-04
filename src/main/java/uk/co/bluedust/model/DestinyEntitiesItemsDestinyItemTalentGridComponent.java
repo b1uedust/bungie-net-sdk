@@ -27,10 +27,10 @@ import uk.co.bluedust.model.DestinyDestinyTalentNode;
  * Well, we&#39;re here in Destiny 2, and Talent Grids are unfortunately still around.  The good news is that they&#39;re pretty much only being used for certain base information on items and for Builds/Subclasses. The bad news is that they still suck. If you really want this information, grab this component.  An important note is that talent grids are defined as such:  A Grid has 1:M Nodes, which has 1:M Steps.  Any given node can only have a single step active at one time, which represents the actual visual contents and effects of the Node (for instance, if you see a \&quot;Super Cool Bonus\&quot; node, the actual icon and text for the node is coming from the current Step of that node).  Nodes can be grouped into exclusivity sets *and* as of D2, exclusivity groups (which are collections of exclusivity sets that affect each other).  See DestinyTalentGridDefinition for more information. Brace yourself, the water&#39;s cold out there in the deep end.
  */
 @ApiModel(description = "Well, we're here in Destiny 2, and Talent Grids are unfortunately still around.  The good news is that they're pretty much only being used for certain base information on items and for Builds/Subclasses. The bad news is that they still suck. If you really want this information, grab this component.  An important note is that talent grids are defined as such:  A Grid has 1:M Nodes, which has 1:M Steps.  Any given node can only have a single step active at one time, which represents the actual visual contents and effects of the Node (for instance, if you see a \"Super Cool Bonus\" node, the actual icon and text for the node is coming from the current Step of that node).  Nodes can be grouped into exclusivity sets *and* as of D2, exclusivity groups (which are collections of exclusivity sets that affect each other).  See DestinyTalentGridDefinition for more information. Brace yourself, the water's cold out there in the deep end.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesItemsDestinyItemTalentGridComponent {
   @JsonProperty("talentGridHash")
-  private Integer talentGridHash = null;
+  private Long talentGridHash = null;
 
   @JsonProperty("nodes")
   private List<DestinyDestinyTalentNode> nodes = null;
@@ -41,7 +41,7 @@ public class DestinyEntitiesItemsDestinyItemTalentGridComponent {
   @JsonProperty("gridProgression")
   private Object gridProgression = null;
 
-  public DestinyEntitiesItemsDestinyItemTalentGridComponent talentGridHash(Integer talentGridHash) {
+  public DestinyEntitiesItemsDestinyItemTalentGridComponent talentGridHash(Long talentGridHash) {
     this.talentGridHash = talentGridHash;
     return this;
   }
@@ -51,11 +51,11 @@ public class DestinyEntitiesItemsDestinyItemTalentGridComponent {
    * @return talentGridHash
   **/
   @ApiModelProperty(value = "Most items don't have useful talent grids anymore, but Builds in particular still do.  You can use this hash to lookup the DestinyTalentGridDefinition attached to this item, which will be crucial for understanding the node values on the item.")
-  public Integer getTalentGridHash() {
+  public Long getTalentGridHash() {
     return talentGridHash;
   }
 
-  public void setTalentGridHash(Integer talentGridHash) {
+  public void setTalentGridHash(Long talentGridHash) {
     this.talentGridHash = talentGridHash;
   }
 

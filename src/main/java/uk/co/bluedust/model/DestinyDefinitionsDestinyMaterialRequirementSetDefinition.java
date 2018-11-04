@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyMaterialRequirement;
  * Represent a set of material requirements: Items that either need to be owned or need to be consumed in order to perform an action.  A variety of other entities refer to these as gatekeepers and payments for actions that can be performed in game.
  */
 @ApiModel(description = "Represent a set of material requirements: Items that either need to be owned or need to be consumed in order to perform an action.  A variety of other entities refer to these as gatekeepers and payments for actions that can be performed in game.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyMaterialRequirementSetDefinition {
   @JsonProperty("materials")
   private List<DestinyDefinitionsDestinyMaterialRequirement> materials = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -67,7 +67,7 @@ public class DestinyDefinitionsDestinyMaterialRequirementSetDefinition {
     this.materials = materials;
   }
 
-  public DestinyDefinitionsDestinyMaterialRequirementSetDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyMaterialRequirementSetDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -77,11 +77,11 @@ public class DestinyDefinitionsDestinyMaterialRequirementSetDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

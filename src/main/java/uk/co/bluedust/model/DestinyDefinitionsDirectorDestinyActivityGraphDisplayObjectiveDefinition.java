@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * When a Graph needs to show active Objectives, this defines those objectives as well as an identifier.
  */
 @ApiModel(description = "When a Graph needs to show active Objectives, this defines those objectives as well as an identifier.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefinition {
   @JsonProperty("id")
-  private Integer id = null;
+  private Long id = null;
 
   @JsonProperty("objectiveHash")
-  private Integer objectiveHash = null;
+  private Long objectiveHash = null;
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefinition id(Integer id) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefinition id(Long id) {
     this.id = id;
     return this;
   }
@@ -42,15 +42,15 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefin
    * @return id
   **/
   @ApiModelProperty(value = "$NOTE $amola 2017-01-19 This field is apparently something that CUI uses to manually wire up objectives to display info. I am unsure how it works.")
-  public Integer getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefinition objectiveHash(Integer objectiveHash) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefinition objectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefin
    * @return objectiveHash
   **/
   @ApiModelProperty(value = "The objective being shown on the map.")
-  public Integer getObjectiveHash() {
+  public Long getObjectiveHash() {
     return objectiveHash;
   }
 
-  public void setObjectiveHash(Integer objectiveHash) {
+  public void setObjectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
   }
 

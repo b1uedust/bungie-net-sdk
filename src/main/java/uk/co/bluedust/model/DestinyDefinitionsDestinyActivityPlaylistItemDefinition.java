@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * If the activity is a playlist, this is the definition for a specific entry in the playlist: a single possible combination of Activity and Activity Mode that can be chosen.
  */
 @ApiModel(description = "If the activity is a playlist, this is the definition for a specific entry in the playlist: a single possible combination of Activity and Activity Mode that can be chosen.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("directActivityModeHash")
-  private Integer directActivityModeHash = null;
+  private Long directActivityModeHash = null;
 
   /**
    * If the playlist entry had an activity mode directly defined on it, this will be the enum value of that mode.
@@ -186,12 +186,12 @@ public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
   private DirectActivityModeTypeEnum directActivityModeType = null;
 
   @JsonProperty("activityModeHashes")
-  private List<Integer> activityModeHashes = null;
+  private List<Long> activityModeHashes = null;
 
   @JsonProperty("activityModeTypes")
   private List<DestinyHistoricalStatsDefinitionsDestinyActivityModeType> activityModeTypes = null;
 
-  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition activityHash(Integer activityHash) {
+  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -201,15 +201,15 @@ public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
    * @return activityHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Activity that can be played. Use it to look up the DestinyActivityDefinition.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
-  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition directActivityModeHash(Integer directActivityModeHash) {
+  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition directActivityModeHash(Long directActivityModeHash) {
     this.directActivityModeHash = directActivityModeHash;
     return this;
   }
@@ -219,11 +219,11 @@ public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
    * @return directActivityModeHash
   **/
   @ApiModelProperty(value = "If this playlist entry had an activity mode directly defined on it, this will be the hash of that mode.")
-  public Integer getDirectActivityModeHash() {
+  public Long getDirectActivityModeHash() {
     return directActivityModeHash;
   }
 
-  public void setDirectActivityModeHash(Integer directActivityModeHash) {
+  public void setDirectActivityModeHash(Long directActivityModeHash) {
     this.directActivityModeHash = directActivityModeHash;
   }
 
@@ -245,12 +245,12 @@ public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
     this.directActivityModeType = directActivityModeType;
   }
 
-  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition activityModeHashes(List<Integer> activityModeHashes) {
+  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition activityModeHashes(List<Long> activityModeHashes) {
     this.activityModeHashes = activityModeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition addActivityModeHashesItem(Integer activityModeHashesItem) {
+  public DestinyDefinitionsDestinyActivityPlaylistItemDefinition addActivityModeHashesItem(Long activityModeHashesItem) {
     if (this.activityModeHashes == null) {
       this.activityModeHashes = new ArrayList<>();
     }
@@ -263,11 +263,11 @@ public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
    * @return activityModeHashes
   **/
   @ApiModelProperty(value = "The hash identifiers for Activity Modes relevant to this entry.")
-  public List<Integer> getActivityModeHashes() {
+  public List<Long> getActivityModeHashes() {
     return activityModeHashes;
   }
 
-  public void setActivityModeHashes(List<Integer> activityModeHashes) {
+  public void setActivityModeHashes(List<Long> activityModeHashes) {
     this.activityModeHashes = activityModeHashes;
   }
 

@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * Basic identifying data about the bubble. Combine with DestinyDestinationBubbleSettingDefinition - see DestinyDestinationDefinition.bubbleSettings for more information.
  */
 @ApiModel(description = "Basic identifying data about the bubble. Combine with DestinyDestinationBubbleSettingDefinition - see DestinyDestinationDefinition.bubbleSettings for more information.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyBubbleDefinition {
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
 
-  public DestinyDefinitionsDestinyBubbleDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyBubbleDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -42,11 +42,11 @@ public class DestinyDefinitionsDestinyBubbleDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The identifier for the bubble: only guaranteed to be unique within the Destination.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

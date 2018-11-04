@@ -24,12 +24,12 @@ import io.swagger.annotations.ApiModelProperty;
  * If the Milestone or a component has vendors whose inventories could/should be displayed that are relevant to it, this will return the vendor in question.   It also contains information we need to determine whether that vendor is actually relevant at the moment, given the user&#39;s current state.
  */
 @ApiModel(description = "If the Milestone or a component has vendors whose inventories could/should be displayed that are relevant to it, this will return the vendor in question.   It also contains information we need to determine whether that vendor is actually relevant at the moment, given the user's current state.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneVendorDefinition {
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneVendorDefinition vendorHash(Integer vendorHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneVendorDefinition vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -39,11 +39,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneVendorDefinition {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "The hash of the vendor whose wares should be shown as associated with the Milestone.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 

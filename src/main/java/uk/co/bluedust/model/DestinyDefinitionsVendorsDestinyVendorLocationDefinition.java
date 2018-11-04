@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * These definitions represent vendors&#39; locations and relevant display information at different times in the game.
  */
 @ApiModel(description = "These definitions represent vendors' locations and relevant display information at different times in the game.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsVendorsDestinyVendorLocationDefinition {
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
   @JsonProperty("backgroundImagePath")
   private String backgroundImagePath = null;
 
-  public DestinyDefinitionsVendorsDestinyVendorLocationDefinition destinationHash(Integer destinationHash) {
+  public DestinyDefinitionsVendorsDestinyVendorLocationDefinition destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -42,11 +42,11 @@ public class DestinyDefinitionsVendorsDestinyVendorLocationDefinition {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "The hash identifier for a Destination at which this vendor may be located. Each destination where a Vendor may exist will only ever have a single entry.")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 

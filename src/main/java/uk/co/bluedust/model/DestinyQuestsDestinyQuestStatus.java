@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyQuestsDestinyObjectiveProgress;
  * Data regarding the progress of a Quest for a specific character. Quests are composed of multiple steps, each with potentially multiple objectives: this QuestStatus will return Objective data for the *currently active* step in this quest.
  */
 @ApiModel(description = "Data regarding the progress of a Quest for a specific character. Quests are composed of multiple steps, each with potentially multiple objectives: this QuestStatus will return Objective data for the *currently active* step in this quest.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyQuestsDestinyQuestStatus {
   @JsonProperty("questHash")
-  private Integer questHash = null;
+  private Long questHash = null;
 
   @JsonProperty("stepHash")
-  private Integer stepHash = null;
+  private Long stepHash = null;
 
   @JsonProperty("stepObjectives")
   private List<DestinyQuestsDestinyObjectiveProgress> stepObjectives = null;
@@ -54,9 +54,9 @@ public class DestinyQuestsDestinyQuestStatus {
   private Boolean started = null;
 
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
-  public DestinyQuestsDestinyQuestStatus questHash(Integer questHash) {
+  public DestinyQuestsDestinyQuestStatus questHash(Long questHash) {
     this.questHash = questHash;
     return this;
   }
@@ -66,15 +66,15 @@ public class DestinyQuestsDestinyQuestStatus {
    * @return questHash
   **/
   @ApiModelProperty(value = "The hash identifier for the Quest Item. (Note: Quests are defined as Items, and thus you would use this to look up the quest's DestinyInventoryItemDefinition). For information on all steps in the quest, you can then examine its DestinyInventoryItemDefinition.setData property for Quest Steps (which are *also* items). You can use the Item Definition to display human readable data about the overall quest.")
-  public Integer getQuestHash() {
+  public Long getQuestHash() {
     return questHash;
   }
 
-  public void setQuestHash(Integer questHash) {
+  public void setQuestHash(Long questHash) {
     this.questHash = questHash;
   }
 
-  public DestinyQuestsDestinyQuestStatus stepHash(Integer stepHash) {
+  public DestinyQuestsDestinyQuestStatus stepHash(Long stepHash) {
     this.stepHash = stepHash;
     return this;
   }
@@ -84,11 +84,11 @@ public class DestinyQuestsDestinyQuestStatus {
    * @return stepHash
   **/
   @ApiModelProperty(value = "The hash identifier of the current Quest Step, which is also a DestinyInventoryItemDefinition. You can use this to get human readable data about the current step and what to do in that step.")
-  public Integer getStepHash() {
+  public Long getStepHash() {
     return stepHash;
   }
 
-  public void setStepHash(Integer stepHash) {
+  public void setStepHash(Long stepHash) {
     this.stepHash = stepHash;
   }
 
@@ -208,7 +208,7 @@ public class DestinyQuestsDestinyQuestStatus {
     this.started = started;
   }
 
-  public DestinyQuestsDestinyQuestStatus vendorHash(Integer vendorHash) {
+  public DestinyQuestsDestinyQuestStatus vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -218,11 +218,11 @@ public class DestinyQuestsDestinyQuestStatus {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "If the quest has a related Vendor that you should talk to in order to initiate the quest/earn rewards/continue the quest, this will be the hash identifier of that Vendor. Look it up its DestinyVendorDefinition.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 

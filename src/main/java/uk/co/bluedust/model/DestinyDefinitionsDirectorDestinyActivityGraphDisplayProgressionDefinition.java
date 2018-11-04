@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * When a Graph needs to show active Progressions, this defines those objectives as well as an identifier.
  */
 @ApiModel(description = "When a Graph needs to show active Progressions, this defines those objectives as well as an identifier.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDefinition {
   @JsonProperty("id")
-  private Integer id = null;
+  private Long id = null;
 
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDefinition id(Integer id) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDefinition id(Long id) {
     this.id = id;
     return this;
   }
@@ -42,15 +42,15 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDef
    * @return id
   **/
   @ApiModelProperty(value = "")
-  public Integer getId() {
+  public Long getId() {
     return id;
   }
 
-  public void setId(Integer id) {
+  public void setId(Long id) {
     this.id = id;
   }
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDefinition progressionHash(Integer progressionHash) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDefinition progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayProgressionDef
    * @return progressionHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 

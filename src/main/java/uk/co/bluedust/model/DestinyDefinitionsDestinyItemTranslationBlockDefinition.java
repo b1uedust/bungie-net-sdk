@@ -28,13 +28,13 @@ import uk.co.bluedust.model.DestinyDyeReference;
  * This Block defines the rendering data associated with the item, if any.
  */
 @ApiModel(description = "This Block defines the rendering data associated with the item, if any.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemTranslationBlockDefinition {
   @JsonProperty("weaponPatternIdentifier")
   private String weaponPatternIdentifier = null;
 
   @JsonProperty("weaponPatternHash")
-  private Integer weaponPatternHash = null;
+  private Long weaponPatternHash = null;
 
   @JsonProperty("defaultDyes")
   private List<DestinyDyeReference> defaultDyes = null;
@@ -69,7 +69,7 @@ public class DestinyDefinitionsDestinyItemTranslationBlockDefinition {
     this.weaponPatternIdentifier = weaponPatternIdentifier;
   }
 
-  public DestinyDefinitionsDestinyItemTranslationBlockDefinition weaponPatternHash(Integer weaponPatternHash) {
+  public DestinyDefinitionsDestinyItemTranslationBlockDefinition weaponPatternHash(Long weaponPatternHash) {
     this.weaponPatternHash = weaponPatternHash;
     return this;
   }
@@ -79,11 +79,11 @@ public class DestinyDefinitionsDestinyItemTranslationBlockDefinition {
    * @return weaponPatternHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getWeaponPatternHash() {
+  public Long getWeaponPatternHash() {
     return weaponPatternHash;
   }
 
-  public void setWeaponPatternHash(Integer weaponPatternHash) {
+  public void setWeaponPatternHash(Long weaponPatternHash) {
     this.weaponPatternHash = weaponPatternHash;
   }
 

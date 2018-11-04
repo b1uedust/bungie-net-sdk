@@ -29,10 +29,10 @@ import uk.co.bluedust.model.DestinyDefinitionsDirectorDestinyActivityGraphNodeSt
  * This is the position and other data related to nodes in the activity graph that you can click to launch activities. An Activity Graph node will only have one active Activity at a time, which will determine the activity to be launched (and, unless overrideDisplay information is provided, will also determine the tooltip and other UI related to the node)
  */
 @ApiModel(description = "This is the position and other data related to nodes in the activity graph that you can click to launch activities. An Activity Graph node will only have one active Activity at a time, which will determine the activity to be launched (and, unless overrideDisplay information is provided, will also determine the tooltip and other UI related to the node)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphNodeDefinition {
   @JsonProperty("nodeId")
-  private Integer nodeId = null;
+  private Long nodeId = null;
 
   @JsonProperty("overrideDisplay")
   private Object overrideDisplay = null;
@@ -49,7 +49,7 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphNodeDefinition {
   @JsonProperty("states")
   private List<DestinyDefinitionsDirectorDestinyActivityGraphNodeStateEntry> states = null;
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphNodeDefinition nodeId(Integer nodeId) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphNodeDefinition nodeId(Long nodeId) {
     this.nodeId = nodeId;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphNodeDefinition {
    * @return nodeId
   **/
   @ApiModelProperty(value = "An identifier for the Activity Graph Node, only guaranteed to be unique within its parent Activity Graph.")
-  public Integer getNodeId() {
+  public Long getNodeId() {
     return nodeId;
   }
 
-  public void setNodeId(Integer nodeId) {
+  public void setNodeId(Long nodeId) {
     this.nodeId = nodeId;
   }
 

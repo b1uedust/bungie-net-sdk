@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiModelProperty;
  * Defines a particular entry in an ItemSet (AKA a particular Quest Step in a Quest)
  */
 @ApiModel(description = "Defines a particular entry in an ItemSet (AKA a particular Quest Step in a Quest)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSetBlockEntryDefinition {
   @JsonProperty("trackingValue")
   private Integer trackingValue = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   public DestinyDefinitionsDestinyItemSetBlockEntryDefinition trackingValue(Integer trackingValue) {
     this.trackingValue = trackingValue;
@@ -50,7 +50,7 @@ public class DestinyDefinitionsDestinyItemSetBlockEntryDefinition {
     this.trackingValue = trackingValue;
   }
 
-  public DestinyDefinitionsDestinyItemSetBlockEntryDefinition itemHash(Integer itemHash) {
+  public DestinyDefinitionsDestinyItemSetBlockEntryDefinition itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyDefinitionsDestinyItemSetBlockEntryDefinition {
    * @return itemHash
   **/
   @ApiModelProperty(value = "This is the hash identifier for a DestinyInventoryItemDefinition representing this quest step.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

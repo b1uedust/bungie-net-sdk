@@ -20,12 +20,12 @@ Name | Type | Description | Notes
 **genderType** | **Object** | Mostly for historical purposes at this point, this is an enumeration for the character&#39;s Gender.  It&#39;ll be preferable in the general case to look up the related definition: but for some people this was too convenient to remove. And yeah, it&#39;s an enumeration and not a boolean. Fight me. |  [optional]
 **emblemPath** | **String** | A shortcut path to the user&#39;s currently equipped emblem image. If you&#39;re just showing summary info for a user, this is more convenient than examining their equipped emblem and looking up the definition. |  [optional]
 **emblemBackgroundPath** | **String** | A shortcut path to the user&#39;s currently equipped emblem background image. If you&#39;re just showing summary info for a user, this is more convenient than examining their equipped emblem and looking up the definition. |  [optional]
-**emblemHash** | **Integer** | The hash of the currently equipped emblem for the user. Can be used to look up the DestinyInventoryItemDefinition. |  [optional]
+**emblemHash** | **Long** | The hash of the currently equipped emblem for the user. Can be used to look up the DestinyInventoryItemDefinition. |  [optional]
 **emblemColor** | **Object** | A shortcut for getting the background color of the user&#39;s currently equipped emblem without having to do a DestinyInventoryItemDefinition lookup. |  [optional]
 **levelProgression** | **Object** | The progression that indicates your character&#39;s level. Not their light level, but their character level: you know, the thing you max out a couple hours in and then ignore for the sake of light level. |  [optional]
 **baseCharacterLevel** | **Integer** | The \&quot;base\&quot; level of your character, not accounting for any light level. |  [optional]
 **percentToNextLevel** | **Float** | A number between 0 and 100, indicating the whole and fractional % remaining to get to the next character level. |  [optional]
-**titleRecordHash** | **Integer** | If this Character has a title assigned to it, this is the identifier of the DestinyRecordDefinition that has that title information. |  [optional]
+**titleRecordHash** | **Long** | If this Character has a title assigned to it, this is the identifier of the DestinyRecordDefinition that has that title information. |  [optional]
 
 
 

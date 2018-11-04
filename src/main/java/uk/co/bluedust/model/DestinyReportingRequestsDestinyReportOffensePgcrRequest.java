@@ -26,23 +26,23 @@ import java.util.List;
  * If you want to report a player causing trouble in a game, this request will let you report that player and the specific PGCR in which the trouble was caused, along with why.  Please don&#39;t do this just because you dislike the person! I mean, I know people will do it anyways, but can you like take a good walk, or put a curse on them or something? Do me a solid and reconsider.  Note that this request object doesn&#39;t have the actual PGCR ID nor your Account/Character ID in it. We will infer that information from your authentication information and the PGCR ID that you pass into the URL of the reporting endpoint itself.
  */
 @ApiModel(description = "If you want to report a player causing trouble in a game, this request will let you report that player and the specific PGCR in which the trouble was caused, along with why.  Please don't do this just because you dislike the person! I mean, I know people will do it anyways, but can you like take a good walk, or put a curse on them or something? Do me a solid and reconsider.  Note that this request object doesn't have the actual PGCR ID nor your Account/Character ID in it. We will infer that information from your authentication information and the PGCR ID that you pass into the URL of the reporting endpoint itself.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyReportingRequestsDestinyReportOffensePgcrRequest {
   @JsonProperty("reasonCategoryHashes")
-  private List<Integer> reasonCategoryHashes = null;
+  private List<Long> reasonCategoryHashes = null;
 
   @JsonProperty("reasonHashes")
-  private List<Integer> reasonHashes = null;
+  private List<Long> reasonHashes = null;
 
   @JsonProperty("offendingCharacterId")
   private Long offendingCharacterId = null;
 
-  public DestinyReportingRequestsDestinyReportOffensePgcrRequest reasonCategoryHashes(List<Integer> reasonCategoryHashes) {
+  public DestinyReportingRequestsDestinyReportOffensePgcrRequest reasonCategoryHashes(List<Long> reasonCategoryHashes) {
     this.reasonCategoryHashes = reasonCategoryHashes;
     return this;
   }
 
-  public DestinyReportingRequestsDestinyReportOffensePgcrRequest addReasonCategoryHashesItem(Integer reasonCategoryHashesItem) {
+  public DestinyReportingRequestsDestinyReportOffensePgcrRequest addReasonCategoryHashesItem(Long reasonCategoryHashesItem) {
     if (this.reasonCategoryHashes == null) {
       this.reasonCategoryHashes = new ArrayList<>();
     }
@@ -55,20 +55,20 @@ public class DestinyReportingRequestsDestinyReportOffensePgcrRequest {
    * @return reasonCategoryHashes
   **/
   @ApiModelProperty(value = "So you've decided to report someone instead of cursing them and their descendants. Well, okay then. This is the category or categorie(s) of infractions for which you are reporting the user. These are hash identifiers that map to DestinyReportReasonCategoryDefinition entries.")
-  public List<Integer> getReasonCategoryHashes() {
+  public List<Long> getReasonCategoryHashes() {
     return reasonCategoryHashes;
   }
 
-  public void setReasonCategoryHashes(List<Integer> reasonCategoryHashes) {
+  public void setReasonCategoryHashes(List<Long> reasonCategoryHashes) {
     this.reasonCategoryHashes = reasonCategoryHashes;
   }
 
-  public DestinyReportingRequestsDestinyReportOffensePgcrRequest reasonHashes(List<Integer> reasonHashes) {
+  public DestinyReportingRequestsDestinyReportOffensePgcrRequest reasonHashes(List<Long> reasonHashes) {
     this.reasonHashes = reasonHashes;
     return this;
   }
 
-  public DestinyReportingRequestsDestinyReportOffensePgcrRequest addReasonHashesItem(Integer reasonHashesItem) {
+  public DestinyReportingRequestsDestinyReportOffensePgcrRequest addReasonHashesItem(Long reasonHashesItem) {
     if (this.reasonHashes == null) {
       this.reasonHashes = new ArrayList<>();
     }
@@ -81,11 +81,11 @@ public class DestinyReportingRequestsDestinyReportOffensePgcrRequest {
    * @return reasonHashes
   **/
   @ApiModelProperty(value = "If applicable, provide a more specific reason(s) within the general category of problems provided by the reasonHash. This is also an identifier for a reason. All reasonHashes provided must be children of at least one the reasonCategoryHashes provided.")
-  public List<Integer> getReasonHashes() {
+  public List<Long> getReasonHashes() {
     return reasonHashes;
   }
 
-  public void setReasonHashes(List<Integer> reasonHashes) {
+  public void setReasonHashes(List<Long> reasonHashes) {
     this.reasonHashes = reasonHashes;
   }
 

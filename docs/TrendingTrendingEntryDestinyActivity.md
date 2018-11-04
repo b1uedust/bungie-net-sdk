@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activityHash** | **Integer** |  |  [optional]
+**activityHash** | **Long** |  |  [optional]
 **status** | [**DestinyActivitiesDestinyPublicActivityStatus**](DestinyActivitiesDestinyPublicActivityStatus.md) |  |  [optional]
 
 

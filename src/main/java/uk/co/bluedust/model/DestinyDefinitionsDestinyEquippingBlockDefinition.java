@@ -26,19 +26,19 @@ import java.util.List;
  * Items that can be equipped define this block. It contains information we need to understand how and when the item can be equipped.
  */
 @ApiModel(description = "Items that can be equipped define this block. It contains information we need to understand how and when the item can be equipped.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyEquippingBlockDefinition {
   @JsonProperty("gearsetItemHash")
-  private Integer gearsetItemHash = null;
+  private Long gearsetItemHash = null;
 
   @JsonProperty("uniqueLabel")
   private String uniqueLabel = null;
 
   @JsonProperty("uniqueLabelHash")
-  private Integer uniqueLabelHash = null;
+  private Long uniqueLabelHash = null;
 
   @JsonProperty("equipmentSlotTypeHash")
-  private Integer equipmentSlotTypeHash = null;
+  private Long equipmentSlotTypeHash = null;
 
   @JsonProperty("attributes")
   private Object attributes = null;
@@ -49,7 +49,7 @@ public class DestinyDefinitionsDestinyEquippingBlockDefinition {
   @JsonProperty("displayStrings")
   private List<String> displayStrings = null;
 
-  public DestinyDefinitionsDestinyEquippingBlockDefinition gearsetItemHash(Integer gearsetItemHash) {
+  public DestinyDefinitionsDestinyEquippingBlockDefinition gearsetItemHash(Long gearsetItemHash) {
     this.gearsetItemHash = gearsetItemHash;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyDefinitionsDestinyEquippingBlockDefinition {
    * @return gearsetItemHash
   **/
   @ApiModelProperty(value = "If the item is part of a gearset, this is a reference to that gearset item.")
-  public Integer getGearsetItemHash() {
+  public Long getGearsetItemHash() {
     return gearsetItemHash;
   }
 
-  public void setGearsetItemHash(Integer gearsetItemHash) {
+  public void setGearsetItemHash(Long gearsetItemHash) {
     this.gearsetItemHash = gearsetItemHash;
   }
 
@@ -85,7 +85,7 @@ public class DestinyDefinitionsDestinyEquippingBlockDefinition {
     this.uniqueLabel = uniqueLabel;
   }
 
-  public DestinyDefinitionsDestinyEquippingBlockDefinition uniqueLabelHash(Integer uniqueLabelHash) {
+  public DestinyDefinitionsDestinyEquippingBlockDefinition uniqueLabelHash(Long uniqueLabelHash) {
     this.uniqueLabelHash = uniqueLabelHash;
     return this;
   }
@@ -95,15 +95,15 @@ public class DestinyDefinitionsDestinyEquippingBlockDefinition {
    * @return uniqueLabelHash
   **/
   @ApiModelProperty(value = "The hash of that unique label. Does not point to a specific definition.")
-  public Integer getUniqueLabelHash() {
+  public Long getUniqueLabelHash() {
     return uniqueLabelHash;
   }
 
-  public void setUniqueLabelHash(Integer uniqueLabelHash) {
+  public void setUniqueLabelHash(Long uniqueLabelHash) {
     this.uniqueLabelHash = uniqueLabelHash;
   }
 
-  public DestinyDefinitionsDestinyEquippingBlockDefinition equipmentSlotTypeHash(Integer equipmentSlotTypeHash) {
+  public DestinyDefinitionsDestinyEquippingBlockDefinition equipmentSlotTypeHash(Long equipmentSlotTypeHash) {
     this.equipmentSlotTypeHash = equipmentSlotTypeHash;
     return this;
   }
@@ -113,11 +113,11 @@ public class DestinyDefinitionsDestinyEquippingBlockDefinition {
    * @return equipmentSlotTypeHash
   **/
   @ApiModelProperty(value = "An equipped item *must* be equipped in an Equipment Slot. This is the hash identifier of the DestinyEquipmentSlotDefinition into which it must be equipped.")
-  public Integer getEquipmentSlotTypeHash() {
+  public Long getEquipmentSlotTypeHash() {
     return equipmentSlotTypeHash;
   }
 
-  public void setEquipmentSlotTypeHash(Integer equipmentSlotTypeHash) {
+  public void setEquipmentSlotTypeHash(Long equipmentSlotTypeHash) {
     this.equipmentSlotTypeHash = equipmentSlotTypeHash;
   }
 

@@ -25,7 +25,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 @Component("uk.co.bluedust.api.CommunityContentApi")
 public class CommunityContentApi {
     private ApiClient apiClient;
@@ -108,7 +108,7 @@ public class CommunityContentApi {
      * @return InlineResponse20060
      * @throws RestClientException if an error occurs while attempting to invoke the API
      */
-    public InlineResponse20060 communityContentGetCommunityLiveStatuses(Integer page, Integer partnershipType, Integer sort, Integer modeHash, String streamLocale) throws RestClientException {
+    public InlineResponse20060 communityContentGetCommunityLiveStatuses(Integer page, Integer partnershipType, Integer sort, Long modeHash, String streamLocale) throws RestClientException {
         Object postBody = null;
         
         // verify the required parameter 'page' is set

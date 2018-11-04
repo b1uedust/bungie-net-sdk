@@ -23,24 +23,24 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyConstantsDestinyEnvironmentLocationMapping
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyConstantsDestinyEnvironmentLocationMapping {
   @JsonProperty("locationHash")
-  private Integer locationHash = null;
+  private Long locationHash = null;
 
   @JsonProperty("activationSource")
   private String activationSource = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("objectiveHash")
-  private Integer objectiveHash = null;
+  private Long objectiveHash = null;
 
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
-  public DestinyConstantsDestinyEnvironmentLocationMapping locationHash(Integer locationHash) {
+  public DestinyConstantsDestinyEnvironmentLocationMapping locationHash(Long locationHash) {
     this.locationHash = locationHash;
     return this;
   }
@@ -50,11 +50,11 @@ public class DestinyConstantsDestinyEnvironmentLocationMapping {
    * @return locationHash
   **/
   @ApiModelProperty(value = "The location that is revealed on the director by this mapping.")
-  public Integer getLocationHash() {
+  public Long getLocationHash() {
     return locationHash;
   }
 
-  public void setLocationHash(Integer locationHash) {
+  public void setLocationHash(Long locationHash) {
     this.locationHash = locationHash;
   }
 
@@ -76,7 +76,7 @@ public class DestinyConstantsDestinyEnvironmentLocationMapping {
     this.activationSource = activationSource;
   }
 
-  public DestinyConstantsDestinyEnvironmentLocationMapping itemHash(Integer itemHash) {
+  public DestinyConstantsDestinyEnvironmentLocationMapping itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -86,15 +86,15 @@ public class DestinyConstantsDestinyEnvironmentLocationMapping {
    * @return itemHash
   **/
   @ApiModelProperty(value = "If this is populated, it is the item that you must possess for this location to be active because of this mapping. (theoretically, a location can have multiple mappings, and some might require an item while others don't)")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 
-  public DestinyConstantsDestinyEnvironmentLocationMapping objectiveHash(Integer objectiveHash) {
+  public DestinyConstantsDestinyEnvironmentLocationMapping objectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
     return this;
   }
@@ -104,15 +104,15 @@ public class DestinyConstantsDestinyEnvironmentLocationMapping {
    * @return objectiveHash
   **/
   @ApiModelProperty(value = "If this is populated, this is an objective related to the location.")
-  public Integer getObjectiveHash() {
+  public Long getObjectiveHash() {
     return objectiveHash;
   }
 
-  public void setObjectiveHash(Integer objectiveHash) {
+  public void setObjectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
   }
 
-  public DestinyConstantsDestinyEnvironmentLocationMapping activityHash(Integer activityHash) {
+  public DestinyConstantsDestinyEnvironmentLocationMapping activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -122,11 +122,11 @@ public class DestinyConstantsDestinyEnvironmentLocationMapping {
    * @return activityHash
   **/
   @ApiModelProperty(value = "If this is populated, this is the activity you have to be playing in order to see this location appear because of this mapping. (theoretically, a location can have multiple mappings, and some might require you to be in a specific activity when others don't)")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

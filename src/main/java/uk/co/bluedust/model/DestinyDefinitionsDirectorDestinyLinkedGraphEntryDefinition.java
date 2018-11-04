@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsDirectorDestinyLinkedGraphEntryDefinition
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyLinkedGraphEntryDefinition {
   @JsonProperty("activityGraphHash")
-  private Integer activityGraphHash = null;
+  private Long activityGraphHash = null;
 
-  public DestinyDefinitionsDirectorDestinyLinkedGraphEntryDefinition activityGraphHash(Integer activityGraphHash) {
+  public DestinyDefinitionsDirectorDestinyLinkedGraphEntryDefinition activityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsDirectorDestinyLinkedGraphEntryDefinition {
    * @return activityGraphHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityGraphHash() {
+  public Long getActivityGraphHash() {
     return activityGraphHash;
   }
 
-  public void setActivityGraphHash(Integer activityGraphHash) {
+  public void setActivityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
   }
 

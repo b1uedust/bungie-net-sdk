@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * The character-specific data for a milestone&#39;s reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.
  */
 @ApiModel(description = "The character-specific data for a milestone's reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestoneRewardEntry {
   @JsonProperty("rewardEntryHash")
-  private Integer rewardEntryHash = null;
+  private Long rewardEntryHash = null;
 
   @JsonProperty("earned")
   private Boolean earned = null;
@@ -35,7 +35,7 @@ public class DestinyMilestonesDestinyMilestoneRewardEntry {
   @JsonProperty("redeemed")
   private Boolean redeemed = null;
 
-  public DestinyMilestonesDestinyMilestoneRewardEntry rewardEntryHash(Integer rewardEntryHash) {
+  public DestinyMilestonesDestinyMilestoneRewardEntry rewardEntryHash(Long rewardEntryHash) {
     this.rewardEntryHash = rewardEntryHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyMilestonesDestinyMilestoneRewardEntry {
    * @return rewardEntryHash
   **/
   @ApiModelProperty(value = "The identifier for the reward entry in question. It is important to look up the related DestinyMilestoneRewardEntryDefinition to get the static details about the reward, which you can do by looking up the milestone's DestinyMilestoneDefinition and examining the DestinyMilestoneDefinition.rewards[rewardCategoryHash].rewardEntries[rewardEntryHash] data.")
-  public Integer getRewardEntryHash() {
+  public Long getRewardEntryHash() {
     return rewardEntryHash;
   }
 
-  public void setRewardEntryHash(Integer rewardEntryHash) {
+  public void setRewardEntryHash(Long rewardEntryHash) {
     this.rewardEntryHash = rewardEntryHash;
   }
 

@@ -26,31 +26,31 @@ import java.util.List;
  * Raw data about the customization options chosen for a character&#39;s face and appearance.  You can look up the relevant class/race/gender combo in DestinyCharacterCustomizationOptionDefinition for the character, and then look up these values within the CustomizationOptions found to pull some data about their choices. Warning: not all of that data is meaningful. Some data has useful icons. Others have nothing, and are only meant for 3D rendering purposes (which we sadly do not expose yet)
  */
 @ApiModel(description = "Raw data about the customization options chosen for a character's face and appearance.  You can look up the relevant class/race/gender combo in DestinyCharacterCustomizationOptionDefinition for the character, and then look up these values within the CustomizationOptions found to pull some data about their choices. Warning: not all of that data is meaningful. Some data has useful icons. Others have nothing, and are only meant for 3D rendering purposes (which we sadly do not expose yet)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyCharacterDestinyCharacterCustomization {
   @JsonProperty("personality")
-  private Integer personality = null;
+  private Long personality = null;
 
   @JsonProperty("face")
-  private Integer face = null;
+  private Long face = null;
 
   @JsonProperty("skinColor")
-  private Integer skinColor = null;
+  private Long skinColor = null;
 
   @JsonProperty("lipColor")
-  private Integer lipColor = null;
+  private Long lipColor = null;
 
   @JsonProperty("eyeColor")
-  private Integer eyeColor = null;
+  private Long eyeColor = null;
 
   @JsonProperty("hairColors")
-  private List<Integer> hairColors = null;
+  private List<Long> hairColors = null;
 
   @JsonProperty("featureColors")
-  private List<Integer> featureColors = null;
+  private List<Long> featureColors = null;
 
   @JsonProperty("decalColor")
-  private Integer decalColor = null;
+  private Long decalColor = null;
 
   @JsonProperty("wearHelmet")
   private Boolean wearHelmet = null;
@@ -64,7 +64,7 @@ public class DestinyCharacterDestinyCharacterCustomization {
   @JsonProperty("decalIndex")
   private Integer decalIndex = null;
 
-  public DestinyCharacterDestinyCharacterCustomization personality(Integer personality) {
+  public DestinyCharacterDestinyCharacterCustomization personality(Long personality) {
     this.personality = personality;
     return this;
   }
@@ -74,15 +74,15 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return personality
   **/
   @ApiModelProperty(value = "")
-  public Integer getPersonality() {
+  public Long getPersonality() {
     return personality;
   }
 
-  public void setPersonality(Integer personality) {
+  public void setPersonality(Long personality) {
     this.personality = personality;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization face(Integer face) {
+  public DestinyCharacterDestinyCharacterCustomization face(Long face) {
     this.face = face;
     return this;
   }
@@ -92,15 +92,15 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return face
   **/
   @ApiModelProperty(value = "")
-  public Integer getFace() {
+  public Long getFace() {
     return face;
   }
 
-  public void setFace(Integer face) {
+  public void setFace(Long face) {
     this.face = face;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization skinColor(Integer skinColor) {
+  public DestinyCharacterDestinyCharacterCustomization skinColor(Long skinColor) {
     this.skinColor = skinColor;
     return this;
   }
@@ -110,15 +110,15 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return skinColor
   **/
   @ApiModelProperty(value = "")
-  public Integer getSkinColor() {
+  public Long getSkinColor() {
     return skinColor;
   }
 
-  public void setSkinColor(Integer skinColor) {
+  public void setSkinColor(Long skinColor) {
     this.skinColor = skinColor;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization lipColor(Integer lipColor) {
+  public DestinyCharacterDestinyCharacterCustomization lipColor(Long lipColor) {
     this.lipColor = lipColor;
     return this;
   }
@@ -128,15 +128,15 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return lipColor
   **/
   @ApiModelProperty(value = "")
-  public Integer getLipColor() {
+  public Long getLipColor() {
     return lipColor;
   }
 
-  public void setLipColor(Integer lipColor) {
+  public void setLipColor(Long lipColor) {
     this.lipColor = lipColor;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization eyeColor(Integer eyeColor) {
+  public DestinyCharacterDestinyCharacterCustomization eyeColor(Long eyeColor) {
     this.eyeColor = eyeColor;
     return this;
   }
@@ -146,20 +146,20 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return eyeColor
   **/
   @ApiModelProperty(value = "")
-  public Integer getEyeColor() {
+  public Long getEyeColor() {
     return eyeColor;
   }
 
-  public void setEyeColor(Integer eyeColor) {
+  public void setEyeColor(Long eyeColor) {
     this.eyeColor = eyeColor;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization hairColors(List<Integer> hairColors) {
+  public DestinyCharacterDestinyCharacterCustomization hairColors(List<Long> hairColors) {
     this.hairColors = hairColors;
     return this;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization addHairColorsItem(Integer hairColorsItem) {
+  public DestinyCharacterDestinyCharacterCustomization addHairColorsItem(Long hairColorsItem) {
     if (this.hairColors == null) {
       this.hairColors = new ArrayList<>();
     }
@@ -172,20 +172,20 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return hairColors
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getHairColors() {
+  public List<Long> getHairColors() {
     return hairColors;
   }
 
-  public void setHairColors(List<Integer> hairColors) {
+  public void setHairColors(List<Long> hairColors) {
     this.hairColors = hairColors;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization featureColors(List<Integer> featureColors) {
+  public DestinyCharacterDestinyCharacterCustomization featureColors(List<Long> featureColors) {
     this.featureColors = featureColors;
     return this;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization addFeatureColorsItem(Integer featureColorsItem) {
+  public DestinyCharacterDestinyCharacterCustomization addFeatureColorsItem(Long featureColorsItem) {
     if (this.featureColors == null) {
       this.featureColors = new ArrayList<>();
     }
@@ -198,15 +198,15 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return featureColors
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getFeatureColors() {
+  public List<Long> getFeatureColors() {
     return featureColors;
   }
 
-  public void setFeatureColors(List<Integer> featureColors) {
+  public void setFeatureColors(List<Long> featureColors) {
     this.featureColors = featureColors;
   }
 
-  public DestinyCharacterDestinyCharacterCustomization decalColor(Integer decalColor) {
+  public DestinyCharacterDestinyCharacterCustomization decalColor(Long decalColor) {
     this.decalColor = decalColor;
     return this;
   }
@@ -216,11 +216,11 @@ public class DestinyCharacterDestinyCharacterCustomization {
    * @return decalColor
   **/
   @ApiModelProperty(value = "")
-  public Integer getDecalColor() {
+  public Long getDecalColor() {
     return decalColor;
   }
 
-  public void setDecalColor(Integer decalColor) {
+  public void setDecalColor(Long decalColor) {
     this.decalColor = decalColor;
   }
 

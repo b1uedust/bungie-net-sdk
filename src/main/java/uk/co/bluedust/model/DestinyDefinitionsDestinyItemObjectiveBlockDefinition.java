@@ -27,19 +27,19 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyObjectiveDisplayProperties;
  * An item can have objectives on it. In practice, these are the exclusive purview of \&quot;Quest Step\&quot; items: DestinyInventoryItemDefinitions that represent a specific step in a Quest.  Quest steps have 1:M objectives that we end up processing and returning in live data as DestinyQuestStatus data, and other useful information.
  */
 @ApiModel(description = "An item can have objectives on it. In practice, these are the exclusive purview of \"Quest Step\" items: DestinyInventoryItemDefinitions that represent a specific step in a Quest.  Quest steps have 1:M objectives that we end up processing and returning in live data as DestinyQuestStatus data, and other useful information.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
   @JsonProperty("objectiveHashes")
-  private List<Integer> objectiveHashes = null;
+  private List<Long> objectiveHashes = null;
 
   @JsonProperty("displayActivityHashes")
-  private List<Integer> displayActivityHashes = null;
+  private List<Long> displayActivityHashes = null;
 
   @JsonProperty("requireFullObjectiveCompletion")
   private Boolean requireFullObjectiveCompletion = null;
 
   @JsonProperty("questlineItemHash")
-  private Integer questlineItemHash = null;
+  private Long questlineItemHash = null;
 
   @JsonProperty("narrative")
   private String narrative = null;
@@ -51,17 +51,17 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
   private String questTypeIdentifier = null;
 
   @JsonProperty("questTypeHash")
-  private Integer questTypeHash = null;
+  private Long questTypeHash = null;
 
   @JsonProperty("perObjectiveDisplayProperties")
   private List<DestinyDefinitionsDestinyObjectiveDisplayProperties> perObjectiveDisplayProperties = null;
 
-  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition objectiveHashes(List<Integer> objectiveHashes) {
+  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition objectiveHashes(List<Long> objectiveHashes) {
     this.objectiveHashes = objectiveHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition addObjectiveHashesItem(Integer objectiveHashesItem) {
+  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition addObjectiveHashesItem(Long objectiveHashesItem) {
     if (this.objectiveHashes == null) {
       this.objectiveHashes = new ArrayList<>();
     }
@@ -74,20 +74,20 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
    * @return objectiveHashes
   **/
   @ApiModelProperty(value = "The hashes to Objectives (DestinyObjectiveDefinition) that are part of this Quest Step, in the order that they should be rendered.")
-  public List<Integer> getObjectiveHashes() {
+  public List<Long> getObjectiveHashes() {
     return objectiveHashes;
   }
 
-  public void setObjectiveHashes(List<Integer> objectiveHashes) {
+  public void setObjectiveHashes(List<Long> objectiveHashes) {
     this.objectiveHashes = objectiveHashes;
   }
 
-  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition displayActivityHashes(List<Integer> displayActivityHashes) {
+  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition displayActivityHashes(List<Long> displayActivityHashes) {
     this.displayActivityHashes = displayActivityHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition addDisplayActivityHashesItem(Integer displayActivityHashesItem) {
+  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition addDisplayActivityHashesItem(Long displayActivityHashesItem) {
     if (this.displayActivityHashes == null) {
       this.displayActivityHashes = new ArrayList<>();
     }
@@ -100,11 +100,11 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
    * @return displayActivityHashes
   **/
   @ApiModelProperty(value = "For every entry in objectiveHashes, there is a corresponding entry in this array at the same index. If the objective is meant to be associated with a specific DestinyActivityDefinition, there will be a valid hash at that index. Otherwise, it will be invalid (0).  Rendered somewhat obsolete by perObjectiveDisplayProperties, which currently has much the same information but may end up with more info in the future.")
-  public List<Integer> getDisplayActivityHashes() {
+  public List<Long> getDisplayActivityHashes() {
     return displayActivityHashes;
   }
 
-  public void setDisplayActivityHashes(List<Integer> displayActivityHashes) {
+  public void setDisplayActivityHashes(List<Long> displayActivityHashes) {
     this.displayActivityHashes = displayActivityHashes;
   }
 
@@ -126,7 +126,7 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
     this.requireFullObjectiveCompletion = requireFullObjectiveCompletion;
   }
 
-  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition questlineItemHash(Integer questlineItemHash) {
+  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition questlineItemHash(Long questlineItemHash) {
     this.questlineItemHash = questlineItemHash;
     return this;
   }
@@ -136,11 +136,11 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
    * @return questlineItemHash
   **/
   @ApiModelProperty(value = "The hash for the DestinyInventoryItemDefinition representing the Quest to which this Quest Step belongs.")
-  public Integer getQuestlineItemHash() {
+  public Long getQuestlineItemHash() {
     return questlineItemHash;
   }
 
-  public void setQuestlineItemHash(Integer questlineItemHash) {
+  public void setQuestlineItemHash(Long questlineItemHash) {
     this.questlineItemHash = questlineItemHash;
   }
 
@@ -198,7 +198,7 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
     this.questTypeIdentifier = questTypeIdentifier;
   }
 
-  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition questTypeHash(Integer questTypeHash) {
+  public DestinyDefinitionsDestinyItemObjectiveBlockDefinition questTypeHash(Long questTypeHash) {
     this.questTypeHash = questTypeHash;
     return this;
   }
@@ -208,11 +208,11 @@ public class DestinyDefinitionsDestinyItemObjectiveBlockDefinition {
    * @return questTypeHash
   **/
   @ApiModelProperty(value = "A hashed value for the questTypeIdentifier, because apparently I like to be redundant.")
-  public Integer getQuestTypeHash() {
+  public Long getQuestTypeHash() {
     return questTypeHash;
   }
 
-  public void setQuestTypeHash(Integer questTypeHash) {
+  public void setQuestTypeHash(Long questTypeHash) {
     this.questTypeHash = questTypeHash;
   }
 

@@ -4,10 +4,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**collectionRootNode** | **Integer** |  |  [optional]
-**badgesRootNode** | **Integer** |  |  [optional]
-**recordsRootNode** | **Integer** |  |  [optional]
-**medalsRootNode** | **Integer** |  |  [optional]
+**collectionRootNode** | **Long** |  |  [optional]
+**badgesRootNode** | **Long** |  |  [optional]
+**recordsRootNode** | **Long** |  |  [optional]
+**medalsRootNode** | **Long** |  |  [optional]
 **undiscoveredCollectibleImage** | **String** |  |  [optional]
 **ammoTypeHeavyIcon** | **String** |  |  [optional]
 **ammoTypeSpecialIcon** | **String** |  |  [optional]

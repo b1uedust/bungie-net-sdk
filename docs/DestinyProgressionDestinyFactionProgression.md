@@ -4,9 +4,9 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**factionHash** | **Integer** | The hash identifier of the Faction related to this progression. Use it to look up the DestinyFactionDefinition for more rendering info. |  [optional]
+**factionHash** | **Long** | The hash identifier of the Faction related to this progression. Use it to look up the DestinyFactionDefinition for more rendering info. |  [optional]
 **factionVendorIndex** | **Integer** | The index of the Faction vendor that is currently available. Will be set to -1 if no vendors are available. |  [optional]
-**progressionHash** | **Integer** | The hash identifier of the Progression in question. Use it to look up the DestinyProgressionDefinition in static data. |  [optional]
+**progressionHash** | **Long** | The hash identifier of the Progression in question. Use it to look up the DestinyProgressionDefinition in static data. |  [optional]
 **dailyProgress** | **Integer** | The amount of progress earned today for this progression. |  [optional]
 **dailyLimit** | **Integer** | If this progression has a daily limit, this is that limit. |  [optional]
 **weeklyProgress** | **Integer** | The amount of progress earned toward this progression in the current week. |  [optional]

@@ -28,10 +28,10 @@ import uk.co.bluedust.model.DestinyDefinitionsMilestonesDestinyMilestoneActivity
  * Any data we need to figure out whether this Quest Item is the currently active one for the conceptual Milestone. Even just typing this description, I already regret it.
  */
 @ApiModel(description = "Any data we need to figure out whether this Quest Item is the currently active one for the conceptual Milestone. Even just typing this description, I already regret it.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition {
   @JsonProperty("questItemHash")
-  private Integer questItemHash = null;
+  private Long questItemHash = null;
 
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -46,9 +46,9 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition {
   private Map<String, DestinyDefinitionsMilestonesDestinyMilestoneActivityDefinition> activities = null;
 
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition questItemHash(Integer questItemHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition questItemHash(Long questItemHash) {
     this.questItemHash = questItemHash;
     return this;
   }
@@ -58,11 +58,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition {
    * @return questItemHash
   **/
   @ApiModelProperty(value = "The item representing this Milestone quest. Use this hash to look up the DestinyInventoryItemDefinition for the quest to find its steps and human readable data.")
-  public Integer getQuestItemHash() {
+  public Long getQuestItemHash() {
     return questItemHash;
   }
 
-  public void setQuestItemHash(Integer questItemHash) {
+  public void setQuestItemHash(Long questItemHash) {
     this.questItemHash = questItemHash;
   }
 
@@ -146,7 +146,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition {
     this.activities = activities;
   }
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition destinationHash(Integer destinationHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -156,11 +156,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "Sometimes, a Milestone's quest is related to an entire Destination rather than a specific activity. In that situation, this will be the hash of that Destination. Hotspots are currently the only Milestones that expose this data, but that does not preclude this data from being returned for other Milestones in the future.")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 

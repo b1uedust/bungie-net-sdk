@@ -27,15 +27,15 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * Represents a reference to a Challenge, which for now is just an Objective.
  */
 @ApiModel(description = "Represents a reference to a Challenge, which for now is just an Objective.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityChallengeDefinition {
   @JsonProperty("objectiveHash")
-  private Integer objectiveHash = null;
+  private Long objectiveHash = null;
 
   @JsonProperty("dummyRewards")
   private List<DestinyDestinyItemQuantity> dummyRewards = null;
 
-  public DestinyDefinitionsDestinyActivityChallengeDefinition objectiveHash(Integer objectiveHash) {
+  public DestinyDefinitionsDestinyActivityChallengeDefinition objectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDefinitionsDestinyActivityChallengeDefinition {
    * @return objectiveHash
   **/
   @ApiModelProperty(value = "The hash for the Objective that matches this challenge. Use it to look up the DestinyObjectiveDefinition.")
-  public Integer getObjectiveHash() {
+  public Long getObjectiveHash() {
     return objectiveHash;
   }
 
-  public void setObjectiveHash(Integer objectiveHash) {
+  public void setObjectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
   }
 

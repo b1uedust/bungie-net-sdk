@@ -26,15 +26,15 @@ import java.util.List;
  * Sockets are grouped into categories in the UI. These define which category and which sockets are under that category.
  */
 @ApiModel(description = "Sockets are grouped into categories in the UI. These define which category and which sockets are under that category.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSocketCategoryDefinition {
   @JsonProperty("socketCategoryHash")
-  private Integer socketCategoryHash = null;
+  private Long socketCategoryHash = null;
 
   @JsonProperty("socketIndexes")
   private List<Integer> socketIndexes = null;
 
-  public DestinyDefinitionsDestinyItemSocketCategoryDefinition socketCategoryHash(Integer socketCategoryHash) {
+  public DestinyDefinitionsDestinyItemSocketCategoryDefinition socketCategoryHash(Long socketCategoryHash) {
     this.socketCategoryHash = socketCategoryHash;
     return this;
   }
@@ -44,11 +44,11 @@ public class DestinyDefinitionsDestinyItemSocketCategoryDefinition {
    * @return socketCategoryHash
   **/
   @ApiModelProperty(value = "The hash for the Socket Category: a quick way to go get the header display information for the category. Use it to look up DestinySocketCategoryDefinition info.")
-  public Integer getSocketCategoryHash() {
+  public Long getSocketCategoryHash() {
     return socketCategoryHash;
   }
 
-  public void setSocketCategoryHash(Integer socketCategoryHash) {
+  public void setSocketCategoryHash(Long socketCategoryHash) {
     this.socketCategoryHash = socketCategoryHash;
   }
 

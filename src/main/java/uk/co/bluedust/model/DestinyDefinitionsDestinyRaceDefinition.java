@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * In Destiny, \&quot;Races\&quot; are really more like \&quot;Species\&quot;. Sort of. I mean, are the Awoken a separate species from humans? I&#39;m not sure. But either way, they&#39;re defined here. You&#39;ll see Exo, Awoken, and Human as examples of these Species. Players will choose one for their character.
  */
 @ApiModel(description = "In Destiny, \"Races\" are really more like \"Species\". Sort of. I mean, are the Awoken a separate species from humans? I'm not sure. But either way, they're defined here. You'll see Exo, Awoken, and Human as examples of these Species. Players will choose one for their character.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyRaceDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -40,7 +40,7 @@ public class DestinyDefinitionsDestinyRaceDefinition {
   private Map<String, String> genderedRaceNames = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -110,7 +110,7 @@ public class DestinyDefinitionsDestinyRaceDefinition {
     this.genderedRaceNames = genderedRaceNames;
   }
 
-  public DestinyDefinitionsDestinyRaceDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyRaceDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -120,11 +120,11 @@ public class DestinyDefinitionsDestinyRaceDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

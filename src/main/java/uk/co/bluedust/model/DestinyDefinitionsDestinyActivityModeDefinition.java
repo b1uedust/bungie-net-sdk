@@ -30,7 +30,7 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * This definition represents an \&quot;Activity Mode\&quot; as it exists in the Historical Stats endpoints. An individual Activity Mode represents a collection of activities that are played in a certain way. For example, Nightfall Strikes are part of a \&quot;Nightfall\&quot; activity mode, and any activities played as the PVP mode \&quot;Clash\&quot; are part of the \&quot;Clash activity mode.  Activity modes are nested under each other in a hierarchy, so that if you ask for - for example - \&quot;AllPvP\&quot;, you will get any PVP activities that the user has played, regardless of what specific PVP mode was being played.
  */
 @ApiModel(description = "This definition represents an \"Activity Mode\" as it exists in the Historical Stats endpoints. An individual Activity Mode represents a collection of activities that are played in a certain way. For example, Nightfall Strikes are part of a \"Nightfall\" activity mode, and any activities played as the PVP mode \"Clash\" are part of the \"Clash activity mode.  Activity modes are nested under each other in a hierarchy, so that if you ask for - for example - \"AllPvP\", you will get any PVP activities that the user has played, regardless of what specific PVP mode was being played.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityModeDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -51,7 +51,7 @@ public class DestinyDefinitionsDestinyActivityModeDefinition {
   private Boolean isAggregateMode = null;
 
   @JsonProperty("parentHashes")
-  private List<Integer> parentHashes = null;
+  private List<Long> parentHashes = null;
 
   @JsonProperty("friendlyName")
   private String friendlyName = null;
@@ -66,7 +66,7 @@ public class DestinyDefinitionsDestinyActivityModeDefinition {
   private Integer order = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -182,12 +182,12 @@ public class DestinyDefinitionsDestinyActivityModeDefinition {
     this.isAggregateMode = isAggregateMode;
   }
 
-  public DestinyDefinitionsDestinyActivityModeDefinition parentHashes(List<Integer> parentHashes) {
+  public DestinyDefinitionsDestinyActivityModeDefinition parentHashes(List<Long> parentHashes) {
     this.parentHashes = parentHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyActivityModeDefinition addParentHashesItem(Integer parentHashesItem) {
+  public DestinyDefinitionsDestinyActivityModeDefinition addParentHashesItem(Long parentHashesItem) {
     if (this.parentHashes == null) {
       this.parentHashes = new ArrayList<>();
     }
@@ -200,11 +200,11 @@ public class DestinyDefinitionsDestinyActivityModeDefinition {
    * @return parentHashes
   **/
   @ApiModelProperty(value = "The hash identifiers of the DestinyActivityModeDefinitions that represent all of the \"parent\" modes for this mode. For instance, the Nightfall Mode is also a member of AllStrikes and AllPvE.")
-  public List<Integer> getParentHashes() {
+  public List<Long> getParentHashes() {
     return parentHashes;
   }
 
-  public void setParentHashes(List<Integer> parentHashes) {
+  public void setParentHashes(List<Long> parentHashes) {
     this.parentHashes = parentHashes;
   }
 
@@ -288,7 +288,7 @@ public class DestinyDefinitionsDestinyActivityModeDefinition {
     this.order = order;
   }
 
-  public DestinyDefinitionsDestinyActivityModeDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyActivityModeDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -298,11 +298,11 @@ public class DestinyDefinitionsDestinyActivityModeDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

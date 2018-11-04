@@ -4,14 +4,14 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**personality** | **Integer** |  |  [optional]
-**face** | **Integer** |  |  [optional]
-**skinColor** | **Integer** |  |  [optional]
-**lipColor** | **Integer** |  |  [optional]
-**eyeColor** | **Integer** |  |  [optional]
-**hairColors** | **List&lt;Integer&gt;** |  |  [optional]
-**featureColors** | **List&lt;Integer&gt;** |  |  [optional]
-**decalColor** | **Integer** |  |  [optional]
+**personality** | **Long** |  |  [optional]
+**face** | **Long** |  |  [optional]
+**skinColor** | **Long** |  |  [optional]
+**lipColor** | **Long** |  |  [optional]
+**eyeColor** | **Long** |  |  [optional]
+**hairColors** | **List&lt;Long&gt;** |  |  [optional]
+**featureColors** | **List&lt;Long&gt;** |  |  [optional]
+**decalColor** | **Long** |  |  [optional]
 **wearHelmet** | **Boolean** |  |  [optional]
 **hairIndex** | **Integer** |  |  [optional]
 **featureIndex** | **Integer** |  |  [optional]

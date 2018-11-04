@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyEntitiesCharactersDestinyCharacterComponent;
 /**
  * DictionaryComponentResponseOfint64AndDestinyCharacterComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DictionaryComponentResponseOfint64AndDestinyCharacterComponent {
   @JsonProperty("data")
   private Map<String, DestinyEntitiesCharactersDestinyCharacterComponent> data = null;

@@ -32,7 +32,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyTalentNodeExclusiveSetDefin
  * The time has unfortunately come to talk about Talent Grids.  Talent Grids are the most complex and unintuitive part of the Destiny Definition data. Grab a cup of coffee before we begin, I can wait.  Talent Grids were the primary way that items could be customized in Destiny 1. In Destiny 2, for now, talent grids have become exclusively used by Subclass/Build items: but the system is still in place for it to be used by items should the direction change back toward talent grids.  Talent Grids have Nodes: the visual circles on the talent grid detail screen that have icons and can be activated if you meet certain requirements and pay costs. The actual visual data and effects, however, are driven by the \&quot;Steps\&quot; on Talent Nodes. Any given node will have 1:M of these steps, and the specific step that will be considered the \&quot;current\&quot; step (and thus the dictator of all benefits, visual state, and activation requirements on the Node) will almost always not be determined until an instance of the item is created. This is how, in Destiny 1, items were able to have such a wide variety of what users saw as \&quot;Perks\&quot;: they were actually Talent Grids with nodes that had a wide variety of Steps, randomly chosen at the time of item creation.  Now that Talent Grids are used exclusively by subclasses and builds, all of the properties within still apply: but there are additional visual elements on the Subclass/Build screens that are superimposed on top of the talent nodes. Unfortunately, BNet doesn&#39;t have this data: if you want to build a subclass screen, you will have to provide your own \&quot;decorative\&quot; assets, such as the visual connectors between nodes and the fancy colored-fire-bathed character standing behind the nodes.  DestinyInventoryItem.talentGrid.talentGridHash defines an item&#39;s linked Talent Grid, which brings you to this definition that contains enough satic data about talent grids to make your head spin. These *must* be combined with instanced data - found when live data returns DestinyItemTalentGridComponent - in order to derive meaning. The instanced data will reference nodes and steps within these definitions, which you will then have to look up in the definition and combine with the instanced data to give the user the visual representation of their item&#39;s talent grid.
  */
 @ApiModel(description = "The time has unfortunately come to talk about Talent Grids.  Talent Grids are the most complex and unintuitive part of the Destiny Definition data. Grab a cup of coffee before we begin, I can wait.  Talent Grids were the primary way that items could be customized in Destiny 1. In Destiny 2, for now, talent grids have become exclusively used by Subclass/Build items: but the system is still in place for it to be used by items should the direction change back toward talent grids.  Talent Grids have Nodes: the visual circles on the talent grid detail screen that have icons and can be activated if you meet certain requirements and pay costs. The actual visual data and effects, however, are driven by the \"Steps\" on Talent Nodes. Any given node will have 1:M of these steps, and the specific step that will be considered the \"current\" step (and thus the dictator of all benefits, visual state, and activation requirements on the Node) will almost always not be determined until an instance of the item is created. This is how, in Destiny 1, items were able to have such a wide variety of what users saw as \"Perks\": they were actually Talent Grids with nodes that had a wide variety of Steps, randomly chosen at the time of item creation.  Now that Talent Grids are used exclusively by subclasses and builds, all of the properties within still apply: but there are additional visual elements on the Subclass/Build screens that are superimposed on top of the talent nodes. Unfortunately, BNet doesn't have this data: if you want to build a subclass screen, you will have to provide your own \"decorative\" assets, such as the visual connectors between nodes and the fancy colored-fire-bathed character standing behind the nodes.  DestinyInventoryItem.talentGrid.talentGridHash defines an item's linked Talent Grid, which brings you to this definition that contains enough satic data about talent grids to make your head spin. These *must* be combined with instanced data - found when live data returns DestinyItemTalentGridComponent - in order to derive meaning. The instanced data will reference nodes and steps within these definitions, which you will then have to look up in the definition and combine with the instanced data to give the user the visual representation of their item's talent grid.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyTalentGridDefinition {
   @JsonProperty("maxGridLevel")
   private Integer maxGridLevel = null;
@@ -41,7 +41,7 @@ public class DestinyDefinitionsDestinyTalentGridDefinition {
   private Integer gridLevelPerColumn = null;
 
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
   @JsonProperty("nodes")
   private List<DestinyDefinitionsDestinyTalentNodeDefinition> nodes = null;
@@ -59,7 +59,7 @@ public class DestinyDefinitionsDestinyTalentGridDefinition {
   private List<DestinyDefinitionsDestinyTalentNodeCategory> nodeCategories = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -103,7 +103,7 @@ public class DestinyDefinitionsDestinyTalentGridDefinition {
     this.gridLevelPerColumn = gridLevelPerColumn;
   }
 
-  public DestinyDefinitionsDestinyTalentGridDefinition progressionHash(Integer progressionHash) {
+  public DestinyDefinitionsDestinyTalentGridDefinition progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -113,11 +113,11 @@ public class DestinyDefinitionsDestinyTalentGridDefinition {
    * @return progressionHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Progression (DestinyProgressionDefinition) that drives whether and when Talent Nodes can be activated on the Grid. Items will have instances of this Progression, and will gain experience that will eventually cause the grid to increase in level. As the grid's level increases, it will cross the threshold where nodes can be activated. See DestinyTalentGridStepDefinition's activation requirements for more information.")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 
@@ -251,7 +251,7 @@ public class DestinyDefinitionsDestinyTalentGridDefinition {
     this.nodeCategories = nodeCategories;
   }
 
-  public DestinyDefinitionsDestinyTalentGridDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyTalentGridDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -261,11 +261,11 @@ public class DestinyDefinitionsDestinyTalentGridDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

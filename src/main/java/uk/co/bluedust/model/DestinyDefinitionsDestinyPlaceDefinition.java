@@ -25,13 +25,13 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Okay, so Activities (DestinyActivityDefinition) take place in Destinations (DestinyDestinationDefinition). Destinations are part of larger locations known as Places (you&#39;re reading its documentation right now).  Places are more on the planetary scale, like \&quot;Earth\&quot; and \&quot;Your Mom.\&quot;
  */
 @ApiModel(description = "Okay, so Activities (DestinyActivityDefinition) take place in Destinations (DestinyDestinationDefinition). Destinations are part of larger locations known as Places (you're reading its documentation right now).  Places are more on the planetary scale, like \"Earth\" and \"Your Mom.\"")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyPlaceDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -57,7 +57,7 @@ public class DestinyDefinitionsDestinyPlaceDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyPlaceDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyPlaceDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -67,11 +67,11 @@ public class DestinyDefinitionsDestinyPlaceDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

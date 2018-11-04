@@ -25,7 +25,7 @@ import uk.co.bluedust.model.PartnershipsPartnershipType;
  * All the partnership info that&#39;s fit to expose externally, if we care to do so.
  */
 @ApiModel(description = "All the partnership info that's fit to expose externally, if we care to do so.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class PartnershipsPublicPartnershipDetail {
   @JsonProperty("partnerType")
   private PartnershipsPartnershipType partnerType = null;

@@ -642,7 +642,7 @@ apiKey.setApiKey("YOUR API KEY");
 
 Destiny2Api apiInstance = new Destiny2Api();
 Long characterId = 789L; // Long | The Destiny Character ID of the character for whom we're getting collectible detail info.
-Integer collectiblePresentationNodeHash = 56; // Integer | The hash identifier of the Presentation Node for whom we should return collectible details. Details will only be returned for collectibles that are direct descendants of this node.
+Long collectiblePresentationNodeHash = 789L; // Long | The hash identifier of the Presentation Node for whom we should return collectible details. Details will only be returned for collectibles that are direct descendants of this node.
 Long destinyMembershipId = 789L; // Long | Destiny membership ID of another user. You may be denied.
 Integer membershipType = 56; // Integer | A valid non-BungieNet membership type.
 List<DestinyDestinyComponentType> components = Arrays.asList(new DestinyDestinyComponentType()); // List<DestinyDestinyComponentType> | A comma separated list of components to return (as strings or numeric values). See the DestinyComponentType enum for valid components to request. You must request at least one component to receive results.
@@ -660,7 +660,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **characterId** | **Long**| The Destiny Character ID of the character for whom we&#39;re getting collectible detail info. |
- **collectiblePresentationNodeHash** | **Integer**| The hash identifier of the Presentation Node for whom we should return collectible details. Details will only be returned for collectibles that are direct descendants of this node. |
+ **collectiblePresentationNodeHash** | **Long**| The hash identifier of the Presentation Node for whom we should return collectible details. Details will only be returned for collectibles that are direct descendants of this node. |
  **destinyMembershipId** | **Long**| Destiny membership ID of another user. You may be denied. |
  **membershipType** | **Integer**| A valid non-BungieNet membership type. | [enum: 0, 1, 2, 4, 10, 254, -1]
  **components** | [**List&lt;DestinyDestinyComponentType&gt;**](DestinyDestinyComponentType.md)| A comma separated list of components to return (as strings or numeric values). See the DestinyComponentType enum for valid components to request. You must request at least one component to receive results. | [optional]
@@ -764,7 +764,7 @@ apiKey.setApiKey("YOUR API KEY");
 
 Destiny2Api apiInstance = new Destiny2Api();
 String entityType = "entityType_example"; // String | The type of entity for whom you would like results. These correspond to the entity's definition contract name. For instance, if you are looking for items, this property should be 'DestinyInventoryItemDefinition'. PREVIEW: This endpoint is still in beta, and may experience rough edges. The schema is tentatively in final form, but there may be bugs that prevent desirable operation.
-Integer hashIdentifier = 56; // Integer | The hash identifier for the specific Entity you want returned.
+Long hashIdentifier = 789L; // Long | The hash identifier for the specific Entity you want returned.
 try {
     InlineResponse20034 result = apiInstance.destiny2GetDestinyEntityDefinition(entityType, hashIdentifier);
     System.out.println(result);
@@ -779,7 +779,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **entityType** | **String**| The type of entity for whom you would like results. These correspond to the entity&#39;s definition contract name. For instance, if you are looking for items, this property should be &#39;DestinyInventoryItemDefinition&#39;. PREVIEW: This endpoint is still in beta, and may experience rough edges. The schema is tentatively in final form, but there may be bugs that prevent desirable operation. |
- **hashIdentifier** | **Integer**| The hash identifier for the specific Entity you want returned. |
+ **hashIdentifier** | **Long**| The hash identifier for the specific Entity you want returned. |
 
 ### Return type
 
@@ -1410,7 +1410,7 @@ apiKey.setApiKey("YOUR API KEY");
 //apiKey.setApiKeyPrefix("Token");
 
 Destiny2Api apiInstance = new Destiny2Api();
-Integer milestoneHash = 56; // Integer | The identifier for the milestone to be returned.
+Long milestoneHash = 789L; // Long | The identifier for the milestone to be returned.
 try {
     InlineResponse20056 result = apiInstance.destiny2GetPublicMilestoneContent(milestoneHash);
     System.out.println(result);
@@ -1424,7 +1424,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **milestoneHash** | **Integer**| The identifier for the milestone to be returned. |
+ **milestoneHash** | **Long**| The identifier for the milestone to be returned. |
 
 ### Return type
 
@@ -1578,7 +1578,7 @@ Destiny2Api apiInstance = new Destiny2Api();
 Long characterId = 789L; // Long | The Destiny Character ID of the character for whom we're getting vendor info.
 Long destinyMembershipId = 789L; // Long | Destiny membership ID of another user. You may be denied.
 Integer membershipType = 56; // Integer | A valid non-BungieNet membership type.
-Integer vendorHash = 56; // Integer | The Hash identifier of the Vendor to be returned.
+Long vendorHash = 789L; // Long | The Hash identifier of the Vendor to be returned.
 List<DestinyDestinyComponentType> components = Arrays.asList(new DestinyDestinyComponentType()); // List<DestinyDestinyComponentType> | A comma separated list of components to return (as strings or numeric values). See the DestinyComponentType enum for valid components to request. You must request at least one component to receive results.
 try {
     InlineResponse20042 result = apiInstance.destiny2GetVendor(characterId, destinyMembershipId, membershipType, vendorHash, components);
@@ -1596,7 +1596,7 @@ Name | Type | Description  | Notes
  **characterId** | **Long**| The Destiny Character ID of the character for whom we&#39;re getting vendor info. |
  **destinyMembershipId** | **Long**| Destiny membership ID of another user. You may be denied. |
  **membershipType** | **Integer**| A valid non-BungieNet membership type. | [enum: 0, 1, 2, 4, 10, 254, -1]
- **vendorHash** | **Integer**| The Hash identifier of the Vendor to be returned. |
+ **vendorHash** | **Long**| The Hash identifier of the Vendor to be returned. |
  **components** | [**List&lt;DestinyDestinyComponentType&gt;**](DestinyDestinyComponentType.md)| A comma separated list of components to return (as strings or numeric values). See the DestinyComponentType enum for valid components to request. You must request at least one component to receive results. | [optional]
 
 ### Return type

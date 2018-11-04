@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyVendorInteractionSackEntryD
  * A Vendor Interaction is a dialog shown by the vendor other than sale items or transfer screens. The vendor is showing you something, and asking you to reply to it by choosing an option or reward.
  */
 @ApiModel(description = "A Vendor Interaction is a dialog shown by the vendor other than sale items or transfer screens. The vendor is showing you something, and asking you to reply to it by choosing an option or reward.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorInteractionDefinition {
   @JsonProperty("interactionIndex")
   private Integer interactionIndex = null;
@@ -40,13 +40,13 @@ public class DestinyDefinitionsDestinyVendorInteractionDefinition {
   private Integer vendorCategoryIndex = null;
 
   @JsonProperty("questlineItemHash")
-  private Integer questlineItemHash = null;
+  private Long questlineItemHash = null;
 
   @JsonProperty("sackInteractionList")
   private List<DestinyDefinitionsDestinyVendorInteractionSackEntryDefinition> sackInteractionList = null;
 
   @JsonProperty("uiInteractionType")
-  private Integer uiInteractionType = null;
+  private Long uiInteractionType = null;
 
   @JsonProperty("interactionType")
   private Object interactionType = null;
@@ -131,7 +131,7 @@ public class DestinyDefinitionsDestinyVendorInteractionDefinition {
     this.vendorCategoryIndex = vendorCategoryIndex;
   }
 
-  public DestinyDefinitionsDestinyVendorInteractionDefinition questlineItemHash(Integer questlineItemHash) {
+  public DestinyDefinitionsDestinyVendorInteractionDefinition questlineItemHash(Long questlineItemHash) {
     this.questlineItemHash = questlineItemHash;
     return this;
   }
@@ -141,11 +141,11 @@ public class DestinyDefinitionsDestinyVendorInteractionDefinition {
    * @return questlineItemHash
   **/
   @ApiModelProperty(value = "If this interaction dialog is about a quest, this is the questline related to the interaction. You can use this to show the quest overview, or even the character's status with the quest if you use it to find the character's current Quest Step by checking their inventory against this questlineItemHash's DestinyInventoryItemDefinition.setData.")
-  public Integer getQuestlineItemHash() {
+  public Long getQuestlineItemHash() {
     return questlineItemHash;
   }
 
-  public void setQuestlineItemHash(Integer questlineItemHash) {
+  public void setQuestlineItemHash(Long questlineItemHash) {
     this.questlineItemHash = questlineItemHash;
   }
 
@@ -175,7 +175,7 @@ public class DestinyDefinitionsDestinyVendorInteractionDefinition {
     this.sackInteractionList = sackInteractionList;
   }
 
-  public DestinyDefinitionsDestinyVendorInteractionDefinition uiInteractionType(Integer uiInteractionType) {
+  public DestinyDefinitionsDestinyVendorInteractionDefinition uiInteractionType(Long uiInteractionType) {
     this.uiInteractionType = uiInteractionType;
     return this;
   }
@@ -185,11 +185,11 @@ public class DestinyDefinitionsDestinyVendorInteractionDefinition {
    * @return uiInteractionType
   **/
   @ApiModelProperty(value = "A UI hint for the behavior of the interaction screen. This is useful to determine what type of interaction is occurring, such as a prompt to receive a rank up reward or a prompt to choose a reward for completing a quest. The hash isn't as useful as the Enum in retrospect, well what can you do. Try using interactionType instead.")
-  public Integer getUiInteractionType() {
+  public Long getUiInteractionType() {
     return uiInteractionType;
   }
 
-  public void setUiInteractionType(Integer uiInteractionType) {
+  public void setUiInteractionType(Long uiInteractionType) {
     this.uiInteractionType = uiInteractionType;
   }
 

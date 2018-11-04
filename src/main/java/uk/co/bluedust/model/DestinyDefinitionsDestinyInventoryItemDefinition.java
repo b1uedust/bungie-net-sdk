@@ -32,13 +32,13 @@ import uk.co.bluedust.model.LinksHyperlinkReference;
  * So much of what you see in Destiny is actually an Item used in a new and creative way. This is the definition for Items in Destiny, which started off as just entities that could exist in your Inventory but ended up being the backing data for so much more: quests, reward previews, slots, and subclasses.  In practice, you will want to associate this data with \&quot;live\&quot; item data from a Bungie.Net Platform call: these definitions describe the item in generic, non-instanced terms: but an actual instance of an item can vary widely from these generic definitions.
  */
 @ApiModel(description = "So much of what you see in Destiny is actually an Item used in a new and creative way. This is the definition for Items in Destiny, which started off as just entities that could exist in your Inventory but ended up being the backing data for so much more: quests, reward previews, slots, and subclasses.  In practice, you will want to associate this data with \"live\" item data from a Bungie.Net Platform call: these definitions describe the item in generic, non-instanced terms: but an actual instance of an item can vary widely from these generic definitions.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyInventoryItemDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("collectibleHash")
-  private Integer collectibleHash = null;
+  private Long collectibleHash = null;
 
   @JsonProperty("secondaryIcon")
   private String secondaryIcon = null;
@@ -83,7 +83,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
   private Object stats = null;
 
   @JsonProperty("emblemObjectiveHash")
-  private Integer emblemObjectiveHash = null;
+  private Long emblemObjectiveHash = null;
 
   @JsonProperty("equippingBlock")
   private Object equippingBlock = null;
@@ -131,10 +131,10 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
   private List<DestinyDefinitionsDestinyItemPerkEntryDefinition> perks = null;
 
   @JsonProperty("loreHash")
-  private Integer loreHash = null;
+  private Long loreHash = null;
 
   @JsonProperty("summaryItemHash")
-  private Integer summaryItemHash = null;
+  private Long summaryItemHash = null;
 
   @JsonProperty("animations")
   private List<DestinyDefinitionsAnimationsDestinyAnimationReference> animations = null;
@@ -152,7 +152,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
   private Boolean nonTransferrable = null;
 
   @JsonProperty("itemCategoryHashes")
-  private List<Integer> itemCategoryHashes = null;
+  private List<Long> itemCategoryHashes = null;
 
   @JsonProperty("specialItemType")
   private Object specialItemType = null;
@@ -170,7 +170,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
   private Boolean equippable = null;
 
   @JsonProperty("damageTypeHashes")
-  private List<Integer> damageTypeHashes = null;
+  private List<Long> damageTypeHashes = null;
 
   @JsonProperty("damageTypes")
   private List<DestinyDamageType> damageTypes = null;
@@ -179,10 +179,10 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
   private Object defaultDamageType = null;
 
   @JsonProperty("defaultDamageTypeHash")
-  private Integer defaultDamageTypeHash = null;
+  private Long defaultDamageTypeHash = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -208,7 +208,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition collectibleHash(Integer collectibleHash) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition collectibleHash(Long collectibleHash) {
     this.collectibleHash = collectibleHash;
     return this;
   }
@@ -218,11 +218,11 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return collectibleHash
   **/
   @ApiModelProperty(value = "If this item has a collectible related to it, this is the hash identifier of that collectible entry.")
-  public Integer getCollectibleHash() {
+  public Long getCollectibleHash() {
     return collectibleHash;
   }
 
-  public void setCollectibleHash(Integer collectibleHash) {
+  public void setCollectibleHash(Long collectibleHash) {
     this.collectibleHash = collectibleHash;
   }
 
@@ -478,7 +478,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
     this.stats = stats;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition emblemObjectiveHash(Integer emblemObjectiveHash) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition emblemObjectiveHash(Long emblemObjectiveHash) {
     this.emblemObjectiveHash = emblemObjectiveHash;
     return this;
   }
@@ -488,11 +488,11 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return emblemObjectiveHash
   **/
   @ApiModelProperty(value = "If the item is an emblem that has a special Objective attached to it - for instance, if the emblem tracks PVP Kills, or what-have-you. This is a bit different from, for example, the Vanguard Kill Tracker mod, which pipes data into the \"art channel\". When I get some time, I would like to standardize these so you can get at the values they expose without having to care about what they're being used for and how they are wired up, but for now here's the raw data.")
-  public Integer getEmblemObjectiveHash() {
+  public Long getEmblemObjectiveHash() {
     return emblemObjectiveHash;
   }
 
-  public void setEmblemObjectiveHash(Integer emblemObjectiveHash) {
+  public void setEmblemObjectiveHash(Long emblemObjectiveHash) {
     this.emblemObjectiveHash = emblemObjectiveHash;
   }
 
@@ -782,7 +782,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
     this.perks = perks;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition loreHash(Integer loreHash) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition loreHash(Long loreHash) {
     this.loreHash = loreHash;
     return this;
   }
@@ -792,15 +792,15 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return loreHash
   **/
   @ApiModelProperty(value = "If the item has any related Lore (DestinyLoreDefinition), this will be the hash identifier you can use to look up the lore definition.")
-  public Integer getLoreHash() {
+  public Long getLoreHash() {
     return loreHash;
   }
 
-  public void setLoreHash(Integer loreHash) {
+  public void setLoreHash(Long loreHash) {
     this.loreHash = loreHash;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition summaryItemHash(Integer summaryItemHash) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition summaryItemHash(Long summaryItemHash) {
     this.summaryItemHash = summaryItemHash;
     return this;
   }
@@ -810,11 +810,11 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return summaryItemHash
   **/
   @ApiModelProperty(value = "There are times when the game will show you a \"summary/vague\" version of an item - such as a description of its type represented as a DestinyInventoryItemDefinition - rather than display the item itself.  This happens sometimes when summarizing possible rewards in a tooltip. This is the item displayed instead, if it exists.")
-  public Integer getSummaryItemHash() {
+  public Long getSummaryItemHash() {
     return summaryItemHash;
   }
 
-  public void setSummaryItemHash(Integer summaryItemHash) {
+  public void setSummaryItemHash(Long summaryItemHash) {
     this.summaryItemHash = summaryItemHash;
   }
 
@@ -924,12 +924,12 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
     this.nonTransferrable = nonTransferrable;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition itemCategoryHashes(List<Integer> itemCategoryHashes) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition itemCategoryHashes(List<Long> itemCategoryHashes) {
     this.itemCategoryHashes = itemCategoryHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition addItemCategoryHashesItem(Integer itemCategoryHashesItem) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition addItemCategoryHashesItem(Long itemCategoryHashesItem) {
     if (this.itemCategoryHashes == null) {
       this.itemCategoryHashes = new ArrayList<>();
     }
@@ -942,11 +942,11 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return itemCategoryHashes
   **/
   @ApiModelProperty(value = "BNet attempts to make a more formal definition of item \"Categories\", as defined by DestinyItemCategoryDefinition. This is a list of all Categories that we were able to algorithmically determine that this item is a member of. (for instance, that it's a \"Weapon\", that it's an \"Auto Rifle\", etc...)  The algorithm for these is, unfortunately, volatile. If you believe you see a miscategorized item, please let us know on the Bungie API forums.")
-  public List<Integer> getItemCategoryHashes() {
+  public List<Long> getItemCategoryHashes() {
     return itemCategoryHashes;
   }
 
-  public void setItemCategoryHashes(List<Integer> itemCategoryHashes) {
+  public void setItemCategoryHashes(List<Long> itemCategoryHashes) {
     this.itemCategoryHashes = itemCategoryHashes;
   }
 
@@ -1040,12 +1040,12 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
     this.equippable = equippable;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition damageTypeHashes(List<Integer> damageTypeHashes) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition damageTypeHashes(List<Long> damageTypeHashes) {
     this.damageTypeHashes = damageTypeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition addDamageTypeHashesItem(Integer damageTypeHashesItem) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition addDamageTypeHashesItem(Long damageTypeHashesItem) {
     if (this.damageTypeHashes == null) {
       this.damageTypeHashes = new ArrayList<>();
     }
@@ -1058,11 +1058,11 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return damageTypeHashes
   **/
   @ApiModelProperty(value = "Theoretically, an item can have many possible damage types. In *practice*, this is not true, but just in case weapons start being made that have multiple (for instance, an item where a socket has reusable plugs for every possible damage type that you can choose from freely), this field will return all of the possible damage types that are available to the weapon by default.")
-  public List<Integer> getDamageTypeHashes() {
+  public List<Long> getDamageTypeHashes() {
     return damageTypeHashes;
   }
 
-  public void setDamageTypeHashes(List<Integer> damageTypeHashes) {
+  public void setDamageTypeHashes(List<Long> damageTypeHashes) {
     this.damageTypeHashes = damageTypeHashes;
   }
 
@@ -1110,7 +1110,7 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
     this.defaultDamageType = defaultDamageType;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition defaultDamageTypeHash(Integer defaultDamageTypeHash) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition defaultDamageTypeHash(Long defaultDamageTypeHash) {
     this.defaultDamageTypeHash = defaultDamageTypeHash;
     return this;
   }
@@ -1120,15 +1120,15 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return defaultDamageTypeHash
   **/
   @ApiModelProperty(value = "Similar to defaultDamageType, but represented as the hash identifier for a DestinyDamageTypeDefinition.  I will likely regret leaving in the enumeration versions of these properties, but for now they're very convenient.")
-  public Integer getDefaultDamageTypeHash() {
+  public Long getDefaultDamageTypeHash() {
     return defaultDamageTypeHash;
   }
 
-  public void setDefaultDamageTypeHash(Integer defaultDamageTypeHash) {
+  public void setDefaultDamageTypeHash(Long defaultDamageTypeHash) {
     this.defaultDamageTypeHash = defaultDamageTypeHash;
   }
 
-  public DestinyDefinitionsDestinyInventoryItemDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyInventoryItemDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -1138,11 +1138,11 @@ public class DestinyDefinitionsDestinyInventoryItemDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

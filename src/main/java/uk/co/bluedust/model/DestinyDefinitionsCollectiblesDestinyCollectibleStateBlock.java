@@ -24,15 +24,15 @@ import uk.co.bluedust.model.DestinyDefinitionsPresentationDestinyPresentationNod
 /**
  * DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock {
   @JsonProperty("obscuredOverrideItemHash")
-  private Integer obscuredOverrideItemHash = null;
+  private Long obscuredOverrideItemHash = null;
 
   @JsonProperty("requirements")
   private DestinyDefinitionsPresentationDestinyPresentationNodeRequirementsBlock requirements = null;
 
-  public DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock obscuredOverrideItemHash(Integer obscuredOverrideItemHash) {
+  public DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock obscuredOverrideItemHash(Long obscuredOverrideItemHash) {
     this.obscuredOverrideItemHash = obscuredOverrideItemHash;
     return this;
   }
@@ -42,11 +42,11 @@ public class DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock {
    * @return obscuredOverrideItemHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getObscuredOverrideItemHash() {
+  public Long getObscuredOverrideItemHash() {
     return obscuredOverrideItemHash;
   }
 
-  public void setObscuredOverrideItemHash(Integer obscuredOverrideItemHash) {
+  public void setObscuredOverrideItemHash(Long obscuredOverrideItemHash) {
     this.obscuredOverrideItemHash = obscuredOverrideItemHash;
   }
 

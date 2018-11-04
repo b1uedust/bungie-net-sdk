@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsDestinyObjectiveDisplayProperties
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyObjectiveDisplayProperties {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("displayOnItemPreviewScreen")
   private Boolean displayOnItemPreviewScreen = null;
 
-  public DestinyDefinitionsDestinyObjectiveDisplayProperties activityHash(Integer activityHash) {
+  public DestinyDefinitionsDestinyObjectiveDisplayProperties activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -41,11 +41,11 @@ public class DestinyDefinitionsDestinyObjectiveDisplayProperties {
    * @return activityHash
   **/
   @ApiModelProperty(value = "The activity associated with this objective in the context of this item, if any.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

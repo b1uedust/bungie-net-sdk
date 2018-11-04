@@ -24,13 +24,13 @@ import io.swagger.annotations.ApiModelProperty;
  * An intrinsic perk on an item, and the requirements for it to be activated.
  */
 @ApiModel(description = "An intrinsic perk on an item, and the requirements for it to be activated.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemPerkEntryDefinition {
   @JsonProperty("requirementDisplayString")
   private String requirementDisplayString = null;
 
   @JsonProperty("perkHash")
-  private Integer perkHash = null;
+  private Long perkHash = null;
 
   @JsonProperty("perkVisibility")
   private Object perkVisibility = null;
@@ -53,7 +53,7 @@ public class DestinyDefinitionsDestinyItemPerkEntryDefinition {
     this.requirementDisplayString = requirementDisplayString;
   }
 
-  public DestinyDefinitionsDestinyItemPerkEntryDefinition perkHash(Integer perkHash) {
+  public DestinyDefinitionsDestinyItemPerkEntryDefinition perkHash(Long perkHash) {
     this.perkHash = perkHash;
     return this;
   }
@@ -63,11 +63,11 @@ public class DestinyDefinitionsDestinyItemPerkEntryDefinition {
    * @return perkHash
   **/
   @ApiModelProperty(value = "A hash identifier for the DestinySandboxPerkDefinition being provided on the item.")
-  public Integer getPerkHash() {
+  public Long getPerkHash() {
     return perkHash;
   }
 
-  public void setPerkHash(Integer perkHash) {
+  public void setPerkHash(Long perkHash) {
     this.perkHash = perkHash;
   }
 

@@ -24,31 +24,31 @@ import io.swagger.annotations.ApiModelProperty;
  * The properties of an individual checklist item. Note that almost everything is optional: it is *highly* variable what kind of data we&#39;ll actually be able to return: at times we may have no other relationships to entities at all.  Whatever UI you build, do it with the knowledge that any given entry might not actually be able to be associated with some other Destiny entity.
  */
 @ApiModel(description = "The properties of an individual checklist item. Note that almost everything is optional: it is *highly* variable what kind of data we'll actually be able to return: at times we may have no other relationships to entities at all.  Whatever UI you build, do it with the knowledge that any given entry might not actually be able to be associated with some other Destiny entity.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
 
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
   @JsonProperty("locationHash")
-  private Integer locationHash = null;
+  private Long locationHash = null;
 
   @JsonProperty("bubbleHash")
-  private Integer bubbleHash = null;
+  private Long bubbleHash = null;
 
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("vendorInteractionIndex")
   private Integer vendorInteractionIndex = null;
@@ -56,7 +56,7 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
   @JsonProperty("scope")
   private Object scope = null;
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition hash(Integer hash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -66,11 +66,11 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The identifier for this Checklist entry. Guaranteed unique only within this Checklist Definition, and not globally/for all checklists.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 
@@ -92,7 +92,7 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition destinationHash(Integer destinationHash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -102,15 +102,15 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition locationHash(Integer locationHash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition locationHash(Long locationHash) {
     this.locationHash = locationHash;
     return this;
   }
@@ -120,15 +120,15 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return locationHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getLocationHash() {
+  public Long getLocationHash() {
     return locationHash;
   }
 
-  public void setLocationHash(Integer locationHash) {
+  public void setLocationHash(Long locationHash) {
     this.locationHash = locationHash;
   }
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition bubbleHash(Integer bubbleHash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition bubbleHash(Long bubbleHash) {
     this.bubbleHash = bubbleHash;
     return this;
   }
@@ -138,15 +138,15 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return bubbleHash
   **/
   @ApiModelProperty(value = "Note that a Bubble's hash doesn't uniquely identify a \"top level\" entity in Destiny. Only the combination of location and bubble can uniquely identify a place in the world of Destiny: so if bubbleHash is populated, locationHash must too be populated for it to have any meaning.  You can use this property if it is populated to look up the DestinyLocationDefinition's associated .locationReleases[].activityBubbleName property.")
-  public Integer getBubbleHash() {
+  public Long getBubbleHash() {
     return bubbleHash;
   }
 
-  public void setBubbleHash(Integer bubbleHash) {
+  public void setBubbleHash(Long bubbleHash) {
     this.bubbleHash = bubbleHash;
   }
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition activityHash(Integer activityHash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -156,15 +156,15 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return activityHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition itemHash(Integer itemHash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -174,15 +174,15 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return itemHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 
-  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition vendorHash(Integer vendorHash) {
+  public DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -192,11 +192,11 @@ public class DestinyDefinitionsChecklistsDestinyChecklistEntryDefinition {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 

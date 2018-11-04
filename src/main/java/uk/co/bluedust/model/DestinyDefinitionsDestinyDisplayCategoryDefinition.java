@@ -25,13 +25,13 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Display Categories are different from \&quot;categories\&quot; in that these are specifically for visual grouping and display of categories in Vendor UI. The \&quot;categories\&quot; structure is for validation of the contained items, and can be categorized entirely separately from \&quot;Display Categories\&quot;, there need be and often will be no meaningful relationship between the two.
  */
 @ApiModel(description = "Display Categories are different from \"categories\" in that these are specifically for visual grouping and display of categories in Vendor UI. The \"categories\" structure is for validation of the contained items, and can be categorized entirely separately from \"Display Categories\", there need be and often will be no meaningful relationship between the two.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
   @JsonProperty("identifier")
   private String identifier = null;
 
   @JsonProperty("displayCategoryHash")
-  private Integer displayCategoryHash = null;
+  private Long displayCategoryHash = null;
 
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -40,13 +40,13 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
   private Boolean displayInBanner = null;
 
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
   @JsonProperty("sortOrder")
   private Object sortOrder = null;
 
   @JsonProperty("displayStyleHash")
-  private Integer displayStyleHash = null;
+  private Long displayStyleHash = null;
 
   @JsonProperty("displayStyleIdentifier")
   private String displayStyleIdentifier = null;
@@ -69,7 +69,7 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
     this.identifier = identifier;
   }
 
-  public DestinyDefinitionsDestinyDisplayCategoryDefinition displayCategoryHash(Integer displayCategoryHash) {
+  public DestinyDefinitionsDestinyDisplayCategoryDefinition displayCategoryHash(Long displayCategoryHash) {
     this.displayCategoryHash = displayCategoryHash;
     return this;
   }
@@ -79,11 +79,11 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
    * @return displayCategoryHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getDisplayCategoryHash() {
+  public Long getDisplayCategoryHash() {
     return displayCategoryHash;
   }
 
-  public void setDisplayCategoryHash(Integer displayCategoryHash) {
+  public void setDisplayCategoryHash(Long displayCategoryHash) {
     this.displayCategoryHash = displayCategoryHash;
   }
 
@@ -123,7 +123,7 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
     this.displayInBanner = displayInBanner;
   }
 
-  public DestinyDefinitionsDestinyDisplayCategoryDefinition progressionHash(Integer progressionHash) {
+  public DestinyDefinitionsDestinyDisplayCategoryDefinition progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -133,11 +133,11 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
    * @return progressionHash
   **/
   @ApiModelProperty(value = "If it exists, this is the hash identifier of a DestinyProgressionDefinition that represents the progression to show on this display category.  Specific categories can now have thier own distinct progression, apparently. So that's cool.")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 
@@ -159,7 +159,7 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
     this.sortOrder = sortOrder;
   }
 
-  public DestinyDefinitionsDestinyDisplayCategoryDefinition displayStyleHash(Integer displayStyleHash) {
+  public DestinyDefinitionsDestinyDisplayCategoryDefinition displayStyleHash(Long displayStyleHash) {
     this.displayStyleHash = displayStyleHash;
     return this;
   }
@@ -169,11 +169,11 @@ public class DestinyDefinitionsDestinyDisplayCategoryDefinition {
    * @return displayStyleHash
   **/
   @ApiModelProperty(value = "An indicator of how the category will be displayed in the UI. It's up to you to do something cool or interesting in response to this, or just to treat it as a normal category.")
-  public Integer getDisplayStyleHash() {
+  public Long getDisplayStyleHash() {
     return displayStyleHash;
   }
 
-  public void setDisplayStyleHash(Integer displayStyleHash) {
+  public void setDisplayStyleHash(Long displayStyleHash) {
     this.displayStyleHash = displayStyleHash;
   }
 

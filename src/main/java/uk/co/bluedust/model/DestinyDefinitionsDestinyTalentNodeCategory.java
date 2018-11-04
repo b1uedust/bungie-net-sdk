@@ -26,7 +26,7 @@ import java.util.List;
  * An artificial construct provided by Bungie.Net, where we attempt to group talent nodes by functionality.  This is a single set of references to Talent Nodes that share a common trait or purpose.
  */
 @ApiModel(description = "An artificial construct provided by Bungie.Net, where we attempt to group talent nodes by functionality.  This is a single set of references to Talent Nodes that share a common trait or purpose.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyTalentNodeCategory {
   @JsonProperty("identifier")
   private String identifier = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsDestinyTalentNodeCategory {
   private Object displayProperties = null;
 
   @JsonProperty("nodeHashes")
-  private List<Integer> nodeHashes = null;
+  private List<Long> nodeHashes = null;
 
   public DestinyDefinitionsDestinyTalentNodeCategory identifier(String identifier) {
     this.identifier = identifier;
@@ -94,12 +94,12 @@ public class DestinyDefinitionsDestinyTalentNodeCategory {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeCategory nodeHashes(List<Integer> nodeHashes) {
+  public DestinyDefinitionsDestinyTalentNodeCategory nodeHashes(List<Long> nodeHashes) {
     this.nodeHashes = nodeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyTalentNodeCategory addNodeHashesItem(Integer nodeHashesItem) {
+  public DestinyDefinitionsDestinyTalentNodeCategory addNodeHashesItem(Long nodeHashesItem) {
     if (this.nodeHashes == null) {
       this.nodeHashes = new ArrayList<>();
     }
@@ -112,11 +112,11 @@ public class DestinyDefinitionsDestinyTalentNodeCategory {
    * @return nodeHashes
   **/
   @ApiModelProperty(value = "The set of all hash identifiers for Talent Nodes (DestinyTalentNodeDefinition) in this Talent Grid that are part of this Category.")
-  public List<Integer> getNodeHashes() {
+  public List<Long> getNodeHashes() {
     return nodeHashes;
   }
 
-  public void setNodeHashes(List<Integer> nodeHashes) {
+  public void setNodeHashes(List<Long> nodeHashes) {
     this.nodeHashes = nodeHashes;
   }
 

@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**itemReferenceHash** | **Integer** |  |  [optional]
+**itemReferenceHash** | **Long** |  |  [optional]
 **stackSize** | **Integer** |  |  [optional]
 **itemId** | **Long** |  |  [optional]
 **characterId** | **Long** |  |  [optional]

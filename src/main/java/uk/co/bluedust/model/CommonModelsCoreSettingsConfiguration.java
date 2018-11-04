@@ -30,7 +30,7 @@ import uk.co.bluedust.model.CommonModelsDestiny2CoreSettings;
 /**
  * CommonModelsCoreSettingsConfiguration
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class CommonModelsCoreSettingsConfiguration {
   @JsonProperty("systems")
   private Map<String, CommonModelsCoreSystem> systems = null;

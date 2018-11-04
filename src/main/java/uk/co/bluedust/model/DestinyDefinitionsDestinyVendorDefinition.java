@@ -38,7 +38,7 @@ import uk.co.bluedust.model.DestinyDefinitionsVendorsDestinyVendorLocationDefini
  * These are the definitions for Vendors.  In Destiny, a Vendor can be a lot of things - some things that you wouldn&#39;t expect, and some things that you don&#39;t even see directly in the game. Vendors are the Dolly Levi of the Destiny universe.  - Traditional Vendors as you see in game: people who you come up to and who give you quests, rewards, or who you can buy things from.  - Kiosks/Collections, which are really just Vendors that don&#39;t charge currency (or charge some pittance of a currency) and whose gating for purchases revolves more around your character&#39;s state.  - Previews for rewards or the contents of sacks. These are implemented as Vendors, where you can&#39;t actually purchase from them but the items that they have for sale and the categories of sale items reflect the rewards or contents of the sack. This is so that the game could reuse the existing Vendor display UI for rewards and save a bunch of wheel reinvention.  - Item Transfer capabilities, like the Vault and Postmaster. Vendors can have \&quot;acceptedItem\&quot; buckets that determine the source and destination buckets for transfers. When you interact with such a vendor, these buckets are what gets shown in the UI instead of any items that the Vendor would have for sale. Yep, the Vault is a vendor.  It is pretty much guaranteed that they&#39;ll be used for even more features in the future. They have come to be seen more as generic categorized containers for items than \&quot;vendors\&quot; in a traditional sense, for better or worse.  Where possible and time allows, we&#39;ll attempt to split those out into their own more digestible derived \&quot;Definitions\&quot;: but often time does not allow that, as you can see from the above ways that vendors are used which we never split off from Vendor Definitions externally.  Since Vendors are so many things to so many parts of the game, the definition is understandably complex. You will want to combine this data with live Vendor information from the API when it is available.
  */
 @ApiModel(description = "These are the definitions for Vendors.  In Destiny, a Vendor can be a lot of things - some things that you wouldn't expect, and some things that you don't even see directly in the game. Vendors are the Dolly Levi of the Destiny universe.  - Traditional Vendors as you see in game: people who you come up to and who give you quests, rewards, or who you can buy things from.  - Kiosks/Collections, which are really just Vendors that don't charge currency (or charge some pittance of a currency) and whose gating for purchases revolves more around your character's state.  - Previews for rewards or the contents of sacks. These are implemented as Vendors, where you can't actually purchase from them but the items that they have for sale and the categories of sale items reflect the rewards or contents of the sack. This is so that the game could reuse the existing Vendor display UI for rewards and save a bunch of wheel reinvention.  - Item Transfer capabilities, like the Vault and Postmaster. Vendors can have \"acceptedItem\" buckets that determine the source and destination buckets for transfers. When you interact with such a vendor, these buckets are what gets shown in the UI instead of any items that the Vendor would have for sale. Yep, the Vault is a vendor.  It is pretty much guaranteed that they'll be used for even more features in the future. They have come to be seen more as generic categorized containers for items than \"vendors\" in a traditional sense, for better or worse.  Where possible and time allows, we'll attempt to split those out into their own more digestible derived \"Definitions\": but often time does not allow that, as you can see from the above ways that vendors are used which we never split off from Vendor Definitions externally.  Since Vendors are so many things to so many parts of the game, the definition is understandably complex. You will want to combine this data with live Vendor information from the API when it is available.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsDestinyVendorDisplayPropertiesDefinition displayProperties = null;
@@ -50,7 +50,7 @@ public class DestinyDefinitionsDestinyVendorDefinition {
   private String sellString = null;
 
   @JsonProperty("displayItemHash")
-  private Integer displayItemHash = null;
+  private Long displayItemHash = null;
 
   @JsonProperty("inhibitBuying")
   private Boolean inhibitBuying = null;
@@ -59,7 +59,7 @@ public class DestinyDefinitionsDestinyVendorDefinition {
   private Boolean inhibitSelling = null;
 
   @JsonProperty("factionHash")
-  private Integer factionHash = null;
+  private Long factionHash = null;
 
   @JsonProperty("resetIntervalMinutes")
   private Integer resetIntervalMinutes = null;
@@ -131,10 +131,10 @@ public class DestinyDefinitionsDestinyVendorDefinition {
   private List<DestinyDefinitionsDestinyVendorGroupReference> groups = null;
 
   @JsonProperty("ignoreSaleItemHashes")
-  private List<Integer> ignoreSaleItemHashes = null;
+  private List<Long> ignoreSaleItemHashes = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -196,7 +196,7 @@ public class DestinyDefinitionsDestinyVendorDefinition {
     this.sellString = sellString;
   }
 
-  public DestinyDefinitionsDestinyVendorDefinition displayItemHash(Integer displayItemHash) {
+  public DestinyDefinitionsDestinyVendorDefinition displayItemHash(Long displayItemHash) {
     this.displayItemHash = displayItemHash;
     return this;
   }
@@ -206,11 +206,11 @@ public class DestinyDefinitionsDestinyVendorDefinition {
    * @return displayItemHash
   **/
   @ApiModelProperty(value = "If the vendor has an item that should be displayed as the \"featured\" item, this is the hash identifier for that DestinyVendorItemDefinition.  Apparently this is usually a related currency, like a reputation token. But it need not be restricted to that.")
-  public Integer getDisplayItemHash() {
+  public Long getDisplayItemHash() {
     return displayItemHash;
   }
 
-  public void setDisplayItemHash(Integer displayItemHash) {
+  public void setDisplayItemHash(Long displayItemHash) {
     this.displayItemHash = displayItemHash;
   }
 
@@ -250,7 +250,7 @@ public class DestinyDefinitionsDestinyVendorDefinition {
     this.inhibitSelling = inhibitSelling;
   }
 
-  public DestinyDefinitionsDestinyVendorDefinition factionHash(Integer factionHash) {
+  public DestinyDefinitionsDestinyVendorDefinition factionHash(Long factionHash) {
     this.factionHash = factionHash;
     return this;
   }
@@ -260,11 +260,11 @@ public class DestinyDefinitionsDestinyVendorDefinition {
    * @return factionHash
   **/
   @ApiModelProperty(value = "If the Vendor has a faction, this hash will be valid and point to a DestinyFactionDefinition.  The game UI and BNet often mine the faction definition for additional elements and details to place on the screen, such as the faction's Progression status (aka \"Reputation\").")
-  public Integer getFactionHash() {
+  public Long getFactionHash() {
     return factionHash;
   }
 
-  public void setFactionHash(Integer factionHash) {
+  public void setFactionHash(Long factionHash) {
     this.factionHash = factionHash;
   }
 
@@ -786,12 +786,12 @@ public class DestinyDefinitionsDestinyVendorDefinition {
     this.groups = groups;
   }
 
-  public DestinyDefinitionsDestinyVendorDefinition ignoreSaleItemHashes(List<Integer> ignoreSaleItemHashes) {
+  public DestinyDefinitionsDestinyVendorDefinition ignoreSaleItemHashes(List<Long> ignoreSaleItemHashes) {
     this.ignoreSaleItemHashes = ignoreSaleItemHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyVendorDefinition addIgnoreSaleItemHashesItem(Integer ignoreSaleItemHashesItem) {
+  public DestinyDefinitionsDestinyVendorDefinition addIgnoreSaleItemHashesItem(Long ignoreSaleItemHashesItem) {
     if (this.ignoreSaleItemHashes == null) {
       this.ignoreSaleItemHashes = new ArrayList<>();
     }
@@ -804,15 +804,15 @@ public class DestinyDefinitionsDestinyVendorDefinition {
    * @return ignoreSaleItemHashes
   **/
   @ApiModelProperty(value = "Some items don't make sense to return in the API, for example because they represent an action to be performed rather than an item being sold. I'd rather we not do this, but at least in the short term this is a workable workaround.")
-  public List<Integer> getIgnoreSaleItemHashes() {
+  public List<Long> getIgnoreSaleItemHashes() {
     return ignoreSaleItemHashes;
   }
 
-  public void setIgnoreSaleItemHashes(List<Integer> ignoreSaleItemHashes) {
+  public void setIgnoreSaleItemHashes(List<Long> ignoreSaleItemHashes) {
     this.ignoreSaleItemHashes = ignoreSaleItemHashes;
   }
 
-  public DestinyDefinitionsDestinyVendorDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyVendorDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -822,11 +822,11 @@ public class DestinyDefinitionsDestinyVendorDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

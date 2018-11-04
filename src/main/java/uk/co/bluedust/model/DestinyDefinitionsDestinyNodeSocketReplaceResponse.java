@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * This is a bit of an odd duck. Apparently, if talent nodes steps have this data, the game will go through on step activation and alter the first Socket it finds on the item that has a type matching the given socket type, inserting the indicated plug item.
  */
 @ApiModel(description = "This is a bit of an odd duck. Apparently, if talent nodes steps have this data, the game will go through on step activation and alter the first Socket it finds on the item that has a type matching the given socket type, inserting the indicated plug item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyNodeSocketReplaceResponse {
   @JsonProperty("socketTypeHash")
-  private Integer socketTypeHash = null;
+  private Long socketTypeHash = null;
 
   @JsonProperty("plugItemHash")
-  private Integer plugItemHash = null;
+  private Long plugItemHash = null;
 
-  public DestinyDefinitionsDestinyNodeSocketReplaceResponse socketTypeHash(Integer socketTypeHash) {
+  public DestinyDefinitionsDestinyNodeSocketReplaceResponse socketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
     return this;
   }
@@ -42,15 +42,15 @@ public class DestinyDefinitionsDestinyNodeSocketReplaceResponse {
    * @return socketTypeHash
   **/
   @ApiModelProperty(value = "The hash identifier of the socket type to find amidst the item's sockets (the item to which this talent grid is attached). See DestinyInventoryItemDefinition.sockets.socketEntries to find the socket type of sockets on the item in question.")
-  public Integer getSocketTypeHash() {
+  public Long getSocketTypeHash() {
     return socketTypeHash;
   }
 
-  public void setSocketTypeHash(Integer socketTypeHash) {
+  public void setSocketTypeHash(Long socketTypeHash) {
     this.socketTypeHash = socketTypeHash;
   }
 
-  public DestinyDefinitionsDestinyNodeSocketReplaceResponse plugItemHash(Integer plugItemHash) {
+  public DestinyDefinitionsDestinyNodeSocketReplaceResponse plugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyDefinitionsDestinyNodeSocketReplaceResponse {
    * @return plugItemHash
   **/
   @ApiModelProperty(value = "The hash identifier of the plug item that will be inserted into the socket found.")
-  public Integer getPlugItemHash() {
+  public Long getPlugItemHash() {
     return plugItemHash;
   }
 
-  public void setPlugItemHash(Integer plugItemHash) {
+  public void setPlugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
   }
 

@@ -27,15 +27,15 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyMilestoneRewardEntry;
  * Represents a category of \&quot;summary\&quot; rewards that can be earned for the Milestone regardless of specific quest rewards that can be earned.
  */
 @ApiModel(description = "Represents a category of \"summary\" rewards that can be earned for the Milestone regardless of specific quest rewards that can be earned.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestoneRewardCategory {
   @JsonProperty("rewardCategoryHash")
-  private Integer rewardCategoryHash = null;
+  private Long rewardCategoryHash = null;
 
   @JsonProperty("entries")
   private List<DestinyMilestonesDestinyMilestoneRewardEntry> entries = null;
 
-  public DestinyMilestonesDestinyMilestoneRewardCategory rewardCategoryHash(Integer rewardCategoryHash) {
+  public DestinyMilestonesDestinyMilestoneRewardCategory rewardCategoryHash(Long rewardCategoryHash) {
     this.rewardCategoryHash = rewardCategoryHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyMilestonesDestinyMilestoneRewardCategory {
    * @return rewardCategoryHash
   **/
   @ApiModelProperty(value = "Look up the relevant DestinyMilestoneDefinition, and then use rewardCategoryHash to look up the category info in DestinyMilestoneDefinition.rewards.")
-  public Integer getRewardCategoryHash() {
+  public Long getRewardCategoryHash() {
     return rewardCategoryHash;
   }
 
-  public void setRewardCategoryHash(Integer rewardCategoryHash) {
+  public void setRewardCategoryHash(Long rewardCategoryHash) {
     this.rewardCategoryHash = rewardCategoryHash;
   }
 

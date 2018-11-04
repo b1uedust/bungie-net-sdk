@@ -27,16 +27,16 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyLocationReleaseDefinition;
  * A \&quot;Location\&quot; is a sort of shortcut for referring to a specific combination of Activity, Destination, Place, and even Bubble or NavPoint within a space.  Most of this data isn&#39;t intrinsically useful to us, but Objectives refer to locations, and through that we can at least infer the Activity, Destination, and Place being referred to by the Objective.
  */
 @ApiModel(description = "A \"Location\" is a sort of shortcut for referring to a specific combination of Activity, Destination, Place, and even Bubble or NavPoint within a space.  Most of this data isn't intrinsically useful to us, but Objectives refer to locations, and through that we can at least infer the Activity, Destination, and Place being referred to by the Objective.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyLocationDefinition {
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("locationReleases")
   private List<DestinyDefinitionsDestinyLocationReleaseDefinition> locationReleases = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -44,7 +44,7 @@ public class DestinyDefinitionsDestinyLocationDefinition {
   @JsonProperty("redacted")
   private Boolean redacted = null;
 
-  public DestinyDefinitionsDestinyLocationDefinition vendorHash(Integer vendorHash) {
+  public DestinyDefinitionsDestinyLocationDefinition vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -54,11 +54,11 @@ public class DestinyDefinitionsDestinyLocationDefinition {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "If the location has a Vendor on it, this is the hash identifier for that Vendor. Look them up with DestinyVendorDefinition.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 
@@ -88,7 +88,7 @@ public class DestinyDefinitionsDestinyLocationDefinition {
     this.locationReleases = locationReleases;
   }
 
-  public DestinyDefinitionsDestinyLocationDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyLocationDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -98,11 +98,11 @@ public class DestinyDefinitionsDestinyLocationDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

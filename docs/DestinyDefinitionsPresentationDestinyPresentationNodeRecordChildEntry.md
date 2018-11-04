@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**recordHash** | **Integer** |  |  [optional]
+**recordHash** | **Long** |  |  [optional]
 
 
 

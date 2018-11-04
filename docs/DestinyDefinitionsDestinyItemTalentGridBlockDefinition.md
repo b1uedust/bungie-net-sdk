@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**talentGridHash** | **Integer** | The hash identifier of the DestinyTalentGridDefinition attached to this item. |  [optional]
+**talentGridHash** | **Long** | The hash identifier of the DestinyTalentGridDefinition attached to this item. |  [optional]
 **itemDetailString** | **String** | This is meant to be a subtitle for looking at the talent grid. In practice, somewhat frustratingly, this always merely says the localized word for \&quot;Details\&quot;. Great. Maybe it&#39;ll have more if talent grids ever get used for more than builds and subclasses again. |  [optional]
 **buildName** | **String** | A shortcut string identifier for the \&quot;build\&quot; in question, if this talent grid has an associated build. Doesn&#39;t map to anything we can expose at the moment. |  [optional]
 **hudDamageType** | **Object** | If the talent grid implies a damage type, this is the enum value for that damage type. |  [optional]

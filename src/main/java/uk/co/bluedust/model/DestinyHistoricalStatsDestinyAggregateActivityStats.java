@@ -27,15 +27,15 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDestinyHistoricalStatsValue;
 /**
  * DestinyHistoricalStatsDestinyAggregateActivityStats
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyHistoricalStatsDestinyAggregateActivityStats {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("values")
   private Map<String, DestinyHistoricalStatsDestinyHistoricalStatsValue> values = null;
 
-  public DestinyHistoricalStatsDestinyAggregateActivityStats activityHash(Integer activityHash) {
+  public DestinyHistoricalStatsDestinyAggregateActivityStats activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyHistoricalStatsDestinyAggregateActivityStats {
    * @return activityHash
   **/
   @ApiModelProperty(value = "Hash ID that can be looked up in the DestinyActivityTable.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channelHash** | **Integer** |  |  [optional]
-**dyeHash** | **Integer** |  |  [optional]
+**channelHash** | **Long** |  |  [optional]
+**dyeHash** | **Long** |  |  [optional]
 
 
 

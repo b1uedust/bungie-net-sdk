@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyInventoryItemStatDefinition
  * Properties of a DestinyInventoryItemDefinition that store all of the information we were able to discern about how the item spawns, and where you can find the item.  Items will have many of these sources, one per level at which it spawns, to try and give more granular data about where items spawn for specific level ranges.
  */
 @ApiModel(description = "Properties of a DestinyInventoryItemDefinition that store all of the information we were able to discern about how the item spawns, and where you can find the item.  Items will have many of these sources, one per level at which it spawns, to try and give more granular data about where items spawn for specific level ranges.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSourcesDestinyItemSourceDefinition {
   @JsonProperty("level")
   private Integer level = null;
@@ -50,7 +50,7 @@ public class DestinyDefinitionsSourcesDestinyItemSourceDefinition {
   private Map<String, DestinyDefinitionsDestinyInventoryItemStatDefinition> computedStats = null;
 
   @JsonProperty("sourceHashes")
-  private List<Integer> sourceHashes = null;
+  private List<Long> sourceHashes = null;
 
   public DestinyDefinitionsSourcesDestinyItemSourceDefinition level(Integer level) {
     this.level = level;
@@ -168,12 +168,12 @@ public class DestinyDefinitionsSourcesDestinyItemSourceDefinition {
     this.computedStats = computedStats;
   }
 
-  public DestinyDefinitionsSourcesDestinyItemSourceDefinition sourceHashes(List<Integer> sourceHashes) {
+  public DestinyDefinitionsSourcesDestinyItemSourceDefinition sourceHashes(List<Long> sourceHashes) {
     this.sourceHashes = sourceHashes;
     return this;
   }
 
-  public DestinyDefinitionsSourcesDestinyItemSourceDefinition addSourceHashesItem(Integer sourceHashesItem) {
+  public DestinyDefinitionsSourcesDestinyItemSourceDefinition addSourceHashesItem(Long sourceHashesItem) {
     if (this.sourceHashes == null) {
       this.sourceHashes = new ArrayList<>();
     }
@@ -186,11 +186,11 @@ public class DestinyDefinitionsSourcesDestinyItemSourceDefinition {
    * @return sourceHashes
   **/
   @ApiModelProperty(value = "The DestinyRewardSourceDefinitions found that can spawn the item at this level.")
-  public List<Integer> getSourceHashes() {
+  public List<Long> getSourceHashes() {
     return sourceHashes;
   }
 
-  public void setSourceHashes(List<Integer> sourceHashes) {
+  public void setSourceHashes(List<Long> sourceHashes) {
     this.sourceHashes = sourceHashes;
   }
 

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The details of an overlay prompt to show to a user. They are all fairly self-explanatory localized strings that can be shown.
  */
 @ApiModel(description = "The details of an overlay prompt to show to a user. They are all fairly self-explanatory localized strings that can be shown.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorCategoryOverlayDefinition {
   @JsonProperty("choiceDescription")
   private String choiceDescription = null;
@@ -39,7 +39,7 @@ public class DestinyDefinitionsDestinyVendorCategoryOverlayDefinition {
   private String title = null;
 
   @JsonProperty("currencyItemHash")
-  private Integer currencyItemHash = null;
+  private Long currencyItemHash = null;
 
   public DestinyDefinitionsDestinyVendorCategoryOverlayDefinition choiceDescription(String choiceDescription) {
     this.choiceDescription = choiceDescription;
@@ -113,7 +113,7 @@ public class DestinyDefinitionsDestinyVendorCategoryOverlayDefinition {
     this.title = title;
   }
 
-  public DestinyDefinitionsDestinyVendorCategoryOverlayDefinition currencyItemHash(Integer currencyItemHash) {
+  public DestinyDefinitionsDestinyVendorCategoryOverlayDefinition currencyItemHash(Long currencyItemHash) {
     this.currencyItemHash = currencyItemHash;
     return this;
   }
@@ -123,11 +123,11 @@ public class DestinyDefinitionsDestinyVendorCategoryOverlayDefinition {
    * @return currencyItemHash
   **/
   @ApiModelProperty(value = "If this overlay has a currency item that it features, this is said featured item.")
-  public Integer getCurrencyItemHash() {
+  public Long getCurrencyItemHash() {
     return currencyItemHash;
   }
 
-  public void setCurrencyItemHash(Integer currencyItemHash) {
+  public void setCurrencyItemHash(Long currencyItemHash) {
     this.currencyItemHash = currencyItemHash;
   }
 

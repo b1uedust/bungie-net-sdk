@@ -28,10 +28,10 @@ import uk.co.bluedust.model.DestinyDefinitionsMilestonesDestinyMilestoneRewardEn
  * The definition of a category of rewards, that contains many individual rewards.
  */
 @ApiModel(description = "The definition of a category of rewards, that contains many individual rewards.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneRewardCategoryDefinition {
   @JsonProperty("categoryHash")
-  private Integer categoryHash = null;
+  private Long categoryHash = null;
 
   @JsonProperty("categoryIdentifier")
   private String categoryIdentifier = null;
@@ -45,7 +45,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardCategoryDefinitio
   @JsonProperty("order")
   private Integer order = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneRewardCategoryDefinition categoryHash(Integer categoryHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneRewardCategoryDefinition categoryHash(Long categoryHash) {
     this.categoryHash = categoryHash;
     return this;
   }
@@ -55,11 +55,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneRewardCategoryDefinitio
    * @return categoryHash
   **/
   @ApiModelProperty(value = "Identifies the reward category. Only guaranteed unique within this specific component!")
-  public Integer getCategoryHash() {
+  public Long getCategoryHash() {
     return categoryHash;
   }
 
-  public void setCategoryHash(Integer categoryHash) {
+  public void setCategoryHash(Long categoryHash) {
     this.categoryHash = categoryHash;
   }
 

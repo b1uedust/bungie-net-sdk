@@ -26,7 +26,7 @@ import java.util.List;
  * A specific \&quot;spot\&quot; referred to by a location. Only one of these can be active at a time for a given Location.
  */
 @ApiModel(description = "A specific \"spot\" referred to by a location. Only one of these can be active at a time for a given Location.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyLocationReleaseDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -41,28 +41,28 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
   private String largeTransparentIcon = null;
 
   @JsonProperty("spawnPoint")
-  private Integer spawnPoint = null;
+  private Long spawnPoint = null;
 
   @JsonProperty("destinationHash")
-  private Integer destinationHash = null;
+  private Long destinationHash = null;
 
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("activityGraphHash")
-  private Integer activityGraphHash = null;
+  private Long activityGraphHash = null;
 
   @JsonProperty("activityGraphNodeHash")
-  private Integer activityGraphNodeHash = null;
+  private Long activityGraphNodeHash = null;
 
   @JsonProperty("activityBubbleName")
-  private Integer activityBubbleName = null;
+  private Long activityBubbleName = null;
 
   @JsonProperty("activityPathBundle")
-  private Integer activityPathBundle = null;
+  private Long activityPathBundle = null;
 
   @JsonProperty("activityPathDestination")
-  private Integer activityPathDestination = null;
+  private Long activityPathDestination = null;
 
   @JsonProperty("navPointType")
   private Object navPointType = null;
@@ -142,7 +142,7 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
     this.largeTransparentIcon = largeTransparentIcon;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition spawnPoint(Integer spawnPoint) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition spawnPoint(Long spawnPoint) {
     this.spawnPoint = spawnPoint;
     return this;
   }
@@ -152,15 +152,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return spawnPoint
   **/
   @ApiModelProperty(value = "If we had map information, this spawnPoint would be interesting. But sadly, we don't have that info.")
-  public Integer getSpawnPoint() {
+  public Long getSpawnPoint() {
     return spawnPoint;
   }
 
-  public void setSpawnPoint(Integer spawnPoint) {
+  public void setSpawnPoint(Long spawnPoint) {
     this.spawnPoint = spawnPoint;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition destinationHash(Integer destinationHash) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition destinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
     return this;
   }
@@ -170,15 +170,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return destinationHash
   **/
   @ApiModelProperty(value = "The Destination being pointed to by this location.")
-  public Integer getDestinationHash() {
+  public Long getDestinationHash() {
     return destinationHash;
   }
 
-  public void setDestinationHash(Integer destinationHash) {
+  public void setDestinationHash(Long destinationHash) {
     this.destinationHash = destinationHash;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition activityHash(Integer activityHash) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -188,15 +188,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return activityHash
   **/
   @ApiModelProperty(value = "The Activity being pointed to by this location.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition activityGraphHash(Integer activityGraphHash) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition activityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
     return this;
   }
@@ -206,15 +206,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return activityGraphHash
   **/
   @ApiModelProperty(value = "The Activity Graph being pointed to by this location.")
-  public Integer getActivityGraphHash() {
+  public Long getActivityGraphHash() {
     return activityGraphHash;
   }
 
-  public void setActivityGraphHash(Integer activityGraphHash) {
+  public void setActivityGraphHash(Long activityGraphHash) {
     this.activityGraphHash = activityGraphHash;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition activityGraphNodeHash(Integer activityGraphNodeHash) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition activityGraphNodeHash(Long activityGraphNodeHash) {
     this.activityGraphNodeHash = activityGraphNodeHash;
     return this;
   }
@@ -224,15 +224,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return activityGraphNodeHash
   **/
   @ApiModelProperty(value = "The Activity Graph Node being pointed to by this location. (Remember that Activity Graph Node hashes are only unique within an Activity Graph: so use the combination to find the node being spoken of)")
-  public Integer getActivityGraphNodeHash() {
+  public Long getActivityGraphNodeHash() {
     return activityGraphNodeHash;
   }
 
-  public void setActivityGraphNodeHash(Integer activityGraphNodeHash) {
+  public void setActivityGraphNodeHash(Long activityGraphNodeHash) {
     this.activityGraphNodeHash = activityGraphNodeHash;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition activityBubbleName(Integer activityBubbleName) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition activityBubbleName(Long activityBubbleName) {
     this.activityBubbleName = activityBubbleName;
     return this;
   }
@@ -242,15 +242,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return activityBubbleName
   **/
   @ApiModelProperty(value = "The Activity Bubble within the Destination. Look this up in the DestinyDestinationDefinition's bubbles and bubbleSettings properties.")
-  public Integer getActivityBubbleName() {
+  public Long getActivityBubbleName() {
     return activityBubbleName;
   }
 
-  public void setActivityBubbleName(Integer activityBubbleName) {
+  public void setActivityBubbleName(Long activityBubbleName) {
     this.activityBubbleName = activityBubbleName;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition activityPathBundle(Integer activityPathBundle) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition activityPathBundle(Long activityPathBundle) {
     this.activityPathBundle = activityPathBundle;
     return this;
   }
@@ -260,15 +260,15 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return activityPathBundle
   **/
   @ApiModelProperty(value = "If we had map information, this would tell us something cool about the path this location wants you to take. I wish we had map information.")
-  public Integer getActivityPathBundle() {
+  public Long getActivityPathBundle() {
     return activityPathBundle;
   }
 
-  public void setActivityPathBundle(Integer activityPathBundle) {
+  public void setActivityPathBundle(Long activityPathBundle) {
     this.activityPathBundle = activityPathBundle;
   }
 
-  public DestinyDefinitionsDestinyLocationReleaseDefinition activityPathDestination(Integer activityPathDestination) {
+  public DestinyDefinitionsDestinyLocationReleaseDefinition activityPathDestination(Long activityPathDestination) {
     this.activityPathDestination = activityPathDestination;
     return this;
   }
@@ -278,11 +278,11 @@ public class DestinyDefinitionsDestinyLocationReleaseDefinition {
    * @return activityPathDestination
   **/
   @ApiModelProperty(value = "If we had map information, this would tell us about path information related to destination on the map. Sad. Maybe you can do something cool with it. Go to town man.")
-  public Integer getActivityPathDestination() {
+  public Long getActivityPathDestination() {
     return activityPathDestination;
   }
 
-  public void setActivityPathDestination(Integer activityPathDestination) {
+  public void setActivityPathDestination(Long activityPathDestination) {
     this.activityPathDestination = activityPathDestination;
   }
 

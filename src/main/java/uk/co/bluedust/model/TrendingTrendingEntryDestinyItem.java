@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * TrendingTrendingEntryDestinyItem
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class TrendingTrendingEntryDestinyItem {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
-  public TrendingTrendingEntryDestinyItem itemHash(Integer itemHash) {
+  public TrendingTrendingEntryDestinyItem itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class TrendingTrendingEntryDestinyItem {
    * @return itemHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * In an attempt to categorize items by type, usage, and other interesting properties, we created DestinyItemCategoryDefinition: information about types that is assembled using a set of heuristics that examine the properties of an item such as what inventory bucket it&#39;s in, its item type name, and whether it has or is missing certain blocks of data.  This heuristic is imperfect, however. If you find an item miscategorized, let us know on the Bungie API forums!  We then populate all of the categories that we think an item belongs to in its DestinyInventoryItemDefinition.itemCategoryHashes property. You can use that to provide your own custom item filtering, sorting, aggregating... go nuts on it! And let us know if you see more categories that you wish would be added!
  */
 @ApiModel(description = "In an attempt to categorize items by type, usage, and other interesting properties, we created DestinyItemCategoryDefinition: information about types that is assembled using a set of heuristics that examine the properties of an item such as what inventory bucket it's in, its item type name, and whether it has or is missing certain blocks of data.  This heuristic is imperfect, however. If you find an item miscategorized, let us know on the Bungie API forums!  We then populate all of the categories that we think an item belongs to in its DestinyInventoryItemDefinition.itemCategoryHashes property. You can use that to provide your own custom item filtering, sorting, aggregating... go nuts on it! And let us know if you see more categories that you wish would be added!")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemCategoryDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -63,16 +63,16 @@ public class DestinyDefinitionsDestinyItemCategoryDefinition {
   private Object grantDestinyClass = null;
 
   @JsonProperty("groupedCategoryHashes")
-  private List<Integer> groupedCategoryHashes = null;
+  private List<Long> groupedCategoryHashes = null;
 
   @JsonProperty("parentCategoryHashes")
-  private List<Integer> parentCategoryHashes = null;
+  private List<Long> parentCategoryHashes = null;
 
   @JsonProperty("groupCategoryOnly")
   private Boolean groupCategoryOnly = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -278,12 +278,12 @@ public class DestinyDefinitionsDestinyItemCategoryDefinition {
     this.grantDestinyClass = grantDestinyClass;
   }
 
-  public DestinyDefinitionsDestinyItemCategoryDefinition groupedCategoryHashes(List<Integer> groupedCategoryHashes) {
+  public DestinyDefinitionsDestinyItemCategoryDefinition groupedCategoryHashes(List<Long> groupedCategoryHashes) {
     this.groupedCategoryHashes = groupedCategoryHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemCategoryDefinition addGroupedCategoryHashesItem(Integer groupedCategoryHashesItem) {
+  public DestinyDefinitionsDestinyItemCategoryDefinition addGroupedCategoryHashesItem(Long groupedCategoryHashesItem) {
     if (this.groupedCategoryHashes == null) {
       this.groupedCategoryHashes = new ArrayList<>();
     }
@@ -296,20 +296,20 @@ public class DestinyDefinitionsDestinyItemCategoryDefinition {
    * @return groupedCategoryHashes
   **/
   @ApiModelProperty(value = "If this category is a \"parent\" category of other categories, those children will have their hashes listed in rendering order here, and can be looked up using these hashes against DestinyItemCategoryDefinition.  In this way, you can build up a visual hierarchy of item categories. That's what we did, and you can do it too. I believe in you. Yes, you, Carl.  (I hope someone named Carl reads this someday)")
-  public List<Integer> getGroupedCategoryHashes() {
+  public List<Long> getGroupedCategoryHashes() {
     return groupedCategoryHashes;
   }
 
-  public void setGroupedCategoryHashes(List<Integer> groupedCategoryHashes) {
+  public void setGroupedCategoryHashes(List<Long> groupedCategoryHashes) {
     this.groupedCategoryHashes = groupedCategoryHashes;
   }
 
-  public DestinyDefinitionsDestinyItemCategoryDefinition parentCategoryHashes(List<Integer> parentCategoryHashes) {
+  public DestinyDefinitionsDestinyItemCategoryDefinition parentCategoryHashes(List<Long> parentCategoryHashes) {
     this.parentCategoryHashes = parentCategoryHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemCategoryDefinition addParentCategoryHashesItem(Integer parentCategoryHashesItem) {
+  public DestinyDefinitionsDestinyItemCategoryDefinition addParentCategoryHashesItem(Long parentCategoryHashesItem) {
     if (this.parentCategoryHashes == null) {
       this.parentCategoryHashes = new ArrayList<>();
     }
@@ -322,11 +322,11 @@ public class DestinyDefinitionsDestinyItemCategoryDefinition {
    * @return parentCategoryHashes
   **/
   @ApiModelProperty(value = "All item category hashes of \"parent\" categories: categories that contain this as a child through the hierarchy of groupedCategoryHashes. It's a bit redundant, but having this child-centric list speeds up some calculations.")
-  public List<Integer> getParentCategoryHashes() {
+  public List<Long> getParentCategoryHashes() {
     return parentCategoryHashes;
   }
 
-  public void setParentCategoryHashes(List<Integer> parentCategoryHashes) {
+  public void setParentCategoryHashes(List<Long> parentCategoryHashes) {
     this.parentCategoryHashes = parentCategoryHashes;
   }
 
@@ -348,7 +348,7 @@ public class DestinyDefinitionsDestinyItemCategoryDefinition {
     this.groupCategoryOnly = groupCategoryOnly;
   }
 
-  public DestinyDefinitionsDestinyItemCategoryDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyItemCategoryDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -358,11 +358,11 @@ public class DestinyDefinitionsDestinyItemCategoryDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

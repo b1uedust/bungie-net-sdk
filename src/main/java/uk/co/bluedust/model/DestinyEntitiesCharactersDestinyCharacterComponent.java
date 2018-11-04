@@ -28,7 +28,7 @@ import java.util.Map;
  * This component contains base properties of the character. You&#39;ll probably want to always request this component, but hey you do you.
  */
 @ApiModel(description = "This component contains base properties of the character. You'll probably want to always request this component, but hey you do you.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesCharactersDestinyCharacterComponent {
   @JsonProperty("membershipId")
   private Long membershipId = null;
@@ -79,7 +79,7 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
   private String emblemBackgroundPath = null;
 
   @JsonProperty("emblemHash")
-  private Integer emblemHash = null;
+  private Long emblemHash = null;
 
   @JsonProperty("emblemColor")
   private Object emblemColor = null;
@@ -94,7 +94,7 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
   private Float percentToNextLevel = null;
 
   @JsonProperty("titleRecordHash")
-  private Integer titleRecordHash = null;
+  private Long titleRecordHash = null;
 
   public DestinyEntitiesCharactersDestinyCharacterComponent membershipId(Long membershipId) {
     this.membershipId = membershipId;
@@ -392,7 +392,7 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
     this.emblemBackgroundPath = emblemBackgroundPath;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterComponent emblemHash(Integer emblemHash) {
+  public DestinyEntitiesCharactersDestinyCharacterComponent emblemHash(Long emblemHash) {
     this.emblemHash = emblemHash;
     return this;
   }
@@ -402,11 +402,11 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
    * @return emblemHash
   **/
   @ApiModelProperty(value = "The hash of the currently equipped emblem for the user. Can be used to look up the DestinyInventoryItemDefinition.")
-  public Integer getEmblemHash() {
+  public Long getEmblemHash() {
     return emblemHash;
   }
 
-  public void setEmblemHash(Integer emblemHash) {
+  public void setEmblemHash(Long emblemHash) {
     this.emblemHash = emblemHash;
   }
 
@@ -482,7 +482,7 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
     this.percentToNextLevel = percentToNextLevel;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterComponent titleRecordHash(Integer titleRecordHash) {
+  public DestinyEntitiesCharactersDestinyCharacterComponent titleRecordHash(Long titleRecordHash) {
     this.titleRecordHash = titleRecordHash;
     return this;
   }
@@ -492,11 +492,11 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
    * @return titleRecordHash
   **/
   @ApiModelProperty(value = "If this Character has a title assigned to it, this is the identifier of the DestinyRecordDefinition that has that title information.")
-  public Integer getTitleRecordHash() {
+  public Long getTitleRecordHash() {
     return titleRecordHash;
   }
 
-  public void setTitleRecordHash(Integer titleRecordHash) {
+  public void setTitleRecordHash(Long titleRecordHash) {
     this.titleRecordHash = titleRecordHash;
   }
 

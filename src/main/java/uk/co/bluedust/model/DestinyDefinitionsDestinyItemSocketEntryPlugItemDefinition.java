@@ -24,12 +24,12 @@ import io.swagger.annotations.ApiModelProperty;
  * The definition of a known, reusable plug that can be applied to a socket.
  */
 @ApiModel(description = "The definition of a known, reusable plug that can be applied to a socket.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition {
   @JsonProperty("plugItemHash")
-  private Integer plugItemHash = null;
+  private Long plugItemHash = null;
 
-  public DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition plugItemHash(Integer plugItemHash) {
+  public DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition plugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
     return this;
   }
@@ -39,11 +39,11 @@ public class DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition {
    * @return plugItemHash
   **/
   @ApiModelProperty(value = "The hash identifier of a DestinyInventoryItemDefinition representing the plug that can be inserted.")
-  public Integer getPlugItemHash() {
+  public Long getPlugItemHash() {
     return plugItemHash;
   }
 
-  public void setPlugItemHash(Integer plugItemHash) {
+  public void setPlugItemHash(Long plugItemHash) {
     this.plugItemHash = plugItemHash;
   }
 

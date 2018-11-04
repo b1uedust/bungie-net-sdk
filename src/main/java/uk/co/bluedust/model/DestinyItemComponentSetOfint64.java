@@ -22,16 +22,16 @@ import io.swagger.annotations.ApiModelProperty;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemInstanceComponent;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemObjectivesComponent;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemPerksComponent;
+import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemPlugComponent;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemRenderComponent;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemSocketsComponent;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemStatsComponent;
 import uk.co.bluedust.model.DictionaryComponentResponseOfint64AndDestinyItemTalentGridComponent;
-import uk.co.bluedust.model.DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent;
 
 /**
  * DestinyItemComponentSetOfint64
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyItemComponentSetOfint64 {
   @JsonProperty("instances")
   private DictionaryComponentResponseOfint64AndDestinyItemInstanceComponent instances = null;
@@ -52,7 +52,7 @@ public class DestinyItemComponentSetOfint64 {
   private DictionaryComponentResponseOfint64AndDestinyItemTalentGridComponent talentGrids = null;
 
   @JsonProperty("plugStates")
-  private DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent plugStates = null;
+  private DictionaryComponentResponseOfint64AndDestinyItemPlugComponent plugStates = null;
 
   @JsonProperty("objectives")
   private DictionaryComponentResponseOfint64AndDestinyItemObjectivesComponent objectives = null;
@@ -165,7 +165,7 @@ public class DestinyItemComponentSetOfint64 {
     this.talentGrids = talentGrids;
   }
 
-  public DestinyItemComponentSetOfint64 plugStates(DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent plugStates) {
+  public DestinyItemComponentSetOfint64 plugStates(DictionaryComponentResponseOfint64AndDestinyItemPlugComponent plugStates) {
     this.plugStates = plugStates;
     return this;
   }
@@ -175,11 +175,11 @@ public class DestinyItemComponentSetOfint64 {
    * @return plugStates
   **/
   @ApiModelProperty(value = "")
-  public DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent getPlugStates() {
+  public DictionaryComponentResponseOfint64AndDestinyItemPlugComponent getPlugStates() {
     return plugStates;
   }
 
-  public void setPlugStates(DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent plugStates) {
+  public void setPlugStates(DictionaryComponentResponseOfint64AndDestinyItemPlugComponent plugStates) {
     this.plugStates = plugStates;
   }
 

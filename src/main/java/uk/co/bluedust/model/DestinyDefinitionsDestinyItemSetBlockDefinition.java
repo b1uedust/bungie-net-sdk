@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyItemSetBlockEntryDefinition
  * Primarily for Quests, this is the definition of properties related to the item if it is a quest and its various quest steps.
  */
 @ApiModel(description = "Primarily for Quests, this is the definition of properties related to the item if it is a quest and its various quest steps.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSetBlockDefinition {
   @JsonProperty("itemList")
   private List<DestinyDefinitionsDestinyItemSetBlockEntryDefinition> itemList = null;

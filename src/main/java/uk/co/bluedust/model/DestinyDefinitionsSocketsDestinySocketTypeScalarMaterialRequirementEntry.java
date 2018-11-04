@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsSocketsDestinySocketTypeScalarMaterialRequirementEntry
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSocketsDestinySocketTypeScalarMaterialRequirementEntry {
   @JsonProperty("currencyItemHash")
-  private Integer currencyItemHash = null;
+  private Long currencyItemHash = null;
 
   @JsonProperty("scalarValue")
   private Integer scalarValue = null;
 
-  public DestinyDefinitionsSocketsDestinySocketTypeScalarMaterialRequirementEntry currencyItemHash(Integer currencyItemHash) {
+  public DestinyDefinitionsSocketsDestinySocketTypeScalarMaterialRequirementEntry currencyItemHash(Long currencyItemHash) {
     this.currencyItemHash = currencyItemHash;
     return this;
   }
@@ -41,11 +41,11 @@ public class DestinyDefinitionsSocketsDestinySocketTypeScalarMaterialRequirement
    * @return currencyItemHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getCurrencyItemHash() {
+  public Long getCurrencyItemHash() {
     return currencyItemHash;
   }
 
-  public void setCurrencyItemHash(Integer currencyItemHash) {
+  public void setCurrencyItemHash(Long currencyItemHash) {
     this.currencyItemHash = currencyItemHash;
   }
 

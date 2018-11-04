@@ -28,16 +28,16 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyArtDyeReference;
  * Characters can not only have Inventory buckets (containers of items that are generally matched by their type or functionality), they can also have Equipment Slots.  The Equipment Slot is an indicator that the related bucket can have instanced items equipped on the character. For instance, the Primary Weapon bucket has an Equipment Slot that determines whether you can equip primary weapons, and holds the association between its slot and the inventory bucket from which it can have items equipped.  An Equipment Slot must have a related Inventory Bucket, but not all inventory buckets must have Equipment Slots.
  */
 @ApiModel(description = "Characters can not only have Inventory buckets (containers of items that are generally matched by their type or functionality), they can also have Equipment Slots.  The Equipment Slot is an indicator that the related bucket can have instanced items equipped on the character. For instance, the Primary Weapon bucket has an Equipment Slot that determines whether you can equip primary weapons, and holds the association between its slot and the inventory bucket from which it can have items equipped.  An Equipment Slot must have a related Inventory Bucket, but not all inventory buckets must have Equipment Slots.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("equipmentCategoryHash")
-  private Integer equipmentCategoryHash = null;
+  private Long equipmentCategoryHash = null;
 
   @JsonProperty("bucketTypeHash")
-  private Integer bucketTypeHash = null;
+  private Long bucketTypeHash = null;
 
   @JsonProperty("applyCustomArtDyes")
   private Boolean applyCustomArtDyes = null;
@@ -46,7 +46,7 @@ public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
   private List<DestinyDefinitionsDestinyArtDyeReference> artDyeChannels = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -72,7 +72,7 @@ public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyEquipmentSlotDefinition equipmentCategoryHash(Integer equipmentCategoryHash) {
+  public DestinyDefinitionsDestinyEquipmentSlotDefinition equipmentCategoryHash(Long equipmentCategoryHash) {
     this.equipmentCategoryHash = equipmentCategoryHash;
     return this;
   }
@@ -82,15 +82,15 @@ public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
    * @return equipmentCategoryHash
   **/
   @ApiModelProperty(value = "These technically point to \"Equipment Category Definitions\". But don't get excited. There's nothing of significant value in those definitions, so I didn't bother to expose them. You can use the hash here to group equipment slots by common functionality, which serves the same purpose as if we had the Equipment Category definitions exposed.")
-  public Integer getEquipmentCategoryHash() {
+  public Long getEquipmentCategoryHash() {
     return equipmentCategoryHash;
   }
 
-  public void setEquipmentCategoryHash(Integer equipmentCategoryHash) {
+  public void setEquipmentCategoryHash(Long equipmentCategoryHash) {
     this.equipmentCategoryHash = equipmentCategoryHash;
   }
 
-  public DestinyDefinitionsDestinyEquipmentSlotDefinition bucketTypeHash(Integer bucketTypeHash) {
+  public DestinyDefinitionsDestinyEquipmentSlotDefinition bucketTypeHash(Long bucketTypeHash) {
     this.bucketTypeHash = bucketTypeHash;
     return this;
   }
@@ -100,11 +100,11 @@ public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
    * @return bucketTypeHash
   **/
   @ApiModelProperty(value = "The inventory bucket that owns this equipment slot.")
-  public Integer getBucketTypeHash() {
+  public Long getBucketTypeHash() {
     return bucketTypeHash;
   }
 
-  public void setBucketTypeHash(Integer bucketTypeHash) {
+  public void setBucketTypeHash(Long bucketTypeHash) {
     this.bucketTypeHash = bucketTypeHash;
   }
 
@@ -152,7 +152,7 @@ public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
     this.artDyeChannels = artDyeChannels;
   }
 
-  public DestinyDefinitionsDestinyEquipmentSlotDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyEquipmentSlotDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -162,11 +162,11 @@ public class DestinyDefinitionsDestinyEquipmentSlotDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

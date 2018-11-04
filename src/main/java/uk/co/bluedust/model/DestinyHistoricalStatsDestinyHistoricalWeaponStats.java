@@ -27,15 +27,15 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDestinyHistoricalStatsValue;
 /**
  * DestinyHistoricalStatsDestinyHistoricalWeaponStats
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyHistoricalStatsDestinyHistoricalWeaponStats {
   @JsonProperty("referenceId")
-  private Integer referenceId = null;
+  private Long referenceId = null;
 
   @JsonProperty("values")
   private Map<String, DestinyHistoricalStatsDestinyHistoricalStatsValue> values = null;
 
-  public DestinyHistoricalStatsDestinyHistoricalWeaponStats referenceId(Integer referenceId) {
+  public DestinyHistoricalStatsDestinyHistoricalWeaponStats referenceId(Long referenceId) {
     this.referenceId = referenceId;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyHistoricalStatsDestinyHistoricalWeaponStats {
    * @return referenceId
   **/
   @ApiModelProperty(value = "The hash ID of the item definition that describes the weapon.")
-  public Integer getReferenceId() {
+  public Long getReferenceId() {
     return referenceId;
   }
 
-  public void setReferenceId(Integer referenceId) {
+  public void setReferenceId(Long referenceId) {
     this.referenceId = referenceId;
   }
 

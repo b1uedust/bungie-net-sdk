@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **vendorItemIndex** | **Integer** | The index into the DestinyVendorDefinition.saleList. This is what we use to refer to items being sold throughout live and definition data. |  [optional]
-**itemHash** | **Integer** | The hash identifier of the item being sold (DestinyInventoryItemDefinition).  Note that a vendor can sell the same item in multiple ways, so don&#39;t assume that itemHash is a unique identifier for this entity. |  [optional]
+**itemHash** | **Long** | The hash identifier of the item being sold (DestinyInventoryItemDefinition).  Note that a vendor can sell the same item in multiple ways, so don&#39;t assume that itemHash is a unique identifier for this entity. |  [optional]
 **quantity** | **Integer** | The amount you will recieve of the item described in itemHash if you make the purchase. |  [optional]
 **failureIndexes** | **List&lt;Integer&gt;** | An list of indexes into the DestinyVendorDefinition.failureStrings array, indicating the possible failure strings that can be relevant for this item. |  [optional]
 **currencies** | [**List&lt;DestinyDefinitionsDestinyVendorItemQuantity&gt;**](DestinyDefinitionsDestinyVendorItemQuantity.md) | This is a pre-compiled aggregation of item value and priceOverrideList, so that we have one place to check for what the purchaser must pay for the item. Use this instead of trying to piece together the price separately.  The somewhat crappy part about this is that, now that item quantity overrides have dynamic modifiers, this will not necessarily be statically true. If you were using this instead of live data, switch to using live data. |  [optional]
@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **maximumLevel** | **Integer** | The maximum character level at which this item is available for sale. |  [optional]
 **action** | **Object** | The action to be performed when purchasing the item, if it&#39;s not just \&quot;buy\&quot;. |  [optional]
 **displayCategory** | **String** | The string identifier for the category selling this item. |  [optional]
-**inventoryBucketHash** | **Integer** | The inventory bucket into which this item will be placed upon purchase. |  [optional]
+**inventoryBucketHash** | **Long** | The inventory bucket into which this item will be placed upon purchase. |  [optional]
 **visibilityScope** | **Object** | The most restrictive scope that determines whether the item is available in the Vendor&#39;s inventory. See DestinyGatingScope&#39;s documentation for more information.  This can be determined by Unlock gating, or by whether or not the item has purchase level requirements (minimumLevel and maximumLevel properties). |  [optional]
 **purchasableScope** | **Object** | Similar to visibilityScope, it represents the most restrictive scope that determines whether the item can be purchased. It will at least be as restrictive as visibilityScope, but could be more restrictive if the item has additional purchase requirements beyond whether it is merely visible or not.  See DestinyGatingScope&#39;s documentation for more information. |  [optional]
 **exclusivity** | **Object** | If this item can only be purchased by a given platform, this indicates the platform to which it is restricted. |  [optional]

@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDestinyPresentationNodeType;
  * A PresentationNode is an entity that represents a logical grouping of other entities visually/organizationally.  For now, Presentation Nodes may contain the following... but it may be used for more in the future:  - Collectibles - Records (Or, as the public will call them, \&quot;Triumphs.\&quot; Don&#39;t ask me why we&#39;re overloading the term \&quot;Triumph\&quot;, it still hurts me to think about it) - Other Presentation Nodes, allowing a tree of Presentation Nodes to be created  Part of me wants to break these into conceptual definitions per entity being collected, but the possibility of these different types being mixed in the same UI and the possibility that it could actually be more useful to return the \&quot;bare metal\&quot; presentation node concept has resulted in me deciding against that for the time being.  We&#39;ll see if I come to regret this as well.
  */
 @ApiModel(description = "A PresentationNode is an entity that represents a logical grouping of other entities visually/organizationally.  For now, Presentation Nodes may contain the following... but it may be used for more in the future:  - Collectibles - Records (Or, as the public will call them, \"Triumphs.\" Don't ask me why we're overloading the term \"Triumph\", it still hurts me to think about it) - Other Presentation Nodes, allowing a tree of Presentation Nodes to be created  Part of me wants to break these into conceptual definitions per entity being collected, but the possibility of these different types being mixed in the same UI and the possibility that it could actually be more useful to return the \"bare metal\" presentation node concept has resulted in me deciding against that for the time being.  We'll see if I come to regret this as well.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -46,10 +46,10 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
   private Object scope = null;
 
   @JsonProperty("objectiveHash")
-  private Integer objectiveHash = null;
+  private Long objectiveHash = null;
 
   @JsonProperty("completionRecordHash")
-  private Integer completionRecordHash = null;
+  private Long completionRecordHash = null;
 
   @JsonProperty("children")
   private Object children = null;
@@ -67,10 +67,10 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
   private Boolean disableChildSubscreenNavigation = null;
 
   @JsonProperty("parentNodeHashes")
-  private List<Integer> parentNodeHashes = null;
+  private List<Long> parentNodeHashes = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -168,7 +168,7 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
     this.scope = scope;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition objectiveHash(Integer objectiveHash) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition objectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
     return this;
   }
@@ -178,15 +178,15 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
    * @return objectiveHash
   **/
   @ApiModelProperty(value = "If this presentation node shows a related objective (for instance, if it tracks the progress of its children), the objective being tracked is indicated here.")
-  public Integer getObjectiveHash() {
+  public Long getObjectiveHash() {
     return objectiveHash;
   }
 
-  public void setObjectiveHash(Integer objectiveHash) {
+  public void setObjectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition completionRecordHash(Integer completionRecordHash) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition completionRecordHash(Long completionRecordHash) {
     this.completionRecordHash = completionRecordHash;
     return this;
   }
@@ -196,11 +196,11 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
    * @return completionRecordHash
   **/
   @ApiModelProperty(value = "If this presentation node has an associated \"Record\" that you can accomplish for completing its children, this is the identifier of that Record.")
-  public Integer getCompletionRecordHash() {
+  public Long getCompletionRecordHash() {
     return completionRecordHash;
   }
 
-  public void setCompletionRecordHash(Integer completionRecordHash) {
+  public void setCompletionRecordHash(Long completionRecordHash) {
     this.completionRecordHash = completionRecordHash;
   }
 
@@ -294,12 +294,12 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
     this.disableChildSubscreenNavigation = disableChildSubscreenNavigation;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition parentNodeHashes(List<Integer> parentNodeHashes) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition parentNodeHashes(List<Long> parentNodeHashes) {
     this.parentNodeHashes = parentNodeHashes;
     return this;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition addParentNodeHashesItem(Integer parentNodeHashesItem) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition addParentNodeHashesItem(Long parentNodeHashesItem) {
     if (this.parentNodeHashes == null) {
       this.parentNodeHashes = new ArrayList<>();
     }
@@ -312,15 +312,15 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
    * @return parentNodeHashes
   **/
   @ApiModelProperty(value = "A quick reference to presentation nodes that have this node as a child. (presentation nodes can be parented under multiple parents)")
-  public List<Integer> getParentNodeHashes() {
+  public List<Long> getParentNodeHashes() {
     return parentNodeHashes;
   }
 
-  public void setParentNodeHashes(List<Integer> parentNodeHashes) {
+  public void setParentNodeHashes(List<Long> parentNodeHashes) {
     this.parentNodeHashes = parentNodeHashes;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition hash(Integer hash) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -330,11 +330,11 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

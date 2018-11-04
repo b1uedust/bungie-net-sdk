@@ -33,10 +33,10 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyMilestoneVendor;
  * Represents a runtime instance of a user&#39;s milestone status. Live Milestone data should be combined with DestinyMilestoneDefinition data to show the user a picture of what is available for them to do in the game, and their status in regards to said \&quot;things to do.\&quot; Consider it a big, wonky to-do list, or Advisors 3.0 for those who remember the Destiny 1 API.
  */
 @ApiModel(description = "Represents a runtime instance of a user's milestone status. Live Milestone data should be combined with DestinyMilestoneDefinition data to show the user a picture of what is available for them to do in the game, and their status in regards to said \"things to do.\" Consider it a big, wonky to-do list, or Advisors 3.0 for those who remember the Destiny 1 API.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyMilestone {
   @JsonProperty("milestoneHash")
-  private Integer milestoneHash = null;
+  private Long milestoneHash = null;
 
   @JsonProperty("availableQuests")
   private List<DestinyMilestonesDestinyMilestoneQuest> availableQuests = null;
@@ -48,7 +48,7 @@ public class DestinyMilestonesDestinyMilestone {
   private Map<String, Float> values = null;
 
   @JsonProperty("vendorHashes")
-  private List<Integer> vendorHashes = null;
+  private List<Long> vendorHashes = null;
 
   @JsonProperty("vendors")
   private List<DestinyMilestonesDestinyMilestoneVendor> vendors = null;
@@ -65,7 +65,7 @@ public class DestinyMilestonesDestinyMilestone {
   @JsonProperty("order")
   private Integer order = null;
 
-  public DestinyMilestonesDestinyMilestone milestoneHash(Integer milestoneHash) {
+  public DestinyMilestonesDestinyMilestone milestoneHash(Long milestoneHash) {
     this.milestoneHash = milestoneHash;
     return this;
   }
@@ -75,11 +75,11 @@ public class DestinyMilestonesDestinyMilestone {
    * @return milestoneHash
   **/
   @ApiModelProperty(value = "The unique identifier for the Milestone. Use it to look up the DestinyMilestoneDefinition, so you can combine the other data in this contract with static definition data.")
-  public Integer getMilestoneHash() {
+  public Long getMilestoneHash() {
     return milestoneHash;
   }
 
-  public void setMilestoneHash(Integer milestoneHash) {
+  public void setMilestoneHash(Long milestoneHash) {
     this.milestoneHash = milestoneHash;
   }
 
@@ -161,12 +161,12 @@ public class DestinyMilestonesDestinyMilestone {
     this.values = values;
   }
 
-  public DestinyMilestonesDestinyMilestone vendorHashes(List<Integer> vendorHashes) {
+  public DestinyMilestonesDestinyMilestone vendorHashes(List<Long> vendorHashes) {
     this.vendorHashes = vendorHashes;
     return this;
   }
 
-  public DestinyMilestonesDestinyMilestone addVendorHashesItem(Integer vendorHashesItem) {
+  public DestinyMilestonesDestinyMilestone addVendorHashesItem(Long vendorHashesItem) {
     if (this.vendorHashes == null) {
       this.vendorHashes = new ArrayList<>();
     }
@@ -179,11 +179,11 @@ public class DestinyMilestonesDestinyMilestone {
    * @return vendorHashes
   **/
   @ApiModelProperty(value = "A milestone may have one or more active vendors that are \"related\" to it (that provide rewards, or that are the initiators of the Milestone). I already regret this, even as I'm typing it. [I told you I'd regret this] You see, sometimes a milestone may be directly correlated with a set of vendors that provide varying tiers of rewards. The player may not be able to interact with one or more of those vendors. This will return the hashes of the Vendors that the player *can* interact with, allowing you to show their current inventory as rewards or related items to the Milestone or its activities.  Before we even use it, it's already deprecated! How much of a bummer is that? We need more data.")
-  public List<Integer> getVendorHashes() {
+  public List<Long> getVendorHashes() {
     return vendorHashes;
   }
 
-  public void setVendorHashes(List<Integer> vendorHashes) {
+  public void setVendorHashes(List<Long> vendorHashes) {
     this.vendorHashes = vendorHashes;
   }
 

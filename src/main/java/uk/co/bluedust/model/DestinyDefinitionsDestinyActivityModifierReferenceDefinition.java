@@ -24,12 +24,12 @@ import io.swagger.annotations.ApiModelProperty;
  * A reference to an Activity Modifier from another entity, such as an Activity (for now, just Activities).  This defines some
  */
 @ApiModel(description = "A reference to an Activity Modifier from another entity, such as an Activity (for now, just Activities).  This defines some")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyActivityModifierReferenceDefinition {
   @JsonProperty("activityModifierHash")
-  private Integer activityModifierHash = null;
+  private Long activityModifierHash = null;
 
-  public DestinyDefinitionsDestinyActivityModifierReferenceDefinition activityModifierHash(Integer activityModifierHash) {
+  public DestinyDefinitionsDestinyActivityModifierReferenceDefinition activityModifierHash(Long activityModifierHash) {
     this.activityModifierHash = activityModifierHash;
     return this;
   }
@@ -39,11 +39,11 @@ public class DestinyDefinitionsDestinyActivityModifierReferenceDefinition {
    * @return activityModifierHash
   **/
   @ApiModelProperty(value = "The hash identifier for the DestinyActivityModifierDefinition referenced by this activity.")
-  public Integer getActivityModifierHash() {
+  public Long getActivityModifierHash() {
     return activityModifierHash;
   }
 
-  public void setActivityModifierHash(Integer activityModifierHash) {
+  public void setActivityModifierHash(Long activityModifierHash) {
     this.activityModifierHash = activityModifierHash;
   }
 

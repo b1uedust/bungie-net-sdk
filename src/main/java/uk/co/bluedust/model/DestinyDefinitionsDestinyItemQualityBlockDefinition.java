@@ -26,7 +26,7 @@ import java.util.List;
  * An item&#39;s \&quot;Quality\&quot; determines its calculated stats. The Level at which the item spawns is combined with its \&quot;qualityLevel\&quot; along with some additional calculations to determine the value of those stats.  In Destiny 2, most items don&#39;t have default item levels and quality, making this property less useful: these apparently are almost always determined by the complex mechanisms of the Reward system rather than statically. They are still provided here in case they are still useful for people. This also contains some information about Infusion.
  */
 @ApiModel(description = "An item's \"Quality\" determines its calculated stats. The Level at which the item spawns is combined with its \"qualityLevel\" along with some additional calculations to determine the value of those stats.  In Destiny 2, most items don't have default item levels and quality, making this property less useful: these apparently are almost always determined by the complex mechanisms of the Reward system rather than statically. They are still provided here in case they are still useful for people. This also contains some information about Infusion.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemQualityBlockDefinition {
   @JsonProperty("itemLevels")
   private List<Integer> itemLevels = null;
@@ -38,13 +38,13 @@ public class DestinyDefinitionsDestinyItemQualityBlockDefinition {
   private String infusionCategoryName = null;
 
   @JsonProperty("infusionCategoryHash")
-  private Integer infusionCategoryHash = null;
+  private Long infusionCategoryHash = null;
 
   @JsonProperty("infusionCategoryHashes")
-  private List<Integer> infusionCategoryHashes = null;
+  private List<Long> infusionCategoryHashes = null;
 
   @JsonProperty("progressionLevelRequirementHash")
-  private Integer progressionLevelRequirementHash = null;
+  private Long progressionLevelRequirementHash = null;
 
   public DestinyDefinitionsDestinyItemQualityBlockDefinition itemLevels(List<Integer> itemLevels) {
     this.itemLevels = itemLevels;
@@ -108,7 +108,7 @@ public class DestinyDefinitionsDestinyItemQualityBlockDefinition {
     this.infusionCategoryName = infusionCategoryName;
   }
 
-  public DestinyDefinitionsDestinyItemQualityBlockDefinition infusionCategoryHash(Integer infusionCategoryHash) {
+  public DestinyDefinitionsDestinyItemQualityBlockDefinition infusionCategoryHash(Long infusionCategoryHash) {
     this.infusionCategoryHash = infusionCategoryHash;
     return this;
   }
@@ -118,20 +118,20 @@ public class DestinyDefinitionsDestinyItemQualityBlockDefinition {
    * @return infusionCategoryHash
   **/
   @ApiModelProperty(value = "The hash identifier for the infusion. It does not map to a Definition entity.  DEPRECATED: Items can now have multiple infusion categories. Please use infusionCategoryHashes instead.")
-  public Integer getInfusionCategoryHash() {
+  public Long getInfusionCategoryHash() {
     return infusionCategoryHash;
   }
 
-  public void setInfusionCategoryHash(Integer infusionCategoryHash) {
+  public void setInfusionCategoryHash(Long infusionCategoryHash) {
     this.infusionCategoryHash = infusionCategoryHash;
   }
 
-  public DestinyDefinitionsDestinyItemQualityBlockDefinition infusionCategoryHashes(List<Integer> infusionCategoryHashes) {
+  public DestinyDefinitionsDestinyItemQualityBlockDefinition infusionCategoryHashes(List<Long> infusionCategoryHashes) {
     this.infusionCategoryHashes = infusionCategoryHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemQualityBlockDefinition addInfusionCategoryHashesItem(Integer infusionCategoryHashesItem) {
+  public DestinyDefinitionsDestinyItemQualityBlockDefinition addInfusionCategoryHashesItem(Long infusionCategoryHashesItem) {
     if (this.infusionCategoryHashes == null) {
       this.infusionCategoryHashes = new ArrayList<>();
     }
@@ -144,15 +144,15 @@ public class DestinyDefinitionsDestinyItemQualityBlockDefinition {
    * @return infusionCategoryHashes
   **/
   @ApiModelProperty(value = "If any one of these hashes matches any value in another item's infusionCategoryHashes, the two can infuse with each other.")
-  public List<Integer> getInfusionCategoryHashes() {
+  public List<Long> getInfusionCategoryHashes() {
     return infusionCategoryHashes;
   }
 
-  public void setInfusionCategoryHashes(List<Integer> infusionCategoryHashes) {
+  public void setInfusionCategoryHashes(List<Long> infusionCategoryHashes) {
     this.infusionCategoryHashes = infusionCategoryHashes;
   }
 
-  public DestinyDefinitionsDestinyItemQualityBlockDefinition progressionLevelRequirementHash(Integer progressionLevelRequirementHash) {
+  public DestinyDefinitionsDestinyItemQualityBlockDefinition progressionLevelRequirementHash(Long progressionLevelRequirementHash) {
     this.progressionLevelRequirementHash = progressionLevelRequirementHash;
     return this;
   }
@@ -162,11 +162,11 @@ public class DestinyDefinitionsDestinyItemQualityBlockDefinition {
    * @return progressionLevelRequirementHash
   **/
   @ApiModelProperty(value = "An item can refer to pre-set level requirements. They are defined in DestinyProgressionLevelRequirementDefinition, and you can use this hash to find the appropriate definition.")
-  public Integer getProgressionLevelRequirementHash() {
+  public Long getProgressionLevelRequirementHash() {
     return progressionLevelRequirementHash;
   }
 
-  public void setProgressionLevelRequirementHash(Integer progressionLevelRequirementHash) {
+  public void setProgressionLevelRequirementHash(Long progressionLevelRequirementHash) {
     this.progressionLevelRequirementHash = progressionLevelRequirementHash;
   }
 

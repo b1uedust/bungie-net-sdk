@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activityHash** | **Integer** | The hash identifier of the Activity. Use this to look up the DestinyActivityDefinition of the activity. |  [optional]
+**activityHash** | **Long** | The hash identifier of the Activity. Use this to look up the DestinyActivityDefinition of the activity. |  [optional]
 **isNew** | **Boolean** | If true, then the activity should have a \&quot;new\&quot; indicator in the Director UI. |  [optional]
 **canLead** | **Boolean** | If true, the user is allowed to lead a Fireteam into this activity. |  [optional]
 **canJoin** | **Boolean** | If true, the user is allowed to join with another Fireteam in this activity. |  [optional]

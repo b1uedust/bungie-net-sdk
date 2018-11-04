@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **verb** | **String** |  |  [optional]
 **isPositive** | **Boolean** |  |  [optional]
 **actionId** | **String** |  |  [optional]
-**actionHash** | **Integer** |  |  [optional]
+**actionHash** | **Long** |  |  [optional]
 **autoPerformAction** | **Boolean** |  |  [optional]
 
 

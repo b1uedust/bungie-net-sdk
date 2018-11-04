@@ -22,13 +22,13 @@ import io.swagger.annotations.ApiModelProperty;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import uk.co.bluedust.model.DestinyBaseItemComponentSetOfuint32;
+import uk.co.bluedust.model.DestinyBaseItemComponentSetOfint64;
 
 /**
  * The response for GetDestinyProfile, with components for character and item-level data.
  */
 @ApiModel(description = "The response for GetDestinyProfile, with components for character and item-level data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyResponsesDestinyProfileResponse {
   @JsonProperty("vendorReceipts")
   private Object vendorReceipts = null;
@@ -85,7 +85,7 @@ public class DestinyResponsesDestinyProfileResponse {
   private Object characterPlugSets = null;
 
   @JsonProperty("characterUninstancedItemComponents")
-  private Map<String, DestinyBaseItemComponentSetOfuint32> characterUninstancedItemComponents = null;
+  private Map<String, DestinyBaseItemComponentSetOfint64> characterUninstancedItemComponents = null;
 
   @JsonProperty("characterPresentationNodes")
   private Object characterPresentationNodes = null;
@@ -426,12 +426,12 @@ public class DestinyResponsesDestinyProfileResponse {
     this.characterPlugSets = characterPlugSets;
   }
 
-  public DestinyResponsesDestinyProfileResponse characterUninstancedItemComponents(Map<String, DestinyBaseItemComponentSetOfuint32> characterUninstancedItemComponents) {
+  public DestinyResponsesDestinyProfileResponse characterUninstancedItemComponents(Map<String, DestinyBaseItemComponentSetOfint64> characterUninstancedItemComponents) {
     this.characterUninstancedItemComponents = characterUninstancedItemComponents;
     return this;
   }
 
-  public DestinyResponsesDestinyProfileResponse putCharacterUninstancedItemComponentsItem(String key, DestinyBaseItemComponentSetOfuint32 characterUninstancedItemComponentsItem) {
+  public DestinyResponsesDestinyProfileResponse putCharacterUninstancedItemComponentsItem(String key, DestinyBaseItemComponentSetOfint64 characterUninstancedItemComponentsItem) {
     if (this.characterUninstancedItemComponents == null) {
       this.characterUninstancedItemComponents = new HashMap<>();
     }
@@ -444,11 +444,11 @@ public class DestinyResponsesDestinyProfileResponse {
    * @return characterUninstancedItemComponents
   **/
   @ApiModelProperty(value = "Do you ever get the feeling that a system was designed *too* flexibly? That it can be used in so many different ways that you end up being unable to provide an easy to use abstraction for the mess that's happening under the surface?  Let's talk about character-specific data that might be related to items without instances. These two statements are totally unrelated, I promise.  At some point during D2, it was decided that items - such as Bounties - could be given to characters and *not* have instance data, but that *could* display and even use relevant state information on your account and character.  Up to now, any item that had meaningful dependencies on character or account state had to be instanced, and thus \"itemComponents\" was all that you needed: it was keyed by item's instance IDs and provided the stateful information you needed inside.  Unfortunately, we don't live in such a magical world anymore. This is information held on a per-character basis about non-instanced items that the characters have in their inventory - or that reference character-specific state information even if it's in Account-level inventory - and the values related to that item's state in relation to the given character.  To give a concrete example, look at a Moments of Triumph bounty. They exist in a character's inventory, and show/care about a character's progression toward completing the bounty. But the bounty itself is a non-instanced item, like a mod or a currency. This returns that data for the characters who have the bounty in their inventory.  I'm not crying, you're crying Okay we're both crying but it's going to be okay I promise Actually I shouldn't promise that, I don't know if it's going to be okay")
-  public Map<String, DestinyBaseItemComponentSetOfuint32> getCharacterUninstancedItemComponents() {
+  public Map<String, DestinyBaseItemComponentSetOfint64> getCharacterUninstancedItemComponents() {
     return characterUninstancedItemComponents;
   }
 
-  public void setCharacterUninstancedItemComponents(Map<String, DestinyBaseItemComponentSetOfuint32> characterUninstancedItemComponents) {
+  public void setCharacterUninstancedItemComponents(Map<String, DestinyBaseItemComponentSetOfint64> characterUninstancedItemComponents) {
     this.characterUninstancedItemComponents = characterUninstancedItemComponents;
   }
 

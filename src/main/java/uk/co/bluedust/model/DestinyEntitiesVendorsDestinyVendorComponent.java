@@ -25,10 +25,10 @@ import java.time.OffsetDateTime;
  * This component contains essential/summary information about the vendor.
  */
 @ApiModel(description = "This component contains essential/summary information about the vendor.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesVendorsDestinyVendorComponent {
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("nextRefreshDate")
   private OffsetDateTime nextRefreshDate = null;
@@ -48,7 +48,7 @@ public class DestinyEntitiesVendorsDestinyVendorComponent {
   @JsonProperty("seasonalRank")
   private Integer seasonalRank = null;
 
-  public DestinyEntitiesVendorsDestinyVendorComponent vendorHash(Integer vendorHash) {
+  public DestinyEntitiesVendorsDestinyVendorComponent vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -58,11 +58,11 @@ public class DestinyEntitiesVendorsDestinyVendorComponent {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "The unique identifier for the vendor. Use it to look up their DestinyVendorDefinition.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 

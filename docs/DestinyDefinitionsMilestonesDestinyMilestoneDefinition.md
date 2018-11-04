@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **isInGameMilestone** | **Boolean** | Some milestones are explicit objectives that you can see and interact with in the game. Some milestones are more conceptual, built by BNet to help advise you on activities and events that happen in-game but that aren&#39;t explicitly shown in game as Milestones. If this is TRUE, you can see this as a milestone in the game. If this is FALSE, it&#39;s an event or activity you can participate in, but you won&#39;t see it as a Milestone in the game&#39;s UI. |  [optional]
 **activities** | [**List&lt;DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefinition&gt;**](DestinyDefinitionsMilestonesDestinyMilestoneChallengeActivityDefinition.md) | A Milestone can now be represented by one or more activities directly (without a backing Quest), and that activity can have many challenges, modifiers, and related to it. |  [optional]
 **defaultOrder** | **Integer** |  |  [optional]
-**hash** | **Integer** | The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to. |  [optional]
+**hash** | **Long** | The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to. |  [optional]
 **index** | **Integer** | The index of the entity as it was found in the investment tables. |  [optional]
 **redacted** | **Boolean** | If this is true, then there is an entity with this identifier/type combination, but BNet is not yet allowed to show it. Sorry! |  [optional]
 

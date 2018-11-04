@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Defines an \&quot;Objective\&quot;.  An objective is a specific task you should accomplish in the game. These are referred to by:  - Quest Steps (which are DestinyInventoryItemDefinition entities with Objectives)  - Challenges (which are Objectives defined on an DestinyActivityDefintion)  - Milestones (which refer to Objectives that are defined on both Quest Steps and Activities)  - Anything else that the designers decide to do later.  Objectives have progress, a notion of having been Completed, human readable data describing the task to be accomplished, and a lot of optional tack-on data that can enhance the information provided about the task.
  */
 @ApiModel(description = "Defines an \"Objective\".  An objective is a specific task you should accomplish in the game. These are referred to by:  - Quest Steps (which are DestinyInventoryItemDefinition entities with Objectives)  - Challenges (which are Objectives defined on an DestinyActivityDefintion)  - Milestones (which refer to Objectives that are defined on both Quest Steps and Activities)  - Anything else that the designers decide to do later.  Objectives have progress, a notion of having been Completed, human readable data describing the task to be accomplished, and a lot of optional tack-on data that can enhance the information provided about the task.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyObjectiveDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -36,7 +36,7 @@ public class DestinyDefinitionsDestinyObjectiveDefinition {
   private Object scope = null;
 
   @JsonProperty("locationHash")
-  private Integer locationHash = null;
+  private Long locationHash = null;
 
   @JsonProperty("allowNegativeValue")
   private Boolean allowNegativeValue = null;
@@ -75,7 +75,7 @@ public class DestinyDefinitionsDestinyObjectiveDefinition {
   private Object inProgressValueStyle = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -137,7 +137,7 @@ public class DestinyDefinitionsDestinyObjectiveDefinition {
     this.scope = scope;
   }
 
-  public DestinyDefinitionsDestinyObjectiveDefinition locationHash(Integer locationHash) {
+  public DestinyDefinitionsDestinyObjectiveDefinition locationHash(Long locationHash) {
     this.locationHash = locationHash;
     return this;
   }
@@ -147,11 +147,11 @@ public class DestinyDefinitionsDestinyObjectiveDefinition {
    * @return locationHash
   **/
   @ApiModelProperty(value = "OPTIONAL: a hash identifier for the location at which this objective must be accomplished, if there is a location defined. Look up the DestinyLocationDefinition for this hash for that additional location info.")
-  public Integer getLocationHash() {
+  public Long getLocationHash() {
     return locationHash;
   }
 
-  public void setLocationHash(Integer locationHash) {
+  public void setLocationHash(Long locationHash) {
     this.locationHash = locationHash;
   }
 
@@ -371,7 +371,7 @@ public class DestinyDefinitionsDestinyObjectiveDefinition {
     this.inProgressValueStyle = inProgressValueStyle;
   }
 
-  public DestinyDefinitionsDestinyObjectiveDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyObjectiveDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -381,11 +381,11 @@ public class DestinyDefinitionsDestinyObjectiveDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

@@ -26,24 +26,24 @@ import java.util.List;
  * As of Destiny 2, nodes can exist as part of \&quot;Exclusive Groups\&quot;. These differ from exclusive sets in that, within the group, many nodes can be activated. But the act of activating any node in the group will cause \&quot;opposing\&quot; nodes (nodes in groups that are not allowed to be activated at the same time as this group) to deactivate.
  */
 @ApiModel(description = "As of Destiny 2, nodes can exist as part of \"Exclusive Groups\". These differ from exclusive sets in that, within the group, many nodes can be activated. But the act of activating any node in the group will cause \"opposing\" nodes (nodes in groups that are not allowed to be activated at the same time as this group) to deactivate.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyTalentExclusiveGroup {
   @JsonProperty("groupHash")
-  private Integer groupHash = null;
+  private Long groupHash = null;
 
   @JsonProperty("loreHash")
-  private Integer loreHash = null;
+  private Long loreHash = null;
 
   @JsonProperty("nodeHashes")
-  private List<Integer> nodeHashes = null;
+  private List<Long> nodeHashes = null;
 
   @JsonProperty("opposingGroupHashes")
-  private List<Integer> opposingGroupHashes = null;
+  private List<Long> opposingGroupHashes = null;
 
   @JsonProperty("opposingNodeHashes")
-  private List<Integer> opposingNodeHashes = null;
+  private List<Long> opposingNodeHashes = null;
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup groupHash(Integer groupHash) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup groupHash(Long groupHash) {
     this.groupHash = groupHash;
     return this;
   }
@@ -53,15 +53,15 @@ public class DestinyDefinitionsDestinyTalentExclusiveGroup {
    * @return groupHash
   **/
   @ApiModelProperty(value = "The identifier for this exclusive group. Only guaranteed unique within the talent grid, not globally.")
-  public Integer getGroupHash() {
+  public Long getGroupHash() {
     return groupHash;
   }
 
-  public void setGroupHash(Integer groupHash) {
+  public void setGroupHash(Long groupHash) {
     this.groupHash = groupHash;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup loreHash(Integer loreHash) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup loreHash(Long loreHash) {
     this.loreHash = loreHash;
     return this;
   }
@@ -71,20 +71,20 @@ public class DestinyDefinitionsDestinyTalentExclusiveGroup {
    * @return loreHash
   **/
   @ApiModelProperty(value = "If this group has an associated piece of lore to show next to it, this will be the identifier for that DestinyLoreDefinition.")
-  public Integer getLoreHash() {
+  public Long getLoreHash() {
     return loreHash;
   }
 
-  public void setLoreHash(Integer loreHash) {
+  public void setLoreHash(Long loreHash) {
     this.loreHash = loreHash;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup nodeHashes(List<Integer> nodeHashes) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup nodeHashes(List<Long> nodeHashes) {
     this.nodeHashes = nodeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup addNodeHashesItem(Integer nodeHashesItem) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup addNodeHashesItem(Long nodeHashesItem) {
     if (this.nodeHashes == null) {
       this.nodeHashes = new ArrayList<>();
     }
@@ -97,20 +97,20 @@ public class DestinyDefinitionsDestinyTalentExclusiveGroup {
    * @return nodeHashes
   **/
   @ApiModelProperty(value = "A quick reference of the talent nodes that are part of this group, by their Talent Node hashes. (See DestinyTalentNodeDefinition.nodeHash)")
-  public List<Integer> getNodeHashes() {
+  public List<Long> getNodeHashes() {
     return nodeHashes;
   }
 
-  public void setNodeHashes(List<Integer> nodeHashes) {
+  public void setNodeHashes(List<Long> nodeHashes) {
     this.nodeHashes = nodeHashes;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup opposingGroupHashes(List<Integer> opposingGroupHashes) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup opposingGroupHashes(List<Long> opposingGroupHashes) {
     this.opposingGroupHashes = opposingGroupHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup addOpposingGroupHashesItem(Integer opposingGroupHashesItem) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup addOpposingGroupHashesItem(Long opposingGroupHashesItem) {
     if (this.opposingGroupHashes == null) {
       this.opposingGroupHashes = new ArrayList<>();
     }
@@ -123,20 +123,20 @@ public class DestinyDefinitionsDestinyTalentExclusiveGroup {
    * @return opposingGroupHashes
   **/
   @ApiModelProperty(value = "A quick reference of Groups whose nodes will be deactivated if any node in this group is activated.")
-  public List<Integer> getOpposingGroupHashes() {
+  public List<Long> getOpposingGroupHashes() {
     return opposingGroupHashes;
   }
 
-  public void setOpposingGroupHashes(List<Integer> opposingGroupHashes) {
+  public void setOpposingGroupHashes(List<Long> opposingGroupHashes) {
     this.opposingGroupHashes = opposingGroupHashes;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup opposingNodeHashes(List<Integer> opposingNodeHashes) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup opposingNodeHashes(List<Long> opposingNodeHashes) {
     this.opposingNodeHashes = opposingNodeHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyTalentExclusiveGroup addOpposingNodeHashesItem(Integer opposingNodeHashesItem) {
+  public DestinyDefinitionsDestinyTalentExclusiveGroup addOpposingNodeHashesItem(Long opposingNodeHashesItem) {
     if (this.opposingNodeHashes == null) {
       this.opposingNodeHashes = new ArrayList<>();
     }
@@ -149,11 +149,11 @@ public class DestinyDefinitionsDestinyTalentExclusiveGroup {
    * @return opposingNodeHashes
   **/
   @ApiModelProperty(value = "A quick reference of Nodes that will be deactivated if any node in this group is activated, by their Talent Node hashes. (See DestinyTalentNodeDefinition.nodeHash)")
-  public List<Integer> getOpposingNodeHashes() {
+  public List<Long> getOpposingNodeHashes() {
     return opposingNodeHashes;
   }
 
-  public void setOpposingNodeHashes(List<Integer> opposingNodeHashes) {
+  public void setOpposingNodeHashes(List<Long> opposingNodeHashes) {
     this.opposingNodeHashes = opposingNodeHashes;
   }
 

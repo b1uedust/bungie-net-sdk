@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **stats** | [**DictionaryComponentResponseOfint32AndDestinyItemStatsComponent**](DictionaryComponentResponseOfint32AndDestinyItemStatsComponent.md) |  |  [optional]
 **sockets** | [**DictionaryComponentResponseOfint32AndDestinyItemSocketsComponent**](DictionaryComponentResponseOfint32AndDestinyItemSocketsComponent.md) |  |  [optional]
 **talentGrids** | [**DictionaryComponentResponseOfint32AndDestinyItemTalentGridComponent**](DictionaryComponentResponseOfint32AndDestinyItemTalentGridComponent.md) |  |  [optional]
-**plugStates** | [**DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent**](DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent.md) |  |  [optional]
+**plugStates** | [**DictionaryComponentResponseOfint64AndDestinyItemPlugComponent**](DictionaryComponentResponseOfint64AndDestinyItemPlugComponent.md) |  |  [optional]
 **objectives** | [**DictionaryComponentResponseOfint32AndDestinyItemObjectivesComponent**](DictionaryComponentResponseOfint32AndDestinyItemObjectivesComponent.md) |  |  [optional]
 
 

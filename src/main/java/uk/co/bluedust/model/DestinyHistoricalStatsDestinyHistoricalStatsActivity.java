@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * Summary information about the activity that was played.
  */
 @ApiModel(description = "Summary information about the activity that was played.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyHistoricalStatsDestinyHistoricalStatsActivity {
   @JsonProperty("referenceId")
-  private Integer referenceId = null;
+  private Long referenceId = null;
 
   @JsonProperty("directorActivityHash")
-  private Integer directorActivityHash = null;
+  private Long directorActivityHash = null;
 
   @JsonProperty("instanceId")
   private Long instanceId = null;
@@ -47,7 +47,7 @@ public class DestinyHistoricalStatsDestinyHistoricalStatsActivity {
   @JsonProperty("isPrivate")
   private Boolean isPrivate = null;
 
-  public DestinyHistoricalStatsDestinyHistoricalStatsActivity referenceId(Integer referenceId) {
+  public DestinyHistoricalStatsDestinyHistoricalStatsActivity referenceId(Long referenceId) {
     this.referenceId = referenceId;
     return this;
   }
@@ -57,15 +57,15 @@ public class DestinyHistoricalStatsDestinyHistoricalStatsActivity {
    * @return referenceId
   **/
   @ApiModelProperty(value = "The unique hash identifier of the DestinyActivityDefinition that was played. If I had this to do over, it'd be named activityHash. Too late now.")
-  public Integer getReferenceId() {
+  public Long getReferenceId() {
     return referenceId;
   }
 
-  public void setReferenceId(Integer referenceId) {
+  public void setReferenceId(Long referenceId) {
     this.referenceId = referenceId;
   }
 
-  public DestinyHistoricalStatsDestinyHistoricalStatsActivity directorActivityHash(Integer directorActivityHash) {
+  public DestinyHistoricalStatsDestinyHistoricalStatsActivity directorActivityHash(Long directorActivityHash) {
     this.directorActivityHash = directorActivityHash;
     return this;
   }
@@ -75,11 +75,11 @@ public class DestinyHistoricalStatsDestinyHistoricalStatsActivity {
    * @return directorActivityHash
   **/
   @ApiModelProperty(value = "The unique hash identifier of the DestinyActivityDefinition that was played.")
-  public Integer getDirectorActivityHash() {
+  public Long getDirectorActivityHash() {
     return directorActivityHash;
   }
 
-  public void setDirectorActivityHash(Integer directorActivityHash) {
+  public void setDirectorActivityHash(Long directorActivityHash) {
     this.directorActivityHash = directorActivityHash;
   }
 

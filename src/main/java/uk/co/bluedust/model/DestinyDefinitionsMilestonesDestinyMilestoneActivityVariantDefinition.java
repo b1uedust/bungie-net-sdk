@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents a variant on an activity for a Milestone: a specific difficulty tier, or a specific activity variant for example.  These will often have more specific details, such as an associated Guided Game, progression steps, tier-specific rewards, and custom values.
  */
 @ApiModel(description = "Represents a variant on an activity for a Milestone: a specific difficulty tier, or a specific activity variant for example.  These will often have more specific details, such as an associated Guided Game, progression steps, tier-specific rewards, and custom values.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneActivityVariantDefinition {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("order")
   private Integer order = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneActivityVariantDefinition activityHash(Integer activityHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneActivityVariantDefinition activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -42,11 +42,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneActivityVariantDefiniti
    * @return activityHash
   **/
   @ApiModelProperty(value = "The hash to use for looking up the variant Activity's definition (DestinyActivityDefinition), where you can find its distinguishing characteristics such as difficulty level and recommended light level.   Frequently, that will be the only distinguishing characteristics in practice, which is somewhat of a bummer.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

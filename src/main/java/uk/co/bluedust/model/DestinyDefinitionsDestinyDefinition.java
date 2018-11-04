@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Provides common properties for destiny definitions.
  */
 @ApiModel(description = "Provides common properties for destiny definitions.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyDefinition {
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -35,7 +35,7 @@ public class DestinyDefinitionsDestinyDefinition {
   @JsonProperty("redacted")
   private Boolean redacted = null;
 
-  public DestinyDefinitionsDestinyDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDefinitionsDestinyDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

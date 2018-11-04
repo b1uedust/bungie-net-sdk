@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyComponentsRecordsDestinyRecordComponent;
 /**
  * DestinyComponentsRecordsDestinyProfileRecordsComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyComponentsRecordsDestinyProfileRecordsComponent {
   @JsonProperty("score")
   private Integer score = null;
 
   @JsonProperty("trackedRecordHash")
-  private Integer trackedRecordHash = null;
+  private Long trackedRecordHash = null;
 
   @JsonProperty("records")
   private Map<String, DestinyComponentsRecordsDestinyRecordComponent> records = null;
@@ -56,7 +56,7 @@ public class DestinyComponentsRecordsDestinyProfileRecordsComponent {
     this.score = score;
   }
 
-  public DestinyComponentsRecordsDestinyProfileRecordsComponent trackedRecordHash(Integer trackedRecordHash) {
+  public DestinyComponentsRecordsDestinyProfileRecordsComponent trackedRecordHash(Long trackedRecordHash) {
     this.trackedRecordHash = trackedRecordHash;
     return this;
   }
@@ -66,11 +66,11 @@ public class DestinyComponentsRecordsDestinyProfileRecordsComponent {
    * @return trackedRecordHash
   **/
   @ApiModelProperty(value = "If this profile is tracking a record, this is the hash identifier of the record it is tracking.")
-  public Integer getTrackedRecordHash() {
+  public Long getTrackedRecordHash() {
     return trackedRecordHash;
   }
 
-  public void setTrackedRecordHash(Integer trackedRecordHash) {
+  public void setTrackedRecordHash(Long trackedRecordHash) {
     this.trackedRecordHash = trackedRecordHash;
   }
 

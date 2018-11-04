@@ -27,23 +27,23 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * Represents the public-facing status of an activity: any data about what is currently active in the Activity, regardless of an individual character&#39;s progress in it.
  */
 @ApiModel(description = "Represents the public-facing status of an activity: any data about what is currently active in the Activity, regardless of an individual character's progress in it.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyActivitiesDestinyPublicActivityStatus {
   @JsonProperty("challengeObjectiveHashes")
-  private List<Integer> challengeObjectiveHashes = null;
+  private List<Long> challengeObjectiveHashes = null;
 
   @JsonProperty("modifierHashes")
-  private List<Integer> modifierHashes = null;
+  private List<Long> modifierHashes = null;
 
   @JsonProperty("rewardTooltipItems")
   private List<DestinyDestinyItemQuantity> rewardTooltipItems = null;
 
-  public DestinyActivitiesDestinyPublicActivityStatus challengeObjectiveHashes(List<Integer> challengeObjectiveHashes) {
+  public DestinyActivitiesDestinyPublicActivityStatus challengeObjectiveHashes(List<Long> challengeObjectiveHashes) {
     this.challengeObjectiveHashes = challengeObjectiveHashes;
     return this;
   }
 
-  public DestinyActivitiesDestinyPublicActivityStatus addChallengeObjectiveHashesItem(Integer challengeObjectiveHashesItem) {
+  public DestinyActivitiesDestinyPublicActivityStatus addChallengeObjectiveHashesItem(Long challengeObjectiveHashesItem) {
     if (this.challengeObjectiveHashes == null) {
       this.challengeObjectiveHashes = new ArrayList<>();
     }
@@ -56,20 +56,20 @@ public class DestinyActivitiesDestinyPublicActivityStatus {
    * @return challengeObjectiveHashes
   **/
   @ApiModelProperty(value = "Active Challenges for the activity, if any - represented as hashes for DestinyObjectiveDefinitions.")
-  public List<Integer> getChallengeObjectiveHashes() {
+  public List<Long> getChallengeObjectiveHashes() {
     return challengeObjectiveHashes;
   }
 
-  public void setChallengeObjectiveHashes(List<Integer> challengeObjectiveHashes) {
+  public void setChallengeObjectiveHashes(List<Long> challengeObjectiveHashes) {
     this.challengeObjectiveHashes = challengeObjectiveHashes;
   }
 
-  public DestinyActivitiesDestinyPublicActivityStatus modifierHashes(List<Integer> modifierHashes) {
+  public DestinyActivitiesDestinyPublicActivityStatus modifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
     return this;
   }
 
-  public DestinyActivitiesDestinyPublicActivityStatus addModifierHashesItem(Integer modifierHashesItem) {
+  public DestinyActivitiesDestinyPublicActivityStatus addModifierHashesItem(Long modifierHashesItem) {
     if (this.modifierHashes == null) {
       this.modifierHashes = new ArrayList<>();
     }
@@ -82,11 +82,11 @@ public class DestinyActivitiesDestinyPublicActivityStatus {
    * @return modifierHashes
   **/
   @ApiModelProperty(value = "The active modifiers on this activity, if any - represented as hashes for DestinyActivityModifierDefinitions.")
-  public List<Integer> getModifierHashes() {
+  public List<Long> getModifierHashes() {
     return modifierHashes;
   }
 
-  public void setModifierHashes(List<Integer> modifierHashes) {
+  public void setModifierHashes(List<Long> modifierHashes) {
     this.modifierHashes = modifierHashes;
   }
 

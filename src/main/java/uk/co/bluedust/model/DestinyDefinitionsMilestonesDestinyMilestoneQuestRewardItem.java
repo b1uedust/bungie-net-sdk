@@ -24,16 +24,16 @@ import io.swagger.annotations.ApiModelProperty;
  * A subclass of DestinyItemQuantity, that provides not just the item and its quantity but also information that BNet can - at some point - use internally to provide more robust runtime information about the item&#39;s qualities.  If you want it, please ask! We&#39;re just out of time to wire it up right now. Or a clever person just may do it with our existing endpoints.
  */
 @ApiModel(description = "A subclass of DestinyItemQuantity, that provides not just the item and its quantity but also information that BNet can - at some point - use internally to provide more robust runtime information about the item's qualities.  If you want it, please ask! We're just out of time to wire it up right now. Or a clever person just may do it with our existing endpoints.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem {
   @JsonProperty("vendorHash")
-  private Integer vendorHash = null;
+  private Long vendorHash = null;
 
   @JsonProperty("vendorItemIndex")
   private Integer vendorItemIndex = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("itemInstanceId")
   private Long itemInstanceId = null;
@@ -41,7 +41,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem {
   @JsonProperty("quantity")
   private Integer quantity = null;
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem vendorHash(Integer vendorHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem vendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
     return this;
   }
@@ -51,11 +51,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem {
    * @return vendorHash
   **/
   @ApiModelProperty(value = "The quest reward item *may* be associated with a vendor. If so, this is that vendor. Use this hash to look up the DestinyVendorDefinition.")
-  public Integer getVendorHash() {
+  public Long getVendorHash() {
     return vendorHash;
   }
 
-  public void setVendorHash(Integer vendorHash) {
+  public void setVendorHash(Long vendorHash) {
     this.vendorHash = vendorHash;
   }
 
@@ -77,7 +77,7 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem {
     this.vendorItemIndex = vendorItemIndex;
   }
 
-  public DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem itemHash(Integer itemHash) {
+  public DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -87,11 +87,11 @@ public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier for the item in question. Use it to look up the item's DestinyInventoryItemDefinition.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

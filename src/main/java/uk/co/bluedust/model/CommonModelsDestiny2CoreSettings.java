@@ -23,19 +23,19 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * CommonModelsDestiny2CoreSettings
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class CommonModelsDestiny2CoreSettings {
   @JsonProperty("collectionRootNode")
-  private Integer collectionRootNode = null;
+  private Long collectionRootNode = null;
 
   @JsonProperty("badgesRootNode")
-  private Integer badgesRootNode = null;
+  private Long badgesRootNode = null;
 
   @JsonProperty("recordsRootNode")
-  private Integer recordsRootNode = null;
+  private Long recordsRootNode = null;
 
   @JsonProperty("medalsRootNode")
-  private Integer medalsRootNode = null;
+  private Long medalsRootNode = null;
 
   @JsonProperty("undiscoveredCollectibleImage")
   private String undiscoveredCollectibleImage = null;
@@ -49,7 +49,7 @@ public class CommonModelsDestiny2CoreSettings {
   @JsonProperty("ammoTypePrimaryIcon")
   private String ammoTypePrimaryIcon = null;
 
-  public CommonModelsDestiny2CoreSettings collectionRootNode(Integer collectionRootNode) {
+  public CommonModelsDestiny2CoreSettings collectionRootNode(Long collectionRootNode) {
     this.collectionRootNode = collectionRootNode;
     return this;
   }
@@ -59,15 +59,15 @@ public class CommonModelsDestiny2CoreSettings {
    * @return collectionRootNode
   **/
   @ApiModelProperty(value = "")
-  public Integer getCollectionRootNode() {
+  public Long getCollectionRootNode() {
     return collectionRootNode;
   }
 
-  public void setCollectionRootNode(Integer collectionRootNode) {
+  public void setCollectionRootNode(Long collectionRootNode) {
     this.collectionRootNode = collectionRootNode;
   }
 
-  public CommonModelsDestiny2CoreSettings badgesRootNode(Integer badgesRootNode) {
+  public CommonModelsDestiny2CoreSettings badgesRootNode(Long badgesRootNode) {
     this.badgesRootNode = badgesRootNode;
     return this;
   }
@@ -77,15 +77,15 @@ public class CommonModelsDestiny2CoreSettings {
    * @return badgesRootNode
   **/
   @ApiModelProperty(value = "")
-  public Integer getBadgesRootNode() {
+  public Long getBadgesRootNode() {
     return badgesRootNode;
   }
 
-  public void setBadgesRootNode(Integer badgesRootNode) {
+  public void setBadgesRootNode(Long badgesRootNode) {
     this.badgesRootNode = badgesRootNode;
   }
 
-  public CommonModelsDestiny2CoreSettings recordsRootNode(Integer recordsRootNode) {
+  public CommonModelsDestiny2CoreSettings recordsRootNode(Long recordsRootNode) {
     this.recordsRootNode = recordsRootNode;
     return this;
   }
@@ -95,15 +95,15 @@ public class CommonModelsDestiny2CoreSettings {
    * @return recordsRootNode
   **/
   @ApiModelProperty(value = "")
-  public Integer getRecordsRootNode() {
+  public Long getRecordsRootNode() {
     return recordsRootNode;
   }
 
-  public void setRecordsRootNode(Integer recordsRootNode) {
+  public void setRecordsRootNode(Long recordsRootNode) {
     this.recordsRootNode = recordsRootNode;
   }
 
-  public CommonModelsDestiny2CoreSettings medalsRootNode(Integer medalsRootNode) {
+  public CommonModelsDestiny2CoreSettings medalsRootNode(Long medalsRootNode) {
     this.medalsRootNode = medalsRootNode;
     return this;
   }
@@ -113,11 +113,11 @@ public class CommonModelsDestiny2CoreSettings {
    * @return medalsRootNode
   **/
   @ApiModelProperty(value = "")
-  public Integer getMedalsRootNode() {
+  public Long getMedalsRootNode() {
     return medalsRootNode;
   }
 
-  public void setMedalsRootNode(Integer medalsRootNode) {
+  public void setMedalsRootNode(Long medalsRootNode) {
     this.medalsRootNode = medalsRootNode;
   }
 

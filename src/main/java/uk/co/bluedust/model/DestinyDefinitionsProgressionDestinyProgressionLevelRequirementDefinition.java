@@ -27,16 +27,16 @@ import uk.co.bluedust.model.InterpolationInterpolationPointFloat;
  * These are pre-constructed collections of data that can be used to determine the Level Requirement for an item given a Progression to be tested (such as the Character&#39;s level).  For instance, say a character receives a new Auto Rifle, and that Auto Rifle&#39;s DestinyInventoryItemDefinition.quality.progressionLevelRequirementHash property is pointing at one of these DestinyProgressionLevelRequirementDefinitions. Let&#39;s pretend also that the progressionHash it is pointing at is the Character Level progression. In that situation, the character&#39;s level will be used to interpolate a value in the requirementCurve property. The value picked up from that interpolation will be the required level for the item.
  */
 @ApiModel(description = "These are pre-constructed collections of data that can be used to determine the Level Requirement for an item given a Progression to be tested (such as the Character's level).  For instance, say a character receives a new Auto Rifle, and that Auto Rifle's DestinyInventoryItemDefinition.quality.progressionLevelRequirementHash property is pointing at one of these DestinyProgressionLevelRequirementDefinitions. Let's pretend also that the progressionHash it is pointing at is the Character Level progression. In that situation, the character's level will be used to interpolate a value in the requirementCurve property. The value picked up from that interpolation will be the required level for the item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefinition {
   @JsonProperty("requirementCurve")
   private List<InterpolationInterpolationPointFloat> requirementCurve = null;
 
   @JsonProperty("progressionHash")
-  private Integer progressionHash = null;
+  private Long progressionHash = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -70,7 +70,7 @@ public class DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefi
     this.requirementCurve = requirementCurve;
   }
 
-  public DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefinition progressionHash(Integer progressionHash) {
+  public DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefinition progressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
     return this;
   }
@@ -80,15 +80,15 @@ public class DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefi
    * @return progressionHash
   **/
   @ApiModelProperty(value = "The progression whose level should be used to determine the level requirement.  Look up the DestinyProgressionDefinition with this hash for more information about the progression in question.")
-  public Integer getProgressionHash() {
+  public Long getProgressionHash() {
     return progressionHash;
   }
 
-  public void setProgressionHash(Integer progressionHash) {
+  public void setProgressionHash(Long progressionHash) {
     this.progressionHash = progressionHash;
   }
 
-  public DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefinition hash(Integer hash) {
+  public DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -98,11 +98,11 @@ public class DestinyDefinitionsProgressionDestinyProgressionLevelRequirementDefi
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

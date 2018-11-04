@@ -24,15 +24,15 @@ import uk.co.bluedust.model.DestinyActivitiesDestinyPublicActivityStatus;
 /**
  * TrendingTrendingEntryDestinyActivity
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class TrendingTrendingEntryDestinyActivity {
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
   @JsonProperty("status")
   private DestinyActivitiesDestinyPublicActivityStatus status = null;
 
-  public TrendingTrendingEntryDestinyActivity activityHash(Integer activityHash) {
+  public TrendingTrendingEntryDestinyActivity activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -42,11 +42,11 @@ public class TrendingTrendingEntryDestinyActivity {
    * @return activityHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

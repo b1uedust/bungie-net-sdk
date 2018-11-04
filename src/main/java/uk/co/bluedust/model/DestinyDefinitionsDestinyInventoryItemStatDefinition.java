@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Defines a specific stat value on an item, and the minimum/maximum range that we could compute for the item based on our heuristics for how the item might be generated.  Not guaranteed to match real-world instances of the item, but should hopefully at least be close. If it&#39;s not close, let us know on the Bungie API forums.
  */
 @ApiModel(description = "Defines a specific stat value on an item, and the minimum/maximum range that we could compute for the item based on our heuristics for how the item might be generated.  Not guaranteed to match real-world instances of the item, but should hopefully at least be close. If it's not close, let us know on the Bungie API forums.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyInventoryItemStatDefinition {
   @JsonProperty("statHash")
-  private Integer statHash = null;
+  private Long statHash = null;
 
   @JsonProperty("value")
   private Integer value = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsDestinyInventoryItemStatDefinition {
   @JsonProperty("maximum")
   private Integer maximum = null;
 
-  public DestinyDefinitionsDestinyInventoryItemStatDefinition statHash(Integer statHash) {
+  public DestinyDefinitionsDestinyInventoryItemStatDefinition statHash(Long statHash) {
     this.statHash = statHash;
     return this;
   }
@@ -48,11 +48,11 @@ public class DestinyDefinitionsDestinyInventoryItemStatDefinition {
    * @return statHash
   **/
   @ApiModelProperty(value = "The hash for the DestinyStatDefinition representing this stat.")
-  public Integer getStatHash() {
+  public Long getStatHash() {
     return statHash;
   }
 
-  public void setStatHash(Integer statHash) {
+  public void setStatHash(Long statHash) {
     this.statHash = statHash;
   }
 

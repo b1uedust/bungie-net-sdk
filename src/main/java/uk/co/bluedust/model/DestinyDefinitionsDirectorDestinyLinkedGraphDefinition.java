@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDirectorDestinyLinkedGraphEntryDef
  * This describes links between the current graph and others, as well as when that link is relevant.
  */
 @ApiModel(description = "This describes links between the current graph and others, as well as when that link is relevant.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyLinkedGraphDefinition {
   @JsonProperty("description")
   private String description = null;
@@ -40,7 +40,7 @@ public class DestinyDefinitionsDirectorDestinyLinkedGraphDefinition {
   private DestinyDefinitionsDestinyUnlockExpressionDefinition unlockExpression = null;
 
   @JsonProperty("linkedGraphId")
-  private Integer linkedGraphId = null;
+  private Long linkedGraphId = null;
 
   @JsonProperty("linkedGraphs")
   private List<DestinyDefinitionsDirectorDestinyLinkedGraphEntryDefinition> linkedGraphs = null;
@@ -102,7 +102,7 @@ public class DestinyDefinitionsDirectorDestinyLinkedGraphDefinition {
     this.unlockExpression = unlockExpression;
   }
 
-  public DestinyDefinitionsDirectorDestinyLinkedGraphDefinition linkedGraphId(Integer linkedGraphId) {
+  public DestinyDefinitionsDirectorDestinyLinkedGraphDefinition linkedGraphId(Long linkedGraphId) {
     this.linkedGraphId = linkedGraphId;
     return this;
   }
@@ -112,11 +112,11 @@ public class DestinyDefinitionsDirectorDestinyLinkedGraphDefinition {
    * @return linkedGraphId
   **/
   @ApiModelProperty(value = "")
-  public Integer getLinkedGraphId() {
+  public Long getLinkedGraphId() {
     return linkedGraphId;
   }
 
-  public void setLinkedGraphId(Integer linkedGraphId) {
+  public void setLinkedGraphId(Long linkedGraphId) {
     this.linkedGraphId = linkedGraphId;
   }
 

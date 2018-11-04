@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * Stat Groups (DestinyStatGroupDefinition) has the ability to override the localized text associated with stats that are to be shown on the items with which they are associated.  This defines a specific overridden stat. You could theoretically check these before rendering your stat UI, and for each stat that has an override show these displayProperties instead of those on the DestinyStatDefinition.  Or you could be like us, and skip that for now because the game has yet to actually use this feature. But know that it&#39;s here, waiting for a resilliant young designer to take up the mantle and make us all look foolish by showing the wrong name for stats.  Note that, if this gets used, the override will apply only to items using the overriding Stat Group. Other items will still show the default stat&#39;s name/description.
  */
 @ApiModel(description = "Stat Groups (DestinyStatGroupDefinition) has the ability to override the localized text associated with stats that are to be shown on the items with which they are associated.  This defines a specific overridden stat. You could theoretically check these before rendering your stat UI, and for each stat that has an override show these displayProperties instead of those on the DestinyStatDefinition.  Or you could be like us, and skip that for now because the game has yet to actually use this feature. But know that it's here, waiting for a resilliant young designer to take up the mantle and make us all look foolish by showing the wrong name for stats.  Note that, if this gets used, the override will apply only to items using the overriding Stat Group. Other items will still show the default stat's name/description.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyStatOverrideDefinition {
   @JsonProperty("statHash")
-  private Integer statHash = null;
+  private Long statHash = null;
 
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
 
-  public DestinyDefinitionsDestinyStatOverrideDefinition statHash(Integer statHash) {
+  public DestinyDefinitionsDestinyStatOverrideDefinition statHash(Long statHash) {
     this.statHash = statHash;
     return this;
   }
@@ -42,11 +42,11 @@ public class DestinyDefinitionsDestinyStatOverrideDefinition {
    * @return statHash
   **/
   @ApiModelProperty(value = "The hash identifier of the stat whose display properties are being overridden.")
-  public Integer getStatHash() {
+  public Long getStatHash() {
     return statHash;
   }
 
-  public void setStatHash(Integer statHash) {
+  public void setStatHash(Long statHash) {
     this.statHash = statHash;
   }
 

@@ -28,7 +28,7 @@ import uk.co.bluedust.model.ExceptionsPlatformErrorCodes;
 /**
  * InlineResponse20061
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class InlineResponse20061 {
   @JsonProperty("Response")
   private CommunityCommunityLiveStatus response = null;

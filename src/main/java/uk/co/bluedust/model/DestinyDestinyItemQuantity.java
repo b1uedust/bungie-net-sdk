@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Used in a number of Destiny contracts to return data about an item stack and its quantity. Can optionally return an itemInstanceId if the item is instanced - in which case, the quantity returned will be 1. If it&#39;s not... uh, let me know okay? Thanks.
  */
 @ApiModel(description = "Used in a number of Destiny contracts to return data about an item stack and its quantity. Can optionally return an itemInstanceId if the item is instanced - in which case, the quantity returned will be 1. If it's not... uh, let me know okay? Thanks.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDestinyItemQuantity {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("itemInstanceId")
   private Long itemInstanceId = null;
@@ -35,7 +35,7 @@ public class DestinyDestinyItemQuantity {
   @JsonProperty("quantity")
   private Integer quantity = null;
 
-  public DestinyDestinyItemQuantity itemHash(Integer itemHash) {
+  public DestinyDestinyItemQuantity itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDestinyItemQuantity {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash identifier for the item in question. Use it to look up the item's DestinyInventoryItemDefinition.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 

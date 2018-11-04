@@ -26,13 +26,13 @@ import java.util.List;
  * If an item has a related gearset, this is the list of items in that set, and an unlock expression that evaluates to a number representing the progress toward gearset completion (a very rare use for unlock expressions!)
  */
 @ApiModel(description = "If an item has a related gearset, this is the list of items in that set, and an unlock expression that evaluates to a number representing the progress toward gearset completion (a very rare use for unlock expressions!)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemGearsetBlockDefinition {
   @JsonProperty("trackingValueMax")
   private Integer trackingValueMax = null;
 
   @JsonProperty("itemList")
-  private List<Integer> itemList = null;
+  private List<Long> itemList = null;
 
   public DestinyDefinitionsDestinyItemGearsetBlockDefinition trackingValueMax(Integer trackingValueMax) {
     this.trackingValueMax = trackingValueMax;
@@ -52,12 +52,12 @@ public class DestinyDefinitionsDestinyItemGearsetBlockDefinition {
     this.trackingValueMax = trackingValueMax;
   }
 
-  public DestinyDefinitionsDestinyItemGearsetBlockDefinition itemList(List<Integer> itemList) {
+  public DestinyDefinitionsDestinyItemGearsetBlockDefinition itemList(List<Long> itemList) {
     this.itemList = itemList;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemGearsetBlockDefinition addItemListItem(Integer itemListItem) {
+  public DestinyDefinitionsDestinyItemGearsetBlockDefinition addItemListItem(Long itemListItem) {
     if (this.itemList == null) {
       this.itemList = new ArrayList<>();
     }
@@ -70,11 +70,11 @@ public class DestinyDefinitionsDestinyItemGearsetBlockDefinition {
    * @return itemList
   **/
   @ApiModelProperty(value = "The list of hashes for items in the gearset. Use them to look up DestinyInventoryItemDefinition entries for the items in the set.")
-  public List<Integer> getItemList() {
+  public List<Long> getItemList() {
     return itemList;
   }
 
-  public void setItemList(List<Integer> itemList) {
+  public void setItemList(List<Long> itemList) {
     this.itemList = itemList;
   }
 

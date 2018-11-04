@@ -27,10 +27,10 @@ import uk.co.bluedust.model.DestinyDefinitionsSourcesDestinyItemSourceDefinition
  * Data about an item&#39;s \&quot;sources\&quot;: ways that the item can be obtained.
  */
 @ApiModel(description = "Data about an item's \"sources\": ways that the item can be obtained.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSourceBlockDefinition {
   @JsonProperty("sourceHashes")
-  private List<Integer> sourceHashes = null;
+  private List<Long> sourceHashes = null;
 
   @JsonProperty("sources")
   private List<DestinyDefinitionsSourcesDestinyItemSourceDefinition> sources = null;
@@ -38,12 +38,12 @@ public class DestinyDefinitionsDestinyItemSourceBlockDefinition {
   @JsonProperty("exclusive")
   private Object exclusive = null;
 
-  public DestinyDefinitionsDestinyItemSourceBlockDefinition sourceHashes(List<Integer> sourceHashes) {
+  public DestinyDefinitionsDestinyItemSourceBlockDefinition sourceHashes(List<Long> sourceHashes) {
     this.sourceHashes = sourceHashes;
     return this;
   }
 
-  public DestinyDefinitionsDestinyItemSourceBlockDefinition addSourceHashesItem(Integer sourceHashesItem) {
+  public DestinyDefinitionsDestinyItemSourceBlockDefinition addSourceHashesItem(Long sourceHashesItem) {
     if (this.sourceHashes == null) {
       this.sourceHashes = new ArrayList<>();
     }
@@ -56,11 +56,11 @@ public class DestinyDefinitionsDestinyItemSourceBlockDefinition {
    * @return sourceHashes
   **/
   @ApiModelProperty(value = "The list of hash identifiers for Reward Sources that hint where the item can be found (DestinyRewardSourceDefinition).")
-  public List<Integer> getSourceHashes() {
+  public List<Long> getSourceHashes() {
     return sourceHashes;
   }
 
-  public void setSourceHashes(List<Integer> sourceHashes) {
+  public void setSourceHashes(List<Long> sourceHashes) {
     this.sourceHashes = sourceHashes;
   }
 

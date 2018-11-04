@@ -4,10 +4,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**activityHash** | **Integer** | The hash identifier of the Activity that can be played. Use it to look up the DestinyActivityDefinition. |  [optional]
-**directActivityModeHash** | **Integer** | If this playlist entry had an activity mode directly defined on it, this will be the hash of that mode. |  [optional]
+**activityHash** | **Long** | The hash identifier of the Activity that can be played. Use it to look up the DestinyActivityDefinition. |  [optional]
+**directActivityModeHash** | **Long** | If this playlist entry had an activity mode directly defined on it, this will be the hash of that mode. |  [optional]
 **directActivityModeType** | [**DirectActivityModeTypeEnum**](#DirectActivityModeTypeEnum) | If the playlist entry had an activity mode directly defined on it, this will be the enum value of that mode. |  [optional]
-**activityModeHashes** | **List&lt;Integer&gt;** | The hash identifiers for Activity Modes relevant to this entry. |  [optional]
+**activityModeHashes** | **List&lt;Long&gt;** | The hash identifiers for Activity Modes relevant to this entry. |  [optional]
 **activityModeTypes** | [**List&lt;DestinyHistoricalStatsDefinitionsDestinyActivityModeType&gt;**](DestinyHistoricalStatsDefinitionsDestinyActivityModeType.md) | The activity modes - if any - in enum form. Because we can&#39;t seem to escape the enums. |  [optional]
 
 

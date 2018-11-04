@@ -32,7 +32,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDirectorDestinyLinkedGraphDefiniti
  * Represents a Map View in the director: be them overview views, destination views, or other.  They have nodes which map to activities, and other various visual elements that we (or others) may or may not be able to use.  Activity graphs, most importantly, have nodes which can have activities in various states of playability.  Unfortunately, activity graphs are combined at runtime with Game UI-only assets such as fragments of map images, various in-game special effects, decals etc... that we don&#39;t get in these definitions.  If we end up having time, we may end up trying to manually populate those here: but the last time we tried that, before the lead-up to D1, it proved to be unmaintainable as the game&#39;s content changed. So don&#39;t bet the farm on us providing that content in this definition.
  */
 @ApiModel(description = "Represents a Map View in the director: be them overview views, destination views, or other.  They have nodes which map to activities, and other various visual elements that we (or others) may or may not be able to use.  Activity graphs, most importantly, have nodes which can have activities in various states of playability.  Unfortunately, activity graphs are combined at runtime with Game UI-only assets such as fragments of map images, various in-game special effects, decals etc... that we don't get in these definitions.  If we end up having time, we may end up trying to manually populate those here: but the last time we tried that, before the lead-up to D1, it proved to be unmaintainable as the game's content changed. So don't bet the farm on us providing that content in this definition.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphDefinition {
   @JsonProperty("nodes")
   private List<DestinyDefinitionsDirectorDestinyActivityGraphNodeDefinition> nodes = null;
@@ -53,7 +53,7 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDefinition {
   private List<DestinyDefinitionsDirectorDestinyLinkedGraphDefinition> linkedGraphs = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -217,7 +217,7 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDefinition {
     this.linkedGraphs = linkedGraphs;
   }
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphDefinition hash(Integer hash) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -227,11 +227,11 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

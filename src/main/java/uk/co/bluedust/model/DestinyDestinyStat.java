@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents a stat on an item *or* Character (NOT a Historical Stat, but a physical attribute stat like Attack, Defense etc...)
  */
 @ApiModel(description = "Represents a stat on an item *or* Character (NOT a Historical Stat, but a physical attribute stat like Attack, Defense etc...)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDestinyStat {
   @JsonProperty("statHash")
-  private Integer statHash = null;
+  private Long statHash = null;
 
   @JsonProperty("value")
   private Integer value = null;
@@ -35,7 +35,7 @@ public class DestinyDestinyStat {
   @JsonProperty("maximumValue")
   private Integer maximumValue = null;
 
-  public DestinyDestinyStat statHash(Integer statHash) {
+  public DestinyDestinyStat statHash(Long statHash) {
     this.statHash = statHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDestinyStat {
    * @return statHash
   **/
   @ApiModelProperty(value = "The hash identifier for the Stat. Use it to look up the DestinyStatDefinition for static data about the stat.")
-  public Integer getStatHash() {
+  public Long getStatHash() {
     return statHash;
   }
 
-  public void setStatHash(Integer statHash) {
+  public void setStatHash(Long statHash) {
     this.statHash = statHash;
   }
 

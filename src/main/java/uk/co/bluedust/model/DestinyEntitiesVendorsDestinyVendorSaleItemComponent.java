@@ -29,16 +29,16 @@ import uk.co.bluedust.model.DestinyDestinyUnlockStatus;
  * Request this component if you want the details about an item being sold in relation to the character making the request: whether the character can buy it, whether they can afford it, and other data related to purchasing the item.  Note that if you want instance, stats, etc... data for the item, you&#39;ll have to request additional components such as ItemInstances, ItemPerks etc... and acquire them from the DestinyVendorResponse&#39;s \&quot;items\&quot; property.
  */
 @ApiModel(description = "Request this component if you want the details about an item being sold in relation to the character making the request: whether the character can buy it, whether they can afford it, and other data related to purchasing the item.  Note that if you want instance, stats, etc... data for the item, you'll have to request additional components such as ItemInstances, ItemPerks etc... and acquire them from the DestinyVendorResponse's \"items\" property.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
   @JsonProperty("vendorItemIndex")
   private Integer vendorItemIndex = null;
 
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("overrideStyleItemHash")
-  private Integer overrideStyleItemHash = null;
+  private Long overrideStyleItemHash = null;
 
   @JsonProperty("quantity")
   private Integer quantity = null;
@@ -50,7 +50,7 @@ public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
   private List<DestinyDestinyItemQuantity> costs = null;
 
   @JsonProperty("requiredUnlocks")
-  private List<Integer> requiredUnlocks = null;
+  private List<Long> requiredUnlocks = null;
 
   @JsonProperty("unlockStatuses")
   private List<DestinyDestinyUnlockStatus> unlockStatuses = null;
@@ -82,7 +82,7 @@ public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
     this.vendorItemIndex = vendorItemIndex;
   }
 
-  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent itemHash(Integer itemHash) {
+  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -92,15 +92,15 @@ public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The hash of the item being sold, as a quick shortcut for looking up the DestinyInventoryItemDefinition of the sale item.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 
-  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent overrideStyleItemHash(Integer overrideStyleItemHash) {
+  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent overrideStyleItemHash(Long overrideStyleItemHash) {
     this.overrideStyleItemHash = overrideStyleItemHash;
     return this;
   }
@@ -110,11 +110,11 @@ public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
    * @return overrideStyleItemHash
   **/
   @ApiModelProperty(value = "If populated, this is the hash of the item whose icon (and other secondary styles, but *not* the human readable strings) should override whatever icons/styles are on the item being sold.  If you don't do this, certain items whose styles are being overridden by socketed items - such as the \"Recycle Shader\" item - would show whatever their default icon/style is, and it wouldn't be pretty or look accurate.")
-  public Integer getOverrideStyleItemHash() {
+  public Long getOverrideStyleItemHash() {
     return overrideStyleItemHash;
   }
 
-  public void setOverrideStyleItemHash(Integer overrideStyleItemHash) {
+  public void setOverrideStyleItemHash(Long overrideStyleItemHash) {
     this.overrideStyleItemHash = overrideStyleItemHash;
   }
 
@@ -180,12 +180,12 @@ public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
     this.costs = costs;
   }
 
-  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent requiredUnlocks(List<Integer> requiredUnlocks) {
+  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent requiredUnlocks(List<Long> requiredUnlocks) {
     this.requiredUnlocks = requiredUnlocks;
     return this;
   }
 
-  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent addRequiredUnlocksItem(Integer requiredUnlocksItem) {
+  public DestinyEntitiesVendorsDestinyVendorSaleItemComponent addRequiredUnlocksItem(Long requiredUnlocksItem) {
     if (this.requiredUnlocks == null) {
       this.requiredUnlocks = new ArrayList<>();
     }
@@ -198,11 +198,11 @@ public class DestinyEntitiesVendorsDestinyVendorSaleItemComponent {
    * @return requiredUnlocks
   **/
   @ApiModelProperty(value = "If you can't buy the item due to a complex character state, these will be hashes for DestinyUnlockDefinitions that you can check to see messages regarding the failure (if the unlocks have human readable information: it is not guaranteed that Unlocks will have human readable strings, and your application will have to handle that)  Prefer using failureIndexes instead. These are provided for informational purposes, but have largely been supplanted by failureIndexes.")
-  public List<Integer> getRequiredUnlocks() {
+  public List<Long> getRequiredUnlocks() {
     return requiredUnlocks;
   }
 
-  public void setRequiredUnlocks(List<Integer> requiredUnlocks) {
+  public void setRequiredUnlocks(List<Long> requiredUnlocks) {
     this.requiredUnlocks = requiredUnlocks;
   }
 

@@ -30,16 +30,16 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyDestinationBubbleSettingDef
  * On to one of the more confusing subjects of the API. What is a Destination, and what is the relationship between it, Activities, Locations, and Places?  A \&quot;Destination\&quot; is a specific region/city/area of a larger \&quot;Place\&quot;. For instance, a Place might be Earth where a Destination might be Bellevue, Washington. (Please, pick a more interesting destination if you come to visit Earth).
  */
 @ApiModel(description = "On to one of the more confusing subjects of the API. What is a Destination, and what is the relationship between it, Activities, Locations, and Places?  A \"Destination\" is a specific region/city/area of a larger \"Place\". For instance, a Place might be Earth where a Destination might be Bellevue, Washington. (Please, pick a more interesting destination if you come to visit Earth).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyDestinationDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("placeHash")
-  private Integer placeHash = null;
+  private Long placeHash = null;
 
   @JsonProperty("defaultFreeroamActivityHash")
-  private Integer defaultFreeroamActivityHash = null;
+  private Long defaultFreeroamActivityHash = null;
 
   @JsonProperty("activityGraphEntries")
   private List<DestinyDefinitionsDestinyActivityGraphListEntryDefinition> activityGraphEntries = null;
@@ -51,7 +51,7 @@ public class DestinyDefinitionsDestinyDestinationDefinition {
   private List<DestinyDefinitionsDestinyBubbleDefinition> bubbles = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -77,7 +77,7 @@ public class DestinyDefinitionsDestinyDestinationDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyDestinationDefinition placeHash(Integer placeHash) {
+  public DestinyDefinitionsDestinyDestinationDefinition placeHash(Long placeHash) {
     this.placeHash = placeHash;
     return this;
   }
@@ -87,15 +87,15 @@ public class DestinyDefinitionsDestinyDestinationDefinition {
    * @return placeHash
   **/
   @ApiModelProperty(value = "The place that \"owns\" this Destination. Use this hash to look up the DestinyPlaceDefinition.")
-  public Integer getPlaceHash() {
+  public Long getPlaceHash() {
     return placeHash;
   }
 
-  public void setPlaceHash(Integer placeHash) {
+  public void setPlaceHash(Long placeHash) {
     this.placeHash = placeHash;
   }
 
-  public DestinyDefinitionsDestinyDestinationDefinition defaultFreeroamActivityHash(Integer defaultFreeroamActivityHash) {
+  public DestinyDefinitionsDestinyDestinationDefinition defaultFreeroamActivityHash(Long defaultFreeroamActivityHash) {
     this.defaultFreeroamActivityHash = defaultFreeroamActivityHash;
     return this;
   }
@@ -105,11 +105,11 @@ public class DestinyDefinitionsDestinyDestinationDefinition {
    * @return defaultFreeroamActivityHash
   **/
   @ApiModelProperty(value = "If this Destination has a default Free-Roam activity, this is the hash for that Activity. Use it to look up the DestinyActivityDefintion.")
-  public Integer getDefaultFreeroamActivityHash() {
+  public Long getDefaultFreeroamActivityHash() {
     return defaultFreeroamActivityHash;
   }
 
-  public void setDefaultFreeroamActivityHash(Integer defaultFreeroamActivityHash) {
+  public void setDefaultFreeroamActivityHash(Long defaultFreeroamActivityHash) {
     this.defaultFreeroamActivityHash = defaultFreeroamActivityHash;
   }
 
@@ -191,7 +191,7 @@ public class DestinyDefinitionsDestinyDestinationDefinition {
     this.bubbles = bubbles;
   }
 
-  public DestinyDefinitionsDestinyDestinationDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyDestinationDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -201,11 +201,11 @@ public class DestinyDefinitionsDestinyDestinationDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * A Milestone can have many Challenges. Challenges are just extra Objectives that provide a fun way to mix-up play and provide extra rewards.
  */
 @ApiModel(description = "A Milestone can have many Challenges. Challenges are just extra Objectives that provide a fun way to mix-up play and provide extra rewards.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyPublicMilestoneChallenge {
   @JsonProperty("objectiveHash")
-  private Integer objectiveHash = null;
+  private Long objectiveHash = null;
 
   @JsonProperty("activityHash")
-  private Integer activityHash = null;
+  private Long activityHash = null;
 
-  public DestinyMilestonesDestinyPublicMilestoneChallenge objectiveHash(Integer objectiveHash) {
+  public DestinyMilestonesDestinyPublicMilestoneChallenge objectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
     return this;
   }
@@ -42,15 +42,15 @@ public class DestinyMilestonesDestinyPublicMilestoneChallenge {
    * @return objectiveHash
   **/
   @ApiModelProperty(value = "The objective for the Challenge, which should have human-readable data about what needs to be done to accomplish the objective. Use this hash to look up the DestinyObjectiveDefinition.")
-  public Integer getObjectiveHash() {
+  public Long getObjectiveHash() {
     return objectiveHash;
   }
 
-  public void setObjectiveHash(Integer objectiveHash) {
+  public void setObjectiveHash(Long objectiveHash) {
     this.objectiveHash = objectiveHash;
   }
 
-  public DestinyMilestonesDestinyPublicMilestoneChallenge activityHash(Integer activityHash) {
+  public DestinyMilestonesDestinyPublicMilestoneChallenge activityHash(Long activityHash) {
     this.activityHash = activityHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyMilestonesDestinyPublicMilestoneChallenge {
    * @return activityHash
   **/
   @ApiModelProperty(value = "IF the Objective is related to a specific Activity, this will be that activity's hash. Use it to look up the DestinyActivityDefinition for additional data to show.")
-  public Integer getActivityHash() {
+  public Long getActivityHash() {
     return activityHash;
   }
 
-  public void setActivityHash(Integer activityHash) {
+  public void setActivityHash(Long activityHash) {
     this.activityHash = activityHash;
   }
 

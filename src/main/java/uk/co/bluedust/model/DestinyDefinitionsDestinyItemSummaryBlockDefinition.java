@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * This appears to be information used when rendering rewards. We don&#39;t currently use it on BNet.
  */
 @ApiModel(description = "This appears to be information used when rendering rewards. We don't currently use it on BNet.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemSummaryBlockDefinition {
   @JsonProperty("sortPriority")
   private Integer sortPriority = null;

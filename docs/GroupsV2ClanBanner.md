@@ -4,13 +4,13 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**decalId** | **Integer** |  |  [optional]
-**decalColorId** | **Integer** |  |  [optional]
-**decalBackgroundColorId** | **Integer** |  |  [optional]
-**gonfalonId** | **Integer** |  |  [optional]
-**gonfalonColorId** | **Integer** |  |  [optional]
-**gonfalonDetailId** | **Integer** |  |  [optional]
-**gonfalonDetailColorId** | **Integer** |  |  [optional]
+**decalId** | **Long** |  |  [optional]
+**decalColorId** | **Long** |  |  [optional]
+**decalBackgroundColorId** | **Long** |  |  [optional]
+**gonfalonId** | **Long** |  |  [optional]
+**gonfalonColorId** | **Long** |  |  [optional]
+**gonfalonDetailId** | **Long** |  |  [optional]
+**gonfalonDetailColorId** | **Long** |  |  [optional]
 
 
 

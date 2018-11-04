@@ -24,10 +24,10 @@ import uk.co.bluedust.model.BungieMembershipType;
 /**
  * DestinyRequestsActionsDestinyPostmasterTransferRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyRequestsActionsDestinyPostmasterTransferRequest {
   @JsonProperty("itemReferenceHash")
-  private Integer itemReferenceHash = null;
+  private Long itemReferenceHash = null;
 
   @JsonProperty("stackSize")
   private Integer stackSize = null;
@@ -41,7 +41,7 @@ public class DestinyRequestsActionsDestinyPostmasterTransferRequest {
   @JsonProperty("membershipType")
   private BungieMembershipType membershipType = null;
 
-  public DestinyRequestsActionsDestinyPostmasterTransferRequest itemReferenceHash(Integer itemReferenceHash) {
+  public DestinyRequestsActionsDestinyPostmasterTransferRequest itemReferenceHash(Long itemReferenceHash) {
     this.itemReferenceHash = itemReferenceHash;
     return this;
   }
@@ -51,11 +51,11 @@ public class DestinyRequestsActionsDestinyPostmasterTransferRequest {
    * @return itemReferenceHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getItemReferenceHash() {
+  public Long getItemReferenceHash() {
     return itemReferenceHash;
   }
 
-  public void setItemReferenceHash(Integer itemReferenceHash) {
+  public void setItemReferenceHash(Long itemReferenceHash) {
     this.itemReferenceHash = itemReferenceHash;
   }
 

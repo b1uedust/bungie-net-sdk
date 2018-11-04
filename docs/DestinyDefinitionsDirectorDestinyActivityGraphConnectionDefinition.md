@@ -4,8 +4,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sourceNodeHash** | **Integer** |  |  [optional]
-**destNodeHash** | **Integer** |  |  [optional]
+**sourceNodeHash** | **Long** |  |  [optional]
+**destNodeHash** | **Long** |  |  [optional]
 
 
 

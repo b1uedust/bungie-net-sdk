@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsPresentationDestinyPresentationNodeCollectibleChildEntry
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsPresentationDestinyPresentationNodeCollectibleChildEntry {
   @JsonProperty("collectibleHash")
-  private Integer collectibleHash = null;
+  private Long collectibleHash = null;
 
-  public DestinyDefinitionsPresentationDestinyPresentationNodeCollectibleChildEntry collectibleHash(Integer collectibleHash) {
+  public DestinyDefinitionsPresentationDestinyPresentationNodeCollectibleChildEntry collectibleHash(Long collectibleHash) {
     this.collectibleHash = collectibleHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsPresentationDestinyPresentationNodeCollectibleChi
    * @return collectibleHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getCollectibleHash() {
+  public Long getCollectibleHash() {
     return collectibleHash;
   }
 
-  public void setCollectibleHash(Integer collectibleHash) {
+  public void setCollectibleHash(Long collectibleHash) {
     this.collectibleHash = collectibleHash;
   }
 

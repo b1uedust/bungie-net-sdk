@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyItemSocketEntryPlugItemDefi
  * Sometimes, we have large sets of reusable plugs that are defined identically and thus can (and in some cases, are so large that they *must*) be shared across the places where they are used. These are the definitions for those reusable sets of plugs.   See DestinyItemSocketEntryDefinition.plugSource and reusablePlugSetHash for the relationship between these reusable plug sets and the sockets that leverage them (for starters, Emotes).
  */
 @ApiModel(description = "Sometimes, we have large sets of reusable plugs that are defined identically and thus can (and in some cases, are so large that they *must*) be shared across the places where they are used. These are the definitions for those reusable sets of plugs.   See DestinyItemSocketEntryDefinition.plugSource and reusablePlugSetHash for the relationship between these reusable plug sets and the sockets that leverage them (for starters, Emotes).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSocketsDestinyPlugSetDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;
@@ -36,7 +36,7 @@ public class DestinyDefinitionsSocketsDestinyPlugSetDefinition {
   private List<DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition> reusablePlugItems = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -88,7 +88,7 @@ public class DestinyDefinitionsSocketsDestinyPlugSetDefinition {
     this.reusablePlugItems = reusablePlugItems;
   }
 
-  public DestinyDefinitionsSocketsDestinyPlugSetDefinition hash(Integer hash) {
+  public DestinyDefinitionsSocketsDestinyPlugSetDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -98,11 +98,11 @@ public class DestinyDefinitionsSocketsDestinyPlugSetDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

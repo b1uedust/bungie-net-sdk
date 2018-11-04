@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsDestinyArtDyeReference
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyArtDyeReference {
   @JsonProperty("artDyeChannelHash")
-  private Integer artDyeChannelHash = null;
+  private Long artDyeChannelHash = null;
 
-  public DestinyDefinitionsDestinyArtDyeReference artDyeChannelHash(Integer artDyeChannelHash) {
+  public DestinyDefinitionsDestinyArtDyeReference artDyeChannelHash(Long artDyeChannelHash) {
     this.artDyeChannelHash = artDyeChannelHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsDestinyArtDyeReference {
    * @return artDyeChannelHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getArtDyeChannelHash() {
+  public Long getArtDyeChannelHash() {
     return artDyeChannelHash;
   }
 
-  public void setArtDyeChannelHash(Integer artDyeChannelHash) {
+  public void setArtDyeChannelHash(Long artDyeChannelHash) {
     this.artDyeChannelHash = artDyeChannelHash;
   }
 

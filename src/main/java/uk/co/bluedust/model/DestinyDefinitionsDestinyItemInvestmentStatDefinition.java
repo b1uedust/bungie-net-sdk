@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents a \&quot;raw\&quot; investment stat, before calculated stats are calculated and before any DestinyStatGroupDefinition is applied to transform the stat into something closer to what you see in-game.  Because these won&#39;t match what you see in-game, consider carefully whether you really want to use these stats. I have left them in case someone can do something useful or interesting with the pre-processed statistics.
  */
 @ApiModel(description = "Represents a \"raw\" investment stat, before calculated stats are calculated and before any DestinyStatGroupDefinition is applied to transform the stat into something closer to what you see in-game.  Because these won't match what you see in-game, consider carefully whether you really want to use these stats. I have left them in case someone can do something useful or interesting with the pre-processed statistics.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemInvestmentStatDefinition {
   @JsonProperty("statTypeHash")
-  private Integer statTypeHash = null;
+  private Long statTypeHash = null;
 
   @JsonProperty("value")
   private Integer value = null;
@@ -35,7 +35,7 @@ public class DestinyDefinitionsDestinyItemInvestmentStatDefinition {
   @JsonProperty("isConditionallyActive")
   private Boolean isConditionallyActive = null;
 
-  public DestinyDefinitionsDestinyItemInvestmentStatDefinition statTypeHash(Integer statTypeHash) {
+  public DestinyDefinitionsDestinyItemInvestmentStatDefinition statTypeHash(Long statTypeHash) {
     this.statTypeHash = statTypeHash;
     return this;
   }
@@ -45,11 +45,11 @@ public class DestinyDefinitionsDestinyItemInvestmentStatDefinition {
    * @return statTypeHash
   **/
   @ApiModelProperty(value = "The hash identifier for the DestinyStatDefinition defining this stat.")
-  public Integer getStatTypeHash() {
+  public Long getStatTypeHash() {
     return statTypeHash;
   }
 
-  public void setStatTypeHash(Integer statTypeHash) {
+  public void setStatTypeHash(Long statTypeHash) {
     this.statTypeHash = statTypeHash;
   }
 

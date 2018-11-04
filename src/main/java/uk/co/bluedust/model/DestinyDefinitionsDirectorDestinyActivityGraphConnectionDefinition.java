@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * Nodes on a graph can be visually connected: this appears to be the information about which nodes to link. It appears to lack more detailed information, such as the path for that linking.
  */
 @ApiModel(description = "Nodes on a graph can be visually connected: this appears to be the information about which nodes to link. It appears to lack more detailed information, such as the path for that linking.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition {
   @JsonProperty("sourceNodeHash")
-  private Integer sourceNodeHash = null;
+  private Long sourceNodeHash = null;
 
   @JsonProperty("destNodeHash")
-  private Integer destNodeHash = null;
+  private Long destNodeHash = null;
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition sourceNodeHash(Integer sourceNodeHash) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition sourceNodeHash(Long sourceNodeHash) {
     this.sourceNodeHash = sourceNodeHash;
     return this;
   }
@@ -42,15 +42,15 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition 
    * @return sourceNodeHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getSourceNodeHash() {
+  public Long getSourceNodeHash() {
     return sourceNodeHash;
   }
 
-  public void setSourceNodeHash(Integer sourceNodeHash) {
+  public void setSourceNodeHash(Long sourceNodeHash) {
     this.sourceNodeHash = sourceNodeHash;
   }
 
-  public DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition destNodeHash(Integer destNodeHash) {
+  public DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition destNodeHash(Long destNodeHash) {
     this.destNodeHash = destNodeHash;
     return this;
   }
@@ -60,11 +60,11 @@ public class DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition 
    * @return destNodeHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getDestNodeHash() {
+  public Long getDestNodeHash() {
     return destNodeHash;
   }
 
-  public void setDestNodeHash(Integer destNodeHash) {
+  public void setDestNodeHash(Long destNodeHash) {
     this.destNodeHash = destNodeHash;
   }
 

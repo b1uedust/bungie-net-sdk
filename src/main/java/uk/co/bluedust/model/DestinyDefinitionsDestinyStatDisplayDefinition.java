@@ -27,10 +27,10 @@ import uk.co.bluedust.model.InterpolationInterpolationPoint;
  * Describes the way that an Item Stat (see DestinyStatDefinition) is transformed using the DestinyStatGroupDefinition related to that item. See both of the aforementioned definitions for more information about the stages of stat transformation.  This represents the transformation of a stat into a \&quot;Display\&quot; stat (the closest value that BNet can get to the in-game display value of the stat)
  */
 @ApiModel(description = "Describes the way that an Item Stat (see DestinyStatDefinition) is transformed using the DestinyStatGroupDefinition related to that item. See both of the aforementioned definitions for more information about the stages of stat transformation.  This represents the transformation of a stat into a \"Display\" stat (the closest value that BNet can get to the in-game display value of the stat)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyStatDisplayDefinition {
   @JsonProperty("statHash")
-  private Integer statHash = null;
+  private Long statHash = null;
 
   @JsonProperty("maximumValue")
   private Integer maximumValue = null;
@@ -41,7 +41,7 @@ public class DestinyDefinitionsDestinyStatDisplayDefinition {
   @JsonProperty("displayInterpolation")
   private List<InterpolationInterpolationPoint> displayInterpolation = null;
 
-  public DestinyDefinitionsDestinyStatDisplayDefinition statHash(Integer statHash) {
+  public DestinyDefinitionsDestinyStatDisplayDefinition statHash(Long statHash) {
     this.statHash = statHash;
     return this;
   }
@@ -51,11 +51,11 @@ public class DestinyDefinitionsDestinyStatDisplayDefinition {
    * @return statHash
   **/
   @ApiModelProperty(value = "The hash identifier for the stat being transformed into a Display stat.  Use it to look up the DestinyStatDefinition, or key into a DestinyInventoryItemDefinition's stats property.")
-  public Integer getStatHash() {
+  public Long getStatHash() {
     return statHash;
   }
 
-  public void setStatHash(Integer statHash) {
+  public void setStatHash(Long statHash) {
     this.statHash = statHash;
   }
 

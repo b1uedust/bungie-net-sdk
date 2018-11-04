@@ -4,7 +4,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**presentationNodeHash** | **Integer** |  |  [optional]
+**presentationNodeHash** | **Long** |  |  [optional]
 
 
 

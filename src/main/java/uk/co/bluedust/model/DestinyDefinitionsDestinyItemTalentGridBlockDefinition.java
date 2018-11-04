@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * This defines information that can only come from a talent grid on an item. Items mostly have negligible talent grid data these days, but instanced items still retain grids as a source for some of this common information.  Builds/Subclasses are the only items left that still have talent grids with meaningful Nodes.
  */
 @ApiModel(description = "This defines information that can only come from a talent grid on an item. Items mostly have negligible talent grid data these days, but instanced items still retain grids as a source for some of this common information.  Builds/Subclasses are the only items left that still have talent grids with meaningful Nodes.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyItemTalentGridBlockDefinition {
   @JsonProperty("talentGridHash")
-  private Integer talentGridHash = null;
+  private Long talentGridHash = null;
 
   @JsonProperty("itemDetailString")
   private String itemDetailString = null;
@@ -41,7 +41,7 @@ public class DestinyDefinitionsDestinyItemTalentGridBlockDefinition {
   @JsonProperty("hudIcon")
   private String hudIcon = null;
 
-  public DestinyDefinitionsDestinyItemTalentGridBlockDefinition talentGridHash(Integer talentGridHash) {
+  public DestinyDefinitionsDestinyItemTalentGridBlockDefinition talentGridHash(Long talentGridHash) {
     this.talentGridHash = talentGridHash;
     return this;
   }
@@ -51,11 +51,11 @@ public class DestinyDefinitionsDestinyItemTalentGridBlockDefinition {
    * @return talentGridHash
   **/
   @ApiModelProperty(value = "The hash identifier of the DestinyTalentGridDefinition attached to this item.")
-  public Integer getTalentGridHash() {
+  public Long getTalentGridHash() {
     return talentGridHash;
   }
 
-  public void setTalentGridHash(Integer talentGridHash) {
+  public void setTalentGridHash(Long talentGridHash) {
     this.talentGridHash = talentGridHash;
   }
 

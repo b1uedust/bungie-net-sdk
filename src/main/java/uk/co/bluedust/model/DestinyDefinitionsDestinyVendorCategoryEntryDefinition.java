@@ -26,7 +26,7 @@ import java.util.List;
  * This is the definition for a single Vendor Category, into which Sale Items are grouped.
  */
 @ApiModel(description = "This is the definition for a single Vendor Category, into which Sale Items are grouped.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorCategoryEntryDefinition {
   @JsonProperty("categoryIndex")
   private Integer categoryIndex = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsDestinyVendorCategoryEntryDefinition {
   private Integer sortValue = null;
 
   @JsonProperty("categoryHash")
-  private Integer categoryHash = null;
+  private Long categoryHash = null;
 
   @JsonProperty("quantityAvailable")
   private Integer quantityAvailable = null;
@@ -133,7 +133,7 @@ public class DestinyDefinitionsDestinyVendorCategoryEntryDefinition {
     this.sortValue = sortValue;
   }
 
-  public DestinyDefinitionsDestinyVendorCategoryEntryDefinition categoryHash(Integer categoryHash) {
+  public DestinyDefinitionsDestinyVendorCategoryEntryDefinition categoryHash(Long categoryHash) {
     this.categoryHash = categoryHash;
     return this;
   }
@@ -143,11 +143,11 @@ public class DestinyDefinitionsDestinyVendorCategoryEntryDefinition {
    * @return categoryHash
   **/
   @ApiModelProperty(value = "The hashed identifier for the category.")
-  public Integer getCategoryHash() {
+  public Long getCategoryHash() {
     return categoryHash;
   }
 
-  public void setCategoryHash(Integer categoryHash) {
+  public void setCategoryHash(Long categoryHash) {
     this.categoryHash = categoryHash;
   }
 

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsPeriodType;
 /**
  * DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition {
   @JsonProperty("statId")
   private String statId = null;
@@ -106,7 +106,7 @@ public class DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition {
   private Integer weight = null;
 
   @JsonProperty("medalTierHash")
-  private Integer medalTierHash = null;
+  private Long medalTierHash = null;
 
   public DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition statId(String statId) {
     this.statId = statId;
@@ -358,7 +358,7 @@ public class DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition {
     this.weight = weight;
   }
 
-  public DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition medalTierHash(Integer medalTierHash) {
+  public DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition medalTierHash(Long medalTierHash) {
     this.medalTierHash = medalTierHash;
     return this;
   }
@@ -368,11 +368,11 @@ public class DestinyHistoricalStatsDefinitionsDestinyHistoricalStatsDefinition {
    * @return medalTierHash
   **/
   @ApiModelProperty(value = "The tier associated with this medal - be it implicitly or explicitly.")
-  public Integer getMedalTierHash() {
+  public Long getMedalTierHash() {
     return medalTierHash;
   }
 
-  public void setMedalTierHash(Integer medalTierHash) {
+  public void setMedalTierHash(Long medalTierHash) {
     this.medalTierHash = medalTierHash;
   }
 

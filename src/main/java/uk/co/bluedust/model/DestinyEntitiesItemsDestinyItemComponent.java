@@ -25,10 +25,10 @@ import java.time.OffsetDateTime;
  * The base item component, filled with properties that are generally useful to know in any item request or that don&#39;t feel worthwhile to put in their own component.
  */
 @ApiModel(description = "The base item component, filled with properties that are generally useful to know in any item request or that don't feel worthwhile to put in their own component.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesItemsDestinyItemComponent {
   @JsonProperty("itemHash")
-  private Integer itemHash = null;
+  private Long itemHash = null;
 
   @JsonProperty("itemInstanceId")
   private Long itemInstanceId = null;
@@ -43,7 +43,7 @@ public class DestinyEntitiesItemsDestinyItemComponent {
   private Object location = null;
 
   @JsonProperty("bucketHash")
-  private Integer bucketHash = null;
+  private Long bucketHash = null;
 
   @JsonProperty("transferStatus")
   private Object transferStatus = null;
@@ -55,12 +55,12 @@ public class DestinyEntitiesItemsDestinyItemComponent {
   private Object state = null;
 
   @JsonProperty("overrideStyleItemHash")
-  private Integer overrideStyleItemHash = null;
+  private Long overrideStyleItemHash = null;
 
   @JsonProperty("expirationDate")
   private OffsetDateTime expirationDate = null;
 
-  public DestinyEntitiesItemsDestinyItemComponent itemHash(Integer itemHash) {
+  public DestinyEntitiesItemsDestinyItemComponent itemHash(Long itemHash) {
     this.itemHash = itemHash;
     return this;
   }
@@ -70,11 +70,11 @@ public class DestinyEntitiesItemsDestinyItemComponent {
    * @return itemHash
   **/
   @ApiModelProperty(value = "The identifier for the item's definition, which is where most of the useful static information for the item can be found.")
-  public Integer getItemHash() {
+  public Long getItemHash() {
     return itemHash;
   }
 
-  public void setItemHash(Integer itemHash) {
+  public void setItemHash(Long itemHash) {
     this.itemHash = itemHash;
   }
 
@@ -150,7 +150,7 @@ public class DestinyEntitiesItemsDestinyItemComponent {
     this.location = location;
   }
 
-  public DestinyEntitiesItemsDestinyItemComponent bucketHash(Integer bucketHash) {
+  public DestinyEntitiesItemsDestinyItemComponent bucketHash(Long bucketHash) {
     this.bucketHash = bucketHash;
     return this;
   }
@@ -160,11 +160,11 @@ public class DestinyEntitiesItemsDestinyItemComponent {
    * @return bucketHash
   **/
   @ApiModelProperty(value = "The hash identifier for the specific inventory bucket in which the item is located.")
-  public Integer getBucketHash() {
+  public Long getBucketHash() {
     return bucketHash;
   }
 
-  public void setBucketHash(Integer bucketHash) {
+  public void setBucketHash(Long bucketHash) {
     this.bucketHash = bucketHash;
   }
 
@@ -222,7 +222,7 @@ public class DestinyEntitiesItemsDestinyItemComponent {
     this.state = state;
   }
 
-  public DestinyEntitiesItemsDestinyItemComponent overrideStyleItemHash(Integer overrideStyleItemHash) {
+  public DestinyEntitiesItemsDestinyItemComponent overrideStyleItemHash(Long overrideStyleItemHash) {
     this.overrideStyleItemHash = overrideStyleItemHash;
     return this;
   }
@@ -232,11 +232,11 @@ public class DestinyEntitiesItemsDestinyItemComponent {
    * @return overrideStyleItemHash
   **/
   @ApiModelProperty(value = "If populated, this is the hash of the item whose icon (and other secondary styles, but *not* the human readable strings) should override whatever icons/styles are on the item being sold.  If you don't do this, certain items whose styles are being overridden by socketed items - such as the \"Recycle Shader\" item - would show whatever their default icon/style is, and it wouldn't be pretty or look accurate.")
-  public Integer getOverrideStyleItemHash() {
+  public Long getOverrideStyleItemHash() {
     return overrideStyleItemHash;
   }
 
-  public void setOverrideStyleItemHash(Integer overrideStyleItemHash) {
+  public void setOverrideStyleItemHash(Long overrideStyleItemHash) {
     this.overrideStyleItemHash = overrideStyleItemHash;
   }
 

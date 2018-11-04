@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Gender is a social construct, and as such we have definitions for Genders. Right now there happens to only be two, but we&#39;ll see what the future holds.
  */
 @ApiModel(description = "Gender is a social construct, and as such we have definitions for Genders. Right now there happens to only be two, but we'll see what the future holds.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyGenderDefinition {
   @JsonProperty("genderType")
   private Object genderType = null;
@@ -34,7 +34,7 @@ public class DestinyDefinitionsDestinyGenderDefinition {
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -78,7 +78,7 @@ public class DestinyDefinitionsDestinyGenderDefinition {
     this.displayProperties = displayProperties;
   }
 
-  public DestinyDefinitionsDestinyGenderDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyGenderDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -88,11 +88,11 @@ public class DestinyDefinitionsDestinyGenderDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

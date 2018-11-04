@@ -32,7 +32,7 @@ import uk.co.bluedust.model.DestinyDestinyRecordValueStyle;
 /**
  * DestinyDefinitionsRecordsDestinyRecordDefinition
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsRecordsDestinyRecordDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -44,10 +44,10 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
   private DestinyDefinitionsPresentationDestinyPresentationChildBlock presentationInfo = null;
 
   @JsonProperty("loreHash")
-  private Integer loreHash = null;
+  private Long loreHash = null;
 
   @JsonProperty("objectiveHashes")
-  private List<Integer> objectiveHashes = null;
+  private List<Long> objectiveHashes = null;
 
   @JsonProperty("recordValueStyle")
   private DestinyDestinyRecordValueStyle recordValueStyle = null;
@@ -65,7 +65,7 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
   private DestinyDefinitionsPresentationDestinyPresentationNodeRequirementsBlock requirements = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -127,7 +127,7 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
     this.presentationInfo = presentationInfo;
   }
 
-  public DestinyDefinitionsRecordsDestinyRecordDefinition loreHash(Integer loreHash) {
+  public DestinyDefinitionsRecordsDestinyRecordDefinition loreHash(Long loreHash) {
     this.loreHash = loreHash;
     return this;
   }
@@ -137,20 +137,20 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
    * @return loreHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getLoreHash() {
+  public Long getLoreHash() {
     return loreHash;
   }
 
-  public void setLoreHash(Integer loreHash) {
+  public void setLoreHash(Long loreHash) {
     this.loreHash = loreHash;
   }
 
-  public DestinyDefinitionsRecordsDestinyRecordDefinition objectiveHashes(List<Integer> objectiveHashes) {
+  public DestinyDefinitionsRecordsDestinyRecordDefinition objectiveHashes(List<Long> objectiveHashes) {
     this.objectiveHashes = objectiveHashes;
     return this;
   }
 
-  public DestinyDefinitionsRecordsDestinyRecordDefinition addObjectiveHashesItem(Integer objectiveHashesItem) {
+  public DestinyDefinitionsRecordsDestinyRecordDefinition addObjectiveHashesItem(Long objectiveHashesItem) {
     if (this.objectiveHashes == null) {
       this.objectiveHashes = new ArrayList<>();
     }
@@ -163,11 +163,11 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
    * @return objectiveHashes
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getObjectiveHashes() {
+  public List<Long> getObjectiveHashes() {
     return objectiveHashes;
   }
 
-  public void setObjectiveHashes(List<Integer> objectiveHashes) {
+  public void setObjectiveHashes(List<Long> objectiveHashes) {
     this.objectiveHashes = objectiveHashes;
   }
 
@@ -261,7 +261,7 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
     this.requirements = requirements;
   }
 
-  public DestinyDefinitionsRecordsDestinyRecordDefinition hash(Integer hash) {
+  public DestinyDefinitionsRecordsDestinyRecordDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -271,11 +271,11 @@ public class DestinyDefinitionsRecordsDestinyRecordDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

@@ -23,15 +23,15 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDyeReference
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDyeReference {
   @JsonProperty("channelHash")
-  private Integer channelHash = null;
+  private Long channelHash = null;
 
   @JsonProperty("dyeHash")
-  private Integer dyeHash = null;
+  private Long dyeHash = null;
 
-  public DestinyDyeReference channelHash(Integer channelHash) {
+  public DestinyDyeReference channelHash(Long channelHash) {
     this.channelHash = channelHash;
     return this;
   }
@@ -41,15 +41,15 @@ public class DestinyDyeReference {
    * @return channelHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getChannelHash() {
+  public Long getChannelHash() {
     return channelHash;
   }
 
-  public void setChannelHash(Integer channelHash) {
+  public void setChannelHash(Long channelHash) {
     this.channelHash = channelHash;
   }
 
-  public DestinyDyeReference dyeHash(Integer dyeHash) {
+  public DestinyDyeReference dyeHash(Long dyeHash) {
     this.dyeHash = dyeHash;
     return this;
   }
@@ -59,11 +59,11 @@ public class DestinyDyeReference {
    * @return dyeHash
   **/
   @ApiModelProperty(value = "")
-  public Integer getDyeHash() {
+  public Long getDyeHash() {
     return dyeHash;
   }
 
-  public void setDyeHash(Integer dyeHash) {
+  public void setDyeHash(Long dyeHash) {
     this.dyeHash = dyeHash;
   }
 

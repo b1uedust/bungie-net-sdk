@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyPlugUiStyles;
  * If an item is a Plug, its DestinyInventoryItemDefinition.plug property will be populated with an instance of one of these bad boys.  This gives information about when it can be inserted, what the plug&#39;s category is (and thus whether it is compatible with a socket... see DestinySocketTypeDefinition for information about Plug Categories and socket compatibility), whether it is enabled and other Plug info.
  */
 @ApiModel(description = "If an item is a Plug, its DestinyInventoryItemDefinition.plug property will be populated with an instance of one of these bad boys.  This gives information about when it can be inserted, what the plug's category is (and thus whether it is compatible with a socket... see DestinySocketTypeDefinition for information about Plug Categories and socket compatibility), whether it is enabled and other Plug info.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
   @JsonProperty("insertionRules")
   private List<DestinyDefinitionsItemsDestinyPlugRuleDefinition> insertionRules = null;
@@ -37,19 +37,19 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
   private String plugCategoryIdentifier = null;
 
   @JsonProperty("plugCategoryHash")
-  private Integer plugCategoryHash = null;
+  private Long plugCategoryHash = null;
 
   @JsonProperty("onActionRecreateSelf")
   private Boolean onActionRecreateSelf = null;
 
   @JsonProperty("insertionMaterialRequirementHash")
-  private Integer insertionMaterialRequirementHash = null;
+  private Long insertionMaterialRequirementHash = null;
 
   @JsonProperty("previewItemOverrideHash")
-  private Integer previewItemOverrideHash = null;
+  private Long previewItemOverrideHash = null;
 
   @JsonProperty("enabledMaterialRequirementHash")
-  private Integer enabledMaterialRequirementHash = null;
+  private Long enabledMaterialRequirementHash = null;
 
   @JsonProperty("enabledRules")
   private List<DestinyDefinitionsItemsDestinyPlugRuleDefinition> enabledRules = null;
@@ -122,7 +122,7 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
     this.plugCategoryIdentifier = plugCategoryIdentifier;
   }
 
-  public DestinyDefinitionsItemsDestinyItemPlugDefinition plugCategoryHash(Integer plugCategoryHash) {
+  public DestinyDefinitionsItemsDestinyItemPlugDefinition plugCategoryHash(Long plugCategoryHash) {
     this.plugCategoryHash = plugCategoryHash;
     return this;
   }
@@ -132,11 +132,11 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
    * @return plugCategoryHash
   **/
   @ApiModelProperty(value = "The hash for the plugCategoryIdentifier. You can use this instead if you wish: I put both in the definition for debugging purposes.")
-  public Integer getPlugCategoryHash() {
+  public Long getPlugCategoryHash() {
     return plugCategoryHash;
   }
 
-  public void setPlugCategoryHash(Integer plugCategoryHash) {
+  public void setPlugCategoryHash(Long plugCategoryHash) {
     this.plugCategoryHash = plugCategoryHash;
   }
 
@@ -158,7 +158,7 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
     this.onActionRecreateSelf = onActionRecreateSelf;
   }
 
-  public DestinyDefinitionsItemsDestinyItemPlugDefinition insertionMaterialRequirementHash(Integer insertionMaterialRequirementHash) {
+  public DestinyDefinitionsItemsDestinyItemPlugDefinition insertionMaterialRequirementHash(Long insertionMaterialRequirementHash) {
     this.insertionMaterialRequirementHash = insertionMaterialRequirementHash;
     return this;
   }
@@ -168,15 +168,15 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
    * @return insertionMaterialRequirementHash
   **/
   @ApiModelProperty(value = "If inserting this plug requires materials, this is the hash identifier for looking up the DestinyMaterialRequirementSetDefinition for those requirements.")
-  public Integer getInsertionMaterialRequirementHash() {
+  public Long getInsertionMaterialRequirementHash() {
     return insertionMaterialRequirementHash;
   }
 
-  public void setInsertionMaterialRequirementHash(Integer insertionMaterialRequirementHash) {
+  public void setInsertionMaterialRequirementHash(Long insertionMaterialRequirementHash) {
     this.insertionMaterialRequirementHash = insertionMaterialRequirementHash;
   }
 
-  public DestinyDefinitionsItemsDestinyItemPlugDefinition previewItemOverrideHash(Integer previewItemOverrideHash) {
+  public DestinyDefinitionsItemsDestinyItemPlugDefinition previewItemOverrideHash(Long previewItemOverrideHash) {
     this.previewItemOverrideHash = previewItemOverrideHash;
     return this;
   }
@@ -186,15 +186,15 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
    * @return previewItemOverrideHash
   **/
   @ApiModelProperty(value = "In the game, if you're inspecting a plug item directly, this will be the item shown with the plug attached. Look up the DestinyInventoryItemDefinition for this hash for the item.")
-  public Integer getPreviewItemOverrideHash() {
+  public Long getPreviewItemOverrideHash() {
     return previewItemOverrideHash;
   }
 
-  public void setPreviewItemOverrideHash(Integer previewItemOverrideHash) {
+  public void setPreviewItemOverrideHash(Long previewItemOverrideHash) {
     this.previewItemOverrideHash = previewItemOverrideHash;
   }
 
-  public DestinyDefinitionsItemsDestinyItemPlugDefinition enabledMaterialRequirementHash(Integer enabledMaterialRequirementHash) {
+  public DestinyDefinitionsItemsDestinyItemPlugDefinition enabledMaterialRequirementHash(Long enabledMaterialRequirementHash) {
     this.enabledMaterialRequirementHash = enabledMaterialRequirementHash;
     return this;
   }
@@ -204,11 +204,11 @@ public class DestinyDefinitionsItemsDestinyItemPlugDefinition {
    * @return enabledMaterialRequirementHash
   **/
   @ApiModelProperty(value = "It's not enough for the plug to be inserted. It has to be enabled as well. For it to be enabled, it may require materials. This is the hash identifier for the DestinyMaterialRequirementSetDefinition for those requirements, if there is one.")
-  public Integer getEnabledMaterialRequirementHash() {
+  public Long getEnabledMaterialRequirementHash() {
     return enabledMaterialRequirementHash;
   }
 
-  public void setEnabledMaterialRequirementHash(Integer enabledMaterialRequirementHash) {
+  public void setEnabledMaterialRequirementHash(Long enabledMaterialRequirementHash) {
     this.enabledMaterialRequirementHash = enabledMaterialRequirementHash;
   }
 

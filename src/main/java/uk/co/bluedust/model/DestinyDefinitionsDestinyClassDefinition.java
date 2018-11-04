@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Defines a Character Class in Destiny 2. These are types of characters you can play, like Titan, Warlock, and Hunter.
  */
 @ApiModel(description = "Defines a Character Class in Destiny 2. These are types of characters you can play, like Titan, Warlock, and Hunter.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyClassDefinition {
   @JsonProperty("classType")
   private Object classType = null;
@@ -40,10 +40,10 @@ public class DestinyDefinitionsDestinyClassDefinition {
   private Map<String, String> genderedClassNames = null;
 
   @JsonProperty("mentorVendorHash")
-  private Integer mentorVendorHash = null;
+  private Long mentorVendorHash = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -113,7 +113,7 @@ public class DestinyDefinitionsDestinyClassDefinition {
     this.genderedClassNames = genderedClassNames;
   }
 
-  public DestinyDefinitionsDestinyClassDefinition mentorVendorHash(Integer mentorVendorHash) {
+  public DestinyDefinitionsDestinyClassDefinition mentorVendorHash(Long mentorVendorHash) {
     this.mentorVendorHash = mentorVendorHash;
     return this;
   }
@@ -123,15 +123,15 @@ public class DestinyDefinitionsDestinyClassDefinition {
    * @return mentorVendorHash
   **/
   @ApiModelProperty(value = "Mentors don't really mean anything anymore. Don't expect this to be populated.")
-  public Integer getMentorVendorHash() {
+  public Long getMentorVendorHash() {
     return mentorVendorHash;
   }
 
-  public void setMentorVendorHash(Integer mentorVendorHash) {
+  public void setMentorVendorHash(Long mentorVendorHash) {
     this.mentorVendorHash = mentorVendorHash;
   }
 
-  public DestinyDefinitionsDestinyClassDefinition hash(Integer hash) {
+  public DestinyDefinitionsDestinyClassDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -141,11 +141,11 @@ public class DestinyDefinitionsDestinyClassDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

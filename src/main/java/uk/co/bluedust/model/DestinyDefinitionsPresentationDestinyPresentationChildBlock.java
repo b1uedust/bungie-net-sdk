@@ -27,13 +27,13 @@ import uk.co.bluedust.model.DestinyDestinyPresentationNodeType;
 /**
  * DestinyDefinitionsPresentationDestinyPresentationChildBlock
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsPresentationDestinyPresentationChildBlock {
   @JsonProperty("presentationNodeType")
   private DestinyDestinyPresentationNodeType presentationNodeType = null;
 
   @JsonProperty("parentPresentationNodeHashes")
-  private List<Integer> parentPresentationNodeHashes = null;
+  private List<Long> parentPresentationNodeHashes = null;
 
   @JsonProperty("displayStyle")
   private DestinyDestinyPresentationDisplayStyle displayStyle = null;
@@ -56,12 +56,12 @@ public class DestinyDefinitionsPresentationDestinyPresentationChildBlock {
     this.presentationNodeType = presentationNodeType;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationChildBlock parentPresentationNodeHashes(List<Integer> parentPresentationNodeHashes) {
+  public DestinyDefinitionsPresentationDestinyPresentationChildBlock parentPresentationNodeHashes(List<Long> parentPresentationNodeHashes) {
     this.parentPresentationNodeHashes = parentPresentationNodeHashes;
     return this;
   }
 
-  public DestinyDefinitionsPresentationDestinyPresentationChildBlock addParentPresentationNodeHashesItem(Integer parentPresentationNodeHashesItem) {
+  public DestinyDefinitionsPresentationDestinyPresentationChildBlock addParentPresentationNodeHashesItem(Long parentPresentationNodeHashesItem) {
     if (this.parentPresentationNodeHashes == null) {
       this.parentPresentationNodeHashes = new ArrayList<>();
     }
@@ -74,11 +74,11 @@ public class DestinyDefinitionsPresentationDestinyPresentationChildBlock {
    * @return parentPresentationNodeHashes
   **/
   @ApiModelProperty(value = "")
-  public List<Integer> getParentPresentationNodeHashes() {
+  public List<Long> getParentPresentationNodeHashes() {
     return parentPresentationNodeHashes;
   }
 
-  public void setParentPresentationNodeHashes(List<Integer> parentPresentationNodeHashes) {
+  public void setParentPresentationNodeHashes(List<Long> parentPresentationNodeHashes) {
     this.parentPresentationNodeHashes = parentPresentationNodeHashes;
   }
 

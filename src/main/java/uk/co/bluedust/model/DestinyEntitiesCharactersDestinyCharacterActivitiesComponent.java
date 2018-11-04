@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * This component holds activity data for a character. It will tell you about the character&#39;s current activity status, as well as activities that are available to the user.
  */
 @ApiModel(description = "This component holds activity data for a character. It will tell you about the character's current activity status, as well as activities that are available to the user.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
   @JsonProperty("dateActivityStarted")
   private OffsetDateTime dateActivityStarted = null;
@@ -38,10 +38,10 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
   private List<DestinyDestinyActivity> availableActivities = null;
 
   @JsonProperty("currentActivityHash")
-  private Integer currentActivityHash = null;
+  private Long currentActivityHash = null;
 
   @JsonProperty("currentActivityModeHash")
-  private Integer currentActivityModeHash = null;
+  private Long currentActivityModeHash = null;
 
   /**
    * And the current activity&#39;s most specific mode type, if it can be found.
@@ -194,16 +194,16 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
   private CurrentActivityModeTypeEnum currentActivityModeType = null;
 
   @JsonProperty("currentActivityModeHashes")
-  private List<Integer> currentActivityModeHashes = null;
+  private List<Long> currentActivityModeHashes = null;
 
   @JsonProperty("currentActivityModeTypes")
   private List<DestinyHistoricalStatsDefinitionsDestinyActivityModeType> currentActivityModeTypes = null;
 
   @JsonProperty("currentPlaylistActivityHash")
-  private Integer currentPlaylistActivityHash = null;
+  private Long currentPlaylistActivityHash = null;
 
   @JsonProperty("lastCompletedStoryHash")
-  private Integer lastCompletedStoryHash = null;
+  private Long lastCompletedStoryHash = null;
 
   public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent dateActivityStarted(OffsetDateTime dateActivityStarted) {
     this.dateActivityStarted = dateActivityStarted;
@@ -249,7 +249,7 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
     this.availableActivities = availableActivities;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentActivityHash(Integer currentActivityHash) {
+  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentActivityHash(Long currentActivityHash) {
     this.currentActivityHash = currentActivityHash;
     return this;
   }
@@ -259,15 +259,15 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
    * @return currentActivityHash
   **/
   @ApiModelProperty(value = "If the user is in an activity, this will be the hash of the Activity being played. Note that you must combine this info with currentActivityModeHash to get a real picture of what the user is doing right now. For instance, PVP \"Activities\" are just maps: it's the ActivityMode that determines what type of PVP game they're playing.")
-  public Integer getCurrentActivityHash() {
+  public Long getCurrentActivityHash() {
     return currentActivityHash;
   }
 
-  public void setCurrentActivityHash(Integer currentActivityHash) {
+  public void setCurrentActivityHash(Long currentActivityHash) {
     this.currentActivityHash = currentActivityHash;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentActivityModeHash(Integer currentActivityModeHash) {
+  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentActivityModeHash(Long currentActivityModeHash) {
     this.currentActivityModeHash = currentActivityModeHash;
     return this;
   }
@@ -277,11 +277,11 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
    * @return currentActivityModeHash
   **/
   @ApiModelProperty(value = "If the user is in an activity, this will be the hash of the activity mode being played. Combine with currentActivityHash to give a person a full picture of what they're doing right now.")
-  public Integer getCurrentActivityModeHash() {
+  public Long getCurrentActivityModeHash() {
     return currentActivityModeHash;
   }
 
-  public void setCurrentActivityModeHash(Integer currentActivityModeHash) {
+  public void setCurrentActivityModeHash(Long currentActivityModeHash) {
     this.currentActivityModeHash = currentActivityModeHash;
   }
 
@@ -303,12 +303,12 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
     this.currentActivityModeType = currentActivityModeType;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentActivityModeHashes(List<Integer> currentActivityModeHashes) {
+  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentActivityModeHashes(List<Long> currentActivityModeHashes) {
     this.currentActivityModeHashes = currentActivityModeHashes;
     return this;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent addCurrentActivityModeHashesItem(Integer currentActivityModeHashesItem) {
+  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent addCurrentActivityModeHashesItem(Long currentActivityModeHashesItem) {
     if (this.currentActivityModeHashes == null) {
       this.currentActivityModeHashes = new ArrayList<>();
     }
@@ -321,11 +321,11 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
    * @return currentActivityModeHashes
   **/
   @ApiModelProperty(value = "If the user is in an activity, this will be the hashes of the DestinyActivityModeDefinition being played. Combine with currentActivityHash to give a person a full picture of what they're doing right now.")
-  public List<Integer> getCurrentActivityModeHashes() {
+  public List<Long> getCurrentActivityModeHashes() {
     return currentActivityModeHashes;
   }
 
-  public void setCurrentActivityModeHashes(List<Integer> currentActivityModeHashes) {
+  public void setCurrentActivityModeHashes(List<Long> currentActivityModeHashes) {
     this.currentActivityModeHashes = currentActivityModeHashes;
   }
 
@@ -355,7 +355,7 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
     this.currentActivityModeTypes = currentActivityModeTypes;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentPlaylistActivityHash(Integer currentPlaylistActivityHash) {
+  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent currentPlaylistActivityHash(Long currentPlaylistActivityHash) {
     this.currentPlaylistActivityHash = currentPlaylistActivityHash;
     return this;
   }
@@ -365,15 +365,15 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
    * @return currentPlaylistActivityHash
   **/
   @ApiModelProperty(value = "If the user is in a playlist, this is the hash identifier for the playlist that they chose.")
-  public Integer getCurrentPlaylistActivityHash() {
+  public Long getCurrentPlaylistActivityHash() {
     return currentPlaylistActivityHash;
   }
 
-  public void setCurrentPlaylistActivityHash(Integer currentPlaylistActivityHash) {
+  public void setCurrentPlaylistActivityHash(Long currentPlaylistActivityHash) {
     this.currentPlaylistActivityHash = currentPlaylistActivityHash;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent lastCompletedStoryHash(Integer lastCompletedStoryHash) {
+  public DestinyEntitiesCharactersDestinyCharacterActivitiesComponent lastCompletedStoryHash(Long lastCompletedStoryHash) {
     this.lastCompletedStoryHash = lastCompletedStoryHash;
     return this;
   }
@@ -383,11 +383,11 @@ public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
    * @return lastCompletedStoryHash
   **/
   @ApiModelProperty(value = "This will have the activity hash of the last completed story/campaign mission, in case you care about that.")
-  public Integer getLastCompletedStoryHash() {
+  public Long getLastCompletedStoryHash() {
     return lastCompletedStoryHash;
   }
 
-  public void setLastCompletedStoryHash(Integer lastCompletedStoryHash) {
+  public void setLastCompletedStoryHash(Long lastCompletedStoryHash) {
     this.lastCompletedStoryHash = lastCompletedStoryHash;
   }
 

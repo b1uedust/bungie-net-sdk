@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * This defines a single Step in a progression (which roughly equates to a level. See DestinyProgressionDefinition for caveats).
  */
 @ApiModel(description = "This defines a single Step in a progression (which roughly equates to a level. See DestinyProgressionDefinition for caveats).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyProgressionStepDefinition {
   @JsonProperty("stepName")
   private String stepName = null;

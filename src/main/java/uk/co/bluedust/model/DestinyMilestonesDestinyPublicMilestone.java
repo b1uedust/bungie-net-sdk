@@ -30,10 +30,10 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyPublicMilestoneVendor;
  * Information about milestones, presented in a character state-agnostic manner. Combine this data with DestinyMilestoneDefinition to get a full picture of the milestone, which is basically a checklist of things to do in the game. Think of this as GetPublicAdvisors 3.0, for those who used the Destiny 1 API.
  */
 @ApiModel(description = "Information about milestones, presented in a character state-agnostic manner. Combine this data with DestinyMilestoneDefinition to get a full picture of the milestone, which is basically a checklist of things to do in the game. Think of this as GetPublicAdvisors 3.0, for those who used the Destiny 1 API.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyMilestonesDestinyPublicMilestone {
   @JsonProperty("milestoneHash")
-  private Integer milestoneHash = null;
+  private Long milestoneHash = null;
 
   @JsonProperty("availableQuests")
   private List<DestinyMilestonesDestinyPublicMilestoneQuest> availableQuests = null;
@@ -42,7 +42,7 @@ public class DestinyMilestonesDestinyPublicMilestone {
   private List<DestinyMilestonesDestinyPublicMilestoneChallengeActivity> activities = null;
 
   @JsonProperty("vendorHashes")
-  private List<Integer> vendorHashes = null;
+  private List<Long> vendorHashes = null;
 
   @JsonProperty("vendors")
   private List<DestinyMilestonesDestinyPublicMilestoneVendor> vendors = null;
@@ -56,7 +56,7 @@ public class DestinyMilestonesDestinyPublicMilestone {
   @JsonProperty("order")
   private Integer order = null;
 
-  public DestinyMilestonesDestinyPublicMilestone milestoneHash(Integer milestoneHash) {
+  public DestinyMilestonesDestinyPublicMilestone milestoneHash(Long milestoneHash) {
     this.milestoneHash = milestoneHash;
     return this;
   }
@@ -66,11 +66,11 @@ public class DestinyMilestonesDestinyPublicMilestone {
    * @return milestoneHash
   **/
   @ApiModelProperty(value = "The hash identifier for the milestone. Use it to look up the DestinyMilestoneDefinition for static data about the Milestone.")
-  public Integer getMilestoneHash() {
+  public Long getMilestoneHash() {
     return milestoneHash;
   }
 
-  public void setMilestoneHash(Integer milestoneHash) {
+  public void setMilestoneHash(Long milestoneHash) {
     this.milestoneHash = milestoneHash;
   }
 
@@ -126,12 +126,12 @@ public class DestinyMilestonesDestinyPublicMilestone {
     this.activities = activities;
   }
 
-  public DestinyMilestonesDestinyPublicMilestone vendorHashes(List<Integer> vendorHashes) {
+  public DestinyMilestonesDestinyPublicMilestone vendorHashes(List<Long> vendorHashes) {
     this.vendorHashes = vendorHashes;
     return this;
   }
 
-  public DestinyMilestonesDestinyPublicMilestone addVendorHashesItem(Integer vendorHashesItem) {
+  public DestinyMilestonesDestinyPublicMilestone addVendorHashesItem(Long vendorHashesItem) {
     if (this.vendorHashes == null) {
       this.vendorHashes = new ArrayList<>();
     }
@@ -144,11 +144,11 @@ public class DestinyMilestonesDestinyPublicMilestone {
    * @return vendorHashes
   **/
   @ApiModelProperty(value = "Sometimes milestones - or activities active in milestones - will have relevant vendors. These are the vendors that are currently relevant.  Deprecated, already, for the sake of the new \"vendors\" property that has more data. What was I thinking.")
-  public List<Integer> getVendorHashes() {
+  public List<Long> getVendorHashes() {
     return vendorHashes;
   }
 
-  public void setVendorHashes(List<Integer> vendorHashes) {
+  public void setVendorHashes(List<Long> vendorHashes) {
     this.vendorHashes = vendorHashes;
   }
 

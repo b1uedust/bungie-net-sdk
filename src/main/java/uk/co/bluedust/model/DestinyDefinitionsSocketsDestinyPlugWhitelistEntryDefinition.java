@@ -26,18 +26,18 @@ import java.util.List;
  * Defines a plug \&quot;Category\&quot; that is allowed to be plugged into a socket of this type.  This should be compared against a given plug item&#39;s DestinyInventoryItemDefinition.plug.plugCategoryHash, which indicates the plug item&#39;s category.
  */
 @ApiModel(description = "Defines a plug \"Category\" that is allowed to be plugged into a socket of this type.  This should be compared against a given plug item's DestinyInventoryItemDefinition.plug.plugCategoryHash, which indicates the plug item's category.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition {
   @JsonProperty("categoryHash")
-  private Integer categoryHash = null;
+  private Long categoryHash = null;
 
   @JsonProperty("categoryIdentifier")
   private String categoryIdentifier = null;
 
   @JsonProperty("reinitializationPossiblePlugHashes")
-  private List<Integer> reinitializationPossiblePlugHashes = null;
+  private List<Long> reinitializationPossiblePlugHashes = null;
 
-  public DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition categoryHash(Integer categoryHash) {
+  public DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition categoryHash(Long categoryHash) {
     this.categoryHash = categoryHash;
     return this;
   }
@@ -47,11 +47,11 @@ public class DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition {
    * @return categoryHash
   **/
   @ApiModelProperty(value = "The hash identifier of the Plug Category to compare against the plug item's plug.plugCategoryHash.  Note that this does NOT relate to any Definition in itself, it is only used for comparison purposes.")
-  public Integer getCategoryHash() {
+  public Long getCategoryHash() {
     return categoryHash;
   }
 
-  public void setCategoryHash(Integer categoryHash) {
+  public void setCategoryHash(Long categoryHash) {
     this.categoryHash = categoryHash;
   }
 
@@ -73,12 +73,12 @@ public class DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition {
     this.categoryIdentifier = categoryIdentifier;
   }
 
-  public DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition reinitializationPossiblePlugHashes(List<Integer> reinitializationPossiblePlugHashes) {
+  public DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition reinitializationPossiblePlugHashes(List<Long> reinitializationPossiblePlugHashes) {
     this.reinitializationPossiblePlugHashes = reinitializationPossiblePlugHashes;
     return this;
   }
 
-  public DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition addReinitializationPossiblePlugHashesItem(Integer reinitializationPossiblePlugHashesItem) {
+  public DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition addReinitializationPossiblePlugHashesItem(Long reinitializationPossiblePlugHashesItem) {
     if (this.reinitializationPossiblePlugHashes == null) {
       this.reinitializationPossiblePlugHashes = new ArrayList<>();
     }
@@ -91,11 +91,11 @@ public class DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition {
    * @return reinitializationPossiblePlugHashes
   **/
   @ApiModelProperty(value = "The list of all plug items (DestinyInventoryItemDefinition) that the socket may randomly be populated with when reinitialized.  Which ones you should actually show are determined by the plug being inserted into the socket, and the socket’s type.  When you inspect the plug that could go into a Masterwork Socket, look up the socket type of the socket being inspected and find the DestinySocketTypeDefinition.  Then, look at the Plugs that can fit in that socket. Find the Whitelist in the DestinySocketTypeDefinition that matches the plug item’s categoryhash.  That whitelist entry will potentially have a new “reinitializationPossiblePlugHashes” property.If it does, that means we know what it will roll if you try to insert this plug into this socket.")
-  public List<Integer> getReinitializationPossiblePlugHashes() {
+  public List<Long> getReinitializationPossiblePlugHashes() {
     return reinitializationPossiblePlugHashes;
   }
 
-  public void setReinitializationPossiblePlugHashes(List<Integer> reinitializationPossiblePlugHashes) {
+  public void setReinitializationPossiblePlugHashes(List<Long> reinitializationPossiblePlugHashes) {
     this.reinitializationPossiblePlugHashes = reinitializationPossiblePlugHashes;
   }
 

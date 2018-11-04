@@ -29,7 +29,7 @@ import uk.co.bluedust.model.GroupsV2ClanBanner;
  * The same as GroupV2ClanInfo, but includes any investment data.
  */
 @ApiModel(description = "The same as GroupV2ClanInfo, but includes any investment data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class GroupsV2GroupV2ClanInfoAndInvestment {
   @JsonProperty("d2ClanProgressions")
   private Map<String, DestinyDestinyProgression> d2ClanProgressions = null;

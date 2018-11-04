@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * If a character purchased an item that is refundable, a Vendor Receipt will be created on the user&#39;s Destiny Profile. These expire after a configurable period of time, but until then can be used to get refunds on items. BNet does not provide the ability to refund a purchase *yet*, but you know.
  */
 @ApiModel(description = "If a character purchased an item that is refundable, a Vendor Receipt will be created on the user's Destiny Profile. These expire after a configurable period of time, but until then can be used to get refunds on items. BNet does not provide the ability to refund a purchase *yet*, but you know.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyVendorsDestinyVendorReceipt {
   @JsonProperty("currencyPaid")
   private List<DestinyDestinyItemQuantity> currencyPaid = null;
@@ -37,7 +37,7 @@ public class DestinyVendorsDestinyVendorReceipt {
   private Object itemReceived = null;
 
   @JsonProperty("licenseUnlockHash")
-  private Integer licenseUnlockHash = null;
+  private Long licenseUnlockHash = null;
 
   @JsonProperty("purchasedByCharacterId")
   private Long purchasedByCharacterId = null;
@@ -98,7 +98,7 @@ public class DestinyVendorsDestinyVendorReceipt {
     this.itemReceived = itemReceived;
   }
 
-  public DestinyVendorsDestinyVendorReceipt licenseUnlockHash(Integer licenseUnlockHash) {
+  public DestinyVendorsDestinyVendorReceipt licenseUnlockHash(Long licenseUnlockHash) {
     this.licenseUnlockHash = licenseUnlockHash;
     return this;
   }
@@ -108,11 +108,11 @@ public class DestinyVendorsDestinyVendorReceipt {
    * @return licenseUnlockHash
   **/
   @ApiModelProperty(value = "The unlock flag used to determine whether you still have the purchased item.")
-  public Integer getLicenseUnlockHash() {
+  public Long getLicenseUnlockHash() {
     return licenseUnlockHash;
   }
 
-  public void setLicenseUnlockHash(Integer licenseUnlockHash) {
+  public void setLicenseUnlockHash(Long licenseUnlockHash) {
     this.licenseUnlockHash = licenseUnlockHash;
   }
 

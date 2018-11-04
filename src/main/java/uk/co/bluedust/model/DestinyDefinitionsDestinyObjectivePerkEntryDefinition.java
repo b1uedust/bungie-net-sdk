@@ -24,15 +24,15 @@ import io.swagger.annotations.ApiModelProperty;
  * Defines the conditions under which an intrinsic perk is applied while participating in an Objective.  These perks will generally not be benefit-granting perks, but rather a perk that modifies gameplay in some interesting way.
  */
 @ApiModel(description = "Defines the conditions under which an intrinsic perk is applied while participating in an Objective.  These perks will generally not be benefit-granting perks, but rather a perk that modifies gameplay in some interesting way.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyObjectivePerkEntryDefinition {
   @JsonProperty("perkHash")
-  private Integer perkHash = null;
+  private Long perkHash = null;
 
   @JsonProperty("style")
   private Object style = null;
 
-  public DestinyDefinitionsDestinyObjectivePerkEntryDefinition perkHash(Integer perkHash) {
+  public DestinyDefinitionsDestinyObjectivePerkEntryDefinition perkHash(Long perkHash) {
     this.perkHash = perkHash;
     return this;
   }
@@ -42,11 +42,11 @@ public class DestinyDefinitionsDestinyObjectivePerkEntryDefinition {
    * @return perkHash
   **/
   @ApiModelProperty(value = "The hash identifier of the DestinySandboxPerkDefinition that will be applied to the character.")
-  public Integer getPerkHash() {
+  public Long getPerkHash() {
     return perkHash;
   }
 
-  public void setPerkHash(Integer perkHash) {
+  public void setPerkHash(Long perkHash) {
     this.perkHash = perkHash;
   }
 

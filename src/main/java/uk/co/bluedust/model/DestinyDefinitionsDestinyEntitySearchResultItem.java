@@ -24,10 +24,10 @@ import io.swagger.annotations.ApiModelProperty;
  * An individual Destiny Entity returned from the entity search.
  */
 @ApiModel(description = "An individual Destiny Entity returned from the entity search.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyEntitySearchResultItem {
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("entityType")
   private String entityType = null;
@@ -38,7 +38,7 @@ public class DestinyDefinitionsDestinyEntitySearchResultItem {
   @JsonProperty("weight")
   private Double weight = null;
 
-  public DestinyDefinitionsDestinyEntitySearchResultItem hash(Integer hash) {
+  public DestinyDefinitionsDestinyEntitySearchResultItem hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -48,11 +48,11 @@ public class DestinyDefinitionsDestinyEntitySearchResultItem {
    * @return hash
   **/
   @ApiModelProperty(value = "The hash identifier of the entity. You will use this to look up the DestinyDefinition relevant for the entity found.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 

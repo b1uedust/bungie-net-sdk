@@ -23,12 +23,12 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsDestinyVendorGroupReference
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsDestinyVendorGroupReference {
   @JsonProperty("vendorGroupHash")
-  private Integer vendorGroupHash = null;
+  private Long vendorGroupHash = null;
 
-  public DestinyDefinitionsDestinyVendorGroupReference vendorGroupHash(Integer vendorGroupHash) {
+  public DestinyDefinitionsDestinyVendorGroupReference vendorGroupHash(Long vendorGroupHash) {
     this.vendorGroupHash = vendorGroupHash;
     return this;
   }
@@ -38,11 +38,11 @@ public class DestinyDefinitionsDestinyVendorGroupReference {
    * @return vendorGroupHash
   **/
   @ApiModelProperty(value = "The DestinyVendorGroupDefinition to which this Vendor can belong.")
-  public Integer getVendorGroupHash() {
+  public Long getVendorGroupHash() {
     return vendorGroupHash;
   }
 
-  public void setVendorGroupHash(Integer vendorGroupHash) {
+  public void setVendorGroupHash(Long vendorGroupHash) {
     this.vendorGroupHash = vendorGroupHash;
   }
 

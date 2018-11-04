@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * These are definitions for in-game \&quot;Lore,\&quot; meant to be narrative enhancements of the game experience.  DestinyInventoryItemDefinitions for interesting items point to these definitions, but nothing&#39;s stopping you from scraping all of these and doing something cool with them. If they end up having cool data.
  */
 @ApiModel(description = "These are definitions for in-game \"Lore,\" meant to be narrative enhancements of the game experience.  DestinyInventoryItemDefinitions for interesting items point to these definitions, but nothing's stopping you from scraping all of these and doing something cool with them. If they end up having cool data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
 public class DestinyDefinitionsLoreDestinyLoreDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
@@ -34,7 +34,7 @@ public class DestinyDefinitionsLoreDestinyLoreDefinition {
   private String subtitle = null;
 
   @JsonProperty("hash")
-  private Integer hash = null;
+  private Long hash = null;
 
   @JsonProperty("index")
   private Integer index = null;
@@ -78,7 +78,7 @@ public class DestinyDefinitionsLoreDestinyLoreDefinition {
     this.subtitle = subtitle;
   }
 
-  public DestinyDefinitionsLoreDestinyLoreDefinition hash(Integer hash) {
+  public DestinyDefinitionsLoreDestinyLoreDefinition hash(Long hash) {
     this.hash = hash;
     return this;
   }
@@ -88,11 +88,11 @@ public class DestinyDefinitionsLoreDestinyLoreDefinition {
    * @return hash
   **/
   @ApiModelProperty(value = "The unique identifier for this entity. Guaranteed to be unique for the type of entity, but not globally.  When entities refer to each other in Destiny content, it is this hash that they are referring to.")
-  public Integer getHash() {
+  public Long getHash() {
     return hash;
   }
 
-  public void setHash(Integer hash) {
+  public void setHash(Long hash) {
     this.hash = hash;
   }
 
