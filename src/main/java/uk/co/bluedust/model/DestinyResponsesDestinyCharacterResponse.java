@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The response contract for GetDestinyCharacter, with components that can be returned for character and item-level data.
  */
 @ApiModel(description = "The response contract for GetDestinyCharacter, with components that can be returned for character and item-level data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyResponsesDestinyCharacterResponse {
   @JsonProperty("inventory")
   private Object inventory = null;

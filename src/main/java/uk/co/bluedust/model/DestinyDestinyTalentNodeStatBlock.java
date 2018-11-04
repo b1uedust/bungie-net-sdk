@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDestinyStat;
  * This property has some history. A talent grid can provide stats on both the item it&#39;s related to and the character equipping the item. This returns data about those stat bonuses.
  */
 @ApiModel(description = "This property has some history. A talent grid can provide stats on both the item it's related to and the character equipping the item. This returns data about those stat bonuses.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDestinyTalentNodeStatBlock {
   @JsonProperty("currentStepStats")
   private List<DestinyDestinyStat> currentStepStats = null;

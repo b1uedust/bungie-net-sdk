@@ -25,7 +25,7 @@ import uk.co.bluedust.model.GroupsV2ClanBanner;
  * This contract contains clan-specific group information. It does not include any investment data.
  */
 @ApiModel(description = "This contract contains clan-specific group information. It does not include any investment data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class GroupsV2GroupV2ClanInfo {
   @JsonProperty("clanCallsign")
   private String clanCallsign = null;

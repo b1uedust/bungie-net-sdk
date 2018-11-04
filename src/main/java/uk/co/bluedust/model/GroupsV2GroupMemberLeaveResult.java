@@ -24,7 +24,7 @@ import uk.co.bluedust.model.GroupsV2GroupV2;
 /**
  * GroupsV2GroupMemberLeaveResult
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class GroupsV2GroupMemberLeaveResult {
   @JsonProperty("group")
   private GroupsV2GroupV2 group = null;

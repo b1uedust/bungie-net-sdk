@@ -27,7 +27,7 @@ import uk.co.bluedust.model.QueriesPagedQuery;
 /**
  * GroupsV2GroupPotentialMembershipSearchResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class GroupsV2GroupPotentialMembershipSearchResponse {
   @JsonProperty("results")
   private List<GroupsV2GroupPotentialMembership> results = null;

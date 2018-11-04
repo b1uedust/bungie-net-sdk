@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDyeReference;
  * Bare minimum summary information for an item, for the sake of 3D rendering the item.
  */
 @ApiModel(description = "Bare minimum summary information for an item, for the sake of 3D rendering the item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyCharacterDestinyItemPeerView {
   @JsonProperty("itemHash")
   private Integer itemHash = null;

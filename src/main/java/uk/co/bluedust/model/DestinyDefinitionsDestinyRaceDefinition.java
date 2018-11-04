@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * In Destiny, \&quot;Races\&quot; are really more like \&quot;Species\&quot;. Sort of. I mean, are the Awoken a separate species from humans? I&#39;m not sure. But either way, they&#39;re defined here. You&#39;ll see Exo, Awoken, and Human as examples of these Species. Players will choose one for their character.
  */
 @ApiModel(description = "In Destiny, \"Races\" are really more like \"Species\". Sort of. I mean, are the Awoken a separate species from humans? I'm not sure. But either way, they're defined here. You'll see Exo, Awoken, and Human as examples of these Species. Players will choose one for their character.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyRaceDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;

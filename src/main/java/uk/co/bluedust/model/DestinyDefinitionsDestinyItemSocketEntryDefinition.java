@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyItemSocketEntryPlugItemRand
  * The definition information for a specific socket on an item. This will determine how the socket behaves in-game.
  */
 @ApiModel(description = "The definition information for a specific socket on an item. This will determine how the socket behaves in-game.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyItemSocketEntryDefinition {
   @JsonProperty("socketTypeHash")
   private Integer socketTypeHash = null;

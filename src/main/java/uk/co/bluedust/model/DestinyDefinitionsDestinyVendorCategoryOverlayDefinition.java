@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The details of an overlay prompt to show to a user. They are all fairly self-explanatory localized strings that can be shown.
  */
 @ApiModel(description = "The details of an overlay prompt to show to a user. They are all fairly self-explanatory localized strings that can be shown.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyVendorCategoryOverlayDefinition {
   @JsonProperty("choiceDescription")
   private String choiceDescription = null;

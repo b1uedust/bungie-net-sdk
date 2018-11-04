@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyQuestsDestinyObjectiveProgress;
  * Items can have objectives and progression. When you request this block, you will obtain information about any Objectives and progression tied to this item.
  */
 @ApiModel(description = "Items can have objectives and progression. When you request this block, you will obtain information about any Objectives and progression tied to this item.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesItemsDestinyItemObjectivesComponent {
   @JsonProperty("objectives")
   private List<DestinyQuestsDestinyObjectiveProgress> objectives = null;

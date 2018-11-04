@@ -50,7 +50,7 @@ import uk.co.bluedust.auth.HttpBasicAuth;
 import uk.co.bluedust.auth.ApiKeyAuth;
 import uk.co.bluedust.auth.OAuth;
 
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 @Component("uk.co.bluedust.ApiClient")
 public class ApiClient {
     public enum CollectionFormat {

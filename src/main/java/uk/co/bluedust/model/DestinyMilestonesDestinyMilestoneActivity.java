@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyMilestoneActivityVariant;
  * Sometimes, we know the specific activity that the Milestone wants you to play. This entity provides additional information about that Activity and all of its variants. (sometimes there&#39;s only one variant, but I think you get the point)
  */
 @ApiModel(description = "Sometimes, we know the specific activity that the Milestone wants you to play. This entity provides additional information about that Activity and all of its variants. (sometimes there's only one variant, but I think you get the point)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyMilestonesDestinyMilestoneActivity {
   @JsonProperty("activityHash")
   private Integer activityHash = null;

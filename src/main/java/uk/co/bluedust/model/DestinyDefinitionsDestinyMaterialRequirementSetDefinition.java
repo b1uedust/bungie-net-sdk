@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyMaterialRequirement;
  * Represent a set of material requirements: Items that either need to be owned or need to be consumed in order to perform an action.  A variety of other entities refer to these as gatekeepers and payments for actions that can be performed in game.
  */
 @ApiModel(description = "Represent a set of material requirements: Items that either need to be owned or need to be consumed in order to perform an action.  A variety of other entities refer to these as gatekeepers and payments for actions that can be performed in game.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyMaterialRequirementSetDefinition {
   @JsonProperty("materials")
   private List<DestinyDefinitionsDestinyMaterialRequirement> materials = null;

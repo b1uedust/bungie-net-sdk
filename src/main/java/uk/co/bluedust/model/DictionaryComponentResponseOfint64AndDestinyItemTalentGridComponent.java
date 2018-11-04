@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyEntitiesItemsDestinyItemTalentGridComponent;
 /**
  * DictionaryComponentResponseOfint64AndDestinyItemTalentGridComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DictionaryComponentResponseOfint64AndDestinyItemTalentGridComponent {
   @JsonProperty("data")
   private Map<String, DestinyEntitiesItemsDestinyItemTalentGridComponent> data = null;

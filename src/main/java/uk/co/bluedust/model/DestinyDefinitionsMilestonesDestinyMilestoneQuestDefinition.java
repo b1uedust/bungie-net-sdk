@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsMilestonesDestinyMilestoneActivity
  * Any data we need to figure out whether this Quest Item is the currently active one for the conceptual Milestone. Even just typing this description, I already regret it.
  */
 @ApiModel(description = "Any data we need to figure out whether this Quest Item is the currently active one for the conceptual Milestone. Even just typing this description, I already regret it.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneQuestDefinition {
   @JsonProperty("questItemHash")
   private Integer questItemHash = null;

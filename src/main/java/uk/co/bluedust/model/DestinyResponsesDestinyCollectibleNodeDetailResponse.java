@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Returns the detailed information about a Collectible Presentation Node and any Collectibles that are direct descendants.
  */
 @ApiModel(description = "Returns the detailed information about a Collectible Presentation Node and any Collectibles that are direct descendants.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyResponsesDestinyCollectibleNodeDetailResponse {
   @JsonProperty("collectibles")
   private Object collectibles = null;

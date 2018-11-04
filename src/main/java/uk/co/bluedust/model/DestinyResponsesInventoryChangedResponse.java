@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyEntitiesItemsDestinyItemComponent;
  * A response containing all of the components for all requested vendors.
  */
 @ApiModel(description = "A response containing all of the components for all requested vendors.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyResponsesInventoryChangedResponse {
   @JsonProperty("addedInventoryItems")
   private List<DestinyEntitiesItemsDestinyItemComponent> addedInventoryItems = null;

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * Activities can refer to one or more sets of tooltip-friendly reward data. These are the definitions for those tooltip friendly rewards.
  */
 @ApiModel(description = "Activities can refer to one or more sets of tooltip-friendly reward data. These are the definitions for those tooltip friendly rewards.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyActivityRewardDefinition {
   @JsonProperty("rewardText")
   private String rewardText = null;

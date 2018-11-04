@@ -31,7 +31,7 @@ import uk.co.bluedust.model.DictionaryComponentResponseOfuint32AndDestinyItemPlu
 /**
  * DestinyItemComponentSetOfint32
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyItemComponentSetOfint32 {
   @JsonProperty("instances")
   private DictionaryComponentResponseOfint32AndDestinyItemInstanceComponent instances = null;

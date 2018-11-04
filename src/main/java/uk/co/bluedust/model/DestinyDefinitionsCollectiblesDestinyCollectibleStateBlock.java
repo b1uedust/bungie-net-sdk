@@ -24,7 +24,7 @@ import uk.co.bluedust.model.DestinyDefinitionsPresentationDestinyPresentationNod
 /**
  * DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsCollectiblesDestinyCollectibleStateBlock {
   @JsonProperty("obscuredOverrideItemHash")
   private Integer obscuredOverrideItemHash = null;

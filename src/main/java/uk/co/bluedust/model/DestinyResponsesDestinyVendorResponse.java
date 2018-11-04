@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * A response containing all of the components for a vendor.
  */
 @ApiModel(description = "A response containing all of the components for a vendor.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyResponsesDestinyVendorResponse {
   @JsonProperty("vendor")
   private Object vendor = null;

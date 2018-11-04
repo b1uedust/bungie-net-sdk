@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Aggregations of multiple progressions.  These are used to apply rewards to multiple progressions at once. They can sometimes have human readable data as well, but only extremely sporadically.
  */
 @ApiModel(description = "Aggregations of multiple progressions.  These are used to apply rewards to multiple progressions at once. They can sometimes have human readable data as well, but only extremely sporadically.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyProgressionMappingDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;

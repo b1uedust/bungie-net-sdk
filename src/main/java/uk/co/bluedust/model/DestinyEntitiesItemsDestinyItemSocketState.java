@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinySocketsDestinyItemPlug;
  * The status of a given item&#39;s socket. (which plug is inserted, if any: whether it is enabled, what \&quot;reusable\&quot; plugs can be inserted, etc...)  If I had it to do over, this would probably have a DestinyItemPlug representing the inserted item instead of most of these properties. :shrug:
  */
 @ApiModel(description = "The status of a given item's socket. (which plug is inserted, if any: whether it is enabled, what \"reusable\" plugs can be inserted, etc...)  If I had it to do over, this would probably have a DestinyItemPlug representing the inserted item instead of most of these properties. :shrug:")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesItemsDestinyItemSocketState {
   @JsonProperty("plugHash")
   private Integer plugHash = null;

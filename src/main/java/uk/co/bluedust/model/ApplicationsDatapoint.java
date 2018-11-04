@@ -24,7 +24,7 @@ import java.time.OffsetDateTime;
 /**
  * ApplicationsDatapoint
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class ApplicationsDatapoint {
   @JsonProperty("time")
   private OffsetDateTime time = null;

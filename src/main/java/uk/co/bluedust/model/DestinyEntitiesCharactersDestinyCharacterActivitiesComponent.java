@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * This component holds activity data for a character. It will tell you about the character&#39;s current activity status, as well as activities that are available to the user.
  */
 @ApiModel(description = "This component holds activity data for a character. It will tell you about the character's current activity status, as well as activities that are available to the user.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesCharactersDestinyCharacterActivitiesComponent {
   @JsonProperty("dateActivityStarted")
   private OffsetDateTime dateActivityStarted = null;

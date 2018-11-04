@@ -26,7 +26,7 @@ import java.util.List;
  * Defines a plug \&quot;Category\&quot; that is allowed to be plugged into a socket of this type.  This should be compared against a given plug item&#39;s DestinyInventoryItemDefinition.plug.plugCategoryHash, which indicates the plug item&#39;s category.
  */
 @ApiModel(description = "Defines a plug \"Category\" that is allowed to be plugged into a socket of this type.  This should be compared against a given plug item's DestinyInventoryItemDefinition.plug.plugCategoryHash, which indicates the plug item's category.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsSocketsDestinyPlugWhitelistEntryDefinition {
   @JsonProperty("categoryHash")
   private Integer categoryHash = null;

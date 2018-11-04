@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents whatever information we can return about an explicit phase in an activity. In the future, I hope we&#39;ll have more than just \&quot;guh, you done gone and did something,\&quot; but for the forseeable future that&#39;s all we&#39;ve got. I&#39;m making it more than just a list of booleans out of that overly-optimistic hope.
  */
 @ApiModel(description = "Represents whatever information we can return about an explicit phase in an activity. In the future, I hope we'll have more than just \"guh, you done gone and did something,\" but for the forseeable future that's all we've got. I'm making it more than just a list of booleans out of that overly-optimistic hope.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyMilestonesDestinyMilestoneActivityPhase {
   @JsonProperty("complete")
   private Boolean complete = null;

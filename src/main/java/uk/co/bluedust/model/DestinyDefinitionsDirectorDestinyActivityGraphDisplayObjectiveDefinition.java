@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * When a Graph needs to show active Objectives, this defines those objectives as well as an identifier.
  */
 @ApiModel(description = "When a Graph needs to show active Objectives, this defines those objectives as well as an identifier.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphDisplayObjectiveDefinition {
   @JsonProperty("id")
   private Integer id = null;

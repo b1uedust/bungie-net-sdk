@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * An intrinsic perk on an item, and the requirements for it to be activated.
  */
 @ApiModel(description = "An intrinsic perk on an item, and the requirements for it to be activated.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyItemPerkEntryDefinition {
   @JsonProperty("requirementDisplayString")
   private String requirementDisplayString = null;

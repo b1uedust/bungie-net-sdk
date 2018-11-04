@@ -29,7 +29,7 @@ import uk.co.bluedust.model.ExceptionsPlatformErrorCodes;
 /**
  * InlineResponse20017
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class InlineResponse20017 {
   @JsonProperty("Response")
   private List<ConfigGroupTheme> response = null;

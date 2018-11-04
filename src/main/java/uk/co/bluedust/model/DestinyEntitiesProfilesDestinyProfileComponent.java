@@ -27,7 +27,7 @@ import java.util.List;
  * The most essential summary information about a Profile (in Destiny 1, we called these \&quot;Accounts\&quot;).
  */
 @ApiModel(description = "The most essential summary information about a Profile (in Destiny 1, we called these \"Accounts\").")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesProfilesDestinyProfileComponent {
   @JsonProperty("userInfo")
   private Object userInfo = null;

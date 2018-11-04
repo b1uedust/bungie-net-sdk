@@ -27,7 +27,7 @@ import uk.co.bluedust.model.IgnoresIgnoreResponse;
 /**
  * ForumPostResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class ForumPostResponse {
   @JsonProperty("lastReplyTimestamp")
   private OffsetDateTime lastReplyTimestamp = null;

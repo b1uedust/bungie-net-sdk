@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * These are definitions for in-game \&quot;Lore,\&quot; meant to be narrative enhancements of the game experience.  DestinyInventoryItemDefinitions for interesting items point to these definitions, but nothing&#39;s stopping you from scraping all of these and doing something cool with them. If they end up having cool data.
  */
 @ApiModel(description = "These are definitions for in-game \"Lore,\" meant to be narrative enhancements of the game experience.  DestinyInventoryItemDefinitions for interesting items point to these definitions, but nothing's stopping you from scraping all of these and doing something cool with them. If they end up having cool data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsLoreDestinyLoreDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;

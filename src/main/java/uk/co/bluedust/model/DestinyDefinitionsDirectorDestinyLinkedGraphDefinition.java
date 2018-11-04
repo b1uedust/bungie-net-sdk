@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDirectorDestinyLinkedGraphEntryDef
  * This describes links between the current graph and others, as well as when that link is relevant.
  */
 @ApiModel(description = "This describes links between the current graph and others, as well as when that link is relevant.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDirectorDestinyLinkedGraphDefinition {
   @JsonProperty("description")
   private String description = null;

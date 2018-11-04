@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyPerksDestinyPerkReference;
  * Instanced items can have perks: benefits that the item bestows.  These are related to DestinySandboxPerkDefinition, and sometimes - but not always - have human readable info. When they do, they are the icons and text that you see in an item&#39;s tooltip.  Talent Grids, Sockets, and the item itself can apply Perks, which are then summarized here for your convenience.
  */
 @ApiModel(description = "Instanced items can have perks: benefits that the item bestows.  These are related to DestinySandboxPerkDefinition, and sometimes - but not always - have human readable info. When they do, they are the icons and text that you see in an item's tooltip.  Talent Grids, Sockets, and the item itself can apply Perks, which are then summarized here for your convenience.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesItemsDestinyItemPerksComponent {
   @JsonProperty("perks")
   private List<DestinyPerksDestinyPerkReference> perks = null;

@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyEntitiesVendorsDestinyVendorSaleItemComponent
  * The collection of all items currently being sold by a specific Vendor and visible to the given character for which the request was made.
  */
 @ApiModel(description = "The collection of all items currently being sold by a specific Vendor and visible to the given character for which the request was made.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyComponentsVendorsDestinyVendorSaleItemSetComponent {
   @JsonProperty("saleItems")
   private Map<String, DestinyEntitiesVendorsDestinyVendorSaleItemComponent> saleItems = null;

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Information about a single inventory bucket in a vendor flyout UI and how it is shown.
  */
 @ApiModel(description = "Information about a single inventory bucket in a vendor flyout UI and how it is shown.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyVendorInventoryFlyoutBucketDefinition {
   @JsonProperty("collapsible")
   private Boolean collapsible = null;

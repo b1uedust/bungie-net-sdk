@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Many Destiny*Definition contracts - the \&quot;first order\&quot; entities of Destiny that have their own tables in the Manifest Database - also have displayable information. This is the base class for that display information.
  */
 @ApiModel(description = "Many Destiny*Definition contracts - the \"first order\" entities of Destiny that have their own tables in the Manifest Database - also have displayable information. This is the base class for that display information.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition {
   @JsonProperty("description")
   private String description = null;

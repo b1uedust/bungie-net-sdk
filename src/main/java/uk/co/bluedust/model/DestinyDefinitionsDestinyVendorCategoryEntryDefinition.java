@@ -26,7 +26,7 @@ import java.util.List;
  * This is the definition for a single Vendor Category, into which Sale Items are grouped.
  */
 @ApiModel(description = "This is the definition for a single Vendor Category, into which Sale Items are grouped.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyVendorCategoryEntryDefinition {
   @JsonProperty("categoryIndex")
   private Integer categoryIndex = null;

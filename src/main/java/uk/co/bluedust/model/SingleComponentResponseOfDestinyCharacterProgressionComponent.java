@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyEntitiesCharactersDestinyCharacterProgression
 /**
  * SingleComponentResponseOfDestinyCharacterProgressionComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class SingleComponentResponseOfDestinyCharacterProgressionComponent {
   @JsonProperty("data")
   private DestinyEntitiesCharactersDestinyCharacterProgressionComponent data = null;

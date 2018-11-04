@@ -33,7 +33,7 @@ import uk.co.bluedust.model.DestinyQuestsDestinyQuestStatus;
  * This component returns anything that could be considered \&quot;Progression\&quot; on a user: data where the user is gaining levels, reputation, completions, rewards, etc...
  */
 @ApiModel(description = "This component returns anything that could be considered \"Progression\" on a user: data where the user is gaining levels, reputation, completions, rewards, etc...")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesCharactersDestinyCharacterProgressionComponent {
   @JsonProperty("progressions")
   private Map<String, DestinyDestinyProgression> progressions = null;

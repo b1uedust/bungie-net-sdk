@@ -28,7 +28,7 @@ import java.util.Map;
  * This component contains base properties of the character. You&#39;ll probably want to always request this component, but hey you do you.
  */
 @ApiModel(description = "This component contains base properties of the character. You'll probably want to always request this component, but hey you do you.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesCharactersDestinyCharacterComponent {
   @JsonProperty("membershipId")
   private Long membershipId = null;
@@ -55,13 +55,13 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
   private Map<String, Integer> stats = null;
 
   @JsonProperty("raceHash")
-  private Integer raceHash = null;
+  private Long raceHash = null;
 
   @JsonProperty("genderHash")
-  private Integer genderHash = null;
+  private Long genderHash = null;
 
   @JsonProperty("classHash")
-  private Integer classHash = null;
+  private Long classHash = null;
 
   @JsonProperty("raceType")
   private Object raceType = null;
@@ -248,7 +248,7 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
     this.stats = stats;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterComponent raceHash(Integer raceHash) {
+  public DestinyEntitiesCharactersDestinyCharacterComponent raceHash(Long raceHash) {
     this.raceHash = raceHash;
     return this;
   }
@@ -258,15 +258,15 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
    * @return raceHash
   **/
   @ApiModelProperty(value = "Use this hash to look up the character's DestinyRaceDefinition.")
-  public Integer getRaceHash() {
+  public Long getRaceHash() {
     return raceHash;
   }
 
-  public void setRaceHash(Integer raceHash) {
+  public void setRaceHash(Long raceHash) {
     this.raceHash = raceHash;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterComponent genderHash(Integer genderHash) {
+  public DestinyEntitiesCharactersDestinyCharacterComponent genderHash(Long genderHash) {
     this.genderHash = genderHash;
     return this;
   }
@@ -276,15 +276,15 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
    * @return genderHash
   **/
   @ApiModelProperty(value = "Use this hash to look up the character's DestinyGenderDefinition.")
-  public Integer getGenderHash() {
+  public Long getGenderHash() {
     return genderHash;
   }
 
-  public void setGenderHash(Integer genderHash) {
+  public void setGenderHash(Long genderHash) {
     this.genderHash = genderHash;
   }
 
-  public DestinyEntitiesCharactersDestinyCharacterComponent classHash(Integer classHash) {
+  public DestinyEntitiesCharactersDestinyCharacterComponent classHash(Long classHash) {
     this.classHash = classHash;
     return this;
   }
@@ -294,11 +294,11 @@ public class DestinyEntitiesCharactersDestinyCharacterComponent {
    * @return classHash
   **/
   @ApiModelProperty(value = "Use this hash to look up the character's DestinyClassDefinition.")
-  public Integer getClassHash() {
+  public Long getClassHash() {
     return classHash;
   }
 
-  public void setClassHash(Integer classHash) {
+  public void setClassHash(Long classHash) {
     this.classHash = classHash;
   }
 

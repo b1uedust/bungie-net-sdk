@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The localized properties of the requirementsDisplay, allowing information about the requirement or item being featured to be seen.
  */
 @ApiModel(description = "The localized properties of the requirementsDisplay, allowing information about the requirement or item being featured to be seen.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyVendorRequirementDisplayEntryDefinition {
   @JsonProperty("icon")
   private String icon = null;

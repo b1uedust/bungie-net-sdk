@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * An individual Destiny Entity returned from the entity search.
  */
 @ApiModel(description = "An individual Destiny Entity returned from the entity search.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyEntitySearchResultItem {
   @JsonProperty("hash")
   private Integer hash = null;
