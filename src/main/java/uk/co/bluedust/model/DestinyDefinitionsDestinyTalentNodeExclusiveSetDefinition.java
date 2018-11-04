@@ -26,7 +26,7 @@ import java.util.List;
  * The list of indexes into the Talent Grid&#39;s \&quot;nodes\&quot; property for nodes in this exclusive set. (See DestinyTalentNodeDefinition.nodeIndex)
  */
 @ApiModel(description = "The list of indexes into the Talent Grid's \"nodes\" property for nodes in this exclusive set. (See DestinyTalentNodeDefinition.nodeIndex)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyTalentNodeExclusiveSetDefinition {
   @JsonProperty("nodeIndexes")
   private List<Integer> nodeIndexes = null;

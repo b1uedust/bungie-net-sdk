@@ -26,7 +26,7 @@ import java.util.List;
  * Sockets are grouped into categories in the UI. These define which category and which sockets are under that category.
  */
 @ApiModel(description = "Sockets are grouped into categories in the UI. These define which category and which sockets are under that category.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyItemSocketCategoryDefinition {
   @JsonProperty("socketCategoryHash")
   private Integer socketCategoryHash = null;

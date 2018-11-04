@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Destinations and Activities may have default Activity Graphs that should be shown when you bring up the Director and are playing in either.  This contract defines the graph referred to and the gating for when it is relevant.
  */
 @ApiModel(description = "Destinations and Activities may have default Activity Graphs that should be shown when you bring up the Director and are playing in either.  This contract defines the graph referred to and the gating for when it is relevant.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyActivityGraphListEntryDefinition {
   @JsonProperty("activityGraphHash")
   private Integer activityGraphHash = null;

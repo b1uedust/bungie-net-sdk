@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The definition of an item and quantity required in a character&#39;s inventory in order to perform an action.
  */
 @ApiModel(description = "The definition of an item and quantity required in a character's inventory in order to perform an action.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyItemActionRequiredItemDefinition {
   @JsonProperty("count")
   private Integer count = null;

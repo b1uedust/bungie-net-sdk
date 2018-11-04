@@ -29,7 +29,7 @@ import uk.co.bluedust.model.UserUserInfoCard;
 /**
  * InlineResponse20035
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class InlineResponse20035 {
   @JsonProperty("Response")
   private List<UserUserInfoCard> response = null;

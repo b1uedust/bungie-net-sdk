@@ -32,7 +32,7 @@ import uk.co.bluedust.model.UserGeneralUser;
 /**
  * ForumPostSearchResponse
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class ForumPostSearchResponse {
   @JsonProperty("relatedPosts")
   private List<ForumPostResponse> relatedPosts = null;

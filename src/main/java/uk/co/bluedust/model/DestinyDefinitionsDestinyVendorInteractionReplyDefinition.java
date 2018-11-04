@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * When the interaction is replied to, Reward sites will fire and items potentially selected based on whether the given unlock expression is TRUE.  You can potentially choose one from multiple replies when replying to an interaction: this is how you get either/or rewards from vendors.
  */
 @ApiModel(description = "When the interaction is replied to, Reward sites will fire and items potentially selected based on whether the given unlock expression is TRUE.  You can potentially choose one from multiple replies when replying to an interaction: this is how you get either/or rewards from vendors.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyVendorInteractionReplyDefinition {
   @JsonProperty("itemRewardsSelection")
   private Object itemRewardsSelection = null;

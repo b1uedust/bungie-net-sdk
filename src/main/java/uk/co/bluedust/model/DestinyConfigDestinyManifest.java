@@ -29,7 +29,7 @@ import uk.co.bluedust.model.DestinyConfigGearAssetDataBaseDefinition;
  * DestinyManifest is the external-facing contract for just the properties needed by those calling the Destiny Platform.
  */
 @ApiModel(description = "DestinyManifest is the external-facing contract for just the properties needed by those calling the Destiny Platform.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyConfigDestinyManifest {
   @JsonProperty("version")
   private String version = null;

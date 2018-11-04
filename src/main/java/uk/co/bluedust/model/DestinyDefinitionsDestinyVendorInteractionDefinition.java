@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyVendorInteractionSackEntryD
  * A Vendor Interaction is a dialog shown by the vendor other than sale items or transfer screens. The vendor is showing you something, and asking you to reply to it by choosing an option or reward.
  */
 @ApiModel(description = "A Vendor Interaction is a dialog shown by the vendor other than sale items or transfer screens. The vendor is showing you something, and asking you to reply to it by choosing an option or reward.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyVendorInteractionDefinition {
   @JsonProperty("interactionIndex")
   private Integer interactionIndex = null;

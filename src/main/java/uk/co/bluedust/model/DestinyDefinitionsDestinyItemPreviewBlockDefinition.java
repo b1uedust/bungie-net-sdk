@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsItemsDestinyDerivedItemCategoryDef
  * Items like Sacks or Boxes can have items that it shows in-game when you view details that represent the items you can obtain if you use or acquire the item.  This defines those categories, and gives some insights into that data&#39;s source.
  */
 @ApiModel(description = "Items like Sacks or Boxes can have items that it shows in-game when you view details that represent the items you can obtain if you use or acquire the item.  This defines those categories, and gives some insights into that data's source.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyItemPreviewBlockDefinition {
   @JsonProperty("screenStyle")
   private String screenStyle = null;

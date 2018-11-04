@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyVendorInventoryFlyoutBucket
  * The definition for an \&quot;inventory flyout\&quot;: a UI screen where we show you part of an otherwise hidden vendor inventory: like the Vault inventory buckets.
  */
 @ApiModel(description = "The definition for an \"inventory flyout\": a UI screen where we show you part of an otherwise hidden vendor inventory: like the Vault inventory buckets.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyVendorInventoryFlyoutDefinition {
   @JsonProperty("lockedDescription")
   private String lockedDescription = null;

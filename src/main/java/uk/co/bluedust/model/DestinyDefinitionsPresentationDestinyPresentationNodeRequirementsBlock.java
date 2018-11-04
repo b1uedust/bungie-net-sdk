@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Presentation nodes can be restricted by various requirements. This defines the rules of those requirements, and the message(s) to be shown if these requirements aren&#39;t met.
  */
 @ApiModel(description = "Presentation nodes can be restricted by various requirements. This defines the rules of those requirements, and the message(s) to be shown if these requirements aren't met.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsPresentationDestinyPresentationNodeRequirementsBlock {
   @JsonProperty("entitlementUnavailableMessage")
   private String entitlementUnavailableMessage = null;

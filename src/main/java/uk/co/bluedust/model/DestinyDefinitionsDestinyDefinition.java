@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Provides common properties for destiny definitions.
  */
 @ApiModel(description = "Provides common properties for destiny definitions.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyDefinition {
   @JsonProperty("hash")
   private Integer hash = null;

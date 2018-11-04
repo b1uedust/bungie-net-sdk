@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyProgressionRewardDefinition
  * If an item can have an action performed on it (like \&quot;Dismantle\&quot;), it will be defined here if you care.
  */
 @ApiModel(description = "If an item can have an action performed on it (like \"Dismantle\"), it will be defined here if you care.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyItemActionBlockDefinition {
   @JsonProperty("verbName")
   private String verbName = null;

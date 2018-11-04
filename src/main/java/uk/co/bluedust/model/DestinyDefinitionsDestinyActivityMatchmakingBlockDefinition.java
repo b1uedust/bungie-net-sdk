@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Information about matchmaking and party size for the activity.
  */
 @ApiModel(description = "Information about matchmaking and party size for the activity.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyActivityMatchmakingBlockDefinition {
   @JsonProperty("isMatchmade")
   private Boolean isMatchmade = null;

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsSourcesDestinyItemSourceDefinition
  * Data about an item&#39;s \&quot;sources\&quot;: ways that the item can be obtained.
  */
 @ApiModel(description = "Data about an item's \"sources\": ways that the item can be obtained.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyItemSourceBlockDefinition {
   @JsonProperty("sourceHashes")
   private List<Integer> sourceHashes = null;

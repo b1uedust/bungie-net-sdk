@@ -27,7 +27,7 @@ import uk.co.bluedust.model.InterpolationInterpolationPoint;
  * Describes the way that an Item Stat (see DestinyStatDefinition) is transformed using the DestinyStatGroupDefinition related to that item. See both of the aforementioned definitions for more information about the stages of stat transformation.  This represents the transformation of a stat into a \&quot;Display\&quot; stat (the closest value that BNet can get to the in-game display value of the stat)
  */
 @ApiModel(description = "Describes the way that an Item Stat (see DestinyStatDefinition) is transformed using the DestinyStatGroupDefinition related to that item. See both of the aforementioned definitions for more information about the stages of stat transformation.  This represents the transformation of a stat into a \"Display\" stat (the closest value that BNet can get to the in-game display value of the stat)")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyStatDisplayDefinition {
   @JsonProperty("statHash")
   private Integer statHash = null;

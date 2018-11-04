@@ -27,7 +27,7 @@ import java.util.Map;
  * The set of progression-related information that applies at a Profile-wide level for your Destiny experience. This differs from the Jimi Hendrix Experience because there&#39;s less guitars on fire. Yet. #spoileralert?  This will include information such as Checklist info.
  */
 @ApiModel(description = "The set of progression-related information that applies at a Profile-wide level for your Destiny experience. This differs from the Jimi Hendrix Experience because there's less guitars on fire. Yet. #spoileralert?  This will include information such as Checklist info.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyComponentsProfilesDestinyProfileProgressionComponent {
   @JsonProperty("checklists")
   private Map<String, Map<String, Boolean>> checklists = null;

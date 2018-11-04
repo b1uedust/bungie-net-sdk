@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Gender is a social construct, and as such we have definitions for Genders. Right now there happens to only be two, but we&#39;ll see what the future holds.
  */
 @ApiModel(description = "Gender is a social construct, and as such we have definitions for Genders. Right now there happens to only be two, but we'll see what the future holds.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyGenderDefinition {
   @JsonProperty("genderType")
   private Object genderType = null;

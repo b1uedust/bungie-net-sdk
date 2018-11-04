@@ -26,7 +26,7 @@ import java.util.List;
  * A specific \&quot;spot\&quot; referred to by a location. Only one of these can be active at a time for a given Location.
  */
 @ApiModel(description = "A specific \"spot\" referred to by a location. Only one of these can be active at a time for a given Location.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyLocationReleaseDefinition {
   @JsonProperty("displayProperties")
   private Object displayProperties = null;

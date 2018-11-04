@@ -26,7 +26,7 @@ import uk.co.bluedust.model.UserUserMembership;
 /**
  * GroupsV2GroupApplicationListRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class GroupsV2GroupApplicationListRequest {
   @JsonProperty("memberships")
   private List<UserUserMembership> memberships = null;

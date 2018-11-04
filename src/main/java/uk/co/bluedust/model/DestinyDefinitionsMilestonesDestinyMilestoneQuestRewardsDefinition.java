@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsMilestonesDestinyMilestoneQuestRew
  * If rewards are given in a quest - as opposed to overall in the entire Milestone - there&#39;s way less to track. We&#39;re going to simplify this contract as a result. However, this also gives us the opportunity to potentially put more than just item information into the reward data if we&#39;re able to mine it out in the future. Remember this if you come back and ask \&quot;why are quest reward items nested inside of their own class?\&quot;
  */
 @ApiModel(description = "If rewards are given in a quest - as opposed to overall in the entire Milestone - there's way less to track. We're going to simplify this contract as a result. However, this also gives us the opportunity to potentially put more than just item information into the reward data if we're able to mine it out in the future. Remember this if you come back and ask \"why are quest reward items nested inside of their own class?\"")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardsDefinition {
   @JsonProperty("items")
   private List<DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem> items = null;

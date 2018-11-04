@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiModelProperty;
 /**
  * DestinyDefinitionsDestinyObjectiveDisplayProperties
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsDestinyObjectiveDisplayProperties {
   @JsonProperty("activityHash")
   private Integer activityHash = null;

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyEntitiesItemsDestinyItemSocketState;
  * Instanced items can have sockets, which are slots on the item where plugs can be inserted.  Sockets are a bit complex: be sure to examine the documentation on the DestinyInventoryItemDefinition&#39;s \&quot;socket\&quot; block and elsewhere on these objects for more details.
  */
 @ApiModel(description = "Instanced items can have sockets, which are slots on the item where plugs can be inserted.  Sockets are a bit complex: be sure to examine the documentation on the DestinyInventoryItemDefinition's \"socket\" block and elsewhere on these objects for more details.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyEntitiesItemsDestinyItemSocketsComponent {
   @JsonProperty("sockets")
   private List<DestinyEntitiesItemsDestinyItemSocketState> sockets = null;

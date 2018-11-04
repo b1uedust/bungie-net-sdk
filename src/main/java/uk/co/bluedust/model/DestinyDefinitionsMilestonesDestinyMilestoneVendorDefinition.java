@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * If the Milestone or a component has vendors whose inventories could/should be displayed that are relevant to it, this will return the vendor in question.   It also contains information we need to determine whether that vendor is actually relevant at the moment, given the user&#39;s current state.
  */
 @ApiModel(description = "If the Milestone or a component has vendors whose inventories could/should be displayed that are relevant to it, this will return the vendor in question.   It also contains information we need to determine whether that vendor is actually relevant at the moment, given the user's current state.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneVendorDefinition {
   @JsonProperty("vendorHash")
   private Integer vendorHash = null;

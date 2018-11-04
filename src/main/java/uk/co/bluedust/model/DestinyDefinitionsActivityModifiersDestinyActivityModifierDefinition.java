@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Modifiers - in Destiny 1, these were referred to as \&quot;Skulls\&quot; - are changes that can be applied to an Activity.
  */
 @ApiModel(description = "Modifiers - in Destiny 1, these were referred to as \"Skulls\" - are changes that can be applied to an Activity.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:50:06.922Z")
 public class DestinyDefinitionsActivityModifiersDestinyActivityModifierDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;
