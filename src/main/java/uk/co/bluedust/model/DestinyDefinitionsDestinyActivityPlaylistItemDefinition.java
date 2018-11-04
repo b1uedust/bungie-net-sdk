@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyHistoricalStatsDefinitionsDestinyActivityMode
  * If the activity is a playlist, this is the definition for a specific entry in the playlist: a single possible combination of Activity and Activity Mode that can be chosen.
  */
 @ApiModel(description = "If the activity is a playlist, this is the definition for a specific entry in the playlist: a single possible combination of Activity and Activity Mode that can be chosen.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyActivityPlaylistItemDefinition {
   @JsonProperty("activityHash")
   private Integer activityHash = null;

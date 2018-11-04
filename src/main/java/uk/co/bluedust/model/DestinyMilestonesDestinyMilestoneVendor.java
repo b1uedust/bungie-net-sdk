@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * If a Milestone has one or more Vendors that are relevant to it, this will contain information about that vendor that you can choose to show.
  */
 @ApiModel(description = "If a Milestone has one or more Vendors that are relevant to it, this will contain information about that vendor that you can choose to show.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyMilestonesDestinyMilestoneVendor {
   @JsonProperty("vendorHash")
   private Integer vendorHash = null;

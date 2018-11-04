@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The character-specific data for a milestone&#39;s reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.
  */
 @ApiModel(description = "The character-specific data for a milestone's reward entry. See DestinyMilestoneDefinition for more information about Reward Entries.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyMilestonesDestinyMilestoneRewardEntry {
   @JsonProperty("rewardEntryHash")
   private Integer rewardEntryHash = null;

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyEntitiesVendorsDestinyVendorCategory;
  * A vendor can have many categories of items that they sell. This component will return the category information for available items, as well as the index into those items in the user&#39;s sale item list.  Note that, since both the category and items are indexes, this data is Content Version dependent. Be sure to check that your content is up to date before using this data. This is an unfortunate, but permanent, limitation of Vendor data.
  */
 @ApiModel(description = "A vendor can have many categories of items that they sell. This component will return the category information for available items, as well as the index into those items in the user's sale item list.  Note that, since both the category and items are indexes, this data is Content Version dependent. Be sure to check that your content is up to date before using this data. This is an unfortunate, but permanent, limitation of Vendor data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyEntitiesVendorsDestinyVendorCategoriesComponent {
   @JsonProperty("categories")
   private List<DestinyEntitiesVendorsDestinyVendorCategory> categories = null;

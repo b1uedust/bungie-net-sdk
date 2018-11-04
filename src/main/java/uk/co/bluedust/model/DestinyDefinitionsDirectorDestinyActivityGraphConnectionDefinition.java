@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Nodes on a graph can be visually connected: this appears to be the information about which nodes to link. It appears to lack more detailed information, such as the path for that linking.
  */
 @ApiModel(description = "Nodes on a graph can be visually connected: this appears to be the information about which nodes to link. It appears to lack more detailed information, such as the path for that linking.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphConnectionDefinition {
   @JsonProperty("sourceNodeHash")
   private Integer sourceNodeHash = null;

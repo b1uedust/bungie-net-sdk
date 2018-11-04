@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * Represents the public-facing status of an activity: any data about what is currently active in the Activity, regardless of an individual character&#39;s progress in it.
  */
 @ApiModel(description = "Represents the public-facing status of an activity: any data about what is currently active in the Activity, regardless of an individual character's progress in it.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyActivitiesDestinyPublicActivityStatus {
   @JsonProperty("challengeObjectiveHashes")
   private List<Integer> challengeObjectiveHashes = null;

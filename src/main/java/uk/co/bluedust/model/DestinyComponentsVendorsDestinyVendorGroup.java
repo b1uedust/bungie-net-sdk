@@ -26,7 +26,7 @@ import java.util.List;
  * Represents a specific group of vendors that can be rendered in the recommended order.  How do we figure out this order? It&#39;s a long story, and will likely get more complicated over time.
  */
 @ApiModel(description = "Represents a specific group of vendors that can be rendered in the recommended order.  How do we figure out this order? It's a long story, and will likely get more complicated over time.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyComponentsVendorsDestinyVendorGroup {
   @JsonProperty("vendorGroupHash")
   private Integer vendorGroupHash = null;

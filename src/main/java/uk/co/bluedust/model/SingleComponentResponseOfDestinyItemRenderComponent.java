@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyEntitiesItemsDestinyItemRenderComponent;
 /**
  * SingleComponentResponseOfDestinyItemRenderComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class SingleComponentResponseOfDestinyItemRenderComponent {
   @JsonProperty("data")
   private DestinyEntitiesItemsDestinyItemRenderComponent data = null;
