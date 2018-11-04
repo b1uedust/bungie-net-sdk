@@ -26,7 +26,7 @@ import java.util.List;
  * Talent nodes have requirements that must be met before they can be activated.  This describes the material costs, the Level of the Talent Grid&#39;s progression required, and other conditional information that limits whether a talent node can be activated.
  */
 @ApiModel(description = "Talent nodes have requirements that must be met before they can be activated.  This describes the material costs, the Level of the Talent Grid's progression required, and other conditional information that limits whether a talent node can be activated.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyNodeActivationRequirement {
   @JsonProperty("gridLevel")
   private Integer gridLevel = null;

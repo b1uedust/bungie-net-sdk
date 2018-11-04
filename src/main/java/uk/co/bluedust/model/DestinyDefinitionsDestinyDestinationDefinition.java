@@ -30,7 +30,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyDestinationBubbleSettingDef
  * On to one of the more confusing subjects of the API. What is a Destination, and what is the relationship between it, Activities, Locations, and Places?  A \&quot;Destination\&quot; is a specific region/city/area of a larger \&quot;Place\&quot;. For instance, a Place might be Earth where a Destination might be Bellevue, Washington. (Please, pick a more interesting destination if you come to visit Earth).
  */
 @ApiModel(description = "On to one of the more confusing subjects of the API. What is a Destination, and what is the relationship between it, Activities, Locations, and Places?  A \"Destination\" is a specific region/city/area of a larger \"Place\". For instance, a Place might be Earth where a Destination might be Bellevue, Washington. (Please, pick a more interesting destination if you come to visit Earth).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyDestinationDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;

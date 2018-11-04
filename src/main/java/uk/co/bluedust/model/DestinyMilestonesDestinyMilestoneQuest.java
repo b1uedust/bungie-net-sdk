@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyChallengesDestinyChallengeStatus;
  * If a Milestone has one or more Quests, this will contain the live information for the character&#39;s status with one of those quests.
  */
 @ApiModel(description = "If a Milestone has one or more Quests, this will contain the live information for the character's status with one of those quests.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyMilestonesDestinyMilestoneQuest {
   @JsonProperty("questItemHash")
   private Integer questItemHash = null;

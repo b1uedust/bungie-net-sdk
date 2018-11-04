@@ -28,7 +28,7 @@ import uk.co.bluedust.model.GroupsV2GroupMemberLeaveResult;
 /**
  * InlineResponse20026
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class InlineResponse20026 {
   @JsonProperty("Response")
   private GroupsV2GroupMemberLeaveResult response = null;

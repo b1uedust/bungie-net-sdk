@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Defines the tier type of an item. Mostly this provides human readable properties for types like Common, Rare, etc...  It also provides some base data for infusion that could be useful.
  */
 @ApiModel(description = "Defines the tier type of an item. Mostly this provides human readable properties for types like Common, Rare, etc...  It also provides some base data for infusion that could be useful.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsItemsDestinyItemTierTypeDefinition {
   @JsonProperty("displayProperties")
   private DestinyDefinitionsCommonDestinyDisplayPropertiesDefinition displayProperties = null;

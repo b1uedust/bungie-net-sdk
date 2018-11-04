@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDefinitionsDestinyNodeStepDefinition;
  * Talent Grids on items have Nodes. These nodes have positions in the talent grid&#39;s UI, and contain \&quot;Steps\&quot; (DestinyTalentNodeStepDefinition), one of whom will be the \&quot;Current\&quot; step.  The Current Step determines the visual properties of the node, as well as what the node grants when it is activated.  See DestinyTalentGridDefinition for a more complete overview of how Talent Grids work, and how they are used in Destiny 2 (and how they were used in Destiny 1).
  */
 @ApiModel(description = "Talent Grids on items have Nodes. These nodes have positions in the talent grid's UI, and contain \"Steps\" (DestinyTalentNodeStepDefinition), one of whom will be the \"Current\" step.  The Current Step determines the visual properties of the node, as well as what the node grants when it is activated.  See DestinyTalentGridDefinition for a more complete overview of how Talent Grids work, and how they are used in Destiny 2 (and how they were used in Destiny 1).")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsDestinyTalentNodeDefinition {
   @JsonProperty("nodeIndex")
   private Integer nodeIndex = null;

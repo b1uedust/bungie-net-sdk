@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyQuestsDestinyObjectiveProgress;
  * Plugs are non-instanced items that can provide Stat and Perk benefits when socketed into an instanced item. Items have Sockets, and Plugs are inserted into Sockets.  This component finds all items that are considered \&quot;Plugs\&quot; in your inventory, and return information about the plug aside from any specific Socket into which it could be inserted.
  */
 @ApiModel(description = "Plugs are non-instanced items that can provide Stat and Perk benefits when socketed into an instanced item. Items have Sockets, and Plugs are inserted into Sockets.  This component finds all items that are considered \"Plugs\" in your inventory, and return information about the plug aside from any specific Socket into which it could be inserted.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyComponentsItemsDestinyItemPlugComponent {
   @JsonProperty("plugItemHash")
   private Integer plugItemHash = null;

@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * The definition of a specific reward, which may be contained in a category of rewards and that has optional information about how it is obtained.
  */
 @ApiModel(description = "The definition of a specific reward, which may be contained in a category of rewards and that has optional information about how it is obtained.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneRewardEntryDefinition {
   @JsonProperty("rewardEntryHash")
   private Integer rewardEntryHash = null;

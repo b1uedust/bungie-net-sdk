@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyQuestsDestinyObjectiveProgress;
 /**
  * DestinyComponentsRecordsDestinyRecordComponent
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-09-29T19:57:25.109+01:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T16:59:02.979Z")
 public class DestinyComponentsRecordsDestinyRecordComponent {
   @JsonProperty("state")
   private DestinyDestinyRecordState state = null;
