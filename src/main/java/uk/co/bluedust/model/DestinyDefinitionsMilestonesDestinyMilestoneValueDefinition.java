@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * The definition for information related to a key/value pair that is relevant for a particular Milestone or component within the Milestone.   This lets us more flexibly pass up information that&#39;s useful to someone, even if it&#39;s not necessarily us.
  */
 @ApiModel(description = "The definition for information related to a key/value pair that is relevant for a particular Milestone or component within the Milestone.   This lets us more flexibly pass up information that's useful to someone, even if it's not necessarily us.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneValueDefinition {
   @JsonProperty("key")
   private String key = null;

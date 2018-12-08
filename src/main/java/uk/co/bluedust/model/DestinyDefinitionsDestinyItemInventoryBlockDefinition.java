@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * If the item can exist in an inventory - the overwhelming majority of them can and do - then this is the basic properties regarding the item&#39;s relationship with the inventory.
  */
 @ApiModel(description = "If the item can exist in an inventory - the overwhelming majority of them can and do - then this is the basic properties regarding the item's relationship with the inventory.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyItemInventoryBlockDefinition {
   @JsonProperty("stackUniqueLabel")
   private String stackUniqueLabel = null;

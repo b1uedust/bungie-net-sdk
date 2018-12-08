@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyCharacterDestinyItemPeerView;
  * A minimal view of a character&#39;s equipped items, for the purpose of rendering a summary screen or showing the character in 3D.
  */
 @ApiModel(description = "A minimal view of a character's equipped items, for the purpose of rendering a summary screen or showing the character in 3D.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyCharacterDestinyCharacterPeerView {
   @JsonProperty("equipment")
   private List<DestinyCharacterDestinyItemPeerView> equipment = null;

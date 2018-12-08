@@ -26,7 +26,7 @@ import java.util.List;
  * Information about the category and items currently sold in that category.
  */
 @ApiModel(description = "Information about the category and items currently sold in that category.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyEntitiesVendorsDestinyVendorCategory {
   @JsonProperty("displayCategoryIndex")
   private Integer displayCategoryIndex = null;

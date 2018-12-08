@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyDefinitionsCommonDestinyDisplayPropertiesDefi
  * Defines a Character Class in Destiny 2. These are types of characters you can play, like Titan, Warlock, and Hunter.
  */
 @ApiModel(description = "Defines a Character Class in Destiny 2. These are types of characters you can play, like Titan, Warlock, and Hunter.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyClassDefinition {
   @JsonProperty("classType")
   private Object classType = null;

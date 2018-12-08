@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * A Milestone can have many Challenges. Challenges are just extra Objectives that provide a fun way to mix-up play and provide extra rewards.
  */
 @ApiModel(description = "A Milestone can have many Challenges. Challenges are just extra Objectives that provide a fun way to mix-up play and provide extra rewards.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyMilestonesDestinyPublicMilestoneChallenge {
   @JsonProperty("objectiveHash")
   private Long objectiveHash = null;

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Defines the conditions under which stat modifications will be applied to a Character while participating in an objective.
  */
 @ApiModel(description = "Defines the conditions under which stat modifications will be applied to a Character while participating in an objective.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyObjectiveStatEntryDefinition {
   @JsonProperty("stat")
   private Object stat = null;

@@ -29,7 +29,7 @@ import uk.co.bluedust.model.ForumForumRecruitmentDetail;
 /**
  * InlineResponse20015
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class InlineResponse20015 {
   @JsonProperty("Response")
   private List<ForumForumRecruitmentDetail> response = null;

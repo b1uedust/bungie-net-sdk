@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * An overly complicated wrapper for the item level at which the item should spawn.
  */
 @ApiModel(description = "An overly complicated wrapper for the item level at which the item should spawn.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyItemCreationEntryLevelDefinition {
   @JsonProperty("level")
   private Integer level = null;

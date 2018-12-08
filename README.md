@@ -28,7 +28,7 @@ Add this dependency to your project's POM:
 <dependency>
     <groupId>uk.co.bluedust</groupId>
     <artifactId>bungie-net-sdk</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.5</version>
     <scope>compile</scope>
 </dependency>
 ```
@@ -38,7 +38,7 @@ Add this dependency to your project's POM:
 Add this dependency to your project's build file:
 
 ```groovy
-compile "uk.co.bluedust:bungie-net-sdk:1.0.2"
+compile "uk.co.bluedust:bungie-net-sdk:1.0.5"
 ```
 
 ### Others
@@ -49,7 +49,7 @@ At first generate the JAR by executing:
 
 Then manually install the following JARs:
 
-* target/bungie-net-sdk-1.0.2.jar
+* target/bungie-net-sdk-1.0.5.jar
 * target/lib/*.jar
 
 ## Getting Started
@@ -263,7 +263,6 @@ Class | Method | HTTP request | Description
  - [DestinyAdvancedAwaUserSelection](docs/DestinyAdvancedAwaUserSelection.md)
  - [DestinyBaseItemComponentSetOfint32](docs/DestinyBaseItemComponentSetOfint32.md)
  - [DestinyBaseItemComponentSetOfint64](docs/DestinyBaseItemComponentSetOfint64.md)
- - [DestinyBaseItemComponentSetOfuint32](docs/DestinyBaseItemComponentSetOfuint32.md)
  - [DestinyBucketCategory](docs/DestinyBucketCategory.md)
  - [DestinyBucketScope](docs/DestinyBucketScope.md)
  - [DestinyChallengesDestinyChallengeStatus](docs/DestinyChallengesDestinyChallengeStatus.md)
@@ -574,7 +573,6 @@ Class | Method | HTTP request | Description
  - [DestinyItemBindStatus](docs/DestinyItemBindStatus.md)
  - [DestinyItemComponentSetOfint32](docs/DestinyItemComponentSetOfint32.md)
  - [DestinyItemComponentSetOfint64](docs/DestinyItemComponentSetOfint64.md)
- - [DestinyItemComponentSetOfuint32](docs/DestinyItemComponentSetOfuint32.md)
  - [DestinyItemLocation](docs/DestinyItemLocation.md)
  - [DestinyItemPerkVisibility](docs/DestinyItemPerkVisibility.md)
  - [DestinyItemState](docs/DestinyItemState.md)
@@ -654,6 +652,7 @@ Class | Method | HTTP request | Description
  - [DictionaryComponentResponseOfint64AndDestinyItemInstanceComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemInstanceComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyItemObjectivesComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemObjectivesComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyItemPerksComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemPerksComponent.md)
+ - [DictionaryComponentResponseOfint64AndDestinyItemPlugComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemPlugComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyItemRenderComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemRenderComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyItemSocketsComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemSocketsComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyItemStatsComponent](docs/DictionaryComponentResponseOfint64AndDestinyItemStatsComponent.md)
@@ -661,17 +660,9 @@ Class | Method | HTTP request | Description
  - [DictionaryComponentResponseOfint64AndDestinyKiosksComponent](docs/DictionaryComponentResponseOfint64AndDestinyKiosksComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyPlugSetsComponent](docs/DictionaryComponentResponseOfint64AndDestinyPlugSetsComponent.md)
  - [DictionaryComponentResponseOfint64AndDestinyPresentationNodesComponent](docs/DictionaryComponentResponseOfint64AndDestinyPresentationNodesComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemInstanceComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemInstanceComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemObjectivesComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemObjectivesComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemPerksComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemPerksComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemPlugComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemRenderComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemRenderComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemSocketsComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemSocketsComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemStatsComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemStatsComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyItemTalentGridComponent](docs/DictionaryComponentResponseOfuint32AndDestinyItemTalentGridComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyVendorCategoriesComponent](docs/DictionaryComponentResponseOfuint32AndDestinyVendorCategoriesComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyVendorComponent](docs/DictionaryComponentResponseOfuint32AndDestinyVendorComponent.md)
- - [DictionaryComponentResponseOfuint32AndDestinyVendorSaleItemSetComponent](docs/DictionaryComponentResponseOfuint32AndDestinyVendorSaleItemSetComponent.md)
+ - [DictionaryComponentResponseOfint64AndDestinyVendorCategoriesComponent](docs/DictionaryComponentResponseOfint64AndDestinyVendorCategoriesComponent.md)
+ - [DictionaryComponentResponseOfint64AndDestinyVendorComponent](docs/DictionaryComponentResponseOfint64AndDestinyVendorComponent.md)
+ - [DictionaryComponentResponseOfint64AndDestinyVendorSaleItemSetComponent](docs/DictionaryComponentResponseOfint64AndDestinyVendorSaleItemSetComponent.md)
  - [EntitiesEntityActionResult](docs/EntitiesEntityActionResult.md)
  - [ExceptionsPlatformErrorCodes](docs/ExceptionsPlatformErrorCodes.md)
  - [FireteamFireteamActivityType](docs/FireteamFireteamActivityType.md)
@@ -927,4 +918,3 @@ It's recommended to create an instance of `ApiClient` per thread in a multithrea
 
 support@bungie.com
 
-# bungie-net-sdk

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Represents a variant of an activity that&#39;s relevant to a milestone.
  */
 @ApiModel(description = "Represents a variant of an activity that's relevant to a milestone.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyMilestonesDestinyPublicMilestoneActivityVariant {
   @JsonProperty("activityHash")
   private Long activityHash = null;

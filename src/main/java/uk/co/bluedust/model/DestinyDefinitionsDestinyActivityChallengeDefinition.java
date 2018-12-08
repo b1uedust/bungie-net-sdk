@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyDestinyItemQuantity;
  * Represents a reference to a Challenge, which for now is just an Objective.
  */
 @ApiModel(description = "Represents a reference to a Challenge, which for now is just an Objective.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyActivityChallengeDefinition {
   @JsonProperty("objectiveHash")
   private Long objectiveHash = null;

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * A subclass of DestinyItemQuantity, that provides not just the item and its quantity but also information that BNet can - at some point - use internally to provide more robust runtime information about the item&#39;s qualities.  If you want it, please ask! We&#39;re just out of time to wire it up right now. Or a clever person just may do it with our existing endpoints.
  */
 @ApiModel(description = "A subclass of DestinyItemQuantity, that provides not just the item and its quantity but also information that BNet can - at some point - use internally to provide more robust runtime information about the item's qualities.  If you want it, please ask! We're just out of time to wire it up right now. Or a clever person just may do it with our existing endpoints.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsMilestonesDestinyMilestoneQuestRewardItem {
   @JsonProperty("vendorHash")
   private Long vendorHash = null;

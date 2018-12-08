@@ -2,7 +2,7 @@ apply plugin: 'idea'
 apply plugin: 'eclipse'
 
 group = 'uk.co.bluedust'
-version = '1.0.2'
+version = '1.0.5'
 
 buildscript {
     repositories {

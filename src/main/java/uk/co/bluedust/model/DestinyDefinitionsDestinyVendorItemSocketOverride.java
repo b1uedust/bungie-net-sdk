@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The information for how the vendor purchase should override a given socket with custom plug data.
  */
 @ApiModel(description = "The information for how the vendor purchase should override a given socket with custom plug data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyVendorItemSocketOverride {
   @JsonProperty("singleItemHash")
   private Long singleItemHash = null;

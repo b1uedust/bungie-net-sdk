@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The definition of a known, reusable plug that can be applied to a socket.
  */
 @ApiModel(description = "The definition of a known, reusable plug that can be applied to a socket.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyItemSocketEntryPlugItemDefinition {
   @JsonProperty("plugItemHash")
   private Long plugItemHash = null;

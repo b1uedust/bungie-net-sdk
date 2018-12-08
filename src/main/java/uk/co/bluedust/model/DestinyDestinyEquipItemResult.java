@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * The results of an Equipping operation performed through the Destiny API.
  */
 @ApiModel(description = "The results of an Equipping operation performed through the Destiny API.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDestinyEquipItemResult {
   @JsonProperty("itemInstanceId")
   private Long itemInstanceId = null;

@@ -25,7 +25,7 @@ import uk.co.bluedust.model.DestinyDestinyGraphNodeState;
  * Represents a single state that a graph node might end up in. Depending on what&#39;s going on in the game, graph nodes could be shown in different ways or even excluded from view entirely.
  */
 @ApiModel(description = "Represents a single state that a graph node might end up in. Depending on what's going on in the game, graph nodes could be shown in different ways or even excluded from view entirely.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphNodeStateEntry {
   @JsonProperty("state")
   private DestinyDestinyGraphNodeState state = null;

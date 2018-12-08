@@ -25,7 +25,7 @@ import java.time.OffsetDateTime;
  * The base item component, filled with properties that are generally useful to know in any item request or that don&#39;t feel worthwhile to put in their own component.
  */
 @ApiModel(description = "The base item component, filled with properties that are generally useful to know in any item request or that don't feel worthwhile to put in their own component.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyEntitiesItemsDestinyItemComponent {
   @JsonProperty("itemHash")
   private Long itemHash = null;

@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Returns data about a character&#39;s status with a given Objective. Combine with DestinyObjectiveDefinition static data for display purposes.
  */
 @ApiModel(description = "Returns data about a character's status with a given Objective. Combine with DestinyObjectiveDefinition static data for display purposes.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyQuestsDestinyObjectiveProgress {
   @JsonProperty("objectiveHash")
   private Long objectiveHash = null;

@@ -26,7 +26,7 @@ import java.util.List;
  * The results of a search for Destiny content. This will be improved on over time, I&#39;ve been doing some experimenting to see what might be useful.
  */
 @ApiModel(description = "The results of a search for Destiny content. This will be improved on over time, I've been doing some experimenting to see what might be useful.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyEntitySearchResult {
   @JsonProperty("suggestedWords")
   private List<String> suggestedWords = null;

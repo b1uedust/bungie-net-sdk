@@ -24,7 +24,7 @@ import io.swagger.annotations.ApiModelProperty;
  * Nodes can have different visual states. This object represents a single visual state (\&quot;highlight type\&quot;) that a node can be in, and the unlock expression condition to determine whether it should be set.
  */
 @ApiModel(description = "Nodes can have different visual states. This object represents a single visual state (\"highlight type\") that a node can be in, and the unlock expression condition to determine whether it should be set.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDirectorDestinyActivityGraphNodeFeaturingStateDefinition {
   @JsonProperty("highlightType")
   private Object highlightType = null;

@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyBaseItemComponentSetOfint64;
  * The response for GetDestinyProfile, with components for character and item-level data.
  */
 @ApiModel(description = "The response for GetDestinyProfile, with components for character and item-level data.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyResponsesDestinyProfileResponse {
   @JsonProperty("vendorReceipts")
   private Object vendorReceipts = null;

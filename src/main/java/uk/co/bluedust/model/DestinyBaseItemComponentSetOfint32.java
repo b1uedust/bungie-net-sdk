@@ -24,7 +24,7 @@ import uk.co.bluedust.model.DictionaryComponentResponseOfint32AndDestinyItemObje
 /**
  * DestinyBaseItemComponentSetOfint32
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyBaseItemComponentSetOfint32 {
   @JsonProperty("objectives")
   private DictionaryComponentResponseOfint32AndDestinyItemObjectivesComponent objectives = null;

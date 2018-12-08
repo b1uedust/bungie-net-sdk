@@ -27,7 +27,7 @@ import uk.co.bluedust.model.DestinyMilestonesDestinyMilestoneRewardEntry;
  * Represents a category of \&quot;summary\&quot; rewards that can be earned for the Milestone regardless of specific quest rewards that can be earned.
  */
 @ApiModel(description = "Represents a category of \"summary\" rewards that can be earned for the Milestone regardless of specific quest rewards that can be earned.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyMilestonesDestinyMilestoneRewardCategory {
   @JsonProperty("rewardCategoryHash")
   private Long rewardCategoryHash = null;

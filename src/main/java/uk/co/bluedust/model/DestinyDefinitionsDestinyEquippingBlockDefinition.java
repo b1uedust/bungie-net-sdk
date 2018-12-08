@@ -26,7 +26,7 @@ import java.util.List;
  * Items that can be equipped define this block. It contains information we need to understand how and when the item can be equipped.
  */
 @ApiModel(description = "Items that can be equipped define this block. It contains information we need to understand how and when the item can be equipped.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyDefinitionsDestinyEquippingBlockDefinition {
   @JsonProperty("gearsetItemHash")
   private Long gearsetItemHash = null;

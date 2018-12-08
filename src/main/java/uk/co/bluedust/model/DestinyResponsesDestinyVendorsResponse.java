@@ -28,7 +28,7 @@ import uk.co.bluedust.model.DestinyItemComponentSetOfint32;
  * A response containing all of the components for all requested vendors.
  */
 @ApiModel(description = "A response containing all of the components for all requested vendors.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-11-04T23:34:27.728Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2018-12-08T21:00:47.497Z")
 public class DestinyResponsesDestinyVendorsResponse {
   @JsonProperty("vendorGroups")
   private Object vendorGroups = null;
