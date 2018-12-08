@@ -192,7 +192,7 @@
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
                     <mavenExecutorId>forked-path</mavenExecutorId>
-                    <arguments>-Dgpg.passphrase={i/NsUUoJPEkHY/K/lJawDP3R6ZcQ9Te+xic4VwIQyKM=}</arguments>
+                    <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
                 </configuration>
                 <dependencies>
                     <dependency>
