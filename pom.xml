@@ -4,7 +4,7 @@
     <artifactId>bungie-net-sdk</artifactId>
     <packaging>jar</packaging>
     <name>bungie-net-sdk</name>
-    <version>1.0.4</version>
+    <version>1.0.5-SNAPSHOT</version>
     <url>https://github.com/swagger-api/swagger-codegen</url>
     <description>Swagger Java</description>
     <distributionManagement>
@@ -21,7 +21,7 @@
         <connection>scm:git:git@github.com:b1uedust/bungie-net-sdk.git</connection>
         <developerConnection>scm:git:git@github.com:b1uedust/bungie-net-sdk.git</developerConnection>
         <url>https://github.com/b1uedust/bungie-net-sdk</url>
-        <tag>bungie-net-sdk-1.0.4</tag>
+        <tag>HEAD</tag>
     </scm>
     <licenses>
         <license>
