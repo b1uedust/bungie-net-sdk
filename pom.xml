@@ -4,7 +4,7 @@
     <artifactId>bungie-net-sdk</artifactId>
     <packaging>jar</packaging>
     <name>bungie-net-sdk</name>
-    <version>1.0.4-SNAPSHOT</version>
+    <version>1.0.4</version>
     <url>https://github.com/swagger-api/swagger-codegen</url>
     <description>Swagger Java</description>
     <distributionManagement>
@@ -21,7 +21,7 @@
         <connection>scm:git:git@github.com:b1uedust/bungie-net-sdk.git</connection>
         <developerConnection>scm:git:git@github.com:b1uedust/bungie-net-sdk.git</developerConnection>
         <url>https://github.com/b1uedust/bungie-net-sdk</url>
-        <tag>HEAD</tag>
+        <tag>bungie-net-sdk-1.0.4</tag>
     </scm>
     <licenses>
         <license>
@@ -103,7 +103,7 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration/>
+                <configuration />
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -192,7 +192,7 @@
                     <localCheckout>true</localCheckout>
                     <pushChanges>false</pushChanges>
                     <mavenExecutorId>forked-path</mavenExecutorId>
-                    <arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
+                    <arguments>-Dgpg.passphrase={i/NsUUoJPEkHY/K/lJawDP3R6ZcQ9Te+xic4VwIQyKM=}</arguments>
                 </configuration>
                 <dependencies>
                     <dependency>
